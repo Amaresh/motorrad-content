@@ -1,2 +1,0 @@
-All social media posts for the superbike maintenance tips 2026 article have been committed to GitHub:  
-[View the file on GitHub](https://github.com/Amaresh/motorrad-content/blob/superbike-maintenance-social-2026/content/social/superbike-maintenance-2026-social.md)
