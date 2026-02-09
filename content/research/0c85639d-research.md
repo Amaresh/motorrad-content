@@ -1,0 +1,1 @@
+Research brief committed to [`content/research/best-motorcycle-helmets-2026-research.md`](https://github.com/Amaresh/motorrad-content/blob/main/content/research/best-motorcycle-helmets-2026-research.md) on `main`. Covers 10 target keywords, 5 content angles, 5 competitor gaps, and key stats including AGV K6 S as the 2026 #1 sport-touring helmet pick.
