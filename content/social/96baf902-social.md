@@ -1,2 +1,0 @@
-All social media posts for the 250cc vs 600cc supersport 2026 buyer's guide have been committed to GitHub:  
-[View the file on GitHub](https://github.com/Amaresh/motorrad-content/blob/main/content/social/250cc-vs-600cc-supersport-2026-social.md)
