@@ -81,6 +81,7 @@ Out of the box, Mission Control ships with **18 AI agents** organized into two m
 | **Pepper** | Developer — pragmatic, ships fast |
 | **Loki** | Developer — creative problem solver |
 | **Wanda** | Developer — frontend specialist |
+| **Quill** | Infrastructure Ops — DigitalOcean monitoring and deployment |
 
 **Content Squad** (Marketing & Publishing):
 
@@ -205,6 +206,7 @@ Here's what an AI team running Mission Control can do for your garage:
 
 **Operations:**
 - Vision monitors your systems 24/7 and alerts you via Telegram if something breaks
+- Quill manages your DigitalOcean infrastructure, ensuring your website and booking system stay online
 - You can respond to alerts from your phone — in the garage, on a ride, wherever
 
 The agents work alongside the tools you already use. If your garage runs on [Garage CRM by Motorrad Theory](https://motorradtheory.com/garage-crm), Mission Control agents can automate the communication layer — generating the content that fills your blog, the social posts that fill your feed, and the reminders that fill your appointment book.
@@ -336,7 +338,7 @@ You don't need all 18 agents on day one. Mission Control supports scaling:
 |---|---|---|
 | 1 (Jarvis) | ~1.1 GB | Single assistant mode |
 | 3 (Jarvis + Friday + Vision) | ~2.2 GB | Core trio — lead, dev, ops |
-| 9 (Build squad) | ~5.6 GB | Full development team |
+| 10 (Build squad) | ~5.6 GB | Full development team |
 | 18 (Everything) | ~10.7 GB | Full build + content operation |
 
 Edit `workflows.yaml` to add or remove agents. No code changes needed.
@@ -388,7 +390,7 @@ Yes. Missions are YAML state machines. Define states, transitions, guards, and a
 
 Enterprise companies have had AI workforces for years. They've had the budgets, the engineering teams, and the infrastructure to deploy autonomous agents at scale. Independent businesses — garages, shops, agencies, solo founders — have watched from the sidelines.
 
-Mission Control changes that. An open-source platform. Eighteen agents. Two command installation. $12 a month to run. Self-healing. Self-learning. Controlled from your phone via Telegram.
+Mission Control changes that. An open-source platform. Eighteen agents. Two-command installation. $12 a month to run. Self-healing. Self-learning. Controlled from your phone via Telegram.
 
 The same principles that make Mission Control work — organized workflows, smart automation, agent coordination, and deterministic quality checks — are exactly what we build into every Motorrad Theory product. Whether you're orchestrating AI agents or motorcycle service bays, the principle is identical: **the right system turns chaos into control.**
 
