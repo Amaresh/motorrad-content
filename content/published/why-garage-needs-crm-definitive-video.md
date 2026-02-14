@@ -5,7 +5,7 @@ type: video
 source_article: content/published/why-garage-needs-crm-definitive-article.md
 duration: "60-90 seconds"
 voice_language: en-IN
-status: script-ready
+status: blocked-insufficient-credits
 tags:
   - GarageCRM
   - MotorcycleWorkshop
@@ -60,18 +60,25 @@ Garages using purpose-built CRM recover up to one hundred and twenty-four thousa
 
 | Field | Value |
 |-------|-------|
-| **Video ID** | *Pending — HeyGen tools not accessible* |
-| **Video URL** | *Pending* |
-| **Avatar** | *Pending* |
-| **Voice ID** | *Pending — requires `heygen_list_voices(language='en-IN')` call* |
+| **Avatar** | Aditya in Blue blazer (`Aditya_public_1`) |
+| **Voice** | Andrew — Indian English (`6be73833ef9a4eb0aeee399b8fe9d62b`) |
+| **Resolution** | 1280×720 (720p) |
+| **Video ID (Attempt 1)** | `0e8bd7ac6a46403099c5c5257be721c9` — ❌ FAILED: `RESOLUTION_NOT_ALLOWED` (1080p requires higher plan) |
+| **Video ID (Attempt 2)** | `7ba18cfe91834277ac7ef7f98764cc34` — ❌ FAILED: `MOVIO_PAYMENT_INSUFFICIENT_CREDIT` (account has no credits) |
+| **Video URL** | *Pending — requires HeyGen credit top-up* |
 
-### ⚠️ HeyGen API Status
+### ⚠️ Blocked: Insufficient HeyGen Credits
 
-The HeyGen MCP server is listed as available but the specific tools (`heygen_list_voices`, `heygen_list_avatars`, `heygen_generate_video`, `heygen_check_video_status`) are **not exposed in the current tool interface**. The video script is complete and ready for generation once HeyGen tool access is resolved.
+Both video generation attempts completed API calls successfully but failed during rendering:
 
-**Next steps to complete video generation:**
-1. Call `heygen_list_voices` with `language='en-IN'` → select Indian English voice
-2. Call `heygen_list_avatars` → select professional male/female presenter
-3. Call `heygen_generate_video` with the script above, selected avatar, and voice
-4. Call `heygen_check_video_status` → retrieve final video URL
-5. Update this document with video ID, URL, avatar, and voice details
+1. **Attempt 1** (1920×1080): Failed with `RESOLUTION_NOT_ALLOWED` — plan does not support 1080p
+2. **Attempt 2** (1280×720): Failed with `MOVIO_PAYMENT_INSUFFICIENT_CREDIT` — account has no remaining credits
+
+**To complete video generation:**
+1. Top up HeyGen credits at [app.heygen.com/billing](https://app.heygen.com/billing)
+2. Re-run `heygen_generate_video` with the script above using:
+   - Avatar: `Aditya_public_1`
+   - Voice: `6be73833ef9a4eb0aeee399b8fe9d62b`
+   - Resolution: 1280×720
+3. Check status with `heygen_check_video_status`
+4. Update this document with final video URL
