@@ -66,15 +66,17 @@ Garages using purpose-built CRM recover up to one hundred and twenty-four thousa
 | **Video ID (Attempt 1)** | `0e8bd7ac6a46403099c5c5257be721c9` — ❌ FAILED: `RESOLUTION_NOT_ALLOWED` (1080p not supported on plan) |
 | **Video ID (Attempt 2)** | `7ba18cfe91834277ac7ef7f98764cc34` — ❌ FAILED: `MOVIO_PAYMENT_INSUFFICIENT_CREDIT` |
 | **Video ID (Attempt 3)** | `ba9e59f786054003a24950efb5c8b722` — ❌ FAILED: `MOVIO_PAYMENT_INSUFFICIENT_CREDIT` |
+| **Video ID (Attempt 4)** | `311e54b650e54d69a23a89efadd81afe` — ❌ FAILED: `MOVIO_PAYMENT_INSUFFICIENT_CREDIT` (2026-02-14) |
 | **Video URL** | *Pending — requires HeyGen credit top-up* |
 
 ### ⚠️ Blocked: Insufficient HeyGen Credits
 
-Three video generation attempts have all failed:
+Four video generation attempts have all failed:
 
 1. **Attempt 1** (1920×1080): `RESOLUTION_NOT_ALLOWED` — plan does not support 1080p
 2. **Attempt 2** (1280×720): `MOVIO_PAYMENT_INSUFFICIENT_CREDIT` — no credits
 3. **Attempt 3** (1280×720, 2026-02-14): `MOVIO_PAYMENT_INSUFFICIENT_CREDIT` — still no credits
+4. **Attempt 4** (1280×720, 2026-02-14): `MOVIO_PAYMENT_INSUFFICIENT_CREDIT` — still no credits
 
 **To complete video generation:**
 1. Top up HeyGen credits at [app.heygen.com/billing](https://app.heygen.com/billing)
