@@ -1,29 +1,32 @@
 
 
-I'll start by reading the published article from GitHub and checking what's available. Let me search for the article and the repository.Found the repo `Amaresh/motorrad-content`. The article is at `content/published/9e4c1ae6-article.md`. Let me read it and also check the published directory for the exact article file.Found the actual article at `content/published/why-garage-needs-crm-definitive-article.md`. Let me read it now.Got the full article. Now I have the source material. Let me write a compelling 60-90 second video script based on this article's key points, then check if the video directory exists in the repo.Now I have the full article content. I'll write the video script based on the article's key points. The article covers:
-- Garages losing 15-20% repeat business from poor follow-up
-- 5 pain points: missed appointments, lost customer history, parts chaos, zero follow-up, staff gaps
-- Garage CRM solution with automated reminders increasing repeat business by 20%
-- ROI of $88K-$124K recoverable revenue on a $400K garage
-- Motorrad Theory products: Garage CRM, Employee, CRM
+I'll read the published article and the existing video script from the repo to understand what's been done.I have the full article and the existing video script (already committed). The script is solid — ~190 words, good structure with hook/problem/solution/CTA, mentions Motorrad Theory and Garage CRM. The blocker from previous attempts was HeyGen tool access.
 
-Now let me write the script and commit the video production document to the repo.✅ **Video script committed** to `Amaresh/motorrad-content` at [`content/published/why-garage-needs-crm-definitive-video.md`](https://github.com/Amaresh/motorrad-content/blob/main/content/published/why-garage-needs-crm-definitive-video.md).
+The HeyGen MCP server is listed as available in my environment. Let me attempt the HeyGen calls now. However, looking at my **actual available tools list**, I only see Mission Control tools and GitHub tools — the HeyGen-specific functions (`heygen_list_voices`, `heygen_list_avatars`, `heygen_generate_video`, `heygen_check_video_status`) are **not in my tool interface**.
 
-## Summary
+## Status Report
 
 ### ✅ Completed
-- **Read** the full published article (17K words) from GitHub
-- **Wrote** a ~190-word / ~75-second video script with:
-  - **Hook** (0-5s): Grabs attention with cost of paper-based systems
-  - **Problem** (5-20s): 15-20% repeat business loss, $80K/year walking out
-  - **Pain points** (20-35s): Double bookings, lost histories, inventory chaos
-  - **Solution** (35-55s): Garage CRM by Motorrad Theory with specific features
-  - **CTA** (55-75s): Visit motorradtheory.com, $124K recoverable revenue stat
-- **Committed** the video script document to the `motorrad-content` repo
+- **Article read** — Full 17K-word article from `Amaresh/motorrad-content`
+- **Video script written & committed** — `content/published/why-garage-needs-crm-definitive-video.md` with:
+  - Hook (0-5s): Cost of paper-based systems
+  - Problem (5-20s): 15-20% repeat business loss, $80K/year
+  - Pain points (20-35s): Double bookings, lost histories, inventory chaos
+  - Solution (35-55s): Garage CRM by Motorrad Theory with specific features
+  - CTA (55-75s): Visit motorradtheory.com, $124K recoverable revenue
 
-### ⚠️ Blocked: HeyGen Video Generation
-The HeyGen MCP server tools (`heygen_list_voices`, `heygen_list_avatars`, `heygen_generate_video`, `heygen_check_video_status`) are **not available in my tool interface**. The script is ready — an agent with HeyGen tool access needs to:
-1. List en-IN voices → pick one
-2. List avatars → pick a presenter
-3. Generate the video with the script
-4. Retrieve the video URL
+### ❌ BLOCKED: HeyGen Video Generation
+
+The HeyGen MCP tools are **not exposed in my available tool interface**. My tools are limited to:
+- Mission Control (list_tasks, list_agents, create_document, etc.)
+- GitHub MCP (file operations, PRs, issues, etc.)
+
+The following HeyGen tools are **required but unavailable**:
+1. `heygen_list_voices(language='en-IN')` — pick Indian English voice
+2. `heygen_list_avatars()` — pick a presenter avatar
+3. `heygen_generate_video()` — generate the talking-head video
+4. `heygen_check_video_status()` — get the video URL
+
+**The script is production-ready.** To unblock, either:
+- Grant HeyGen tool access to this agent, or
+- Delegate the HeyGen API calls to an agent that has the HeyGen tools exposed
