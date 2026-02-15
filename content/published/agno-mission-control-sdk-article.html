@@ -19,7 +19,7 @@
   <style>
     :root {
       --accent: #6366f1;
-      --accent-glow: rgba(99, 102, 241, 0.15);
+      --accent-glow: #6366f126;
       --bg-primary: #09090b;
       --bg-secondary: #111113;
       --bg-card: #18181b;
@@ -120,6 +120,66 @@
     .meta-row span { display: flex; align-items: center; gap: 0.3rem; }
     .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.25); }
 
+    /* ═══ SECTION IMAGES (under h2) ═══ */
+    .section-image {
+      position: relative;
+      width: 100%;
+      margin: 1rem 0 2rem;
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 3 / 1;
+    }
+    .section-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.7) saturate(1.15);
+      transition: filter 0.4s ease;
+    }
+    .section-image:hover img {
+      filter: brightness(0.85) saturate(1.2);
+    }
+    .section-image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(9, 9, 11, 0.15) 60%,
+        rgba(9, 9, 11, 0.5) 100%
+      );
+      pointer-events: none;
+    }
+
+    /* ═══ FLOWING BACKGROUND IMAGES ═══ */
+    .bg-break {
+      position: relative;
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      height: 300px;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      overflow: hidden;
+    }
+    .bg-break img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.3) saturate(1.2);
+    }
+    .bg-break-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        var(--bg-primary) 0%,
+        rgba(9, 9, 11, 0.2) 20%,
+        rgba(9, 9, 11, 0.2) 80%,
+        var(--bg-primary) 100%
+      );
+    }
+
     /* ═══ TABLE OF CONTENTS ═══ */
     .toc {
       max-width: 740px;
@@ -163,7 +223,7 @@
       font-size: 1.65rem;
       font-weight: 800;
       color: var(--text-primary);
-      margin: 3.5rem 0 1.25rem;
+      margin: 3.5rem 0 0.5rem;
       padding-bottom: 0.6rem;
       letter-spacing: -0.02em;
       position: relative;
@@ -196,51 +256,67 @@
       margin: 2rem 0 0.5rem;
     }
 
-    /* ── Body text ── */
+    /* ── Paragraphs & links ── */
     .article p {
-      margin-bottom: 1.4rem;
-      color: var(--text-secondary);
+      margin-bottom: 1.35rem;
       font-size: 1.02rem;
     }
     .article a {
       color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--accent-glow);
+      transition: text-decoration-color 0.15s;
     }
-    .article a:hover { border-bottom-color: var(--accent); }
-    .article strong { color: var(--text-primary); font-weight: 600; }
-    .article em { color: var(--text-secondary); }
+    .article a:hover { text-decoration-color: var(--accent); }
 
     /* ── Lists ── */
     .article ul, .article ol {
-      margin: 0 0 1.4rem 1.25rem;
-      color: var(--text-secondary);
+      margin: 0 0 1.5rem 1.25rem;
+      padding: 0;
     }
     .article li {
-      margin-bottom: 0.5rem;
-      padding-left: 0.25rem;
+      margin-bottom: 0.45rem;
+      font-size: 1.02rem;
     }
     .article li::marker { color: var(--accent); }
 
     /* ── Blockquotes ── */
     .article blockquote {
       border-left: 3px solid var(--accent);
-      padding: 1rem 1.5rem;
-      margin: 2rem 0;
       background: var(--accent-glow);
-      border-radius: 0 8px 8px 0;
+      margin: 1.75rem 0;
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 10px 10px 0;
       font-style: italic;
-      color: var(--text-secondary);
+      color: var(--text-primary);
     }
+    .article blockquote p { margin-bottom: 0; }
 
-    /* ── Horizontal rules ── */
-    .article hr {
+    /* ── Code ── */
+    .article code {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 0.88em;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 0.15em 0.4em;
+      border-radius: 5px;
+      color: var(--accent);
+    }
+    .article pre {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      overflow-x: auto;
+      margin: 1.75rem 0;
+    }
+    .article pre code {
+      background: none;
       border: none;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--border), transparent);
-      margin: 3rem 0;
+      padding: 0;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
     }
 
     /* ── Tables ── */
@@ -248,172 +324,144 @@
       width: 100%;
       border-collapse: separate;
       border-spacing: 0;
-      margin: 2rem 0;
-      font-size: 0.9rem;
+      margin: 1.75rem 0;
+      border: 1px solid var(--border);
       border-radius: 10px;
       overflow: hidden;
-      border: 1px solid var(--border);
     }
-    .article thead {
+    .article thead th {
       background: var(--bg-card);
-    }
-    .article th {
       padding: 0.85rem 1rem;
       text-align: left;
-      color: var(--accent);
-      font-weight: 600;
-      font-size: 0.8rem;
+      font-weight: 700;
+      font-size: 0.82rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
+      color: var(--accent);
       border-bottom: 1px solid var(--border);
     }
     .article td {
-      padding: 0.7rem 1rem;
+      padding: 0.75rem 1rem;
       border-bottom: 1px solid var(--border-subtle);
-      color: var(--text-secondary);
+      font-size: 0.95rem;
     }
-    .article tbody tr:last-child td { border-bottom: none; }
-    .article tbody tr:hover td {
-      background: rgba(255, 255, 255, 0.02);
-    }
+    .article tr:last-child td { border-bottom: none; }
+    .article tbody tr { transition: background 0.15s; }
+    .article tbody tr:hover { background: var(--bg-card); }
 
-    /* ── Code ── */
-    .article code {
-      background: var(--bg-card);
-      color: var(--accent);
-      padding: 0.15rem 0.45rem;
-      border-radius: 5px;
-      font-size: 0.86em;
-      font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace;
-      border: 1px solid var(--border-subtle);
-    }
-    .article pre {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.5rem;
-      overflow-x: auto;
-      margin: 2rem 0;
-    }
-    .article pre code {
-      background: none;
-      padding: 0;
-      color: var(--text-secondary);
+    /* ── Horizontal rule ── */
+    .article hr {
       border: none;
-      font-size: 0.88rem;
+      height: 1px;
+      background: var(--border);
+      margin: 3rem 0;
     }
 
-    /* ═══ TAGS ═══ */
-    .tags {
-      display: flex;
-      gap: 0.4rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-    .tag {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      color: var(--text-muted);
-      padding: 0.2rem 0.65rem;
-      border-radius: 100px;
-      font-size: 0.7rem;
-      font-weight: 500;
-    }
+    /* ── Strong / em ── */
+    .article strong { color: var(--text-primary); font-weight: 700; }
+    .article em { color: var(--text-primary); }
 
     /* ═══ FOOTER CTA ═══ */
     .footer-cta {
-      text-align: center;
-      padding: 4rem 2rem;
-      background: var(--bg-secondary);
-      border-top: 1px solid var(--border);
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
     }
-    .footer-cta .cta-heading {
+    .cta-card {
+      background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 3rem;
+      text-align: center;
+    }
+    .cta-card h3 {
       font-size: 1.5rem;
       font-weight: 800;
       color: var(--text-primary);
       margin-bottom: 0.75rem;
-      letter-spacing: -0.02em;
+      border: none;
+      padding: 0;
     }
-    .footer-cta p {
+    .cta-card p {
       color: var(--text-muted);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       font-size: 1rem;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
     }
-    .footer-cta .cta {
+    .cta-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .cta-links a {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .cta-links a.primary {
       background: var(--accent);
       color: #fff;
-      padding: 0.85rem 1.75rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.95rem;
-      transition: all 0.2s;
-      box-shadow: 0 0 0 0 var(--accent-glow);
     }
-    .footer-cta .cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px var(--accent-glow);
+    .cta-links a.primary:hover { filter: brightness(1.15); }
+    .cta-links a.secondary {
+      background: var(--bg-elevated);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
     }
-    .footer-links {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .footer-links a {
+    .cta-links a.secondary:hover { border-color: var(--accent); color: var(--text-primary); }
+
+    /* ═══ FOOTER ═══ */
+    .site-footer {
+      text-align: center;
+      padding: 2rem;
       color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 500;
-      transition: color 0.2s;
+      font-size: 0.82rem;
+      border-top: 1px solid var(--border-subtle);
     }
-    .footer-links a:hover { color: var(--accent); }
 
     /* ═══ RESPONSIVE ═══ */
     @media (max-width: 640px) {
-      .hero { min-height: 55vh; }
-      .hero-content { padding: 3rem 1.5rem 2.5rem; }
+      .hero { min-height: 60vh; }
+      .hero-content { padding: 2.5rem 1.25rem 2.5rem; }
       .article { padding: 2rem 1.25rem 3rem; }
-      .article h2 { font-size: 1.4rem; margin-top: 2.5rem; }
-      .article h3 { font-size: 1.1rem; }
-      .article table { font-size: 0.8rem; }
-      .article th, .article td { padding: 0.5rem 0.6rem; }
       .toc { padding: 2rem 1.25rem 0; }
-      .meta-row { gap: 0.75rem; }
+      .cta-card { padding: 2rem 1.25rem; }
+      .cta-links { flex-direction: column; }
+      .section-image { aspect-ratio: 2.5 / 1; border-radius: 8px; }
+      .bg-break { height: 200px; margin-top: 2.5rem; margin-bottom: 2.5rem; }
     }
   </style>
 </head>
 <body>
 
-  <section class="hero">
-    <img class="hero-img" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1400&h=700&fit=crop&q=80" alt="The $12/Month AI Workforce: How a Free Open-Source Platform Lets Any Garage Run 18 AI Employees" loading="eager">
+  <header class="hero">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1400&h=700&fit=crop&q=80" alt="The $12/Month AI Workforce: How a Free Open-Source Platform Lets Any Garage Run 18 AI Employees">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <div class="badge">🤖 AI & Automation</div>
+      <div class="badge">⬡ Product Deep-Dive</div>
       <h1>The $12/Month AI Workforce: How a Free Open-Source Platform Lets Any Garage Run 18 AI Employees</h1>
       <p class="subtitle">Mission Control is an open-source AI agent platform that runs 18 autonomous workers on a $12/month server. Learn how motorcycle garages and small businesses are using it to automate admin, content, and operations — no coding degree required.</p>
       <div class="meta-row">
-        <span>Motorrad Theory Team</span>
+        <span>✎ Motorrad Theory Team</span>
         <span class="meta-dot"></span>
-        <span>2026-02-10</span>
+        <span>◷ 16 min read</span>
         <span class="meta-dot"></span>
-        <span>15 min read</span>
+        <span>⊞ 2026-02-10</span>
       </div>
-      <div class="tags"><span class="tag">#AIAgents</span><span class="tag">#AgenticAI</span><span class="tag">#SmallBusinessAI</span><span class="tag">#OpenSourceAI</span><span class="tag">#MotoTech</span><span class="tag">#GarageCRM</span><span class="tag">#MotorradTheory</span><span class="tag">#MultiAgentAI</span><span class="tag">#BuildInPublic</span><span class="tag">#FutureOfWork</span></div>
     </div>
-  </section>
+  </header>
 
-  <nav class="toc"><div class="toc-label">In this article</div><ul><li class="toc-h2"><a href="#introduction-what-if-you-could-hire-18-employees-for-less-than-your-monthly-coffee-budget">Introduction: What If You Could Hire 18 Employees for Less Than Your Monthly Coffee Budget?</a></li><li class="toc-h2"><a href="#the-problem-small-businesses-drown-in-admin-while-big-companies-automate-everything">The Problem: Small Businesses Drown in Admin While Big Companies Automate Everything</a></li><li class="toc-h3"><a href="#23-of-your-work-week-is-paperwork">23% of Your Work Week Is Paperwork</a></li><li class="toc-h3"><a href="#the-ai-agent-gap">The AI Agent Gap</a></li><li class="toc-h2"><a href="#what-is-mission-control">What Is Mission Control?</a></li><li class="toc-h3"><a href="#install-in-two-commands">Install in Two Commands</a></li><li class="toc-h3"><a href="#18-agents-two-missions-one-server">18 Agents, Two Missions, One Server</a></li><li class="toc-h2"><a href="#how-it-actually-works-missions-not-chatbots">How It Actually Works: Missions, Not Chatbots</a></li><li class="toc-h3"><a href="#this-is-not-another-chatbot">This Is Not Another Chatbot</a></li><li class="toc-h3"><a href="#the-content-mission-from-idea-to-published-article-hands-free">The Content Mission: From Idea to Published Article, Hands-Free</a></li><li class="toc-h3"><a href="#the-build-mission-from-task-to-pull-request">The Build Mission: From Task to Pull Request</a></li><li class="toc-h3"><a href="#agents-wake-up-work-and-sleep">Agents Wake Up, Work, and Sleep</a></li><li class="toc-h2"><a href="#the-12-month-breakdown-why-this-is-so-cheap">The $12/Month Breakdown: Why This Is So Cheap</a></li><li class="toc-h3"><a href="#why-enterprise-ai-platforms-are-expensive">Why Enterprise AI Platforms Are Expensive</a></li><li class="toc-h3"><a href="#why-mission-control-is-12">Why Mission Control Is $12</a></li><li class="toc-h3"><a href="#the-comparison-that-matters">The Comparison That Matters</a></li><li class="toc-h2"><a href="#what-this-means-for-motorcycle-garages">What This Means for Motorcycle Garages</a></li><li class="toc-h3"><a href="#the-garage-owner-s-ai-team">The Garage Owner's AI Team</a></li><li class="toc-h3"><a href="#real-example-our-content-pipeline">Real Example: Our Content Pipeline</a></li><li class="toc-h2"><a href="#not-just-for-garages-who-else-benefits">Not Just for Garages: Who Else Benefits</a></li><li class="toc-h3"><a href="#trade-businesses">Trade Businesses</a></li><li class="toc-h3"><a href="#solo-founders-and-indie-developers">Solo Founders and Indie Developers</a></li><li class="toc-h3"><a href="#content-agencies">Content Agencies</a></li><li class="toc-h3"><a href="#any-small-business-doing-repetitive-knowledge-work">Any Small Business Doing Repetitive Knowledge Work</a></li><li class="toc-h2"><a href="#vision-the-self-healing-operations-manager">Vision: The Self-Healing Operations Manager</a></li><li class="toc-h2"><a href="#what-makes-this-different-from-langchain-crewai-and-autogen">What Makes This Different from LangChain, CrewAI, and AutoGen</a></li><li class="toc-h3"><a href="#langchain-langgraph">LangChain / LangGraph</a></li><li class="toc-h3"><a href="#crewai">CrewAI</a></li><li class="toc-h3"><a href="#autogen-microsoft">AutoGen (Microsoft)</a></li><li class="toc-h3"><a href="#mission-control">Mission Control</a></li><li class="toc-h2"><a href="#the-learning-engine-agents-get-better-over-time">The Learning Engine: Agents Get Better Over Time</a></li><li class="toc-h2"><a href="#security-and-control-your-data-your-server-your-rules">Security and Control: Your Data, Your Server, Your Rules</a></li><li class="toc-h3"><a href="#self-hosted-by-default">Self-Hosted by Default</a></li><li class="toc-h3"><a href="#byok-philosophy">BYOK Philosophy</a></li><li class="toc-h3"><a href="#deterministic-guards-not-ai-trust">Deterministic Guards, Not AI Trust</a></li><li class="toc-h2"><a href="#getting-started-weekend-project-long-term-payoff">Getting Started: Weekend Project, Long-Term Payoff</a></li><li class="toc-h3"><a href="#what-you-need">What You Need</a></li><li class="toc-h3"><a href="#the-path">The Path</a></li><li class="toc-h3"><a href="#start-small">Start Small</a></li><li class="toc-h2"><a href="#the-numbers-that-matter">The Numbers That Matter</a></li><li class="toc-h2"><a href="#frequently-asked-questions">Frequently Asked Questions</a></li><li class="toc-h3"><a href="#do-i-need-to-know-how-to-code">Do I need to know how to code?</a></li><li class="toc-h3"><a href="#is-my-customer-data-safe">Is my customer data safe?</a></li><li class="toc-h3"><a href="#can-i-use-it-without-github-copilot">Can I use it without GitHub Copilot?</a></li><li class="toc-h3"><a href="#how-is-this-different-from-chatgpt-or-gemini">How is this different from ChatGPT or Gemini?</a></li><li class="toc-h3"><a href="#can-i-define-my-own-missions">Can I define my own missions?</a></li><li class="toc-h2"><a href="#conclusion-the-playing-field-just-leveled">Conclusion: The Playing Field Just Leveled</a></li><li class="toc-h2"><a href="#ready-to-build-your-ai-workforce">Ready to Build Your AI Workforce?</a></li></ul></nav>
+  <nav class="toc"><div class="toc-label">In this article</div><ul><li><a href="#introduction-what-if-you-could-hire-18-employees-for-less-than-your-monthly-coffee-budget">Introduction: What If You Could Hire 18 Employees for Less Than Your Monthly Coffee Budget?</a></li><li><a href="#the-problem-small-businesses-drown-in-admin-while-big-companies-automate-everything">The Problem: Small Businesses Drown in Admin While Big Companies Automate Everything</a></li><li class="toc-h3"><a href="#23-of-your-work-week-is-paperwork">23% of Your Work Week Is Paperwork</a></li><li class="toc-h3"><a href="#the-ai-agent-gap">The AI Agent Gap</a></li><li><a href="#what-is-mission-control">What Is Mission Control?</a></li><li class="toc-h3"><a href="#install-in-two-commands">Install in Two Commands</a></li><li class="toc-h3"><a href="#18-agents-two-missions-one-server">18 Agents, Two Missions, One Server</a></li><li><a href="#how-it-actually-works-missions-not-chatbots">How It Actually Works: Missions, Not Chatbots</a></li><li class="toc-h3"><a href="#this-is-not-another-chatbot">This Is Not Another Chatbot</a></li><li class="toc-h3"><a href="#the-content-mission-from-idea-to-published-article-hands-free">The Content Mission: From Idea to Published Article, Hands-Free</a></li><li class="toc-h3"><a href="#the-build-mission-from-task-to-pull-request">The Build Mission: From Task to Pull Request</a></li><li class="toc-h3"><a href="#agents-wake-up-work-and-sleep">Agents Wake Up, Work, and Sleep</a></li><li><a href="#the-12month-breakdown-why-this-is-so-cheap">The $12/Month Breakdown: Why This Is So Cheap</a></li><li class="toc-h3"><a href="#why-enterprise-ai-platforms-are-expensive">Why Enterprise AI Platforms Are Expensive</a></li><li class="toc-h3"><a href="#why-mission-control-is-12">Why Mission Control Is $12</a></li><li class="toc-h3"><a href="#the-comparison-that-matters">The Comparison That Matters</a></li><li><a href="#what-this-means-for-motorcycle-garages">What This Means for Motorcycle Garages</a></li><li class="toc-h3"><a href="#the-garage-owners-ai-team">The Garage Owner's AI Team</a></li><li class="toc-h3"><a href="#real-example-our-content-pipeline">Real Example: Our Content Pipeline</a></li><li><a href="#not-just-for-garages-who-else-benefits">Not Just for Garages: Who Else Benefits</a></li><li class="toc-h3"><a href="#trade-businesses">Trade Businesses</a></li><li class="toc-h3"><a href="#solo-founders-and-indie-developers">Solo Founders and Indie Developers</a></li><li class="toc-h3"><a href="#content-agencies">Content Agencies</a></li><li class="toc-h3"><a href="#any-small-business-doing-repetitive-knowledge-work">Any Small Business Doing Repetitive Knowledge Work</a></li><li><a href="#vision-the-self-healing-operations-manager">Vision: The Self-Healing Operations Manager</a></li><li><a href="#what-makes-this-different-from-langchain-crewai-and-autogen">What Makes This Different from LangChain, CrewAI, and AutoGen</a></li><li class="toc-h3"><a href="#langchain-langgraph">LangChain / LangGraph</a></li><li class="toc-h3"><a href="#crewai">CrewAI</a></li><li class="toc-h3"><a href="#autogen-microsoft">AutoGen (Microsoft)</a></li><li class="toc-h3"><a href="#mission-control">Mission Control</a></li><li><a href="#the-learning-engine-agents-get-better-over-time">The Learning Engine: Agents Get Better Over Time</a></li><li><a href="#security-and-control-your-data-your-server-your-rules">Security and Control: Your Data, Your Server, Your Rules</a></li><li class="toc-h3"><a href="#self-hosted-by-default">Self-Hosted by Default</a></li><li class="toc-h3"><a href="#byok-philosophy">BYOK Philosophy</a></li><li class="toc-h3"><a href="#deterministic-guards-not-ai-trust">Deterministic Guards, Not AI Trust</a></li><li><a href="#getting-started-weekend-project-long-term-payoff">Getting Started: Weekend Project, Long-Term Payoff</a></li><li class="toc-h3"><a href="#what-you-need">What You Need</a></li><li class="toc-h3"><a href="#the-path">The Path</a></li><li class="toc-h3"><a href="#start-small">Start Small</a></li><li><a href="#the-numbers-that-matter">The Numbers That Matter</a></li><li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li><li class="toc-h3"><a href="#do-i-need-to-know-how-to-code">Do I need to know how to code?</a></li><li class="toc-h3"><a href="#is-my-customer-data-safe">Is my customer data safe?</a></li><li class="toc-h3"><a href="#can-i-use-it-without-github-copilot">Can I use it without GitHub Copilot?</a></li><li class="toc-h3"><a href="#how-is-this-different-from-chatgpt-or-gemini">How is this different from ChatGPT or Gemini?</a></li><li class="toc-h3"><a href="#can-i-define-my-own-missions">Can I define my own missions?</a></li><li><a href="#conclusion-the-playing-field-just-leveled">Conclusion: The Playing Field Just Leveled</a></li><li><a href="#ready-to-build-your-ai-workforce">Ready to Build Your AI Workforce?</a></li></ul></nav>
 
   <article class="article">
     <h2 id="introduction-what-if-you-could-hire-18-employees-for-less-than-your-monthly-coffee-budget">Introduction: What If You Could Hire 18 Employees for Less Than Your Monthly Coffee Budget?</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=400&fit=crop&q=80" alt="Introduction: What If You Could Hire 18 Employees for Less Than Your Monthly Coffee Budget?" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>Picture this. It's 7 AM. You haven't opened the garage doors yet, but your AI team has already been working for six hours. One agent researched the best motorcycle chain lubricants for your next blog post. Another drafted 2,000 words about winter storage tips for sportbikes. A third reviewed the draft for errors. A fourth published it to your website. A fifth wrote social media posts to promote it.</p>
 <p>Meanwhile, a sixth agent checked whether any customer service tickets were stuck. A seventh monitored your server health. An eighth ran diagnostics on your appointment system.</p>
 <p>All of them autonomous. All of them coordinated. All of them running on a cloud server that costs $12 a month.</p>
@@ -423,6 +471,7 @@
 <p>Here's how it works, who it's for, and why it might be the most important tool a small business owner discovers this year.</p>
 <hr />
 <h2 id="the-problem-small-businesses-drown-in-admin-while-big-companies-automate-everything">The Problem: Small Businesses Drown in Admin While Big Companies Automate Everything</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=400&fit=crop&q=80" alt="The Problem: Small Businesses Drown in Admin While Big Companies Automate Everything" loading="lazy"><div class="section-image-overlay"></div></div>
 <h3 id="23-of-your-work-week-is-paperwork">23% of Your Work Week Is Paperwork</h3>
 <p>According to Sage Research, <strong>small businesses spend 23% of their working hours on administrative tasks</strong> — scheduling, invoicing, follow-ups, inventory checks, customer communications, and data entry. For a garage owner working 50-hour weeks, that's nearly 12 hours a week spent not working on bikes.</p>
 <p>Yet <strong>67% of small businesses have no AI strategy at all</strong>, per the US Chamber of Commerce. Not because they don't want one — because the tools aren't built for them. Enterprise AI platforms assume you have an IT department, a six-figure software budget, and a team that can dedicate weeks to implementation.</p>
@@ -463,6 +512,7 @@
 <p>That gap — the sub-$50/month market for autonomous AI agents that don't require a computer science degree — is exactly where Mission Control lives.</p>
 <hr />
 <h2 id="what-is-mission-control">What Is Mission Control?</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=400&fit=crop&q=80" alt="What Is Mission Control?" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>Mission Control is an <strong>open-source, self-orchestrating AI agent platform</strong>. That's a mouthful, so let's break it down:</p>
 <ul>
 <li><strong>Open-source:</strong> The code is free. MIT license. You can read it, modify it, deploy it on your own hardware, and never pay a licensing fee.</li>
@@ -572,7 +622,9 @@ mc setup
 </table>
 <p>Every one of these agents is defined in a single YAML configuration file — no custom Python code per agent. Want to add a 19th? Copy a YAML block and change the name. Want to remove five you don't need? Delete those blocks. The system adapts.</p>
 <hr />
+<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
 <h2 id="how-it-actually-works-missions-not-chatbots">How It Actually Works: Missions, Not Chatbots</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=400&fit=crop&q=80" alt="How It Actually Works: Missions, Not Chatbots" loading="lazy"><div class="section-image-overlay"></div></div>
 <h3 id="this-is-not-another-chatbot">This Is Not Another Chatbot</h3>
 <p>Most &quot;AI tools&quot; for small businesses are chatbots — they sit in a widget on your website and answer customer questions. That's useful, but it's not what Mission Control does.</p>
 <p>Mission Control runs <strong>missions</strong> — multi-stage workflows where different agents handle different stages, handing off to each other automatically. Think of it less like a chatbot and more like a project management system where the employees are AI.</p>
@@ -604,7 +656,8 @@ mc setup
 </ol>
 <p>This means agents aren't running 24/7 burning compute. They wake up, do a unit of work, and rest. The entire 18-agent platform runs on roughly <strong>10.7 GB of RAM</strong> — achievable on a $12/month DigitalOcean droplet or equivalent.</p>
 <hr />
-<h2 id="the-12-month-breakdown-why-this-is-so-cheap">The $12/Month Breakdown: Why This Is So Cheap</h2>
+<h2 id="the-12month-breakdown-why-this-is-so-cheap">The $12/Month Breakdown: Why This Is So Cheap</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=400&fit=crop&q=80" alt="The $12/Month Breakdown: Why This Is So Cheap" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>The cost story is the headline, so let's be transparent about it.</p>
 <h3 id="why-enterprise-ai-platforms-are-expensive">Why Enterprise AI Platforms Are Expensive</h3>
 <p>Traditional AI agent platforms charge $200–$500 per seat per month because they host the AI models, the orchestration infrastructure, and the compute for you. You're paying for their GPUs, their servers, their model API costs, and their profit margin.</p>
@@ -706,7 +759,8 @@ mc setup
 </table>
 <hr />
 <h2 id="what-this-means-for-motorcycle-garages">What This Means for Motorcycle Garages</h2>
-<h3 id="the-garage-owner-s-ai-team">The Garage Owner's AI Team</h3>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1200&h=400&fit=crop&q=80" alt="What This Means for Motorcycle Garages" loading="lazy"><div class="section-image-overlay"></div></div>
+<h3 id="the-garage-owners-ai-team">The Garage Owner's AI Team</h3>
 <p>You run a motorcycle workshop. You're great with bikes — Ducati valve adjustments, Yamaha R1 suspension setups, BMW boxer engine rebuilds. But you're drowning in the business <em>around</em> the bikes: scheduling, follow-ups, inventory tracking, marketing, social media, and customer communication.</p>
 <p>Here's what an AI team running Mission Control can do for your garage:</p>
 <p><strong>Content &amp; Marketing:</strong></p>
@@ -733,7 +787,9 @@ mc setup
 <h3 id="real-example-our-content-pipeline">Real Example: Our Content Pipeline</h3>
 <p>This article you're reading right now was produced by Mission Control's content pipeline. Scout researched the SDK and compiled a brief with 10 target keywords, 5 content angles, and competitor analysis. Ink (that's the agent writing this) took the brief and produced the article. The system works.</p>
 <hr />
+<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
 <h2 id="not-just-for-garages-who-else-benefits">Not Just for Garages: Who Else Benefits</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=400&fit=crop&q=80" alt="Not Just for Garages: Who Else Benefits" loading="lazy"><div class="section-image-overlay"></div></div>
 <h3 id="trade-businesses">Trade Businesses</h3>
 <p>Plumbers, HVAC technicians, electricians, auto body shops — any service business where the owner is both the primary worker and the business manager. Mission Control automates the marketing and admin that these businesses neglect because there's literally no time for it.</p>
 <h3 id="solo-founders-and-indie-developers">Solo Founders and Indie Developers</h3>
@@ -744,6 +800,7 @@ mc setup
 <p>If your business involves regular content creation, customer communication, documentation, reporting, or system monitoring, Mission Control can handle it.</p>
 <hr />
 <h2 id="vision-the-self-healing-operations-manager">Vision: The Self-Healing Operations Manager</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&h=400&fit=crop&q=80" alt="Vision: The Self-Healing Operations Manager" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>One agent deserves special attention. <strong>Vision</strong> is Mission Control's operations healer — and it's unlike anything in competing platforms.</p>
 <p>Every hour, Vision runs <strong>16 automated health checks</strong>:</p>
 <table>
@@ -792,6 +849,7 @@ mc setup
 <p>And here's the closed-loop part: when Vision alerts you on Telegram, you can respond in Vision mode and it will execute fixes directly — restart services, kill processes, reset tasks — all from your phone. You're managing your AI workforce while standing in your garage working on a bike.</p>
 <hr />
 <h2 id="what-makes-this-different-from-langchain-crewai-and-autogen">What Makes This Different from LangChain, CrewAI, and AutoGen</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&h=400&fit=crop&q=80" alt="What Makes This Different from LangChain, CrewAI, and AutoGen" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>If you're technical enough to have heard of these frameworks, here's why Mission Control is a different category:</p>
 <h3 id="langchain-langgraph">LangChain / LangGraph</h3>
 <p>Powerful agent primitives, but you build your own orchestration, task management, scheduling, and monitoring from scratch. It's a toolkit, not a platform. Mission Control is a platform.</p>
@@ -803,12 +861,15 @@ mc setup
 <p>Ships as a complete platform: 18 agents, 2 missions, task board, health monitoring, Telegram integration, visual mission builder, hot-reload configuration, and 196 automated tests. Install, run setup, and you have a working system — not a framework that requires months of custom engineering.</p>
 <p><strong>Multi-agent systems improve task completion by 40% compared to single-agent setups</strong>, according to Stanford HAI research. Mission Control delivers that improvement out of the box.</p>
 <hr />
+<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
 <h2 id="the-learning-engine-agents-get-better-over-time">The Learning Engine: Agents Get Better Over Time</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=400&fit=crop&q=80" alt="The Learning Engine: Agents Get Better Over Time" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>Here's a detail that separates Mission Control from every workflow automation tool: <strong>agents learn.</strong></p>
 <p>The Agno framework underneath Mission Control captures outcomes from every interaction. Over days and weeks, agents measurably improve at your specific workflows without manual tuning. The learning analytics dashboard shows you exactly what's improving and where bottlenecks remain.</p>
 <p>This means the system you deploy on day one is the <em>worst</em> it will ever be. By week four, agents are faster, more accurate, and better adapted to your particular business patterns.</p>
 <hr />
 <h2 id="security-and-control-your-data-your-server-your-rules">Security and Control: Your Data, Your Server, Your Rules</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1200&h=400&fit=crop&q=80" alt="Security and Control: Your Data, Your Server, Your Rules" loading="lazy"><div class="section-image-overlay"></div></div>
 <h3 id="self-hosted-by-default">Self-Hosted by Default</h3>
 <p>Mission Control runs on <em>your</em> server. Customer data, service records, business communications — nothing leaves your infrastructure unless you explicitly configure external integrations.</p>
 <h3 id="byok-philosophy">BYOK Philosophy</h3>
@@ -823,6 +884,7 @@ mc setup
 <p>Mission transitions are gated by <strong>factual checks</strong> — not by what the AI claims happened. The system verifies that a PR actually exists on GitHub before allowing a code review transition. It checks that a research file actually exists before allowing a draft to begin. The AI does the creative work; deterministic logic validates the results.</p>
 <hr />
 <h2 id="getting-started-weekend-project-long-term-payoff">Getting Started: Weekend Project, Long-Term Payoff</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1200&h=400&fit=crop&q=80" alt="Getting Started: Weekend Project, Long-Term Payoff" loading="lazy"><div class="section-image-overlay"></div></div>
 <h3 id="what-you-need">What You Need</h3>
 <ul>
 <li>A cloud server with 2+ GB RAM ($6–$12/month on DigitalOcean, Hetzner, or any provider)</li>
@@ -873,6 +935,7 @@ mc setup
 <p>Edit <code>workflows.yaml</code> to add or remove agents. No code changes needed.</p>
 <hr />
 <h2 id="the-numbers-that-matter">The Numbers That Matter</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=400&fit=crop&q=80" alt="The Numbers That Matter" loading="lazy"><div class="section-image-overlay"></div></div>
 <table>
 <thead>
 <tr>
@@ -960,16 +1023,21 @@ mc setup
 
   </article>
 
-  <section class="footer-cta">
-    <div class="cta-heading">Ready to transform your garage?</div>
-    <p>Data-driven workshop management built for the modern Indian motorcycle market.</p>
-    <a href="https://www.motorradtheory.com/garage-crm" class="cta">Explore Garage CRM →</a>
-    <div class="footer-links">
-      <a href="https://www.motorradtheory.com/crm">Customer CRM</a>
-      <a href="https://www.motorradtheory.com/employee">Team Management</a>
-      <a href="https://www.motorradtheory.com">Motorrad Theory</a>
+  <div class="footer-cta">
+    <div class="cta-card">
+      <h3>Ready to Transform Your Garage?</h3>
+      <p>Explore Motorrad Theory's suite of tools built for Indian motorcycle workshops.</p>
+      <div class="cta-links">
+        <a href="#" class="primary">🏍 Garage CRM</a>
+        <a href="#" class="secondary">👥 Customer CRM</a>
+        <a href="#" class="secondary">📊 Team Management</a>
+      </div>
     </div>
-  </section>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 Motorrad Theory · Built for Indian motorcycle workshops</p>
+  </footer>
 
 </body>
 </html>

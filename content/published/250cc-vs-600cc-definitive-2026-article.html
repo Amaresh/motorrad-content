@@ -19,7 +19,7 @@
   <style>
     :root {
       --accent: #3b82f6;
-      --accent-glow: rgba(59, 130, 246, 0.15);
+      --accent-glow: #3b82f626;
       --bg-primary: #09090b;
       --bg-secondary: #111113;
       --bg-card: #18181b;
@@ -120,6 +120,66 @@
     .meta-row span { display: flex; align-items: center; gap: 0.3rem; }
     .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.25); }
 
+    /* ═══ SECTION IMAGES (under h2) ═══ */
+    .section-image {
+      position: relative;
+      width: 100%;
+      margin: 1rem 0 2rem;
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 3 / 1;
+    }
+    .section-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.7) saturate(1.15);
+      transition: filter 0.4s ease;
+    }
+    .section-image:hover img {
+      filter: brightness(0.85) saturate(1.2);
+    }
+    .section-image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(9, 9, 11, 0.15) 60%,
+        rgba(9, 9, 11, 0.5) 100%
+      );
+      pointer-events: none;
+    }
+
+    /* ═══ FLOWING BACKGROUND IMAGES ═══ */
+    .bg-break {
+      position: relative;
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      height: 300px;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      overflow: hidden;
+    }
+    .bg-break img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.3) saturate(1.2);
+    }
+    .bg-break-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        var(--bg-primary) 0%,
+        rgba(9, 9, 11, 0.2) 20%,
+        rgba(9, 9, 11, 0.2) 80%,
+        var(--bg-primary) 100%
+      );
+    }
+
     /* ═══ TABLE OF CONTENTS ═══ */
     .toc {
       max-width: 740px;
@@ -163,7 +223,7 @@
       font-size: 1.65rem;
       font-weight: 800;
       color: var(--text-primary);
-      margin: 3.5rem 0 1.25rem;
+      margin: 3.5rem 0 0.5rem;
       padding-bottom: 0.6rem;
       letter-spacing: -0.02em;
       position: relative;
@@ -196,51 +256,67 @@
       margin: 2rem 0 0.5rem;
     }
 
-    /* ── Body text ── */
+    /* ── Paragraphs & links ── */
     .article p {
-      margin-bottom: 1.4rem;
-      color: var(--text-secondary);
+      margin-bottom: 1.35rem;
       font-size: 1.02rem;
     }
     .article a {
       color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--accent-glow);
+      transition: text-decoration-color 0.15s;
     }
-    .article a:hover { border-bottom-color: var(--accent); }
-    .article strong { color: var(--text-primary); font-weight: 600; }
-    .article em { color: var(--text-secondary); }
+    .article a:hover { text-decoration-color: var(--accent); }
 
     /* ── Lists ── */
     .article ul, .article ol {
-      margin: 0 0 1.4rem 1.25rem;
-      color: var(--text-secondary);
+      margin: 0 0 1.5rem 1.25rem;
+      padding: 0;
     }
     .article li {
-      margin-bottom: 0.5rem;
-      padding-left: 0.25rem;
+      margin-bottom: 0.45rem;
+      font-size: 1.02rem;
     }
     .article li::marker { color: var(--accent); }
 
     /* ── Blockquotes ── */
     .article blockquote {
       border-left: 3px solid var(--accent);
-      padding: 1rem 1.5rem;
-      margin: 2rem 0;
       background: var(--accent-glow);
-      border-radius: 0 8px 8px 0;
+      margin: 1.75rem 0;
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 10px 10px 0;
       font-style: italic;
-      color: var(--text-secondary);
+      color: var(--text-primary);
     }
+    .article blockquote p { margin-bottom: 0; }
 
-    /* ── Horizontal rules ── */
-    .article hr {
+    /* ── Code ── */
+    .article code {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 0.88em;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 0.15em 0.4em;
+      border-radius: 5px;
+      color: var(--accent);
+    }
+    .article pre {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      overflow-x: auto;
+      margin: 1.75rem 0;
+    }
+    .article pre code {
+      background: none;
       border: none;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--border), transparent);
-      margin: 3rem 0;
+      padding: 0;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
     }
 
     /* ── Tables ── */
@@ -248,178 +324,151 @@
       width: 100%;
       border-collapse: separate;
       border-spacing: 0;
-      margin: 2rem 0;
-      font-size: 0.9rem;
+      margin: 1.75rem 0;
+      border: 1px solid var(--border);
       border-radius: 10px;
       overflow: hidden;
-      border: 1px solid var(--border);
     }
-    .article thead {
+    .article thead th {
       background: var(--bg-card);
-    }
-    .article th {
       padding: 0.85rem 1rem;
       text-align: left;
-      color: var(--accent);
-      font-weight: 600;
-      font-size: 0.8rem;
+      font-weight: 700;
+      font-size: 0.82rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
+      color: var(--accent);
       border-bottom: 1px solid var(--border);
     }
     .article td {
-      padding: 0.7rem 1rem;
+      padding: 0.75rem 1rem;
       border-bottom: 1px solid var(--border-subtle);
-      color: var(--text-secondary);
+      font-size: 0.95rem;
     }
-    .article tbody tr:last-child td { border-bottom: none; }
-    .article tbody tr:hover td {
-      background: rgba(255, 255, 255, 0.02);
-    }
+    .article tr:last-child td { border-bottom: none; }
+    .article tbody tr { transition: background 0.15s; }
+    .article tbody tr:hover { background: var(--bg-card); }
 
-    /* ── Code ── */
-    .article code {
-      background: var(--bg-card);
-      color: var(--accent);
-      padding: 0.15rem 0.45rem;
-      border-radius: 5px;
-      font-size: 0.86em;
-      font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace;
-      border: 1px solid var(--border-subtle);
-    }
-    .article pre {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.5rem;
-      overflow-x: auto;
-      margin: 2rem 0;
-    }
-    .article pre code {
-      background: none;
-      padding: 0;
-      color: var(--text-secondary);
+    /* ── Horizontal rule ── */
+    .article hr {
       border: none;
-      font-size: 0.88rem;
+      height: 1px;
+      background: var(--border);
+      margin: 3rem 0;
     }
 
-    /* ═══ TAGS ═══ */
-    .tags {
-      display: flex;
-      gap: 0.4rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-    .tag {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      color: var(--text-muted);
-      padding: 0.2rem 0.65rem;
-      border-radius: 100px;
-      font-size: 0.7rem;
-      font-weight: 500;
-    }
+    /* ── Strong / em ── */
+    .article strong { color: var(--text-primary); font-weight: 700; }
+    .article em { color: var(--text-primary); }
 
     /* ═══ FOOTER CTA ═══ */
     .footer-cta {
-      text-align: center;
-      padding: 4rem 2rem;
-      background: var(--bg-secondary);
-      border-top: 1px solid var(--border);
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
     }
-    .footer-cta .cta-heading {
+    .cta-card {
+      background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 3rem;
+      text-align: center;
+    }
+    .cta-card h3 {
       font-size: 1.5rem;
       font-weight: 800;
       color: var(--text-primary);
       margin-bottom: 0.75rem;
-      letter-spacing: -0.02em;
+      border: none;
+      padding: 0;
     }
-    .footer-cta p {
+    .cta-card p {
       color: var(--text-muted);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       font-size: 1rem;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
     }
-    .footer-cta .cta {
+    .cta-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .cta-links a {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .cta-links a.primary {
       background: var(--accent);
       color: #fff;
-      padding: 0.85rem 1.75rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.95rem;
-      transition: all 0.2s;
-      box-shadow: 0 0 0 0 var(--accent-glow);
     }
-    .footer-cta .cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px var(--accent-glow);
+    .cta-links a.primary:hover { filter: brightness(1.15); }
+    .cta-links a.secondary {
+      background: var(--bg-elevated);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
     }
-    .footer-links {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .footer-links a {
+    .cta-links a.secondary:hover { border-color: var(--accent); color: var(--text-primary); }
+
+    /* ═══ FOOTER ═══ */
+    .site-footer {
+      text-align: center;
+      padding: 2rem;
       color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 500;
-      transition: color 0.2s;
+      font-size: 0.82rem;
+      border-top: 1px solid var(--border-subtle);
     }
-    .footer-links a:hover { color: var(--accent); }
 
     /* ═══ RESPONSIVE ═══ */
     @media (max-width: 640px) {
-      .hero { min-height: 55vh; }
-      .hero-content { padding: 3rem 1.5rem 2.5rem; }
+      .hero { min-height: 60vh; }
+      .hero-content { padding: 2.5rem 1.25rem 2.5rem; }
       .article { padding: 2rem 1.25rem 3rem; }
-      .article h2 { font-size: 1.4rem; margin-top: 2.5rem; }
-      .article h3 { font-size: 1.1rem; }
-      .article table { font-size: 0.8rem; }
-      .article th, .article td { padding: 0.5rem 0.6rem; }
       .toc { padding: 2rem 1.25rem 0; }
-      .meta-row { gap: 0.75rem; }
+      .cta-card { padding: 2rem 1.25rem; }
+      .cta-links { flex-direction: column; }
+      .section-image { aspect-ratio: 2.5 / 1; border-radius: 8px; }
+      .bg-break { height: 200px; margin-top: 2.5rem; margin-bottom: 2.5rem; }
     }
   </style>
 </head>
 <body>
 
-  <section class="hero">
-    <img class="hero-img" src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1400&h=700&fit=crop&q=80" alt="250cc vs 600cc Supersport: The Definitive 2026 Buyer's Guide for Every Rider" loading="eager">
+  <header class="hero">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1400&h=700&fit=crop&q=80" alt="250cc vs 600cc Supersport: The Definitive 2026 Buyer's Guide for Every Rider">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <div class="badge">📊 Buyer's Guide</div>
+      <div class="badge">⬡ Buyer's Guide</div>
       <h1>250cc vs 600cc Supersport: The Definitive 2026 Buyer's Guide for Every Rider</h1>
       <p class="subtitle">250cc or 600cc supersport in 2026? This data-driven buyer's guide compares performance, insurance costs, maintenance, fuel economy, and rider suitability—with 2026 model highlights for Yamaha, Kawasaki, and Honda.</p>
       <div class="meta-row">
-        <span>Motorrad Theory Team</span>
+        <span>✎ Motorrad Theory Team</span>
         <span class="meta-dot"></span>
-        <span>2026-02-09</span>
+        <span>◷ 10 min read</span>
         <span class="meta-dot"></span>
-        <span>11 min read</span>
+        <span>⊞ 2026-02-09</span>
       </div>
-      <div class="tags"><span class="tag">#Supersport2026</span><span class="tag">#250ccVs600cc</span><span class="tag">#BuyersGuide</span><span class="tag">#SportBikeLife</span><span class="tag">#BeginnerBiker</span><span class="tag">#RideSmart</span><span class="tag">#MotorcycleComparison</span><span class="tag">#TrackDayReady</span></div>
     </div>
-  </section>
+  </header>
 
-  <nav class="toc"><div class="toc-label">In this article</div><ul><li class="toc-h2"><a href="#introduction-two-classes-one-obsession">Introduction: Two Classes, One Obsession</a></li><li class="toc-h2"><a href="#the-numbers-at-a-glance-250cc-vs-600cc-supersport">The Numbers at a Glance: 250cc vs 600cc Supersport</a></li><li class="toc-h2"><a href="#performance-and-power-what-the-dyno-tells-you-and-what-it-doesn-t">Performance and Power: What the Dyno Tells You (and What It Doesn't)</a></li><li class="toc-h3"><a href="#250cc-enough-to-learn-enough-to-grin">250cc: Enough to Learn, Enough to Grin</a></li><li class="toc-h3"><a href="#600cc-controlled-violence">600cc: Controlled Violence</a></li><li class="toc-h3"><a href="#the-verdict-on-performance">The Verdict on Performance</a></li><li class="toc-h2"><a href="#total-cost-of-ownership-the-real-price-of-supersport-life">Total Cost of Ownership: The Real Price of Supersport Life</a></li><li class="toc-h3"><a href="#purchase-price">Purchase Price</a></li><li class="toc-h3"><a href="#insurance-the-hidden-budget-killer">Insurance: The Hidden Budget Killer</a></li><li class="toc-h3"><a href="#maintenance-costs">Maintenance Costs</a></li><li class="toc-h3"><a href="#fuel-economy">Fuel Economy</a></li><li class="toc-h3"><a href="#five-year-total-cost-comparison">Five-Year Total Cost Comparison</a></li><li class="toc-h2"><a href="#2026-model-spotlight-what-s-on-the-showroom-floor">2026 Model Spotlight: What's on the Showroom Floor</a></li><li class="toc-h3"><a href="#best-250cc-supersports-of-2026">Best 250cc Supersports of 2026</a></li><li class="toc-h3"><a href="#best-600cc-supersports-of-2026">Best 600cc Supersports of 2026</a></li><li class="toc-h2"><a href="#rider-aids-and-technology-in-2026">Rider Aids and Technology in 2026</a></li><li class="toc-h3"><a href="#250cc-the-essentials">250cc: The Essentials</a></li><li class="toc-h3"><a href="#600cc-the-full-arsenal">600cc: The Full Arsenal</a></li><li class="toc-h2"><a href="#target-audience-who-should-buy-what-in-2026">Target Audience: Who Should Buy What in 2026</a></li><li class="toc-h3"><a href="#the-250cc-rider">The 250cc Rider</a></li><li class="toc-h3"><a href="#the-600cc-rider">The 600cc Rider</a></li><li class="toc-h3"><a href="#the-wrong-choice">The Wrong Choice</a></li><li class="toc-h2"><a href="#the-garage-owner-s-perspective-servicing-both-classes">The Garage Owner's Perspective: Servicing Both Classes</a></li><li class="toc-h3"><a href="#different-service-profiles">Different Service Profiles</a></li><li class="toc-h3"><a href="#inventory-implications">Inventory Implications</a></li><li class="toc-h3"><a href="#the-technology-solution">The Technology Solution</a></li><li class="toc-h2"><a href="#frequently-asked-questions">Frequently Asked Questions</a></li><li class="toc-h3"><a href="#should-i-start-on-a-250cc-or-a-600cc">Should I start on a 250cc or a 600cc?</a></li><li class="toc-h3"><a href="#is-a-600cc-supersport-practical-for-daily-commuting">Is a 600cc supersport practical for daily commuting?</a></li><li class="toc-h3"><a href="#how-much-more-does-it-cost-to-insure-a-600cc-vs-250cc">How much more does it cost to insure a 600cc vs 250cc?</a></li><li class="toc-h3"><a href="#what-are-the-best-supersport-bikes-for-track-days-in-2026">What are the best supersport bikes for track days in 2026?</a></li><li class="toc-h3"><a href="#how-often-do-supersports-need-maintenance">How often do supersports need maintenance?</a></li><li class="toc-h2"><a href="#conclusion-ride-the-right-bike-at-the-right-time">Conclusion: Ride the Right Bike at the Right Time</a></li><li class="toc-h2"><a href="#ready-to-upgrade-your-garage">Ready to Upgrade Your Garage?</a></li></ul></nav>
+  <nav class="toc"><div class="toc-label">In this article</div><ul><li><a href="#introduction-two-classes-one-obsession">Introduction: Two Classes, One Obsession</a></li><li><a href="#the-numbers-at-a-glance-250cc-vs-600cc-supersport">The Numbers at a Glance: 250cc vs 600cc Supersport</a></li><li><a href="#performance-and-power-what-the-dyno-tells-you-and-what-it-doesnt">Performance and Power: What the Dyno Tells You (and What It Doesn't)</a></li><li class="toc-h3"><a href="#250cc-enough-to-learn-enough-to-grin">250cc: Enough to Learn, Enough to Grin</a></li><li class="toc-h3"><a href="#600cc-controlled-violence">600cc: Controlled Violence</a></li><li class="toc-h3"><a href="#the-verdict-on-performance">The Verdict on Performance</a></li><li><a href="#total-cost-of-ownership-the-real-price-of-supersport-life">Total Cost of Ownership: The Real Price of Supersport Life</a></li><li class="toc-h3"><a href="#purchase-price">Purchase Price</a></li><li class="toc-h3"><a href="#insurance-the-hidden-budget-killer">Insurance: The Hidden Budget Killer</a></li><li class="toc-h3"><a href="#maintenance-costs">Maintenance Costs</a></li><li class="toc-h3"><a href="#fuel-economy">Fuel Economy</a></li><li class="toc-h3"><a href="#five-year-total-cost-comparison">Five-Year Total Cost Comparison</a></li><li><a href="#2026-model-spotlight-whats-on-the-showroom-floor">2026 Model Spotlight: What's on the Showroom Floor</a></li><li class="toc-h3"><a href="#best-250cc-supersports-of-2026">Best 250cc Supersports of 2026</a></li><li class="toc-h3"><a href="#best-600cc-supersports-of-2026">Best 600cc Supersports of 2026</a></li><li><a href="#rider-aids-and-technology-in-2026">Rider Aids and Technology in 2026</a></li><li class="toc-h3"><a href="#250cc-the-essentials">250cc: The Essentials</a></li><li class="toc-h3"><a href="#600cc-the-full-arsenal">600cc: The Full Arsenal</a></li><li><a href="#target-audience-who-should-buy-what-in-2026">Target Audience: Who Should Buy What in 2026</a></li><li class="toc-h3"><a href="#the-250cc-rider">The 250cc Rider</a></li><li class="toc-h3"><a href="#the-600cc-rider">The 600cc Rider</a></li><li class="toc-h3"><a href="#the-wrong-choice">The Wrong Choice</a></li><li><a href="#the-garage-owners-perspective-servicing-both-classes">The Garage Owner's Perspective: Servicing Both Classes</a></li><li class="toc-h3"><a href="#different-service-profiles">Different Service Profiles</a></li><li class="toc-h3"><a href="#inventory-implications">Inventory Implications</a></li><li class="toc-h3"><a href="#the-technology-solution">The Technology Solution</a></li><li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li><li class="toc-h3"><a href="#should-i-start-on-a-250cc-or-a-600cc">Should I start on a 250cc or a 600cc?</a></li><li class="toc-h3"><a href="#is-a-600cc-supersport-practical-for-daily-commuting">Is a 600cc supersport practical for daily commuting?</a></li><li class="toc-h3"><a href="#how-much-more-does-it-cost-to-insure-a-600cc-vs-250cc">How much more does it cost to insure a 600cc vs 250cc?</a></li><li class="toc-h3"><a href="#what-are-the-best-supersport-bikes-for-track-days-in-2026">What are the best supersport bikes for track days in 2026?</a></li><li class="toc-h3"><a href="#how-often-do-supersports-need-maintenance">How often do supersports need maintenance?</a></li><li><a href="#conclusion-ride-the-right-bike-at-the-right-time">Conclusion: Ride the Right Bike at the Right Time</a></li><li><a href="#ready-to-upgrade-your-garage">Ready to Upgrade Your Garage?</a></li></ul></nav>
 
   <article class="article">
     <h2 id="introduction-two-classes-one-obsession">Introduction: Two Classes, One Obsession</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1200&h=400&fit=crop&q=80" alt="Introduction: Two Classes, One Obsession" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>The supersport segment is the heartbeat of motorcycle culture. Aggressive clip-ons, full fairings, track-derived chassis geometry—whether you're straddling a 250cc twin or a screaming 600cc inline-four, these machines are built to make your pulse quicken.</p>
 <p>But choosing between a 250cc and a 600cc supersport in 2026 isn't just a matter of horsepower. It's a decision that affects your insurance bill, your maintenance schedule, your safety margin, and ultimately, how much you enjoy riding. Get it right and every ride is a revelation. Get it wrong and you're either bored or overwhelmed.</p>
 <p>This guide exists because there's nothing else like it online. Competitor content either covers 600cc bikes in isolation, lives in outdated forum threads, or skips the numbers entirely. We're going head-to-head across every metric that actually matters—performance, cost of ownership, insurance, technology, and rider fit—with 2026 model data and real-world context.</p>
 <p>Let's settle this.</p>
 <hr />
 <h2 id="the-numbers-at-a-glance-250cc-vs-600cc-supersport">The Numbers at a Glance: 250cc vs 600cc Supersport</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=400&fit=crop&q=80" alt="The Numbers at a Glance: 250cc vs 600cc Supersport" loading="lazy"><div class="section-image-overlay"></div></div>
 <table>
 <thead>
 <tr>
@@ -478,7 +527,8 @@
 </table>
 <p>The gap is wide—and deliberate. These are fundamentally different tools for fundamentally different jobs.</p>
 <hr />
-<h2 id="performance-and-power-what-the-dyno-tells-you-and-what-it-doesn-t">Performance and Power: What the Dyno Tells You (and What It Doesn't)</h2>
+<h2 id="performance-and-power-what-the-dyno-tells-you-and-what-it-doesnt">Performance and Power: What the Dyno Tells You (and What It Doesn't)</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1200&h=400&fit=crop&q=80" alt="Performance and Power: What the Dyno Tells You (and What It Doesn't)" loading="lazy"><div class="section-image-overlay"></div></div>
 <h3 id="250cc-enough-to-learn-enough-to-grin">250cc: Enough to Learn, Enough to Grin</h3>
 <p>A modern 250cc supersport like the Kawasaki Ninja 400 or Yamaha YZF-R3 produces roughly 40 horsepower and weighs around 165 kg wet. That's a power-to-weight ratio that feels genuinely quick in the real world—enough to carve canyons, hold highway speeds comfortably, and put a permanent smile on your face through a set of twisties.</p>
 <p>What dyno sheets don't capture is how these bikes teach you to ride. With manageable power, you can focus on body position, cornering lines, trail braking, and throttle modulation without the constant threat of the front wheel pawing the sky. You learn to carry speed through corners instead of relying on brute acceleration out of them. That's a skill that transfers directly when you move up.</p>
@@ -489,7 +539,9 @@
 <h3 id="the-verdict-on-performance">The Verdict on Performance</h3>
 <p>If your riding is primarily street-based, a 250cc delivers a higher percentage of its performance in legal, everyday conditions. If track days are your priority, the 600cc's ceiling is astronomically higher—but you need the skills to exploit it safely.</p>
 <hr />
+<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
 <h2 id="total-cost-of-ownership-the-real-price-of-supersport-life">Total Cost of Ownership: The Real Price of Supersport Life</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=400&fit=crop&q=80" alt="Total Cost of Ownership: The Real Price of Supersport Life" loading="lazy"><div class="section-image-overlay"></div></div>
 <h3 id="purchase-price">Purchase Price</h3>
 <p>The entry cost difference is significant:</p>
 <ul>
@@ -560,7 +612,8 @@
 <p><strong>Garage Owner Tip:</strong><br />
 If you service both classes, tracking maintenance schedules and parts inventory across 250cc and 600cc platforms is critical. <a href="#">Garage CRM by Motorrad Theory</a> automates service reminders, manages model-specific parts catalogs, and ensures nothing falls through the cracks—whether you're rotating tires on a Ninja 400 or rebuilding the front end on a ZX-6R.</p>
 <hr />
-<h2 id="2026-model-spotlight-what-s-on-the-showroom-floor">2026 Model Spotlight: What's on the Showroom Floor</h2>
+<h2 id="2026-model-spotlight-whats-on-the-showroom-floor">2026 Model Spotlight: What's on the Showroom Floor</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?w=1200&h=400&fit=crop&q=80" alt="2026 Model Spotlight: What's on the Showroom Floor" loading="lazy"><div class="section-image-overlay"></div></div>
 <h3 id="best-250cc-supersports-of-2026">Best 250cc Supersports of 2026</h3>
 <p><strong>Kawasaki Ninja 400</strong><br />
 The benchmark for small-displacement supersports. Parallel twin, 49 hp, 366 lb wet. For 2026: updated TFT display, USB-C charging, refined suspension damping. The Ninja 400 dominates the lightweight racing scene and remains the bike most riding schools recommend.</p>
@@ -577,6 +630,7 @@ The ZX-6R's 636cc engine gives it a displacement advantage in the class—more m
 Honda's precision-engineered middleweight returns for 2026 with a full-color TFT dashboard, Throttle By Wire, Honda Selectable Torque Control (HSTC), and an integrated lap timer. The 599cc inline-four delivers 118 hp with Honda's trademark smoothness. Suspension is fully adjustable Showa BPF front and Pro-Link rear.</p>
 <hr />
 <h2 id="rider-aids-and-technology-in-2026">Rider Aids and Technology in 2026</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=400&fit=crop&q=80" alt="Rider Aids and Technology in 2026" loading="lazy"><div class="section-image-overlay"></div></div>
 <h3 id="250cc-the-essentials">250cc: The Essentials</h3>
 <p>Modern 250cc supersports now universally include:</p>
 <ul>
@@ -598,7 +652,9 @@ Honda's precision-engineered middleweight returns for 2026 with a full-color TFT
 </ul>
 <p>These systems don't make a 600cc safe for beginners—but they dramatically raise the safety ceiling for experienced riders.</p>
 <hr />
+<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
 <h2 id="target-audience-who-should-buy-what-in-2026">Target Audience: Who Should Buy What in 2026</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=400&fit=crop&q=80" alt="Target Audience: Who Should Buy What in 2026" loading="lazy"><div class="section-image-overlay"></div></div>
 <h3 id="the-250cc-rider">The 250cc Rider</h3>
 <ul>
 <li><strong>New riders (any age):</strong> Building skill, confidence, and good habits.</li>
@@ -620,7 +676,8 @@ Honda's precision-engineered middleweight returns for 2026 with a full-color TFT
 <li><strong>A 250cc when you've been riding for five years and want track performance.</strong> You'll outgrow it quickly and spend money upgrading a platform with a low ceiling.</li>
 </ul>
 <hr />
-<h2 id="the-garage-owner-s-perspective-servicing-both-classes">The Garage Owner's Perspective: Servicing Both Classes</h2>
+<h2 id="the-garage-owners-perspective-servicing-both-classes">The Garage Owner's Perspective: Servicing Both Classes</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1200&h=400&fit=crop&q=80" alt="The Garage Owner's Perspective: Servicing Both Classes" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>If you run a motorcycle workshop, the 250cc vs 600cc split affects your operation directly.</p>
 <h3 id="different-service-profiles">Different Service Profiles</h3>
 <ul>
@@ -645,6 +702,7 @@ Honda's precision-engineered middleweight returns for 2026 with a full-color TFT
 <h3 id="how-often-do-supersports-need-maintenance">How often do supersports need maintenance?</h3>
 <p>250cc: Oil every 4,000–6,000 miles, chain every 500 miles, tires every 8,000–12,000 miles. 600cc: Oil every 3,000–5,000 miles, chain every 500 miles, tires every 4,000–7,000 miles depending on riding style. Track use accelerates all intervals.</p>
 <hr />
+<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
 <h2 id="conclusion-ride-the-right-bike-at-the-right-time">Conclusion: Ride the Right Bike at the Right Time</h2>
 <p>The 250cc vs 600cc debate isn't really a debate—it's a timeline. The 250cc is where most riders should start: affordable, forgiving, and genuinely fun. The 600cc is where you go when your skills demand more and your budget can handle the jump.</p>
 <p>Neither choice is wrong. Both classes in 2026 offer incredible machines packed with technology that would have been unthinkable a decade ago. The key is matching the bike to where you are as a rider—not where your ego wants to be.</p>
@@ -668,16 +726,21 @@ Honda's precision-engineered middleweight returns for 2026 with a full-color TFT
 
   </article>
 
-  <section class="footer-cta">
-    <div class="cta-heading">Ready to transform your garage?</div>
-    <p>Data-driven workshop management built for the modern Indian motorcycle market.</p>
-    <a href="https://www.motorradtheory.com/garage-crm" class="cta">Explore Garage CRM →</a>
-    <div class="footer-links">
-      <a href="https://www.motorradtheory.com/crm">Customer CRM</a>
-      <a href="https://www.motorradtheory.com/employee">Team Management</a>
-      <a href="https://www.motorradtheory.com">Motorrad Theory</a>
+  <div class="footer-cta">
+    <div class="cta-card">
+      <h3>Ready to Transform Your Garage?</h3>
+      <p>Explore Motorrad Theory's suite of tools built for Indian motorcycle workshops.</p>
+      <div class="cta-links">
+        <a href="#" class="primary">🏍 Garage CRM</a>
+        <a href="#" class="secondary">👥 Customer CRM</a>
+        <a href="#" class="secondary">📊 Team Management</a>
+      </div>
     </div>
-  </section>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 Motorrad Theory · Built for Indian motorcycle workshops</p>
+  </footer>
 
 </body>
 </html>

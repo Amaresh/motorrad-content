@@ -19,7 +19,7 @@
   <style>
     :root {
       --accent: #f59e0b;
-      --accent-glow: rgba(245, 158, 11, 0.15);
+      --accent-glow: #f59e0b26;
       --bg-primary: #09090b;
       --bg-secondary: #111113;
       --bg-card: #18181b;
@@ -120,6 +120,66 @@
     .meta-row span { display: flex; align-items: center; gap: 0.3rem; }
     .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.25); }
 
+    /* ═══ SECTION IMAGES (under h2) ═══ */
+    .section-image {
+      position: relative;
+      width: 100%;
+      margin: 1rem 0 2rem;
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 3 / 1;
+    }
+    .section-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.7) saturate(1.15);
+      transition: filter 0.4s ease;
+    }
+    .section-image:hover img {
+      filter: brightness(0.85) saturate(1.2);
+    }
+    .section-image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(9, 9, 11, 0.15) 60%,
+        rgba(9, 9, 11, 0.5) 100%
+      );
+      pointer-events: none;
+    }
+
+    /* ═══ FLOWING BACKGROUND IMAGES ═══ */
+    .bg-break {
+      position: relative;
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+      height: 300px;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      overflow: hidden;
+    }
+    .bg-break img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.3) saturate(1.2);
+    }
+    .bg-break-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        var(--bg-primary) 0%,
+        rgba(9, 9, 11, 0.2) 20%,
+        rgba(9, 9, 11, 0.2) 80%,
+        var(--bg-primary) 100%
+      );
+    }
+
     /* ═══ TABLE OF CONTENTS ═══ */
     .toc {
       max-width: 740px;
@@ -163,7 +223,7 @@
       font-size: 1.65rem;
       font-weight: 800;
       color: var(--text-primary);
-      margin: 3.5rem 0 1.25rem;
+      margin: 3.5rem 0 0.5rem;
       padding-bottom: 0.6rem;
       letter-spacing: -0.02em;
       position: relative;
@@ -196,51 +256,67 @@
       margin: 2rem 0 0.5rem;
     }
 
-    /* ── Body text ── */
+    /* ── Paragraphs & links ── */
     .article p {
-      margin-bottom: 1.4rem;
-      color: var(--text-secondary);
+      margin-bottom: 1.35rem;
       font-size: 1.02rem;
     }
     .article a {
       color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.2s;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: var(--accent-glow);
+      transition: text-decoration-color 0.15s;
     }
-    .article a:hover { border-bottom-color: var(--accent); }
-    .article strong { color: var(--text-primary); font-weight: 600; }
-    .article em { color: var(--text-secondary); }
+    .article a:hover { text-decoration-color: var(--accent); }
 
     /* ── Lists ── */
     .article ul, .article ol {
-      margin: 0 0 1.4rem 1.25rem;
-      color: var(--text-secondary);
+      margin: 0 0 1.5rem 1.25rem;
+      padding: 0;
     }
     .article li {
-      margin-bottom: 0.5rem;
-      padding-left: 0.25rem;
+      margin-bottom: 0.45rem;
+      font-size: 1.02rem;
     }
     .article li::marker { color: var(--accent); }
 
     /* ── Blockquotes ── */
     .article blockquote {
       border-left: 3px solid var(--accent);
-      padding: 1rem 1.5rem;
-      margin: 2rem 0;
       background: var(--accent-glow);
-      border-radius: 0 8px 8px 0;
+      margin: 1.75rem 0;
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 10px 10px 0;
       font-style: italic;
-      color: var(--text-secondary);
+      color: var(--text-primary);
     }
+    .article blockquote p { margin-bottom: 0; }
 
-    /* ── Horizontal rules ── */
-    .article hr {
+    /* ── Code ── */
+    .article code {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+      font-size: 0.88em;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 0.15em 0.4em;
+      border-radius: 5px;
+      color: var(--accent);
+    }
+    .article pre {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      overflow-x: auto;
+      margin: 1.75rem 0;
+    }
+    .article pre code {
+      background: none;
       border: none;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--border), transparent);
-      margin: 3rem 0;
+      padding: 0;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
     }
 
     /* ── Tables ── */
@@ -248,169 +324,140 @@
       width: 100%;
       border-collapse: separate;
       border-spacing: 0;
-      margin: 2rem 0;
-      font-size: 0.9rem;
+      margin: 1.75rem 0;
+      border: 1px solid var(--border);
       border-radius: 10px;
       overflow: hidden;
-      border: 1px solid var(--border);
     }
-    .article thead {
+    .article thead th {
       background: var(--bg-card);
-    }
-    .article th {
       padding: 0.85rem 1rem;
       text-align: left;
-      color: var(--accent);
-      font-weight: 600;
-      font-size: 0.8rem;
+      font-weight: 700;
+      font-size: 0.82rem;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
+      color: var(--accent);
       border-bottom: 1px solid var(--border);
     }
     .article td {
-      padding: 0.7rem 1rem;
+      padding: 0.75rem 1rem;
       border-bottom: 1px solid var(--border-subtle);
-      color: var(--text-secondary);
+      font-size: 0.95rem;
     }
-    .article tbody tr:last-child td { border-bottom: none; }
-    .article tbody tr:hover td {
-      background: rgba(255, 255, 255, 0.02);
-    }
+    .article tr:last-child td { border-bottom: none; }
+    .article tbody tr { transition: background 0.15s; }
+    .article tbody tr:hover { background: var(--bg-card); }
 
-    /* ── Code ── */
-    .article code {
-      background: var(--bg-card);
-      color: var(--accent);
-      padding: 0.15rem 0.45rem;
-      border-radius: 5px;
-      font-size: 0.86em;
-      font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace;
-      border: 1px solid var(--border-subtle);
-    }
-    .article pre {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.5rem;
-      overflow-x: auto;
-      margin: 2rem 0;
-    }
-    .article pre code {
-      background: none;
-      padding: 0;
-      color: var(--text-secondary);
+    /* ── Horizontal rule ── */
+    .article hr {
       border: none;
-      font-size: 0.88rem;
+      height: 1px;
+      background: var(--border);
+      margin: 3rem 0;
     }
 
-    /* ═══ TAGS ═══ */
-    .tags {
-      display: flex;
-      gap: 0.4rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-    .tag {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      color: var(--text-muted);
-      padding: 0.2rem 0.65rem;
-      border-radius: 100px;
-      font-size: 0.7rem;
-      font-weight: 500;
-    }
+    /* ── Strong / em ── */
+    .article strong { color: var(--text-primary); font-weight: 700; }
+    .article em { color: var(--text-primary); }
 
     /* ═══ FOOTER CTA ═══ */
     .footer-cta {
-      text-align: center;
-      padding: 4rem 2rem;
-      background: var(--bg-secondary);
-      border-top: 1px solid var(--border);
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 2rem 4rem;
     }
-    .footer-cta .cta-heading {
+    .cta-card {
+      background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 3rem;
+      text-align: center;
+    }
+    .cta-card h3 {
       font-size: 1.5rem;
       font-weight: 800;
       color: var(--text-primary);
       margin-bottom: 0.75rem;
-      letter-spacing: -0.02em;
+      border: none;
+      padding: 0;
     }
-    .footer-cta p {
+    .cta-card p {
       color: var(--text-muted);
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       font-size: 1rem;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
     }
-    .footer-cta .cta {
+    .cta-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .cta-links a {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .cta-links a.primary {
       background: var(--accent);
       color: #fff;
-      padding: 0.85rem 1.75rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 0.95rem;
-      transition: all 0.2s;
-      box-shadow: 0 0 0 0 var(--accent-glow);
     }
-    .footer-cta .cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px var(--accent-glow);
+    .cta-links a.primary:hover { filter: brightness(1.15); }
+    .cta-links a.secondary {
+      background: var(--bg-elevated);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
     }
-    .footer-links {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .footer-links a {
+    .cta-links a.secondary:hover { border-color: var(--accent); color: var(--text-primary); }
+
+    /* ═══ FOOTER ═══ */
+    .site-footer {
+      text-align: center;
+      padding: 2rem;
       color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 500;
-      transition: color 0.2s;
+      font-size: 0.82rem;
+      border-top: 1px solid var(--border-subtle);
     }
-    .footer-links a:hover { color: var(--accent); }
 
     /* ═══ RESPONSIVE ═══ */
     @media (max-width: 640px) {
-      .hero { min-height: 55vh; }
-      .hero-content { padding: 3rem 1.5rem 2.5rem; }
+      .hero { min-height: 60vh; }
+      .hero-content { padding: 2.5rem 1.25rem 2.5rem; }
       .article { padding: 2rem 1.25rem 3rem; }
-      .article h2 { font-size: 1.4rem; margin-top: 2.5rem; }
-      .article h3 { font-size: 1.1rem; }
-      .article table { font-size: 0.8rem; }
-      .article th, .article td { padding: 0.5rem 0.6rem; }
       .toc { padding: 2rem 1.25rem 0; }
-      .meta-row { gap: 0.75rem; }
+      .cta-card { padding: 2rem 1.25rem; }
+      .cta-links { flex-direction: column; }
+      .section-image { aspect-ratio: 2.5 / 1; border-radius: 8px; }
+      .bg-break { height: 200px; margin-top: 2.5rem; margin-bottom: 2.5rem; }
     }
   </style>
 </head>
 <body>
 
-  <section class="hero">
-    <img class="hero-img" src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?w=1400&h=700&fit=crop&q=80" alt="Best Motorcycle Tire Brands 2026: Performance vs Value Ranked" loading="eager">
+  <header class="hero">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?w=1400&h=700&fit=crop&q=80" alt="Best Motorcycle Tire Brands 2026: Performance vs Value Ranked">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <div class="badge">🏍️ 2026 Tire Guide</div>
+      <div class="badge">⬡ Buyer's Guide</div>
       <h1>Best Motorcycle Tire Brands 2026: Performance vs Value Ranked</h1>
       <p class="subtitle">Compare Michelin, Pirelli, Dunlop, Bridgestone, Continental & Metzeler motorcycle tires with independent lap times, cost-per-mile data, and fitment guides for supersport and naked bikes.</p>
       <div class="meta-row">
-        <span>Motorrad Theory Team</span>
+        <span>✎ Motorrad Theory Team</span>
         <span class="meta-dot"></span>
-        <span>2026-02-11</span>
+        <span>◷ 16 min read</span>
         <span class="meta-dot"></span>
-        <span>14 min read</span>
+        <span>⊞ 2026-02-11</span>
       </div>
-      <div class="tags"><span class="tag">#MotorcycleTires</span><span class="tag">#BestSportbikeTires</span><span class="tag">#MichelinVsPirelli</span><span class="tag">#TireBrandsComparison</span><span class="tag">#BudgetMotorcycleTires</span><span class="tag">#TrackDayTires</span><span class="tag">#MotoGear</span><span class="tag">#RiderSafety</span><span class="tag">#GarageCRM</span><span class="tag">#MotorradTheory</span></div>
     </div>
-  </section>
+  </header>
 
-  <nav class="toc"><div class="toc-label">In this article</div><ul><li class="toc-h2"><a href="#how-we-ranked-these-tires">How We Ranked These Tires</a></li><li class="toc-h2"><a href="#the-big-6-tire-brands-compared">The Big 6 Tire Brands Compared</a></li><li class="toc-h3"><a href="#michelin-best-all-rounder">Michelin — Best All-Rounder 🏆</a></li><li class="toc-h3"><a href="#pirelli-best-track-performance">Pirelli — Best Track Performance 🏆</a></li><li class="toc-h3"><a href="#dunlop-best-balanced-performance">Dunlop — Best Balanced Performance 🏆</a></li><li class="toc-h3"><a href="#bridgestone-best-oem-quality">Bridgestone — Best OEM Quality 🏆</a></li><li class="toc-h3"><a href="#continental-rising-challenger">Continental — Rising Challenger 🔥</a></li><li class="toc-h3"><a href="#metzeler-best-sport-touring-crossover">Metzeler — Best Sport-Touring Crossover 🏆</a></li><li class="toc-h2"><a href="#performance-vs-value-the-cost-per-mile-analysis-nobody-else-publishes">Performance vs Value: The Cost-Per-Mile Analysis Nobody Else Publishes</a></li><li class="toc-h2"><a href="#best-tires-by-riding-style">Best Tires by Riding Style</a></li><li class="toc-h3"><a href="#track-day-warriors">Track Day Warriors</a></li><li class="toc-h3"><a href="#canyon-carvers">Canyon Carvers</a></li><li class="toc-h3"><a href="#daily-commuters">Daily Commuters</a></li><li class="toc-h3"><a href="#budget-conscious-riders">Budget-Conscious Riders</a></li><li class="toc-h2"><a href="#best-tires-for-250cc-600cc-supersport-naked-bikes">Best Tires for 250cc–600cc Supersport & Naked Bikes</a></li><li class="toc-h2"><a href="#2026-new-tire-launches-to-watch">2026 New Tire Launches to Watch</a></li><li class="toc-h2"><a href="#how-to-choose-the-right-tire-a-decision-framework">How to Choose the Right Tire: A Decision Framework</a></li><li class="toc-h2"><a href="#what-a-smart-tire-management-system-looks-like">What a Smart Tire Management System Looks Like</a></li><li class="toc-h2"><a href="#frequently-asked-questions">Frequently Asked Questions</a></li><li class="toc-h3"><a href="#how-long-do-sportbike-tires-last">How long do sportbike tires last?</a></li><li class="toc-h3"><a href="#are-budget-motorcycle-tires-safe">Are budget motorcycle tires safe?</a></li><li class="toc-h3"><a href="#how-much-does-it-cost-to-replace-motorcycle-tires-in-2026">How much does it cost to replace motorcycle tires in 2026?</a></li><li class="toc-h3"><a href="#what-tire-pressure-should-i-run-on-my-sportbike">What tire pressure should I run on my sportbike?</a></li><li class="toc-h3"><a href="#which-tire-brand-has-the-best-wet-weather-grip">Which tire brand has the best wet weather grip?</a></li><li class="toc-h2"><a href="#the-bottom-line">The Bottom Line</a></li></ul></nav>
+  <nav class="toc"><div class="toc-label">In this article</div><ul><li><a href="#how-we-ranked-these-tires">How We Ranked These Tires</a></li><li><a href="#the-big-6-tire-brands-compared">The Big 6 Tire Brands Compared</a></li><li class="toc-h3"><a href="#michelin-best-all-rounder">Michelin — Best All-Rounder 🏆</a></li><li class="toc-h3"><a href="#pirelli-best-track-performance">Pirelli — Best Track Performance 🏆</a></li><li class="toc-h3"><a href="#dunlop-best-balanced-performance">Dunlop — Best Balanced Performance 🏆</a></li><li class="toc-h3"><a href="#bridgestone-best-oem-quality">Bridgestone — Best OEM Quality 🏆</a></li><li class="toc-h3"><a href="#continental-rising-challenger">Continental — Rising Challenger 🔥</a></li><li class="toc-h3"><a href="#metzeler-best-sport-touring-crossover">Metzeler — Best Sport-Touring Crossover 🏆</a></li><li><a href="#performance-vs-value-the-cost-per-mile-analysis-nobody-else-publishes">Performance vs Value: The Cost-Per-Mile Analysis Nobody Else Publishes</a></li><li><a href="#best-tires-by-riding-style">Best Tires by Riding Style</a></li><li class="toc-h3"><a href="#track-day-warriors">Track Day Warriors</a></li><li class="toc-h3"><a href="#canyon-carvers">Canyon Carvers</a></li><li class="toc-h3"><a href="#daily-commuters">Daily Commuters</a></li><li class="toc-h3"><a href="#budget-conscious-riders">Budget-Conscious Riders</a></li><li><a href="#best-tires-for-250cc600cc-supersport-naked-bikes">Best Tires for 250cc–600cc Supersport & Naked Bikes</a></li><li><a href="#2026-new-tire-launches-to-watch">2026 New Tire Launches to Watch</a></li><li><a href="#how-to-choose-the-right-tire-a-decision-framework">How to Choose the Right Tire: A Decision Framework</a></li><li><a href="#what-a-smart-tire-management-system-looks-like">What a Smart Tire Management System Looks Like</a></li><li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li><li class="toc-h3"><a href="#how-long-do-sportbike-tires-last">How long do sportbike tires last?</a></li><li class="toc-h3"><a href="#are-budget-motorcycle-tires-safe">Are budget motorcycle tires safe?</a></li><li class="toc-h3"><a href="#how-much-does-it-cost-to-replace-motorcycle-tires-in-2026">How much does it cost to replace motorcycle tires in 2026?</a></li><li class="toc-h3"><a href="#what-tire-pressure-should-i-run-on-my-sportbike">What tire pressure should I run on my sportbike?</a></li><li class="toc-h3"><a href="#which-tire-brand-has-the-best-wet-weather-grip">Which tire brand has the best wet weather grip?</a></li><li><a href="#the-bottom-line">The Bottom Line</a></li></ul></nav>
 
   <article class="article">
     <p>You can upgrade your exhaust, flash your ECU, and bolt on rearsets that cost more than your first bike — but nothing changes how a motorcycle feels faster than a new set of tires. They are the only thing between you and the tarmac. Two contact patches, each roughly the size of a credit card, doing everything: accelerating, braking, cornering, and keeping you upright when the heavens open.</p>
@@ -418,6 +465,7 @@
 <p>We tested, compared, and data-crunched the six biggest motorcycle tire brands on the market in 2026 — Michelin, Pirelli, Dunlop, Bridgestone, Continental, and Metzeler — using independent lap-time data, real-world rider reviews, and a cost-per-mile analysis that no other guide publishes. Whether you ride a Ninja 400 or an S 1000 RR, a Sunday canyon carver or a daily commuter grinding through wet roundabouts, this guide will tell you exactly which tire deserves your money.</p>
 <hr />
 <h2 id="how-we-ranked-these-tires">How We Ranked These Tires</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1504222490345-c075b6008014?w=1200&h=400&fit=crop&q=80" alt="How We Ranked These Tires" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>Let's talk methodology, because a tire recommendation without context is just an opinion.</p>
 <p>We anchored this guide on the <strong>2025 TyreReviews Sport &amp; Hypersport Independent Test</strong> — the most rigorous published motorcycle tire comparison available. Twelve tires were tested back-to-back on a <strong>BMW S 1000 RR</strong> on a standardized circuit under controlled conditions. Every tire got the same rider, the same bike, and the same asphalt temperature window.</p>
 <p>On top of that data, we layered:</p>
@@ -431,6 +479,7 @@
 <p>The result? A ranking system that balances what matters on track <em>and</em> what matters in your wallet.</p>
 <hr />
 <h2 id="the-big-6-tire-brands-compared">The Big 6 Tire Brands Compared</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?w=1200&h=400&fit=crop&q=80" alt="The Big 6 Tire Brands Compared" loading="lazy"><div class="section-image-overlay"></div></div>
 <h3 id="michelin-best-all-rounder">Michelin — Best All-Rounder 🏆</h3>
 <p>Michelin does not make the fastest tire on a bone-dry track. They make the tire that is fast everywhere, in every condition, for the longest time. And for most riders, that matters far more than chasing the last tenth of a second.</p>
 <p><strong>Key models:</strong></p>
@@ -685,6 +734,7 @@
 <p><strong>Best for:</strong> European-market riders, sport-touring crossover use, and anyone who wants near-Supercorsa performance with better cold-weather confidence.</p>
 <hr />
 <h2 id="performance-vs-value-the-cost-per-mile-analysis-nobody-else-publishes">Performance vs Value: The Cost-Per-Mile Analysis Nobody Else Publishes</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=400&fit=crop&q=80" alt="Performance vs Value: The Cost-Per-Mile Analysis Nobody Else Publishes" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>Here is the table that should change how you think about tire buying. The cheapest tire on the shelf is not always the cheapest tire to own.</p>
 <table>
 <thead>
@@ -810,7 +860,9 @@
 <p><strong>Garage owners:</strong> Tire changes are the #2 service revenue driver for sport-focused garages. Tracking tire mileage, brand preferences, and replacement intervals in a system like <strong><a href="https://motorradtheory.com">Motorrad Theory Garage CRM</a></strong> turns reactive walk-ins into predictable, schedulable revenue.</p>
 </blockquote>
 <hr />
+<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
 <h2 id="best-tires-by-riding-style">Best Tires by Riding Style</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1200&h=400&fit=crop&q=80" alt="Best Tires by Riding Style" loading="lazy"><div class="section-image-overlay"></div></div>
 <h3 id="track-day-warriors">Track Day Warriors</h3>
 <p>You need grip, feedback, and a tire that can handle repeated heat cycles without falling apart. Your shortlist:</p>
 <ol>
@@ -840,7 +892,8 @@
 <li><strong>Shinko 005 Advance</strong> — $85 rear for casual riding. Not for aggressive lean angles or wet conditions.</li>
 </ol>
 <hr />
-<h2 id="best-tires-for-250cc-600cc-supersport-amp-naked-bikes">Best Tires for 250cc–600cc Supersport &amp; Naked Bikes</h2>
+<h2 id="best-tires-for-250cc600cc-supersport-amp-naked-bikes">Best Tires for 250cc–600cc Supersport &amp; Naked Bikes</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1200&h=400&fit=crop&q=80" alt="Best Tires for 250cc–600cc Supersport &amp; Naked Bikes" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>This is the section that no competitor publishes. Most &quot;best sportbike tire&quot; guides default to literbike sizes (120/70-17 front, 190/55-17 rear). If you ride a smaller-displacement sport or naked bike, your tire options are different — and narrower.</p>
 <table>
 <thead>
@@ -900,6 +953,7 @@
 <p><strong>Pro tip for garages:</strong> Stocking 150/60R17 and 110/70R17 in popular models (Dunlop GPR300, Continental SM 2) covers the fast-growing 250–500cc segment. Track this inventory automatically with <strong><a href="https://motorradtheory.com">Motorrad Theory Garage CRM</a></strong> — set reorder alerts when stock drops below two sets of each.</p>
 <hr />
 <h2 id="2026-new-tire-launches-to-watch">2026 New Tire Launches to Watch</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=400&fit=crop&q=80" alt="2026 New Tire Launches to Watch" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>The tire market never sits still. Here are the launches that should be on your radar this year:</p>
 <ul>
 <li><strong>Continental SportAttack 5</strong> — Successor to the SA4. Expected to close the gap with Michelin Power 6 in wet performance while improving dry lap times. Retailers are already listing it.</li>
@@ -910,7 +964,9 @@
 </ul>
 <p>If you run a garage, new tire launches are a goldmine for customer engagement. Use <strong><a href="https://motorradtheory.com">Motorrad Theory CRM</a></strong> to segment your customer database by bike type and riding style, then send targeted notifications: <em>&quot;The new Continental SportAttack 5 is here — perfect for your Z900. Book your fitting.&quot;</em></p>
 <hr />
+<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
 <h2 id="how-to-choose-the-right-tire-a-decision-framework">How to Choose the Right Tire: A Decision Framework</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1200&h=400&fit=crop&q=80" alt="How to Choose the Right Tire: A Decision Framework" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>Still not sure? Answer these three questions:</p>
 <p><strong>1. What is your primary riding?</strong></p>
 <ul>
@@ -934,6 +990,7 @@
 <p><strong>For garage technicians:</strong> Train your staff on these decision frameworks. When a customer asks &quot;what tire should I get?&quot; your technician should ask these three questions, not just recommend what's on the shelf. <strong><a href="https://motorradtheory.com">Motorrad Theory Employee</a></strong> lets you build tire recommendation training modules and track which techs complete them — so every customer gets expert-level advice, not guesswork.</p>
 <hr />
 <h2 id="what-a-smart-tire-management-system-looks-like">What a Smart Tire Management System Looks Like</h2>
+<div class="section-image"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=400&fit=crop&q=80" alt="What a Smart Tire Management System Looks Like" loading="lazy"><div class="section-image-overlay"></div></div>
 <p>The best garages in 2026 do not manage tires on paper or memory. They track:</p>
 <ul>
 <li><strong>Tire brand, model, and size</strong> across every customer bike in the fleet</li>
@@ -962,6 +1019,7 @@
 <h3 id="which-tire-brand-has-the-best-wet-weather-grip">Which tire brand has the best wet weather grip?</h3>
 <p>Michelin, without question. Their Power 6 posted the best wet performance among all sport tires in the 2025 TyreReviews test, and the Power GP2 was the best wet tire among hypersport compounds — a remarkable achievement for a track-biased tire. Michelin's silica-compound advantage in rain is measurable: 6–11 seconds faster per lap in wet conditions compared to the Pirelli Supercorsa.</p>
 <hr />
+<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
 <h2 id="the-bottom-line">The Bottom Line</h2>
 <p>The motorcycle tire market in 2026 is the most competitive it has ever been. Only <strong>4.75 seconds</strong> separates the fastest tire (Pirelli Supercorsa SP V4, 79.82s) from the slowest sport tire (Continental SportAttack 4, 84.57s) in independent testing. That means even the &quot;worst&quot; sport tire on this list delivers grip reserves that, as TyreReviews put it, &quot;can hardly be fully utilized on public roads.&quot;</p>
 <p>So stop agonizing over lap times and start thinking about value, conditions, and your actual riding style. For most riders, a mid-tier sport tire like the <strong>Michelin Power 6</strong> ($0.028/mile), <strong>Dunlop Sportsmart MK4</strong> ($0.026/mile), or <strong>Continental SportAttack 4</strong> ($0.024/mile) is the smartest money you can spend.</p>
@@ -973,16 +1031,21 @@
 
   </article>
 
-  <section class="footer-cta">
-    <div class="cta-heading">Ready to transform your garage?</div>
-    <p>Data-driven workshop management built for the modern Indian motorcycle market.</p>
-    <a href="https://www.motorradtheory.com/garage-crm" class="cta">Explore Garage CRM →</a>
-    <div class="footer-links">
-      <a href="https://www.motorradtheory.com/crm">Customer CRM</a>
-      <a href="https://www.motorradtheory.com/employee">Team Management</a>
-      <a href="https://www.motorradtheory.com">Motorrad Theory</a>
+  <div class="footer-cta">
+    <div class="cta-card">
+      <h3>Ready to Transform Your Garage?</h3>
+      <p>Explore Motorrad Theory's suite of tools built for Indian motorcycle workshops.</p>
+      <div class="cta-links">
+        <a href="#" class="primary">🏍 Garage CRM</a>
+        <a href="#" class="secondary">👥 Customer CRM</a>
+        <a href="#" class="secondary">📊 Team Management</a>
+      </div>
     </div>
-  </section>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2026 Motorrad Theory · Built for Indian motorcycle workshops</p>
+  </footer>
 
 </body>
 </html>
