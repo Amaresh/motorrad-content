@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Tech — From INMRC Podiums to Your Garage | Motorrad Theory</title>
+  <meta name="description" content="From ECU mapping to OBD scanners — how Motorrad Theory uses smart tech to win INMRC podiums, and how the same innovation is changing Indian motorcycle garages.">
+  <meta name="keywords" content="smart motorcycle technology, INMRC racing, motorcycle diagnostics tools, ECU tuning motorcycle, motorcycle telemetry systems, motorcycle OBD scanner, smart bike technology India">
+  <meta property="og:title" content="Smart Tech — From INMRC Podiums to Your Garage">
+  <meta property="og:description" content="From ECU mapping to OBD scanners — how Motorrad Theory uses smart tech to win INMRC podiums, and how the same innovation is changing Indian motorcycle garages.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.motorradtheory.com/blog/smart-tech-inmrc-racing-diagnostics">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Smart Tech — From INMRC Podiums to Your Garage">
+  <meta name="twitter:description" content="From ECU mapping to OBD scanners — how racing innovation is transforming motorcycle service in India.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #0a0a0a; color: #f0f0f0; }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0d1117 0%, #1a1a2e 40%, #16213e 70%, #0f3460 100%);
+      position: relative;
+      overflow: hidden;
+      padding: 2rem;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: radial-gradient(ellipse at 30% 50%, rgba(0, 180, 255, 0.08) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 30%, rgba(255, 90, 0, 0.06) 0%, transparent 50%);
+      animation: pulse 8s ease-in-out infinite alternate;
+    }
+    @keyframes pulse { 0% { opacity: 0.6; } 100% { opacity: 1; } }
+    .content {
+      max-width: 820px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(0, 180, 255, 0.15);
+      border: 1px solid rgba(0, 180, 255, 0.3);
+      color: #00b4ff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.4rem 1.2rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #ffffff 0%, #00b4ff 50%, #ff5a00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: #a0aec0;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      margin: 2.5rem 0;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #00b4ff;
+    }
+    .stat-label {
+      font-size: 0.75rem;
+      color: #718096;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-top: 0.25rem;
+    }
+    .cta-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2.5rem;
+    }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.9rem 2rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .cta-primary {
+      background: linear-gradient(135deg, #00b4ff, #0077cc);
+      color: #fff;
+    }
+    .cta-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0, 180, 255, 0.3); }
+    .cta-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: #e2e8f0;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .cta-secondary:hover { background: rgba(255, 255, 255, 0.12); transform: translateY(-2px); }
+    .meta {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: #4a5568;
+    }
+    .tags {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .tag {
+      background: rgba(255, 255, 255, 0.06);
+      color: #718096;
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      font-size: 0.7rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="content">
+      <div class="badge">INMRC Racing × Garage Tech</div>
+      <h1>Smart Tech — From INMRC Podiums to Your Garage</h1>
+      <p class="subtitle">How Motorrad Theory uses ECU mapping, telemetry, and data-driven strategy to win podiums at India's INMRC — and how the same racing innovation is transforming motorcycle service across the country.</p>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-value">8–12 GB</div>
+          <div class="stat-label">Data per race weekend</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">1,000 Hz</div>
+          <div class="stat-label">IMU sampling rate</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">₹2,500</div>
+          <div class="stat-label">OBD adapter from</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">21.4M</div>
+          <div class="stat-label">Bikes sold FY2025</div>
+        </div>
+      </div>
+      <div class="cta-group">
+        <a href="https://www.motorradtheory.com/blog/smart-tech-inmrc-racing-diagnostics" class="cta cta-primary">Read the Full Article →</a>
+        <a href="https://www.motorradtheory.com/garage-crm" class="cta cta-secondary">Explore Garage CRM</a>
+      </div>
+      <div class="meta">
+        <p>By Motorrad Theory Team · February 15, 2026 · ~2,900 words · 12 min read</p>
+        <div class="tags">
+          <span class="tag">#SmartMotorcycleTechnology</span>
+          <span class="tag">#INMRC</span>
+          <span class="tag">#ECUTuning</span>
+          <span class="tag">#MotorcycleDiagnostics</span>
+          <span class="tag">#BSVI</span>
+          <span class="tag">#PredictiveMaintenance</span>
+          <span class="tag">#IndianBikers</span>
+          <span class="tag">#GarageCRM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
