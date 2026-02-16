@@ -80,15 +80,17 @@
       max-width:800px; padding:4rem 2rem;
     }
     .hero-badge {
-      display:block;
+      display:flex; flex-direction:column; align-items:center; gap:1rem;
       width: 75%;
       margin: 0 auto 2rem;
       background: linear-gradient(135deg, #DC2626, #991B1B);
-      color: #fff; padding:1.5rem 3rem; border-radius:12px;
+      color: #fff; padding:2rem 3rem 1.5rem; border-radius:12px;
       font-family:'Syncopate',sans-serif; font-size:3rem; font-weight:900; letter-spacing:0.12em;
       text-transform:uppercase; text-align:center;
       box-shadow: 0 6px 30px rgba(220,38,38,0.35);
     }
+    .hero-badge svg { opacity:0.25; }
+    .hero-badge .badge-text { line-height:1; }
     .hero h1 {
       font-family:'Syncopate',sans-serif; font-size:clamp(2.2rem,5.5vw,3.8rem); font-weight:900;
       line-height:1.15; letter-spacing:-0.03em;
@@ -215,7 +217,10 @@
 
   <section class="hero">
     <div class="hero-content">
-      <div class="hero-badge">TYMING CHAIN</div>
+      <div class="hero-badge">
+        <span class="badge-text">TYMING CHAIN</span>
+        <svg width="280" height="80" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="22" cy="30" r="12" stroke="#fff" stroke-width="2.5" fill="none"/><circle cx="22" cy="30" r="4" fill="#fff"/><line x1="22" y1="15" x2="22" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="22" y1="42" x2="22" y2="45" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="23" x2="11.5" y2="25" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="32.5" y1="35" x2="35" y2="37" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="37" x2="11.5" y2="35" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="32.5" y1="25" x2="35" y2="23" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="72" cy="30" r="20" stroke="#fff" stroke-width="2.5" fill="none"/><circle cx="72" cy="30" r="6" fill="#fff"/><line x1="72" y1="7" x2="72" y2="10" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="72" y1="50" x2="72" y2="53" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="49" y1="30" x2="52" y2="30" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="92" y1="30" x2="95" y2="30" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="54" y1="16" x2="56.5" y2="18.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="87.5" y1="41.5" x2="90" y2="44" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="54" y1="44" x2="56.5" y2="41.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="87.5" y1="18.5" x2="90" y2="16" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M 22 18 Q 47 6, 72 10" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M 22 42 Q 47 54, 72 50" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="35" cy="12" r="1.5" fill="#fff"/><circle cx="47" cy="9" r="1.5" fill="#fff"/><circle cx="59" cy="9" r="1.5" fill="#fff"/><circle cx="35" cy="48" r="1.5" fill="#fff"/><circle cx="47" cy="51" r="1.5" fill="#fff"/><circle cx="59" cy="51" r="1.5" fill="#fff"/></svg>
+      </div>
       <h1>Your Garage Deserves <span>Smart Software</span></h1>
       <p class="subtitle">Purpose-built CRM, scheduling, and customer management for motorcycle workshops. Stop losing revenue to paper diaries and missed appointments.</p>
       <div class="hero-video">
