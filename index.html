@@ -104,6 +104,20 @@
     }
     .hero-cta:hover { filter:brightness(1.15); }
 
+    .hero-video {
+      margin: 2rem auto 0;
+      max-width: 800px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+    .hero-video video {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     /* Articles section */
     .articles-section {
       max-width:1200px; margin:0 auto; padding:5rem 2rem;
@@ -182,6 +196,11 @@
       <div class="hero-badge">⬡ For Indian Motorcycle Workshops</div>
       <h1>Your Garage Deserves <span>Smart Software</span></h1>
       <p class="subtitle">Purpose-built CRM, scheduling, and customer management for motorcycle workshops. Stop losing revenue to paper diaries and missed appointments.</p>
+      <div class="hero-video">
+        <video autoplay muted loop playsinline>
+          <source src="/assets/garage-crm-hero.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="hero-stats">
         <div class="stat"><div class="stat-num">30%</div><div class="stat-label">Revenue lost to scheduling failures</div></div>
         <div class="stat"><div class="stat-num">25%</div><div class="stat-label">Higher retention with CRM</div></div>
