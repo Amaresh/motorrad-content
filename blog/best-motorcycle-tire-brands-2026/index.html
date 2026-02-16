@@ -15,26 +15,27 @@
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?w=1400&h=700&fit=crop&q=80">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syncopate:wght@400;700&display=swap');</style>
   <style>
     :root {
-      --accent: #f59e0b;
-      --accent-glow: #f59e0b26;
-      --bg-primary: #09090b;
+      --accent: #DC2626;
+      --accent-glow: rgba(220,38,38,0.15);
+      --bg-primary: #0a0a0a;
       --bg-secondary: #111113;
-      --bg-card: #18181b;
-      --bg-elevated: #1e1e22;
-      --text-primary: #fafafa;
-      --text-secondary: #a1a1aa;
-      --text-muted: #71717a;
-      --border: #27272a;
-      --border-subtle: #1e1e22;
+      --bg-card: #1E293B;
+      --bg-elevated: #334155;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --border: #1e293b;
+      --border-subtle: #1e293b;
+      --gold: #CA8A04;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: 'Space Mono', monospace;
       background: var(--bg-primary);
       color: var(--text-secondary);
       line-height: 1.8;
@@ -64,9 +65,9 @@
       background: linear-gradient(
         0deg,
         var(--bg-primary) 0%,
-        rgba(9, 9, 11, 0.85) 30%,
-        rgba(9, 9, 11, 0.4) 60%,
-        rgba(9, 9, 11, 0.2) 100%
+        rgba(10, 10, 10, 0.85) 30%,
+        rgba(10, 10, 10, 0.4) 60%,
+        rgba(10, 10, 10, 0.2) 100%
       );
     }
     .hero-content {
@@ -78,6 +79,7 @@
       width: 100%;
     }
     .badge {
+      font-family: 'Syncopate', sans-serif;
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
@@ -95,6 +97,7 @@
       margin-bottom: 1.25rem;
     }
     .hero h1 {
+      font-family: 'Syncopate', sans-serif;
       font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 900;
       line-height: 1.12;
@@ -174,42 +177,11 @@
       background: linear-gradient(
         180deg,
         var(--bg-primary) 0%,
-        rgba(9, 9, 11, 0.2) 20%,
-        rgba(9, 9, 11, 0.2) 80%,
+        rgba(10, 10, 10, 0.2) 20%,
+        rgba(10, 10, 10, 0.2) 80%,
         var(--bg-primary) 100%
       );
     }
-
-    /* ═══ TABLE OF CONTENTS ═══ */
-    .toc {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 2.5rem 2rem 0;
-    }
-    .toc-label {
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--accent);
-      margin-bottom: 0.75rem;
-    }
-    .toc ul { list-style: none; display: flex; flex-direction: column; gap: 0.15rem; }
-    .toc a {
-      display: block;
-      padding: 0.4rem 0.75rem;
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.88rem;
-      font-weight: 500;
-      border-radius: 6px;
-      transition: all 0.15s;
-    }
-    .toc a:hover {
-      color: var(--text-primary);
-      background: var(--bg-card);
-    }
-    .toc .toc-h3 a { padding-left: 1.75rem; font-size: 0.83rem; font-weight: 400; }
 
     /* ═══ ARTICLE BODY ═══ */
     .article {
@@ -220,6 +192,7 @@
 
     /* ── Headings ── */
     .article h2 {
+      font-family: 'Syncopate', sans-serif;
       font-size: 1.65rem;
       font-weight: 800;
       color: var(--text-primary);
@@ -241,7 +214,8 @@
     .article h2:first-child { margin-top: 0; }
 
     .article h3 {
-      font-size: 1.2rem;
+      font-family: 'Syncopate', sans-serif;
+      font-size: 1.1rem;
       font-weight: 700;
       color: var(--text-primary);
       margin: 2.5rem 0 0.75rem;
@@ -375,6 +349,7 @@
       text-align: center;
     }
     .cta-card h3 {
+      font-family: 'Syncopate', sans-serif;
       font-size: 1.5rem;
       font-weight: 800;
       color: var(--text-primary);
@@ -430,7 +405,6 @@
       .hero { min-height: 60vh; }
       .hero-content { padding: 2.5rem 1.25rem 2.5rem; }
       .article { padding: 2rem 1.25rem 3rem; }
-      .toc { padding: 2rem 1.25rem 0; }
       .cta-card { padding: 2rem 1.25rem; }
       .cta-links { flex-direction: column; }
       .section-image { aspect-ratio: 2.5 / 1; border-radius: 8px; }
@@ -442,7 +416,7 @@
   <style>
     .site-nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(9,9,11,0.85);
+      background: rgba(10,10,10,0.9);
       backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(255,255,255,0.06);
       padding: 0 2rem;
@@ -453,17 +427,17 @@
       height: 64px;
     }
     .nav-logo {
-      font-size: 1.1rem; font-weight: 800; color: #fafafa;
+      font-family: 'Syncopate', sans-serif; font-size: 1.1rem; font-weight: 800; color: #f1f5f9;
       text-decoration: none; letter-spacing: -0.02em;
     }
-    .nav-logo span { color: #10b981; }
+    .nav-logo span { color: #DC2626; }
     .nav-links { display: flex; gap: 2rem; align-items: center; }
     .nav-links a {
-      color: #a1a1aa; text-decoration: none; font-size: 0.88rem;
+      color: #94a3b8; text-decoration: none; font-size: 0.88rem;
       font-weight: 500; transition: color 0.15s;
     }
-    .nav-links a:hover { color: #fafafa; }
-    .nav-links a.active { color: #10b981; }
+    .nav-links a:hover { color: #f1f5f9; }
+    .nav-links a.active { color: #DC2626; }
 </style>
   <nav class="site-nav">
     <div class="nav-inner">
@@ -493,8 +467,6 @@
       </div>
     </div>
   </header>
-
-  <nav class="toc"><div class="toc-label">In this article</div><ul><li><a href="#how-we-ranked-these-tires">How We Ranked These Tires</a></li><li><a href="#the-big-6-tire-brands-compared">The Big 6 Tire Brands Compared</a></li><li class="toc-h3"><a href="#michelin-best-all-rounder">Michelin — Best All-Rounder 🏆</a></li><li class="toc-h3"><a href="#pirelli-best-track-performance">Pirelli — Best Track Performance 🏆</a></li><li class="toc-h3"><a href="#dunlop-best-balanced-performance">Dunlop — Best Balanced Performance 🏆</a></li><li class="toc-h3"><a href="#bridgestone-best-oem-quality">Bridgestone — Best OEM Quality 🏆</a></li><li class="toc-h3"><a href="#continental-rising-challenger">Continental — Rising Challenger 🔥</a></li><li class="toc-h3"><a href="#metzeler-best-sport-touring-crossover">Metzeler — Best Sport-Touring Crossover 🏆</a></li><li><a href="#performance-vs-value-the-cost-per-mile-analysis-nobody-else-publishes">Performance vs Value: The Cost-Per-Mile Analysis Nobody Else Publishes</a></li><li><a href="#best-tires-by-riding-style">Best Tires by Riding Style</a></li><li class="toc-h3"><a href="#track-day-warriors">Track Day Warriors</a></li><li class="toc-h3"><a href="#canyon-carvers">Canyon Carvers</a></li><li class="toc-h3"><a href="#daily-commuters">Daily Commuters</a></li><li class="toc-h3"><a href="#budget-conscious-riders">Budget-Conscious Riders</a></li><li><a href="#best-tires-for-250cc600cc-supersport-naked-bikes">Best Tires for 250cc–600cc Supersport & Naked Bikes</a></li><li><a href="#2026-new-tire-launches-to-watch">2026 New Tire Launches to Watch</a></li><li><a href="#how-to-choose-the-right-tire-a-decision-framework">How to Choose the Right Tire: A Decision Framework</a></li><li><a href="#what-a-smart-tire-management-system-looks-like">What a Smart Tire Management System Looks Like</a></li><li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li><li class="toc-h3"><a href="#how-long-do-sportbike-tires-last">How long do sportbike tires last?</a></li><li class="toc-h3"><a href="#are-budget-motorcycle-tires-safe">Are budget motorcycle tires safe?</a></li><li class="toc-h3"><a href="#how-much-does-it-cost-to-replace-motorcycle-tires-in-2026">How much does it cost to replace motorcycle tires in 2026?</a></li><li class="toc-h3"><a href="#what-tire-pressure-should-i-run-on-my-sportbike">What tire pressure should I run on my sportbike?</a></li><li class="toc-h3"><a href="#which-tire-brand-has-the-best-wet-weather-grip">Which tire brand has the best wet weather grip?</a></li><li><a href="#the-bottom-line">The Bottom Line</a></li></ul></nav>
 
   <article class="article">
     <p>You can upgrade your exhaust, flash your ECU, and bolt on rearsets that cost more than your first bike — but nothing changes how a motorcycle feels faster than a new set of tires. They are the only thing between you and the tarmac. Two contact patches, each roughly the size of a credit card, doing everything: accelerating, braking, cornering, and keeping you upright when the heavens open.</p>
@@ -1081,7 +1053,7 @@
   </div>
 
   <footer class="site-footer">
-    <p>© 2026 Tyming Chain · <a href="/" style="color:var(--accent);text-decoration:none">Home</a> · <a href="/blog/" style="color:var(--accent);text-decoration:none">Blog</a> · <a href="https://motorradtheory.com" style="color:var(--accent);text-decoration:none">Motorrad Theory</a></p>
+    <p>© 2026 Tyming Chain · <a href="/" style="color:#DC2626;text-decoration:none">Home</a> · <a href="/blog/" style="color:#DC2626;text-decoration:none">Blog</a> · <a href="https://motorradtheory.com" style="color:#DC2626;text-decoration:none">Motorrad Theory</a></p>
   </footer>
 
 </body>

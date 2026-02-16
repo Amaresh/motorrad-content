@@ -15,26 +15,27 @@
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1400&h=700&fit=crop&q=80">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syncopate:wght@400;700&display=swap');</style>
   <style>
     :root {
-      --accent: #ff4d4d;
-      --accent-glow: #ff4d4d26;
-      --bg-primary: #09090b;
+      --accent: #DC2626;
+      --accent-glow: rgba(220,38,38,0.15);
+      --bg-primary: #0a0a0a;
       --bg-secondary: #111113;
-      --bg-card: #18181b;
-      --bg-elevated: #1e1e22;
-      --text-primary: #fafafa;
-      --text-secondary: #a1a1aa;
-      --text-muted: #71717a;
-      --border: #27272a;
-      --border-subtle: #1e1e22;
+      --bg-card: #1E293B;
+      --bg-elevated: #334155;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --border: #1e293b;
+      --border-subtle: #1e293b;
+      --gold: #CA8A04;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: 'Space Mono', monospace;
       background: var(--bg-primary);
       color: var(--text-secondary);
       line-height: 1.8;
@@ -64,9 +65,9 @@
       background: linear-gradient(
         0deg,
         var(--bg-primary) 0%,
-        rgba(9, 9, 11, 0.85) 30%,
-        rgba(9, 9, 11, 0.4) 60%,
-        rgba(9, 9, 11, 0.2) 100%
+        rgba(10, 10, 10, 0.85) 30%,
+        rgba(10, 10, 10, 0.4) 60%,
+        rgba(10, 10, 10, 0.2) 100%
       );
     }
     .hero-content {
@@ -78,6 +79,7 @@
       width: 100%;
     }
     .badge {
+      font-family: 'Syncopate', sans-serif;
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
@@ -95,6 +97,7 @@
       margin-bottom: 1.25rem;
     }
     .hero h1 {
+      font-family: 'Syncopate', sans-serif;
       font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 900;
       line-height: 1.12;
@@ -174,42 +177,11 @@
       background: linear-gradient(
         180deg,
         var(--bg-primary) 0%,
-        rgba(9, 9, 11, 0.2) 20%,
-        rgba(9, 9, 11, 0.2) 80%,
+        rgba(10, 10, 10, 0.2) 20%,
+        rgba(10, 10, 10, 0.2) 80%,
         var(--bg-primary) 100%
       );
     }
-
-    /* ═══ TABLE OF CONTENTS ═══ */
-    .toc {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 2.5rem 2rem 0;
-    }
-    .toc-label {
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--accent);
-      margin-bottom: 0.75rem;
-    }
-    .toc ul { list-style: none; display: flex; flex-direction: column; gap: 0.15rem; }
-    .toc a {
-      display: block;
-      padding: 0.4rem 0.75rem;
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.88rem;
-      font-weight: 500;
-      border-radius: 6px;
-      transition: all 0.15s;
-    }
-    .toc a:hover {
-      color: var(--text-primary);
-      background: var(--bg-card);
-    }
-    .toc .toc-h3 a { padding-left: 1.75rem; font-size: 0.83rem; font-weight: 400; }
 
     /* ═══ ARTICLE BODY ═══ */
     .article {
@@ -220,6 +192,7 @@
 
     /* ── Headings ── */
     .article h2 {
+      font-family: 'Syncopate', sans-serif;
       font-size: 1.65rem;
       font-weight: 800;
       color: var(--text-primary);
@@ -241,7 +214,8 @@
     .article h2:first-child { margin-top: 0; }
 
     .article h3 {
-      font-size: 1.2rem;
+      font-family: 'Syncopate', sans-serif;
+      font-size: 1.1rem;
       font-weight: 700;
       color: var(--text-primary);
       margin: 2.5rem 0 0.75rem;
@@ -375,6 +349,7 @@
       text-align: center;
     }
     .cta-card h3 {
+      font-family: 'Syncopate', sans-serif;
       font-size: 1.5rem;
       font-weight: 800;
       color: var(--text-primary);
@@ -430,7 +405,6 @@
       .hero { min-height: 60vh; }
       .hero-content { padding: 2.5rem 1.25rem 2.5rem; }
       .article { padding: 2rem 1.25rem 3rem; }
-      .toc { padding: 2rem 1.25rem 0; }
       .cta-card { padding: 2rem 1.25rem; }
       .cta-links { flex-direction: column; }
       .section-image { aspect-ratio: 2.5 / 1; border-radius: 8px; }
@@ -442,7 +416,7 @@
   <style>
     .site-nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(9,9,11,0.85);
+      background: rgba(10,10,10,0.9);
       backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(255,255,255,0.06);
       padding: 0 2rem;
@@ -453,17 +427,17 @@
       height: 64px;
     }
     .nav-logo {
-      font-size: 1.1rem; font-weight: 800; color: #fafafa;
+      font-family: 'Syncopate', sans-serif; font-size: 1.1rem; font-weight: 800; color: #f1f5f9;
       text-decoration: none; letter-spacing: -0.02em;
     }
-    .nav-logo span { color: #10b981; }
+    .nav-logo span { color: #DC2626; }
     .nav-links { display: flex; gap: 2rem; align-items: center; }
     .nav-links a {
-      color: #a1a1aa; text-decoration: none; font-size: 0.88rem;
+      color: #94a3b8; text-decoration: none; font-size: 0.88rem;
       font-weight: 500; transition: color 0.15s;
     }
-    .nav-links a:hover { color: #fafafa; }
-    .nav-links a.active { color: #10b981; }
+    .nav-links a:hover { color: #f1f5f9; }
+    .nav-links a.active { color: #DC2626; }
 </style>
   <nav class="site-nav">
     <div class="nav-inner">
@@ -493,8 +467,6 @@
       </div>
     </div>
   </header>
-
-  <nav class="toc"><div class="toc-label">In this article</div><ul><li><a href="#race-day-at-the-madras-international-circuit">Race Day at the Madras International Circuit</a></li><li><a href="#inside-the-smart-tech-stack">Inside the Smart Tech Stack</a></li><li class="toc-h3"><a href="#data-acquisition-systems">Data Acquisition Systems</a></li><li class="toc-h3"><a href="#ecu-mapping-and-fuel-strategy">ECU Mapping and Fuel Strategy</a></li><li class="toc-h3"><a href="#traction-control-and-the-imu">Traction Control and the IMU</a></li><li class="toc-h3"><a href="#quickshifters-and-auto-blippers">Quickshifters and Auto-Blippers</a></li><li class="toc-h3"><a href="#tyre-pressure-monitoring">Tyre Pressure Monitoring</a></li><li class="toc-h3"><a href="#pit-to-rider-communication">Pit-to-Rider Communication</a></li><li><a href="#data-driven-racing-how-telemetry-wins-podiums">Data-Driven Racing: How Telemetry Wins Podiums</a></li><li><a href="#from-racetrack-to-workshop-the-trickle-down-revolution">From Racetrack to Workshop: The Trickle-Down Revolution</a></li><li class="toc-h3"><a href="#bs-vi-phase-2-indias-obd-moment">BS-VI Phase 2: India's OBD Moment</a></li><li class="toc-h3"><a href="#connected-bike-apps-india-leads">Connected Bike Apps: India Leads</a></li><li class="toc-h3"><a href="#predictive-maintenance-the-real-game-changer">Predictive Maintenance: The Real Game-Changer</a></li><li><a href="#diy-vs-dealer-smart-diagnostics-for-every-indian-rider">DIY vs. Dealer: Smart Diagnostics for Every Indian Rider</a></li><li><a href="#the-mechanic-as-data-analyst">The Mechanic as Data Analyst</a></li><li><a href="#building-a-360-customer-view">Building a 360° Customer View</a></li><li><a href="#where-indian-motorcycle-tech-is-heading">Where Indian Motorcycle Tech Is Heading</a></li><li><a href="#faq">FAQ</a></li><li class="toc-h3"><a href="#what-smart-tech-is-used-in-inmrc-racing">What smart tech is used in INMRC racing?</a></li><li class="toc-h3"><a href="#how-does-ecu-mapping-improve-motorcycle-race-performance">How does ECU mapping improve motorcycle race performance?</a></li><li class="toc-h3"><a href="#can-i-use-an-obd-scanner-on-my-bs-vi-bike">Can I use an OBD scanner on my BS-VI bike?</a></li><li class="toc-h3"><a href="#what-is-an-imu-on-a-motorcycle">What is an IMU on a motorcycle?</a></li><li class="toc-h3"><a href="#how-does-predictive-maintenance-work-for-motorcycles">How does predictive maintenance work for motorcycles?</a></li><li><a href="#ride-smart-wrench-smarter">Ride Smart. Wrench Smarter.</a></li></ul></nav>
 
   <article class="article">
     <!-- IMAGE SUGGESTION: Hero banner — split composition showing INMRC pit box screens (left) and a modern Indian garage with a mechanic using a tablet diagnostic tool (right). Conveys the racing-to-garage bridge visually. -->
@@ -667,7 +639,7 @@
   </div>
 
   <footer class="site-footer">
-    <p>© 2026 Tyming Chain · <a href="/" style="color:var(--accent);text-decoration:none">Home</a> · <a href="/blog/" style="color:var(--accent);text-decoration:none">Blog</a> · <a href="https://motorradtheory.com" style="color:var(--accent);text-decoration:none">Motorrad Theory</a></p>
+    <p>© 2026 Tyming Chain · <a href="/" style="color:#DC2626;text-decoration:none">Home</a> · <a href="/blog/" style="color:#DC2626;text-decoration:none">Blog</a> · <a href="https://motorradtheory.com" style="color:#DC2626;text-decoration:none">Motorrad Theory</a></p>
   </footer>
 
 </body>

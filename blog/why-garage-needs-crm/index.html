@@ -15,26 +15,27 @@
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1400&h=700&fit=crop&q=80">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syncopate:wght@400;700&display=swap');</style>
   <style>
     :root {
-      --accent: #10b981;
-      --accent-glow: #10b98126;
-      --bg-primary: #09090b;
+      --accent: #DC2626;
+      --accent-glow: rgba(220,38,38,0.15);
+      --bg-primary: #0a0a0a;
       --bg-secondary: #111113;
-      --bg-card: #18181b;
-      --bg-elevated: #1e1e22;
-      --text-primary: #fafafa;
-      --text-secondary: #a1a1aa;
-      --text-muted: #71717a;
-      --border: #27272a;
-      --border-subtle: #1e1e22;
+      --bg-card: #1E293B;
+      --bg-elevated: #334155;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --border: #1e293b;
+      --border-subtle: #1e293b;
+      --gold: #CA8A04;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: 'Space Mono', monospace;
       background: var(--bg-primary);
       color: var(--text-secondary);
       line-height: 1.8;
@@ -64,9 +65,9 @@
       background: linear-gradient(
         0deg,
         var(--bg-primary) 0%,
-        rgba(9, 9, 11, 0.85) 30%,
-        rgba(9, 9, 11, 0.4) 60%,
-        rgba(9, 9, 11, 0.2) 100%
+        rgba(10, 10, 10, 0.85) 30%,
+        rgba(10, 10, 10, 0.4) 60%,
+        rgba(10, 10, 10, 0.2) 100%
       );
     }
     .hero-content {
@@ -78,6 +79,7 @@
       width: 100%;
     }
     .badge {
+      font-family: 'Syncopate', sans-serif;
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
@@ -95,6 +97,7 @@
       margin-bottom: 1.25rem;
     }
     .hero h1 {
+      font-family: 'Syncopate', sans-serif;
       font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 900;
       line-height: 1.12;
@@ -174,42 +177,11 @@
       background: linear-gradient(
         180deg,
         var(--bg-primary) 0%,
-        rgba(9, 9, 11, 0.2) 20%,
-        rgba(9, 9, 11, 0.2) 80%,
+        rgba(10, 10, 10, 0.2) 20%,
+        rgba(10, 10, 10, 0.2) 80%,
         var(--bg-primary) 100%
       );
     }
-
-    /* ═══ TABLE OF CONTENTS ═══ */
-    .toc {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 2.5rem 2rem 0;
-    }
-    .toc-label {
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--accent);
-      margin-bottom: 0.75rem;
-    }
-    .toc ul { list-style: none; display: flex; flex-direction: column; gap: 0.15rem; }
-    .toc a {
-      display: block;
-      padding: 0.4rem 0.75rem;
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.88rem;
-      font-weight: 500;
-      border-radius: 6px;
-      transition: all 0.15s;
-    }
-    .toc a:hover {
-      color: var(--text-primary);
-      background: var(--bg-card);
-    }
-    .toc .toc-h3 a { padding-left: 1.75rem; font-size: 0.83rem; font-weight: 400; }
 
     /* ═══ ARTICLE BODY ═══ */
     .article {
@@ -220,6 +192,7 @@
 
     /* ── Headings ── */
     .article h2 {
+      font-family: 'Syncopate', sans-serif;
       font-size: 1.65rem;
       font-weight: 800;
       color: var(--text-primary);
@@ -241,7 +214,8 @@
     .article h2:first-child { margin-top: 0; }
 
     .article h3 {
-      font-size: 1.2rem;
+      font-family: 'Syncopate', sans-serif;
+      font-size: 1.1rem;
       font-weight: 700;
       color: var(--text-primary);
       margin: 2.5rem 0 0.75rem;
@@ -375,6 +349,7 @@
       text-align: center;
     }
     .cta-card h3 {
+      font-family: 'Syncopate', sans-serif;
       font-size: 1.5rem;
       font-weight: 800;
       color: var(--text-primary);
@@ -430,7 +405,6 @@
       .hero { min-height: 60vh; }
       .hero-content { padding: 2.5rem 1.25rem 2.5rem; }
       .article { padding: 2rem 1.25rem 3rem; }
-      .toc { padding: 2rem 1.25rem 0; }
       .cta-card { padding: 2rem 1.25rem; }
       .cta-links { flex-direction: column; }
       .section-image { aspect-ratio: 2.5 / 1; border-radius: 8px; }
@@ -442,7 +416,7 @@
   <style>
     .site-nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(9,9,11,0.85);
+      background: rgba(10,10,10,0.9);
       backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(255,255,255,0.06);
       padding: 0 2rem;
@@ -453,17 +427,17 @@
       height: 64px;
     }
     .nav-logo {
-      font-size: 1.1rem; font-weight: 800; color: #fafafa;
+      font-family: 'Syncopate', sans-serif; font-size: 1.1rem; font-weight: 800; color: #f1f5f9;
       text-decoration: none; letter-spacing: -0.02em;
     }
-    .nav-logo span { color: #10b981; }
+    .nav-logo span { color: #DC2626; }
     .nav-links { display: flex; gap: 2rem; align-items: center; }
     .nav-links a {
-      color: #a1a1aa; text-decoration: none; font-size: 0.88rem;
+      color: #94a3b8; text-decoration: none; font-size: 0.88rem;
       font-weight: 500; transition: color 0.15s;
     }
-    .nav-links a:hover { color: #fafafa; }
-    .nav-links a.active { color: #10b981; }
+    .nav-links a:hover { color: #f1f5f9; }
+    .nav-links a.active { color: #DC2626; }
 </style>
   <nav class="site-nav">
     <div class="nav-inner">
@@ -493,8 +467,6 @@
       </div>
     </div>
   </header>
-
-  <nav class="toc"><div class="toc-label">In this article</div><ul><li><a href="#introduction-the-garage-that-runs-on-memory-and-paper">Introduction: The Garage That Runs on Memory and Paper</a></li><li><a href="#the-five-pain-points-killing-your-garages-profitability">The Five Pain Points Killing Your Garage's Profitability</a></li><li class="toc-h3"><a href="#1-missed-and-double-booked-appointments">1. Missed and Double-Booked Appointments</a></li><li class="toc-h3"><a href="#2-lost-customer-history-and-service-records">2. Lost Customer History and Service Records</a></li><li class="toc-h3"><a href="#3-parts-inventory-chaos">3. Parts Inventory Chaos</a></li><li class="toc-h3"><a href="#4-zero-follow-up-after-service">4. Zero Follow-Up After Service</a></li><li class="toc-h3"><a href="#5-staff-scheduling-and-accountability-gaps">5. Staff Scheduling and Accountability Gaps</a></li><li><a href="#what-a-crm-actually-does-for-a-motorcycle-garage">What a CRM Actually Does for a Motorcycle Garage</a></li><li class="toc-h3"><a href="#centralized-customer-profiles">Centralized Customer Profiles</a></li><li class="toc-h3"><a href="#intelligent-appointment-scheduling">Intelligent Appointment Scheduling</a></li><li class="toc-h3"><a href="#automated-service-reminders">Automated Service Reminders</a></li><li class="toc-h3"><a href="#integrated-parts-inventory">Integrated Parts Inventory</a></li><li class="toc-h3"><a href="#staff-management-and-performance-tracking">Staff Management and Performance Tracking</a></li><li><a href="#the-roi-of-crm-adoption-real-numbers-for-real-garages">The ROI of CRM Adoption: Real Numbers for Real Garages</a></li><li><a href="#why-motorcycle-garages-need-motorcycle-specific-software">Why Motorcycle Garages Need Motorcycle-Specific Software</a></li><li class="toc-h3"><a href="#what-generic-software-gets-wrong">What Generic Software Gets Wrong</a></li><li class="toc-h3"><a href="#what-motorcycle-specific-crm-gets-right">What Motorcycle-Specific CRM Gets Right</a></li><li><a href="#from-dealership-to-independent-crm-is-not-just-for-the-big-shops">From Dealership to Independent: CRM Is Not Just for the Big Shops</a></li><li><a href="#implementation-how-to-get-started-without-disrupting-your-workflow">Implementation: How to Get Started Without Disrupting Your Workflow</a></li><li class="toc-h3"><a href="#phase-1-customer-data-migration-week-1-2">Phase 1: Customer Data Migration (Week 1-2)</a></li><li class="toc-h3"><a href="#phase-2-schedule-digitization-week-2-3">Phase 2: Schedule Digitization (Week 2-3)</a></li><li class="toc-h3"><a href="#phase-3-service-history-logging-ongoing">Phase 3: Service History Logging (Ongoing)</a></li><li class="toc-h3"><a href="#phase-4-inventory-integration-month-2">Phase 4: Inventory Integration (Month 2)</a></li><li class="toc-h3"><a href="#phase-5-automation-activation-month-3">Phase 5: Automation Activation (Month 3)</a></li><li><a href="#what-your-customers-actually-experience">What Your Customers Actually Experience</a></li><li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li><li class="toc-h3"><a href="#do-i-need-a-crm-if-i-only-have-one-or-two-technicians">Do I need a CRM if I only have one or two technicians?</a></li><li class="toc-h3"><a href="#how-long-does-it-take-to-see-roi">How long does it take to see ROI?</a></li><li class="toc-h3"><a href="#will-my-techs-actually-use-it">Will my techs actually use it?</a></li><li class="toc-h3"><a href="#what-about-data-security-and-customer-privacy">What about data security and customer privacy?</a></li><li class="toc-h3"><a href="#can-i-track-both-service-and-retail-sales">Can I track both service and retail sales?</a></li><li><a href="#conclusion-the-garage-that-remembers-everything">Conclusion: The Garage That Remembers Everything</a></li><li><a href="#take-your-garage-from-chaos-to-control">Take Your Garage From Chaos to Control</a></li></ul></nav>
 
   <article class="article">
     <h2 id="introduction-the-garage-that-runs-on-memory-and-paper">Introduction: The Garage That Runs on Memory and Paper</h2>
@@ -732,7 +704,7 @@
   </div>
 
   <footer class="site-footer">
-    <p>© 2026 Tyming Chain · <a href="/" style="color:var(--accent);text-decoration:none">Home</a> · <a href="/blog/" style="color:var(--accent);text-decoration:none">Blog</a> · <a href="https://motorradtheory.com" style="color:var(--accent);text-decoration:none">Motorrad Theory</a></p>
+    <p>© 2026 Tyming Chain · <a href="/" style="color:#DC2626;text-decoration:none">Home</a> · <a href="/blog/" style="color:#DC2626;text-decoration:none">Blog</a> · <a href="https://motorradtheory.com" style="color:#DC2626;text-decoration:none">Motorrad Theory</a></p>
   </footer>
 
 </body>
