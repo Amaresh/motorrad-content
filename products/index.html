@@ -134,8 +134,7 @@
 
     .bento-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-auto-rows: minmax(220px, auto);
+      grid-template-columns: repeat(2, 1fr);
       gap: 1.25rem;
     }
 
@@ -166,10 +165,6 @@
       100% { opacity:1; transform:translateY(0) scale(1); }
     }
 
-    /* Card sizes */
-    .bento-wide { grid-column: span 2; }
-    .bento-tall { grid-row: span 2; }
-    .bento-hero { grid-column: span 2; grid-row: span 2; }
 
     .bento-card .card-icon {
       width: 52px; height: 52px;
@@ -303,14 +298,8 @@
     }
     .site-footer a { color:var(--accent); text-decoration:none; }
 
-    @media (max-width:900px) {
-      .bento-grid { grid-template-columns: repeat(2, 1fr); }
-      .bento-hero { grid-column: span 2; grid-row: span 1; }
-    }
     @media (max-width:640px) {
       .bento-grid { grid-template-columns: 1fr; }
-      .bento-wide, .bento-hero { grid-column: span 1; }
-      .bento-tall { grid-row: span 1; }
       .arch-pills { flex-direction: column; align-items: center; }
     }
   </style>
@@ -354,7 +343,7 @@
     <div class="bento-grid">
 
       <!-- CRM: Hero card (2x2) -->
-      <div class="bento-card bento-hero card-crm">
+      <div class="bento-card card-crm">
         <div class="card-icon" style="background:rgba(220,38,38,0.12)">🏪</div>
         <div class="card-label" style="color:#DC2626">Command Center</div>
         <h3>Garage CRM</h3>
@@ -377,7 +366,7 @@
       </div>
 
       <!-- Employee App: Tall card (1x2) -->
-      <div class="bento-card bento-wide card-employee">
+      <div class="bento-card card-employee">
         <div class="card-icon" style="background:rgba(16,185,129,0.12)">👨‍🔧</div>
         <div class="card-label" style="color:#10b981">On the Floor</div>
         <h3>Employee App</h3>
@@ -397,7 +386,7 @@
       </div>
 
       <!-- Copilot: Wide card (2x1) -->
-      <div class="bento-card bento-wide card-copilot">
+      <div class="bento-card card-copilot">
         <div class="card-icon" style="background:rgba(99,102,241,0.12)">🤖</div>
         <div class="card-label" style="color:#6366f1">Conversational Intelligence</div>
         <h3>Copilot SDK</h3>
@@ -411,7 +400,7 @@
       </div>
 
       <!-- AI Backbone: Wide card (2x1) -->
-      <div class="bento-card bento-wide card-backbone">
+      <div class="bento-card card-backbone">
         <div class="card-icon" style="background:rgba(202,138,4,0.12)">⚡</div>
         <div class="card-label" style="color:#CA8A04">Intelligence Layer</div>
         <h3>AI Platform</h3>
