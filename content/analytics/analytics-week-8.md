@@ -1,156 +1,147 @@
 # 📊 Motorrad Theory — Weekly Analytics Report
-## Week 8 (Feb 10–16, 2026) | Generated: 2026-02-16
+## Week 8 (Feb 10–16, 2026) | Generated 2026-02-16T04:00Z by Archie
 
 ---
 
-## 1. Pipeline Throughput
+## 1. Repository Activity Summary
 
-| Stage | Count | Δ vs Week 7 |
-|-------|------:|:-----------:|
-| **Research Briefs** | 14 | — |
-| **Drafts** | 8 | — |
-| **Published Articles** | 10 (md) + 5 (html) + 5 (splash) + 1 (video) = **21 files** | +1 article |
-| **Social Posts** | 13 | +1 |
-| **Reddit Scout Reports** | 4 | +2 |
-| **Video Scripts** | 3 | +1 |
-| **Analytics Reports** | 2 (incl. this) | +1 |
+| Metric | Count |
+|---|---|
+| **Commits this week (Feb 10–16)** | 28 |
+| **Active days** | 3 (Feb 14, 15, 16) |
+| **Peak activity** | Feb 15 (16 commits) |
+| **Contributors** | 1 (Amaresh + Copilot co-authored) |
 
-### Conversion Funnel (content pieces, excl. .gitkeep)
+### Key commits this week:
+- ✅ Published "Smart Tech — From INMRC Podiums to Your Garage" (article + HTML + splash + social)
+- 🎬 Video scripts for Garage CRM & INMRC Smart Tech (blocked — HeyGen insufficient credits)
+- 📡 Reddit scout reports: Feb 14, 15, 16 (45+ outreach opportunities identified)
+- 🎨 Enhanced `article.html` with full-bleed hero images, dark theme, per-article accent colors
+
+---
+
+## 2. Content Pipeline Throughput
+
+| Stage | Pieces | Files (excl. .gitkeep) |
+|---|---|---|
+| 🔬 **Research briefs** | 14 | research/ |
+| 📝 **Drafts** | 8 | drafts/ |
+| ✅ **Published articles** | 10 (md) + 5 (html) + 5 (splash) + 1 (video) = **21 assets** | published/ |
+| 📱 **Social posts** | 13 | social/ |
+| 🎬 **Video scripts** | 3 | videos/ |
+| 📡 **Reddit scouts** | 4 | reddit/ |
+| 📊 **Analytics** | 1 (prev week) | analytics/ |
+| 🗄️ **Archive** | 1 run | archive/ |
+
+### Pipeline Flow (content pieces):
 ```
-Research (14) → Drafts (8) → Published (10 articles) → Social (13) → Video (3)
+Research (14) → Drafts (8) → Published (10 articles) → Social (13) → Videos (3)
+     ↓              ↓              ↓
+   6 stuck      Some stuck     Fully promoted
+   in research   in drafts     with social + splash
 ```
-- **Research → Draft conversion:** 57% (8/14)
-- **Draft → Published conversion:** 100%+ (10 published vs 8 current drafts — older drafts promoted out)
-- **Published → Social conversion:** 100% (all published articles have social posts)
-- **Published → Video conversion:** 30% (3/10 articles have video scripts)
+
+### ⚠️ Bottleneck Analysis
+
+| Bottleneck | Details | Severity |
+|---|---|---|
+| **Research → Draft gap** | 6 research briefs have no matching draft (43% stuck) | 🔴 HIGH |
+| **Draft → Publish gap** | 8 drafts exist but only ~5 have been fully published with HTML | 🟡 MEDIUM |
+| **Video production BLOCKED** | HeyGen credits exhausted — 2 video scripts stuck (4+ failed attempts) | 🔴 HIGH |
+| **Social coverage** | 13 social packs for 10 published articles — good ratio ✅ | 🟢 LOW |
 
 ---
 
-## 2. Week 8 Activity Summary
+## 3. Top Performing Topics & Keywords
 
-**30 commits** in the trailing 7 days — extremely high velocity.
+Based on published content and research coverage:
 
-### Key Activity This Week
-| Date | Activity |
-|------|----------|
-| Feb 14 | Video script: "Why Your Motorcycle Garage Needs a CRM System" (4 HeyGen attempts — **BLOCKED: insufficient credits**) |
-| Feb 15 | **Published:** Smart Tech — INMRC Podiums to Your Garage (reviewed & approved by Sage) |
-| Feb 15 | Social posts generated for Smart Tech INMRC article (Twitter ×5, Instagram, Facebook, LinkedIn, Reddit) |
-| Feb 15 | Premium article.html generation for 5 published articles (hero images, dark theme) |
-| Feb 15–16 | Reddit scout reports ×4 (15 outreach opportunities per report) |
-| Feb 16 | Reddit scout report for 2026-02-16 |
-
----
-
-## 3. 🚨 Bottleneck Analysis
-
-### CRITICAL: Video Production Blocked
-- **2 video scripts** stuck due to HeyGen insufficient credits
-- Scripts ready: CRM video, Smart Tech INMRC video
-- **Impact:** No videos published this week despite scripts being complete
-- **Action Required:** Top up HeyGen credits or switch to alternative video platform (Synthesia, D-ID)
-
-### MODERATE: Drafts Accumulating
-- **8 drafts** sitting in `content/drafts/` without progressing to published
-- Includes: tire brands article (25KB — large piece), Agno SDK article, and 5 UUID-based drafts
-- **Recommendation:** Prioritize review of `best-motorcycle-tire-brands-2026-article.md` — it's the largest unpublished piece
-
-### LOW: Research Not Converting
-- **6 UUID-based research briefs** appear to be stubs (< 1KB each)
-- Only named research briefs (tire brands, helmets, CRM, superbike maintenance) have converted to drafts
+| Topic | Pipeline Stage | Keyword Strength |
+|---|---|---|
+| **Motorcycle Garage CRM** | Published + Video + Social | ⭐⭐⭐⭐⭐ (niche, low competition) |
+| **250cc vs 600cc Supersport** | Published + HTML + Social | ⭐⭐⭐⭐⭐ (high search volume) |
+| **Best Motorcycle Tire Brands 2026** | Published + HTML + Social | ⭐⭐⭐⭐ (seasonal) |
+| **Smart Tech INMRC Racing Diagnostics** | Published + Social (NEW this week) | ⭐⭐⭐⭐ (India-specific, racing niche) |
+| **Superbike Maintenance Tips** | Research + Social only | ⭐⭐⭐ (needs draft) |
+| **Best Motorcycle Helmets 2026** | Research only | ⭐⭐⭐ (needs draft) |
+| **Agno Mission Control SDK** | Published + Social | ⭐⭐⭐ (tech/dev niche) |
 
 ---
 
-## 4. Top Keywords & Topics
+## 4. Online Mentions & Brand Presence
 
-### Performing Topics (Published)
-| Topic | Stage | Assets |
-|-------|-------|--------|
-| Motorcycle Garage CRM | Published + Social + Video + HTML | Full pipeline ✅ |
-| 250cc vs 600cc Supersport | Published + Social + HTML | Full pipeline ✅ |
-| Best Motorcycle Tire Brands 2026 | Published + Social + HTML | Full pipeline ✅ |
-| Smart Tech INMRC Racing Diagnostics | Published + Social + HTML + Video script | **NEW this week** 🆕 |
-| Agno Mission Control SDK | Published + Social + HTML | Full pipeline ✅ |
+| Platform | Finding |
+|---|---|
+| **motaorradtheory.com** | Blog page live but content management appears via Wix CMS ("open the Blog Manager by hovering over your blog feed") — articles may not be synced from GitHub yet |
+| **Search visibility** | No significant organic mentions found for "Motorrad Theory" outside own domain — brand is pre-launch phase |
+| **Reddit** | Active scouting (4 reports this week) but no confirmed Motorrad Theory mentions in communities yet |
 
-### Trending Keywords (from Reddit Scout Reports)
-- Motorcycle diagnostics, racing tech, garage management
-- OBD-II for motorcycles, ECU tuning
-- Motorcycle CRM, workshop management software
+**Assessment:** Brand is in stealth/content-building phase. GitHub repo is the content engine; public distribution hasn't scaled yet.
 
 ---
 
 ## 5. Competitor Gap Analysis
 
-### What Indian Motorcycle Media Is Covering (We're NOT)
+### Trending topics competitors are covering that Motorrad Theory is NOT:
 
-| Competitor Topic | Source | Our Gap |
-|-----------------|--------|---------|
-| **TVS Apache RTX — IMOTY 2026 Winner** | BikeWale, Bike India | No coverage of award-winning bikes |
-| **Indian Motorcycle → Standalone Company (Carolwood acquisition)** | Autocar India, BikeWale | No coverage of major brand restructuring |
-| **Royal Enfield capacity expansion + 24% sales growth** | Reuters | No coverage of market-moving OEM news |
-| **Electric motorcycle market scaling** | NextMSC, IBEF | No EV content at all |
-| **Connected motorcycles market (10.5% CAGR)** | LinkedIn/industry reports | No IoT/connected bike content |
-| **India-EU FTA impact on two-wheelers** | IBEF | No policy/trade content |
-| **Kawasaki Ninja ZX-4R 2026 update** | BikeWale | No new model coverage |
-| **Custom motorcycle market ($174M, 6.3% CAGR)** | DataInsightsMarket | No café racer/custom content |
+| Trending Topic | Competitor Coverage | Our Gap | Priority |
+|---|---|---|---|
+| **2026 Honda Africa Twin / Adventure Touring** | TopSpeed, RevZilla, AMCN | No adventure touring content | 🔴 HIGH |
+| **Electric motorcycles (India EV 2-wheeler boom)** | BikeWale, Financial Express, Reuters | Zero EV coverage | 🔴 HIGH |
+| **Royal Enfield tax cuts & premiumisation (India)** | Reuters, ET Auto | No India market analysis | 🟡 MEDIUM |
+| **Triumph Scrambler 900 (2026)** | Bennetts BikeWorld | No retro/scrambler content | 🟡 MEDIUM |
+| **2026 Kawasaki W800 (retro segment)** | Gear Patrol | No classic/retro coverage | 🟡 MEDIUM |
+| **WorldSBK 2026 season preview** | AMCN | No racing season previews | 🟡 MEDIUM |
+| **Hero MotoCorp scooter push / India market share** | HT Auto, Financial Express | No Indian OEM strategy pieces | 🟡 MEDIUM |
+| **Summer touring gear reviews** | ADVRider forums | No gear/apparel reviews | 🟢 LOW |
 
-### What Competitors Are Doing Better
-- **BikeWale/Autocar India:** Daily news cycle, IMOTY coverage, comparison articles
-- **Overdrive/Bike India:** Video reviews, first-ride content, industry awards
-- **Motorrad Theory gap:** Zero breaking-news content, no EV coverage, no new-model articles
-
----
-
-## 6. Motorrad Theory Online Presence
-
-| Platform | Status |
-|----------|--------|
-| **Instagram** (@motorradtheory) | Active — premium service garage positioning |
-| **Facebook** (Motorrad Theory Bangalore) | 313 likes, 115 check-ins |
-| **LinkedIn** | Profile active — 5,000+ riders engaged, 85% retention, 3,000+ customers |
-| **YouTube** | Podcast series "Between Oil and Order" (S01 EP02 — 140 views, 7 likes) |
-| **Website** | motorradtheory.com — active, service-focused |
-
-### Brand Mentions
-- No third-party mentions/press coverage found this week
-- YouTube podcast viewership low (140 views) — needs promotion
-- **Recommendation:** Cross-post podcast clips as social shorts to drive awareness
+### India 2-Wheeler Market Intelligence (new data):
+- **Jan 2026:** 20.82% YoY growth in India 2-wheeler sales
+- **Royal Enfield:** Domestic sales up 24% (Dec quarter), capacity expansion announced
+- **Honda:** Restructuring motorcycle business — merging ICE + EV teams (effective Apr 2026)
+- **EV sector:** Electric motorcycle hub motor market CAGR accelerating through 2033
 
 ---
 
-## 7. 🎯 Top 3 Priorities for Week 9
+## 6. Recommendations for Week 9 (Feb 17–23)
 
-### 1. 🔴 Unblock Video Production
-- Resolve HeyGen credits issue or migrate to Synthesia/D-ID
-- 2 video scripts are ready and waiting — each day of delay = missed engagement
+### 🔴 Critical Actions
+1. **Unblock video production** — Replenish HeyGen credits or evaluate alternatives (Synthesia, D-ID, Pictory). 2 scripts are ready and waiting.
+2. **Clear research backlog** — Convert top 3 stuck research briefs into drafts:
+   - `best-motorcycle-helmets-2026` (high search volume)
+   - `superbike-maintenance-tips` (evergreen)
+   - `tire-brands-2026-performance-vs-value` (already deeply researched)
 
-### 2. 🟡 Publish Tire Brands Article
-- `best-motorcycle-tire-brands-2026-article.md` is 25KB and ready for review
-- High-value SEO piece — "best motorcycle tire brands 2026" is a money keyword
-- Get Sage review → publish → generate social → video
+### 🟡 Growth Actions
+3. **Start electric motorcycle content track** — Research brief on India's EV 2-wheeler boom (20.82% YoY growth, Honda restructuring). Competitors are all over this.
+4. **Add adventure touring content** — 2026 Africa Twin, ADV segment is massive. Write a "Best Adventure Motorcycles 2026" research brief.
+5. **India market analysis piece** — Royal Enfield premiumisation, tax cut impact. High relevance for Indian audience.
 
-### 3. 🟢 Fill Competitor Gaps with News Content
-- Write a quick-take on **TVS Apache RTX winning IMOTY 2026**
-- Cover **Royal Enfield's 24% sales growth** and capacity expansion
-- Consider an EV roundup piece (Ultraviolette X-47, Ather, Ola) — Motorrad Theory already partners with Ultraviolette
-
----
-
-## 8. Pipeline Health Score
-
-| Metric | Score | Notes |
-|--------|:-----:|-------|
-| Research velocity | ⭐⭐⭐ | 14 briefs — healthy backlog |
-| Draft conversion | ⭐⭐⭐ | 57% conversion rate |
-| Publish throughput | ⭐⭐⭐⭐ | 1 new article published this week |
-| Social amplification | ⭐⭐⭐⭐⭐ | 100% of published articles have social |
-| Video production | ⭐ | **BLOCKED** — 0 videos produced |
-| Reddit outreach | ⭐⭐⭐⭐⭐ | 4 scout reports, 60+ opportunities identified |
-| Competitor coverage | ⭐⭐ | Major gaps in news, EV, new models |
-
-**Overall Pipeline Health: 🟡 3.3/5 — Video blockage and competitor gaps dragging score down**
+### 🟢 Optimization
+6. **Sync GitHub → motaorradtheory.com** — Published HTML articles exist but may not be live on the blog. Verify CMS sync.
+7. **Reddit outreach execution** — 45+ opportunities identified across 3 scout reports. Start commenting/engaging with Motorrad Theory links.
+8. **Publish social posts** — 13 social packs are ready but need scheduling/posting on actual platforms.
 
 ---
 
-*Report generated by Archie (Analytics Reporter) — Motorrad Theory Content Pipeline*
-*Next report: Week 9 (Feb 23, 2026)*
+## 7. Week-over-Week Comparison
+
+| Metric | Week 7 | Week 8 | Δ |
+|---|---|---|---|
+| Commits | — | 28 | — |
+| New published articles | — | 1 (Smart Tech INMRC) | — |
+| Social packs created | — | 1 (Smart Tech INMRC) | — |
+| Reddit scouts | — | 3 | — |
+| Video scripts | — | 1 (Smart Tech) | — |
+| Blocked items | — | 2 (videos) | ⚠️ |
+
+*Note: Week 7 analytics were generated mid-week (Feb 14); this is the first full weekly report.*
+
+---
+
+**Pipeline Health Score: 6.5/10** ⚡
+
+The content engine is producing at a good clip (28 commits, new published article, strong social coverage). The two critical blockers are **(1) video production** (HeyGen credits) and **(2) research-to-draft conversion rate** (43% stuck). Fixing these two issues and adding EV/adventure content will push the score to 8+.
+
+---
+*Report generated by Archie 🤖 | Analytics Reporter | Motorrad Theory Content Pipeline*
