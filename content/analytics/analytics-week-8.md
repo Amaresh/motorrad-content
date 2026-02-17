@@ -1,5 +1,5 @@
 # 📊 Motorrad Theory — साप्ताहिक विश्लेषण (Weekly Analytics Report)
-## Week 8 (Feb 16–22, 2026) | Update #5: 2026-02-17T21:30Z by Gaṇaka (गणक)
+## Week 8 (Feb 16–22, 2026) | Update #6: 2026-02-17T21:30Z by Gaṇaka (गणक)
 
 > *Consolidated analytics with live competitor data, market intelligence, brand monitoring, and pipeline audit.*
 
@@ -9,7 +9,7 @@
 
 | Metric | Value |
 |---|---|
-| **Commits (last 30)** | 30 |
+| **Commits (last 30)** | 30+ |
 | **Active days (W8)** | 2 of 7 (Feb 16–17; week in progress) |
 | **Peak day** | Feb 16 — 18 commits (GitHub Pages launch + UI redesign + Products page) |
 | **Latest commit** | Feb 17 21:18 UTC — final consolidation |
@@ -76,49 +76,50 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 | Channel | Status | Metrics |
 |---|---|---|
 | **tymingchain.com** | 🆕 LIVE — GitHub Pages | 11 pages, 5 articles published |
-| **Instagram** @motorradtheory | Active | Clutch plate reel, engine oil breakdown reel, Versys 650 service |
+| **Instagram** @motorradtheory | Active | Speed 400 service (92 views), R3 service (**653 views** — best performer), Himalayan 411 (110 views) |
 | **YouTube** | "Between Oil and Order" podcast | 140+ views, 7 likes, 4 comments |
 | **LinkedIn** /motorradtheorybangalore | Active | **342 followers**, 2-10 employees, premium service focus |
-| **Facebook** /motorradtheory | Active | **315 followers**, race track rental, photo gallery |
+| **Facebook** /motorradtheory | Active | **315 followers**, race track rental, service photos |
 | **motaorradtheory.com** (old Wix) | ⚠️ Still live — generic blog templates | Splitting authority with tymingchain.com |
 | **Instagram expansion post** | Shanthinagar unit announcement | Community engagement (congrats from riders) |
 | **Tavily deep scan** | No organic 3rd-party mentions for "tymingchain.com" | Pre-SEO phase |
 
-**Brand Score: 🟡 3.5/10** — Site launched but no organic search traffic. Social presence healthy but disconnected from tymingchain.com domain.
+**Brand Score: 🟡 3.5/10** — Site launched but no organic search traffic. IG R3 reel hit 653 views (best performing). Social presence healthy but disconnected from tymingchain.com.
 
 ---
 
-## 6. Competitor Gap Analysis (Live Data — Feb 17, 2026)
+## 6. Competitor Gap Analysis (Live Data — Feb 17, 2026 21:30Z)
 
 ### 🔥 Breaking Headlines We're Missing
 
 | # | Topic | Source | Impact |
 |---|---|---|---|
-| 1 | **🏍️ 5 Major Launches Feb 2026** — RE Bullet 650, Triumph 350, TVS Apache RTX 300, Brixton Crossfire 500 Storr, FB Mondial Piega 452 | eAuto.co.in (Feb 17) | Multiple first-mover article opportunities |
-| 2 | **🇺🇸 Harley zero-duty India** — India-US trade framework eliminates tariffs on premium bikes | Reuters, PowersportsBusiness (Feb 12) | Import pricing disruption for premium segment |
-| 3 | **📊 2W market → 29M units FY27** — 7-9% growth; 150-350cc premiumisation at 25% (up from 23%) | Crisil via News18, Financial Express (Feb 17) | Macro industry authority piece |
-| 4 | **📈 Premium motorcycles gaining speed** — consumer sentiment shifting toward higher-cc models | Economic Times (Feb 17) | Aligns with supersport content |
-| 5 | **🏢 Hero MotoCorp premium expansion** — CEO admits "under-represented" in scooters, premium, EV | Outlook Business (Feb 16) | Strategy shift; Hero-Harley partnership angle |
-| 6 | **🏷️ Kawasaki Feb discounts** — up to ₹2.5L off + free accessories through Feb 28 | HindustanTimes (Feb 15) | Time-sensitive deal coverage |
-| 7 | **⚡ Legacy OEMs 60% EV 2W market** — TVS/Bajaj/Hero crush startups; Ola -69% YoY | ET, AutocarPro (Feb 16) | Massive market shift story |
-| 8 | **📦 2W export split recovery Q3** — divergent manufacturer patterns | Business Standard (Feb 15) | Data journalism opportunity |
-| 9 | **🏁 SIAM Jan 2026** — Hero & Honda separated by just 629 units (27% each) | AutocarPro (Feb 13) | Dramatic statistical deadlock |
-| 10 | **🏍️ BMW R 1300 RT announced** — new 1,300cc boxer tourer with 145 hp, ASA automatic shift | BMW Motorrad (Feb 17) | Premium touring segment coverage |
-| 11 | **🏔️ QJMotor SRT 450 RX** — affordable ADV with TPMS, heated grips, TFT dash | GearPatrol (Feb 2026) | Budget ADV segment disruption |
-| 12 | **⚙️ MV Agusta full electronics standard** — across entire 2026 lineup | TotalMotorcycle (Feb 2026) | Premium tech story |
-| 13 | **🔧 RE Continental GT 650 mid-cycle update** — confirmed for late 2026 | NDTV Auto (Feb 2026) | Royal Enfield product pipeline coverage |
-| 14 | **📱 Garmin zūmo XT3** — motorcycle GPS with live lean angles, expanded mapping | Garmin/PRNewswire (Feb 2026) | Motorcycle tech/accessories niche |
-| 15 | **🏍️ Indian Motorcycle: no entry-level plans** — focusing exclusively on premium cruisers/touring | BRM NZ (Feb 2026) | Strategy analysis; contrasts with Hero/Honda approach |
+| 1 | **🏭 Harley pulling back production** — pivoting to aftermarket parts market | The Sun (Feb 13) | Strategic shift; major story |
+| 2 | **📉 Harley Q4 loss** — $2.44 EPS loss, shares at 52-wk low $19.30 | Investing.com (Feb 10) | Financial analysis opportunity |
+| 3 | **🤝 Bajaj completes KTM acquisition** | Motorcycle.com | Major ownership change |
+| 4 | **🏍️ Carolwood acquires Indian Motorcycle** — CEO Mike Kennedy Q&A | Motorcycle.com, TotalMotorcycle (Feb 9) | Post-Polaris era analysis |
+| 5 | **🏁 MotoGP 2027 revolution** — biggest rule rewrite in 80 years (850cc engines) | Motorsport Magazine (Feb 11) | Technical authority content |
+| 6 | **🇺🇸 Kawasaki now #1 US sales** — HD slips to #3, Honda #2 | Motorcycle Memories (Feb 2026) | Market shift analysis |
+| 7 | **🏎️ Ducati Formula 73 + Monster+ first rides** | RevZilla Common Tread (Feb 12-13) | Review/comparison content |
+| 8 | **⚠️ Ducati Panigale V4/Streetfighter V4 recall** | Motorcycle.com | Safety/recall coverage |
+| 9 | **📊 Honda record Q3 motorcycle sales** — offset by auto losses | Investing.com (Feb 10) | Financial + market analysis |
+| 10 | **🏍️ Top 10 Best 2026 Motorcycles** — TotalMotorcycle definitive list | TotalMotorcycle (Feb 16) | Compete with own listicle |
+| 11 | **🔔 Barber Museum founder George Barber Jr. dies at 85** | RevZilla (Feb 17) | Tribute/heritage piece |
+| 12 | **📋 Federal bill to ban autocycles** | RevZilla (Feb 16) | Regulatory coverage |
+| 13 | **⚡ Solid-state batteries in Verge electric motorcycles** | Riding5, CES 2026 | EV technology authority |
+| 14 | **🏍️ 5 Major Launches Feb 2026** — Bullet 650, Triumph 350, Apache RTX 300, Brixton Crossfire 500 | eAuto.co.in (Feb 17) | First-mover listicle |
+| 15 | **📈 Premium motorcycles gaining speed** — consumer sentiment shift | ET Prime (Feb 17) | Aligns with supersport content |
 
 ### Previously Identified Gaps (Still Open)
 | Topic | Priority |
 |---|---|
-| Aprilia RS 457 launched ₹4.22L | 🔴 HIGH |
-| KTM 200 Duke refresh (390-borrowed parts) | 🔴 HIGH |
-| Royal Enfield Flying Flea C6 EV — production confirmed | 🔴 HIGH |
-| Yezdi Blood Moon Roadster — Mar 3 launch | 🟡 MEDIUM |
+| Harley zero-duty India trade deal | 🔴 HIGH |
+| India 2W market → 29M units FY27 (Crisil) | 🔴 HIGH |
+| RE Flying Flea C6 EV — production confirmed | 🔴 HIGH |
+| Legacy OEMs 60% EV 2W market | 🟡 MEDIUM |
+| Hero premium expansion | 🟡 MEDIUM |
 | Kawasaki W800 India tease | 🟡 MEDIUM |
-| Ultraviolette F77 AI voice control (CES 2026) | 🟡 MEDIUM |
+| Yezdi Blood Moon Roadster — Mar 3 launch | 🟡 MEDIUM |
 
 ### What We Cover That Competitors DON'T
 - ✅ AI-powered content pipeline economics ($12/month)
@@ -135,16 +136,16 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 | # | Action | Agent | Impact |
 |---|---|---|---|
 | 1 | **Publish tire brands article** — 25KB draft ready, highest SEO value | Prakāśaka | Capture buying-intent search traffic |
-| 2 | **Write Harley zero-duty India article** — trade deal + Hero partnership | Lekhaka | First-mover on premium pricing disruption |
-| 3 | **Write "5 Motorcycles Launching Feb 2026" roundup** — Bullet 650, Triumph 350, Apache RTX 300 | Lekhaka | High-search-volume timely listicle |
+| 2 | **Write Harley crisis deep-dive** — production pullback + aftermarket pivot + Q4 loss + #3 US | Lekhaka | Biggest moto industry story of Feb 2026 |
+| 3 | **Write Bajaj-KTM + Carolwood-Indian ownership piece** — two acquisitions reshaping industry | Lekhaka | First-mover on ownership changes |
 | 4 | **Fix video pipeline** — evaluate Synthesia/D-ID/Pictory, unblock 3 scripts | Citraka | Unblock entire video channel |
 
 ### 🟡 P1 — Growth (Wed–Thu)
 | # | Action | Agent | Impact |
 |---|---|---|---|
-| 5 | **India 2W market → 29M units FY27** — Crisil data + premiumisation trend analysis | Anveṣaka → Lekhaka | Industry authority content |
-| 6 | **BMW R 1300 RT + RE Continental GT 650 update** — premium touring segment coverage | Lekhaka | Global + India premium angle |
-| 7 | **EV market shakeup** — Legacy OEMs crush startups; Ola collapse (-69% YoY) | Anveṣaka → Lekhaka | Trending analysis piece |
+| 5 | **MotoGP 2027 revolution** — 850cc engines, biggest rule change in 80 years | Lekhaka | Technical authority, motorsport SEO |
+| 6 | **India 2W market analysis** — 29M FY27, premiumisation, Hero vs Honda 629-unit gap | Anveṣaka → Lekhaka | Industry authority content |
+| 7 | **Ducati Formula 73 + Monster+ roundup** — leverage RevZilla first rides | Lekhaka | Timely model coverage |
 | 8 | **Submit tymingchain.com to Google Search Console + JSON-LD schema** | Rakṣaka | Enable SEO discovery |
 
 ### 🟢 P2 — Strategic (Fri–Sun)
@@ -154,8 +155,8 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 | 10 | **Schedule social posts** — 14 packs unposted, set up Buffer/Later | Social reach activation |
 | 11 | **Process draft queue** — triage 9 drafts, clear 3+, rename UUID slugs | Pipeline throughput |
 | 12 | **Redirect motaorradtheory.com → tymingchain.com** | SEO authority consolidation |
-| 13 | **Helmet article** — research brief exists, no draft yet | New article for W10 |
-| 14 | **MV Agusta electronics + Garmin zūmo XT3 tech roundup** | Motorcycle tech authority |
+| 13 | **EV coverage** — solid-state batteries in Verge, legacy OEMs crushing startups | New vertical for W10 |
+| 14 | **Helmet article** — research brief exists, no draft yet | New article for W10 |
 
 ### 📈 Week 9 KPI Targets
 
@@ -174,13 +175,13 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 
 | Dimension | Score | Notes |
 |---|---|---|
-| Content velocity | 8/10 | 30 commits, site launch, INMRC publish |
+| Content velocity | 8/10 | 30+ commits, site launch, INMRC publish |
 | Research depth | 7/10 | 14 briefs, tire research at 19KB |
 | Publish rate | 6/10 | 11 articles but 9 drafts waiting |
 | Distribution | 4/10 | tymingchain.com live, but social unposted |
 | Video | 1/10 | BLOCKED — HeyGen credits exhausted |
 | Community | 5/10 | 5 Reddit scouts, 0 outreach executed |
-| Competitor coverage | 3/10 | Missing 20+ trending topics |
+| Competitor coverage | 3/10 | Missing 22+ trending topics |
 | Website/SEO | 6/10 | Site live, needs GSC + schema markup |
 
 ### **Overall: 5.0 / 10** ⚠️
@@ -189,12 +190,12 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 
 ### Path to 8.0/10:
 1. Unblock video (Synthesia/D-ID) → +2
-2. Publish 4 drafts (tires, Harley, Feb launches, RE growth) → +1
+2. Publish 4 drafts (tires, Harley, Bajaj-KTM, MotoGP) → +1
 3. Execute social posting + Reddit outreach → +1
 4. Submit GSC + add JSON-LD schema → +0.5
 
 ---
 
 *Report by Gaṇaka (गणक) 🔢 | Analytics Reporter | Motorrad Theory Content Pipeline*
-*Data: GitHub API (Amaresh/motorrad-content), Tavily (Reuters, ET, Crisil, News18, Financial Express, HindustanTimes, BMW Motorrad, TotalMotorcycle, NDTV Auto, Garmin, BRM NZ, GearPatrol, Outlook Business)*
+*Data: GitHub API (Amaresh/motorrad-content), Tavily (The Sun, Investing.com, Motorcycle.com, TotalMotorcycle, RevZilla, Motorsport Magazine, Riding5, ET, Crisil, Fortune India)*
 *Next report: Week 9 — 2026-02-23*
