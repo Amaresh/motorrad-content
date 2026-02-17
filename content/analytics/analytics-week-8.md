@@ -1,6 +1,6 @@
 # 📊 Gaṇaka (गणक) — Week 8 Analytics Report (FINAL CONSOLIDATED)
 > **Period:** 2026-02-10 → 2026-02-17 (ISO Week 8)
-> **Generated:** 2026-02-17T22:45Z | Update #21 (FINAL CONSOLIDATED)
+> **Generated:** 2026-02-17T22:47Z | Update #22 (FINAL CONSOLIDATED)
 > **Pipeline:** Motorrad Theory / tymingchain.com
 
 ---
@@ -43,22 +43,27 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Agno Mission Control SDK | Published (25KB) | ⭐ MEDIUM | Tech crossover — in published/ |
 | Superbike maintenance tips | Social only | ⭐ MEDIUM | Needs full article |
 
-### Trending Keywords (from competitor analysis)
-- "MotoGP 2026 850cc rules" — massive search spike
-- "Harley-Davidson 2025 sales decline" — news cycle active
-- "Ducati 100th anniversary 2026" — year-long coverage
-- "KTM 490 twin" — replacing 390 single, huge enthusiast buzz
-- "LiveWire S4 Honcho" — EV motorcycle strategy shift
-- "Royal Enfield Continental GT 750" — new model hype
-- "Intermot 2026 cancelled" — postponed to Feb 2027, industry shock
-- "CFMoto electric sportbike" — emerging details, new segment
-- "Aprilia leg wings patent" — aero innovation for streetbikes
-- "Yamaha variable-geometry swingarm" — next-gen chassis tech
-- "Indian Motorcycle 125th anniversary" — heritage marketing campaign
-- "Honda Rebel 300 E-Clutch" — clutchless tech expanding to small bikes
-- "Zero Motorcycles 2026 relaunch" — strategic pivot, A1 scooter EU
-- "Federal HR-3385 autocycle bill" — three-wheeler regulation fight
-- "Triumph Speed 400 service" — 🔥 our own viral content (11.7K views)
+### Trending Keywords (from competitor analysis — scan #22)
+- **"HR-3385 autocycle bill"** — VIRAL across 5+ CBS/Fox news affiliates this week
+- **"Honda Super Cub discontinued USA"** — Autopian exclusive, massive nostalgic engagement
+- **"Indian Motorcycle trike strategy"** — 159 comments on RevZilla (HIGHEST engagement W8)
+- **"Ducati Monster+"** — 82 comments on RevZilla first ride review
+- **"Ducati Formula 73"** — 28 comments, 873 numbered units
+- **"MotoGP 2026 850cc rules"** — massive search spike
+- **"Harley-Davidson 2025 sales decline"** — $29M loss, news cycle active
+- **"Harley 2026 Liberty Edition CVO"** — 250th US anniversary touring/trike debut
+- **"Ducati 100th anniversary 2026"** — year-long coverage
+- **"KTM 490 twin"** — replacing 390 single, huge enthusiast buzz
+- **"LiveWire S4 Honcho"** — EV motorcycle strategy shift
+- **"Intermot 2026 cancelled"** — postponed to Feb 2027, industry shock
+- **"CFMoto electric sportbike"** — emerging details, new segment
+- **"Aprilia leg wings patent"** — aero innovation for streetbikes
+- **"Honda Rebel 300 E-Clutch"** — clutchless tech expanding to small bikes
+- **"Zero Motorcycles 2026 relaunch"** — strategic pivot, A1 scooter EU
+- **"Triumph Speed 400 service"** — 🔥 our own viral content (11.7K views)
+- **"George Barber Jr dies at 85"** — CycleWorld tribute, museum founder
+- **"RideApart Easyriders controversy"** — editorial crisis, industry discussion
+- **"Norton Manx R AIMExpo"** — premium superbike reveal, brand resurgence
 
 ---
 
@@ -71,75 +76,76 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 |-------|--------|----------------|
 | Harley-Davidson $29M FY2025 loss, -16% shipments, Kawasaki now #1 US | RevZilla, The Sun | Massive industry shift |
 | MotoGP 2027 850cc revolution (80yr rule change) | BRM, CycleWorld | Huge search demand |
-| Intermot 2026 cancelled → Feb 2027 (3-day, 4 halls, OEM-backed) | RideApart | Major industry calendar disruption |
-| Ducati 100th anniversary — events, special editions, centennial year | Visordown, MCN | Year-long opportunity |
-| KTM 490 twin replacing 390 single | Visordown | Major model pipeline shift |
-| LiveWire S4 Honcho — smaller, cheaper EV strategy + $75M loss on 653 EVs | Electrek, RideApart | EV motorcycle future |
-| Royal Enfield 6 new twin-cylinder bikes 2026 | CarToq | Global launch pipeline |
-| U.S. motorcycle sales dropped 7.6% in 2025 | RevZilla | Industry health check |
-| Federal HR-3385 motorcycle redefinition bill — MIC opposes | CBS, OKC Fox | Regulatory disruption — active in Congress |
+| Honda Super Cub C125 quietly pulled from US market | The Autopian | Nostalgic, shareable, high SEO potential |
+| Indian Motorcycle new trike strategy (159 comments — HIGHEST W8) | RevZilla Common Tread | Most-discussed moto article this week |
+| HR-3385 federal autocycle redefinition bill — MIC opposes | CBS12, OKC Fox, KATV + 5 affiliates | VIRAL — regulatory disruption in Congress |
+| Intermot 2026 cancelled → Feb 2027 (3-day, 4 halls) | RideApart | Major industry calendar disruption |
+| Ducati 100th anniversary — events, special editions | Visordown, MCN | Year-long opportunity |
+| LiveWire S4 Honcho — smaller, cheaper EV + $75M loss on 653 EVs | Electrek, RideApart | EV motorcycle future |
+| Harley 2026 Liberty Edition CVO + Touring + Trike debut | MPN, RevZilla | 250th US anniversary models |
 | EPA Endangerment Finding repeal — V-twins cleared | Bikernet | Policy impact on riders |
 
 #### ⚠️ MEDIUM PRIORITY
-| Story | Source |
-|-------|--------|
-| CFMoto electric sportbike details emerge | CycleWorld |
-| Aprilia leg wings patent for streetbikes | CycleWorld |
-| Yamaha variable-geometry swingarm patent | CycleWorld |
-| Morbidelli T1002V and T1002VX approved for US market | CycleWorld |
-| Honda Rebel 300 E-Clutch review (clutchless tech mainstream) | CycleWorld |
-| Indian Motorcycle 125th anniversary campaign | CycleWorld |
-| Indian CEO Mike Kennedy interview — brand future | CycleWorld |
-| Updated Ducati Diavel V4 design registration | CycleWorld |
-| Ducati Desmo450 EDS coming summer 2026 | CycleWorld |
-| 2027 KTM 1390 Super Adventure S EVO review | CycleWorld |
-| Honda Nighthawk restoration + 1983 tariff historical parallel | RideApart |
-| KTM 2026-27 Duke lineup (compact to range-topping) | MPN |
-| Norton Manx R — premium superbike AIMExpo reveal | MPN |
-| Moto Morini 2026 lineup + redesigned X-Cape 700 | MPN |
-| Triumph Trident 800 arrives (RM56,900 Malaysia) | BikesRepublic |
-| BMW R 1300 RT boxer tourer announced | Various |
-| Shark Aeron GP FIM #2 helmet for 2026 MotoGP rules | Visordown |
-| MV Agusta Rush Titanio limited edition | CycleWorld |
-| Ducati Formula 73 (873 numbered units) | CycleWorld |
-| Honda 8 models returning 2026-27 (Africa Twin, Trail125, Dax, etc.) | MPN |
-| Arai XD-5 adventure helmet review | Motorcycle.com |
-| Zero Motorcycles 2026 strategic relaunch — A1 scooter, larger batteries | 1000PS |
+| Story | Source | Engagement |
+|-------|--------|------------|
+| Ducati Monster+ first ride review | RevZilla | 82 comments |
+| Ducati Formula 73 first look (873 units) | RevZilla/CycleWorld | 28 comments |
+| KTM 490 twin replacing 390 single | Visordown | High buzz |
+| Norton Manx R — premium superbike AIMExpo reveal | MPN | Brand resurgence |
+| Honda 8 models returning 2026-27 (AIMExpo confirmed) | MPN | Major lineup |
+| CFMoto electric sportbike details emerge | CycleWorld | New segment |
+| Aprilia leg wings patent for streetbikes | CycleWorld | Aero innovation |
+| Yamaha variable-geometry swingarm patent | CycleWorld | Chassis tech |
+| Honda Rebel 300 E-Clutch review | CycleWorld | Clutchless mainstream |
+| Indian Motorcycle 125th anniversary campaign | CycleWorld | Heritage marketing |
+| Indian CEO Mike Kennedy interview | CycleWorld | Brand future |
+| Ducati Diavel V4 updated design registration | CycleWorld | Model refresh |
+| Ducati Desmo450 EDS coming summer 2026 | CycleWorld | Competition Desmo |
+| 2027 KTM 1390 Super Adventure S EVO review | CycleWorld | ADV flagship |
+| RideApart/Easyriders editorial controversy | RideApart | Industry ethics |
+| George Barber Jr. dies at 85 | CycleWorld | Museum founder tribute |
+| KTM 2026-27 Duke lineup announced | MPN | Range overhaul |
+| Moto Morini 2026 lineup + X-Cape 700 | MPN | Brand expansion |
+| RE 6 new twin-cylinder bikes 2026 | CarToq | Global pipeline |
+| U.S. motorcycle sales dropped 7.6% in 2025 | RevZilla | Industry health |
+| Zero Motorcycles 2026 relaunch — A1 scooter, larger batteries | 1000PS | EV pivot |
+| Morbidelli T1002V approved for US market | CycleWorld | New entrant |
+| BMW R 1300 RT boxer tourer announced | Various | Touring segment |
+| Shark Aeron GP FIM #2 helmet for 2026 MotoGP | Visordown | Safety regs |
+| MV Agusta Rush Titanio limited edition | CycleWorld | Premium niche |
 
 #### 📌 TRACKED (lower priority)
 - Triumph Tiger Sport 660, Trident 660, Bonneville T120 2026
 - Harley CVO Street Glide + Limited + Trike 2026 (105 comments RevZilla)
 - CES 2026 solid-state batteries + Verge EVs (56 comments)
-- Ducati Factory Made customization program (Multistrada V4 first)
-- Yamaha tariff profit decline despite stable moto sales
-- CFMOTO Papio Racer (RM8,888 Malaysia)
-- Triumph Scrambler 400 XC (RM34,200 Malaysia)
+- Ducati Factory Made customization program
+- Yamaha tariff profit decline
+- CFMOTO Papio Racer, Triumph Scrambler 400 XC
 - AJS JS125-X naked (£3149), Benelli middleweights
-- Schuberth S3 Carbon + C5 ANC helmets
+- Schuberth S3 Carbon + C5 ANC, Arai XD-5 review
 - Alpinestars Wolf Dust + Tech 7 Enduro Drystar
 - Beta AMA National Dual Sport 18-event schedule
-- MotoAmerica Daytona 139 riders, 9 races Mar 10-12
-- RevZilla ADV Fest Jul 16-18 (Buffalo Chip, SD — test rides from 7 OEMs)
-- Benda LFC700 2026, Norton Manx R, Indian Chief Vintage 2026
-- UK custom bike sales +79.2% (Keeway Superlight 125)
-- RideApart acquired by Motorsport Network / Motor1.com
-- Latin America 5.86M units (+20.6%), fastest growing market
-- Wunderlich Edition X kit for BMW R1300 GS
-- Thor 2026 MX mid-season drop, Leatt 2026 full range
-- Alpinestars Supertech R10 Flyte limited edition
-- Triumph Thruxton 400 — Best New Rider Release 2026
-- Triumph Speed Twin 1200 RS — Ltd 800 units
+- MotoAmerica Daytona 139 riders Mar 10-12
+- RevZilla ADV Fest Jul 16-18
+- Benda LFC700 2026, Indian Chief Vintage 2026, LAND Moto District ADV
+- UK custom bike sales +79.2%, Latin America 5.86M (+20.6%)
+- Wunderlich Edition X for R1300 GS
+- Thor 2026 MX mid-season, Leatt 2026 full range, Alpinestars R10 Flyte
+- Triumph Thruxton 400, Speed Twin 1200 RS (800 units)
+- Honda Nighthawk restoration + 1983 tariff parallel (RideApart)
+- RideApart acquired by Motorsport Network
 
 ### Market Data Snapshot
 | Region | Metric |
 |--------|--------|
 | **Global** | $78.58B (2026) → $118.9B (2034), CAGR 5.31% (Fortune BI) |
 | **Global (alt)** | $73.15B (2026) → $82.9B (2035), CAGR 1.4% (MRW) |
+| **ICE share** | 89.53% of global market in 2026 |
 | **India** | $10.63B projected 2026 — largest by volume (17M+ units/yr) |
 | **China** | $14.27B projected 2026 — largest by production (19M+) |
 | **Japan** | $2.73B projected 2026 |
 | **Latin America** | 5.86M units 2025, +20.6% YoY — fastest growing |
-| **UK** | +16.1% Jan 2026, but EVs -27.9% (124 units). ICE 89.53% share |
+| **UK** | +16.1% Jan 2026, but EVs -27.9% (124 units) |
 | **US** | -7.6% overall 2025; Harley -12%, Kawasaki now #1 |
 | **US powersports** | $51B retail market (2025, MIC estimate) |
 
@@ -160,19 +166,17 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | **Facebook** | Kawasaki Versys 650 brake/indicator upgrade | 373 views | Steady |
 | **Facebook** | Kawasaki ZX-6R full service | 198 views | Typical |
 | **Facebook** | Royal Enfield Himalayan 411 service | 110 views | Consistent |
-| **Facebook** | Triumph Speed 400 general service (2 weeks ago) | 92 views | Consistent |
-| **Facebook** | RE Interceptor 650 service | 23 views | Low |
 | **Facebook** | Shanthinagar expansion announcement | Active | New unit opening |
 | **YouTube** | @MotorradTheory channel | **4.93K subs, 22 videos** | Growing |
+| **YouTube** | Triumph Scrambler 400 XC review S01E01 | 885 views | Best long-form performer |
 | **YouTube** | "Between Oil and Order" podcast S01E02 | 140 views | Origin story content |
-| **YouTube** | Triumph Scrambler 400 XC review S01E01 | 885 views | Best performing video |
 | **LinkedIn** | Magesh Balaji G — MT launch post | 52 reactions | Founding team visibility |
-| **Website** | motaorradtheory.com (Wix) | Live but sparse | Needs SEO + tymingchain.com sync |
+| **Website** | motaorradtheory.com (Wix) | Live but sparse | Needs SEO optimization |
 | **Website** | tymingchain.com | LIVE — 11 pages | Content hub operational |
 | **Reviews** | Arrivala.com | 5.00 rating (1 review) | "Good behavior, reasonable rate" |
 
 ### 🔥 BREAKOUT: Triumph Speed 400 reel = **11.7K views + 1.3K likes**
-This is a **20-80x increase** over typical 50-184 view posts. The Speed 400 audience is highly engaged. **Action:** Create more Speed 400 content immediately — service guide, owner's tips, comparison article.
+This is a **20-80x increase** over typical 50-184 view posts. **Action:** Create more Speed 400 content immediately — service guide, owner's tips, comparison article.
 
 **Assessment:** Brand is growing via social service content. YouTube at 4.93K subs with 22 videos shows organic momentum. Scrambler 400 XC review (885 views) is best long-form performer. No external media mentions yet (pre-launch stage). Speed 400 viral moment proves product-specific content resonates. Cross-link motaorradtheory.com ↔ tymingchain.com for SEO synergy.
 
@@ -193,28 +197,30 @@ This is a **20-80x increase** over typical 50-184 view posts. The Speed 400 audi
 ## 🎯 Week 9 Recommendations
 
 ### 🔴 MUST DO (Critical Path)
-1. **Write Harley-Davidson crisis article** — HD $29M loss, Kawasaki overtaking US, LiveWire $75M loss, aftermarket pivot. Time-sensitive
-2. **Write MotoGP 2027 850cc revolution article** — 80-year rule change, Marc Márquez, Toprak crossover, Shark Aeron GP FIM#2. Evergreen + news
+1. **Write Harley-Davidson crisis article** — HD $29M loss, Kawasaki overtaking US, LiveWire $75M loss, aftermarket pivot, Liberty Edition CVO. Time-sensitive
+2. **Write MotoGP 2027 850cc revolution article** — 80-year rule change, Marc Márquez, Toprak crossover. Evergreen + news
 3. **Create Speed 400 content series** — 11.7K views proves massive audience. Service guide + comparison + owner tips
+4. **Write HR-3385 autocycle bill explainer** — Viral across 5+ news affiliates, regulatory angle with real-time momentum
 
 ### ⚠️ SHOULD DO (High Impact)
-4. **Promote tire brands article** — Now published. Push to social channels, Reddit outreach, SEO backlinks
-5. **Unblock video production** — HeyGen blocked. Evaluate Synthesia, D-ID, or Runway. 3 scripts ready
-6. **Write Intermot 2026 cancellation article** — Postponed to Feb 2027, 3-day format, 4 halls
-7. **Write Ducati 100th anniversary overview** — Year-long opportunity for evergreen content
-8. **Execute Reddit outreach** — 80+ opportunities, 0 engaged. Start with CRM/shop threads
-9. **Write Zero Motorcycles strategic relaunch** — EU A1 scooter, larger batteries, pricing
+5. **Write Honda Super Cub US discontinuation piece** — Nostalgic, shareable, high SEO potential
+6. **Write Indian Motorcycle trike strategy analysis** — 159 comments = most-discussed article this week
+7. **Promote tire brands article** — Now published. Push to social, Reddit, SEO backlinks
+8. **Unblock video production** — HeyGen blocked. Evaluate Synthesia, D-ID, or Runway
+9. **Write Intermot 2026 cancellation article** — Postponed to Feb 2027, industry implications
+10. **Write Ducati 100th anniversary overview** — Year-long evergreen content
+11. **Execute Reddit outreach** — 80+ opportunities, 0 engaged. Start with CRM/shop threads
 
 ### 📌 NICE TO HAVE
-10. Create "News" section on tymingchain.com for rapid competitor coverage
-11. Publish remaining 8 drafts — Agno SDK already in published/ (verify sync)
-12. Superbike maintenance → full article (currently social-only)
-13. Gear roundup: Leatt 2026, Thor mid-season, Alpinestars Flyte, Arai XD-5
-14. Cross-link motaorradtheory.com ↔ tymingchain.com
-15. Federal HR-3385 + EPA repeal explainer — regulatory angle
-16. CFMoto electric sportbike + Aprilia leg wings + Yamaha swingarm tech roundup
-17. Indian Motorcycle 125th anniversary + new CEO Mike Kennedy profile
-18. RevZilla ADV Fest Jul 16-18 preview — test ride coverage opportunity
+12. Create "News" section on tymingchain.com for rapid competitor coverage
+13. Publish remaining 8 drafts — Agno SDK already in published/ (verify sync)
+14. Norton Manx R + KTM 490 twin articles
+15. Gear roundup: Leatt 2026, Thor mid-season, Alpinestars Flyte, Arai XD-5
+16. Cross-link motaorradtheory.com ↔ tymingchain.com
+17. EPA repeal explainer — regulatory angle for V-twin riders
+18. CFMoto electric sportbike + Aprilia leg wings + Yamaha swingarm tech roundup
+19. Indian Motorcycle 125th anniversary + CEO Mike Kennedy profile
+20. RevZilla ADV Fest Jul 16-18 preview — test ride coverage opportunity
 
 ---
 
@@ -234,4 +240,4 @@ This is a **20-80x increase** over typical 50-184 view posts. The Speed 400 audi
 
 *Report generated by Gaṇaka (गणक) — Analytics Reporter*
 *Motorrad Theory Content Pipeline — tymingchain.com*
-*21 scans consolidated across Week 8*
+*22 scans consolidated across Week 8*
