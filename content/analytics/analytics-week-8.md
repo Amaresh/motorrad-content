@@ -1,5 +1,7 @@
-# 📊 Motorrad Theory — Weekly Analytics Report
-## Week 8 (Feb 10–16, 2026) | Generated 2026-02-16T04:01Z by Archie
+# 📊 Motorrad Theory — साप्ताहिक विश्लेषण (Weekly Analytics Report)
+## Week 8 (Feb 10–16, 2026) | Updated 2026-02-17T20:45Z by Gaṇaka (गणक)
+
+> *Previous version by Archie at 2026-02-16T04:01Z. This is the end-of-week consolidated update.*
 
 ---
 
@@ -7,128 +9,133 @@
 
 | Metric | Value |
 |---|---|
-| **Total commits (last 30)** | 30 |
-| **Active days** | 3 (Feb 14, 15, 16) |
-| **Peak activity** | Feb 15 — 16 commits (HTML generation, Reddit scouts, publishing) |
+| **Commits (last 30 fetched)** | 30 |
+| **Active days (W8)** | 4 (Feb 14–17) |
+| **Peak day** | Feb 16 — 20+ commits (GitHub Pages, UI redesign, Products page, INMRC publish) |
+| **Latest commit** | `4804ef7` — Sanskrit agent names (Chikitsaka, Rakṣaka) — Feb 17 07:47 UTC |
 | **Contributors** | 1 (Amaresh + Copilot co-authored) |
 
-### Key commits this week:
-- ✅ Published "Smart Tech — From INMRC Podiums to Your Garage" (article + HTML + splash + social)
-- 🎬 Video scripts for Garage CRM & INMRC Smart Tech (blocked — HeyGen insufficient credits, 4+ failed attempts)
-- 📡 Reddit scout reports: Feb 14, 15, 16 — 60+ outreach opportunities identified
-- 🎨 Enhanced `article.html` with full-bleed hero images, section images, flowing backgrounds, per-article accent colors
-- 📊 Analytics reports generated (Week 7 + Week 8)
+### Key Activity This Week:
+- 🌐 **GitHub Pages site launched** — tymingchain.com with homepage, blog listing, 5 article pages, CNAME
+- 🎨 **UI/UX Pro Max redesign** — Syncopate + Space Mono typography, automotive dark palette (#0a0a0a), gold accents
+- 📄 **Products page** — bento grid: Garage CRM, Employee App, Copilot SDK, AI Platform
+- 👥 **About page** — animated AI team showcase with 11 agent cards + pipeline visualization
+- ✅ **Published** "Smart Tech — INMRC Racing to Your Garage" (PR #5 merged)
+- 📡 **Reddit scouts** × 4 (Feb 9, 14, 15, 16) — 60+ outreach opportunities
+- 🏷️ **Sanskrit naming** — all agents received Sanskrit identities (Gaṇaka, Anveṣaka, Lekhaka…)
 
 ---
 
 ## 2. Content Pipeline Throughput
 
-| Stage | Count | Details |
+| Stage | Count | Δ vs Week 7 |
 |---|---|---|
-| 🔬 **Research briefs** | **14** | Includes tire brands (3 variants), helmets, CRM, supersport, superbike maintenance, Agno SDK |
-| 📝 **Drafts** | **8** | Tire brands (25KB — largest piece), Agno SDK, INMRC, CRM, 4 UUID-based articles |
-| ✅ **Published** | **10 articles** | 10 .md articles + 5 .html renderings + 5 splash pages + 1 video doc = **21 total assets** |
-| 📱 **Social posts** | **13** | Multi-platform packs (Twitter, Instagram, Facebook, LinkedIn, Reddit) |
-| 🎬 **Video scripts** | **3** | CRM (×1), INMRC Smart Tech (×1), one UUID-based script — **0 produced** ⚠️ |
-| 📡 **Reddit scouts** | **4** | Feb 9, 14, 15, 16 — 60+ outreach opportunities |
-| 📊 **Analytics** | **2** | Week 7 + Week 8 |
+| 🔬 **Research briefs** | **14** | +4 |
+| 📝 **Drafts** | **9** | +2 |
+| ✅ **Published articles** | **10** (21 total assets incl. HTML + splash) | +1 new (INMRC) |
+| 📱 **Social post packs** | **14** | +3 |
+| 🎬 **Video scripts** | **3** (0 produced) | ⛔ Blocked |
+| 📡 **Reddit scouts** | **4** reports | +3 |
+| 📊 **Analytics** | **2** (W7 + W8) | +1 |
+| 🗄️ **Archive** | 1 batch (run-1) | — |
 
-### Pipeline Funnel:
+### Pipeline Funnel Visualization:
 ```
-Research (14) ──→ Drafts (8) ──→ Published (10) ──→ Social (13) ──→ Videos (3)
-                                                                       ↓
-   6 stuck         ~3 stuck       All have social     0 produced ⛔ BLOCKED
-   (43%)           in drafts      packs ready         (HeyGen credits)
+Research (14) ──→ Drafts (9) ──→ Published (10) ──→ Social (14) ──→ Videos (3)
+  │                 │                │                  │                │
+  │ 5 no draft      │ ~4 not yet     │ All have         │ 14 packs      │ 0 produced
+  │ (36% stuck)     │ published      │ social packs     │ ready         │ ⛔ BLOCKED
 ```
 
-### ⚠️ Bottleneck Analysis
+### ⚠️ Bottleneck Analysis (Ranked by Severity)
 
-| Bottleneck | Impact | Severity |
+| Bottleneck | Pieces Stuck | Severity |
 |---|---|---|
-| **🔴 Video production BLOCKED** | HeyGen credits exhausted — 3 scripts ready, 0 videos produced (4+ failed API calls) | 🔴 CRITICAL |
-| **🔴 Research → Draft conversion** | 6 of 14 research briefs (43%) have no matching draft article | 🔴 HIGH |
-| **🟡 Draft → Publish pipeline** | 8 drafts exist, ~5 fully published with HTML — tire brands (25KB) stuck in drafts | 🟡 MEDIUM |
-| **🟢 Social coverage** | 13 social packs for 10 published articles — strong 1.3:1 ratio | 🟢 GOOD |
+| **🔴 Video production** — HeyGen credits exhausted, 3 scripts queued, 0 rendered | 3 | 🔴 CRITICAL |
+| **🟠 Research → Draft gap** — 5 research briefs have no draft (helmets, superbike maint, misc) | 5 | 🟠 HIGH |
+| **🟡 Draft → Publish** — tire brands article (25KB), Agno SDK draft, 4 UUID articles waiting | ~4 | 🟡 MEDIUM |
+| **🟢 Social → Distribution** — 14 packs written, none confirmed posted on platforms | 14 | 🟢 PROCESS |
 
 ---
 
 ## 3. Top Performing Topics & Keywords
 
-| Rank | Topic | Pipeline Status | Keyword Potential |
+| Rank | Topic | Status | SEO Potential |
 |---|---|---|---|
-| 1 | **250cc vs 600cc Supersport Buyers Guide** | ✅ Published + HTML + Social | ⭐⭐⭐⭐⭐ High search vol, comparison intent |
-| 2 | **Best Motorcycle Tire Brands 2026** | ✅ Published + HTML + Social (25KB draft also in pipeline) | ⭐⭐⭐⭐⭐ Seasonal, buying intent |
-| 3 | **Why Your Motorcycle Garage Needs a CRM** | ✅ Published + HTML + Social + Video script | ⭐⭐⭐⭐⭐ Low competition niche |
-| 4 | **Smart Tech — INMRC Racing to Your Garage** | ✅ Published + HTML + Social + Video (NEW this week) | ⭐⭐⭐⭐ India-specific, racing tech |
-| 5 | **Best Motorcycle Helmets 2026** | 🔬 Research only | ⭐⭐⭐⭐ High intent, needs draft |
-| 6 | **Superbike Maintenance Tips** | 🔬 Research + Social only | ⭐⭐⭐ Evergreen, needs draft |
-| 7 | **Agno Mission Control SDK** | ✅ Published + Social | ⭐⭐⭐ Dev/tech niche |
+| 1 | **250cc vs 600cc Supersport Buyers Guide** | ✅ Published + HTML + Social | ⭐⭐⭐⭐⭐ Comparison intent |
+| 2 | **Best Motorcycle Tire Brands 2026** | ✅ Published + HTML + Social (25KB draft variant still in pipeline) | ⭐⭐⭐⭐⭐ Seasonal buying |
+| 3 | **Why Your Motorcycle Garage Needs a CRM** | ✅ Published + HTML + Social + Video script | ⭐⭐⭐⭐⭐ Low-competition niche |
+| 4 | **Smart Tech — INMRC Racing to Your Garage** | ✅ Published + HTML + Social + Video script (NEW W8) | ⭐⭐⭐⭐ India racing tech |
+| 5 | **Best Motorcycle Helmets 2026** | 🔬 Research only — no draft | ⭐⭐⭐⭐ High intent, needs writing |
+| 6 | **Superbike Maintenance Tips** | 🔬 Research + Social (no draft!) | ⭐⭐⭐ Evergreen |
+| 7 | **Agno Mission Control SDK** | ✅ Published + Social (2 versions) | ⭐⭐⭐ Dev/tech niche |
 
 ---
 
 ## 4. Online Mentions & Brand Presence
 
-| Platform | Status |
+| Channel | Findings |
 |---|---|
-| **Instagram** (@motorradtheory) | Active — "premium motorcycle service garage" positioning. Recent reel: "What it feels like to be a part of Motorrad Theory" |
-| **Facebook** (motorradtheory) | Active — Triumph Speed 400 service post recent. Community engagement present |
-| **YouTube** | Podcast S01E02: "Between Oil and Order — How Motorrad Theory Began" (140 views, 7 likes, 4920 subscribers) |
-| **Website** (motaorradtheory.com) | Blog page live but using Wix CMS — GitHub-published articles may NOT be synced |
-| **Search visibility** | Minimal organic mentions outside owned properties — brand in content-building phase |
-| **Reddit** | 4 scout reports generated; no confirmed Motorrad Theory mentions in communities yet |
+| **Instagram** (@motorradtheory) | Active — Ducati V4S reel, "premium motorcycle service garage" positioning |
+| **YouTube** | "Between Oil and Order — How Motorrad Theory Began" — comparing OEM vs private garage workflows |
+| **GitHub Pages** | tymingchain.com now LIVE — homepage + blog + 5 articles + Products + About + Contact |
+| **Search** | "Motorrad Theory" returns owned properties (Instagram, YouTube). No third-party mentions/reviews yet |
+| **Reddit** | 4 scout reports covering r/indianbikes, r/motorcycles — 60+ outreach targets identified, none executed |
 
-**Brand Health:** 🟡 Active on social but low discoverability. Content exists but distribution hasn't scaled.
+**Brand Discoverability Score:** 🟡 3/10 — Properties exist, organic reach hasn't started.
 
 ---
 
 ## 5. Competitor Gap Analysis
 
-### 🔥 Trending Topics We're Missing
+### 🔥 Trending Topics We're NOT Covering
 
-| Topic | Who's Covering It | Gap Priority |
+| Topic | Competitors Covering | Our Action |
 |---|---|---|
-| **India EV 2-wheeler boom** (Ather 68% ↑, 20.82% YoY market growth) | BikeWale, RushLane, NDTV Auto, Reuters | 🔴 CRITICAL |
-| **Royal Enfield Bullet 650 launch** (Feb 16!) | HT Auto, ZigWheels, BikeWale | 🔴 HIGH |
-| **Royal Enfield Q3 results** (profit up 21%, domestic sales +24%) | Reuters, ET Auto | 🔴 HIGH |
-| **Adventure touring 2026** (Africa Twin, Himalayan 450, KLR update) | ADVRider, RevZilla, TopSpeed | 🟡 MEDIUM |
-| **2026 Kawasaki Vulcan S** (launched ₹8.13L) | Autocar India | 🟡 MEDIUM |
-| **Best cruiser motorcycles 2026** | YouTube creators (500K+ views) | 🟡 MEDIUM |
-| **Motorcycle riding gear market** (8.6% CAGR through 2033) | LinkedIn industry reports | 🟢 LOW |
+| **Premium motorcycle shift** — 125cc+ now 26% of India sales (was 22.1% in FY20) | Economic Times, HT Auto, BikeWale | 🔴 Write analysis piece |
+| **Aprilia Tuono 457** — launched ₹3.96L, first ride reviews live | HT Auto, BikeWale, ZigWheels | 🔴 Review/comparison needed |
+| **Brixton Crossfire 500 Storr** — India Q2 2026 launch via MotoHaus | Motoroids, BikeWale | 🟡 Preview article |
+| **Electric 2W momentum** — Suzuki 10M units milestone, Vida VX2, Yamaha EC-06 | NextMSC, ET Auto, RushLane | 🔴 EV roundup article |
+| **2026 Indian Chief Vintage** — MCN review live | Motorcycle News, TopSpeed | 🟡 Niche coverage |
+| **KTM 790 Duke leaked** — 103 BHP, new LED face | BikeJunction, ZigWheels | 🟡 News piece |
+| **Honda Gold Wing Tour 2026** — touring segment coverage | TopSpeed, CycleWorld | 🟢 Low priority |
+| **Reliability debate** — "Which brand is the low-stress all-rounder?" (viral Reddit thread) | r/indianbikes (high engagement) | 🔴 Perfect for our authority |
 
-### India Market Intelligence (Feb 2026):
-- **Jan 2026 2W sales:** 20.82% YoY growth across all segments
-- **Hero MotoCorp:** Market leader, but Honda closing gap
-- **Royal Enfield:** 1,06,398 units in Jan, sub-350cc demand exploding. Bullet 650 launching TODAY (Feb 16)
-- **Bajaj:** 1,95,752 units — strong Pulsar Classic pipeline
-- **EV sector:** Ather up 68% (21,999 units), Ultraviolette expanding, Honda merging ICE+EV teams (Apr 2026)
+### India Market Snapshot (Feb 2026):
+- **Premium shift:** Bikes 125cc+ = 26% of total 2W sales (FY26 10-month avg)
+- **Royal Enfield:** Hunter 350 crossed 500K sales in 2.5 years; Bullet 650 upcoming
+- **TVS:** Apache RTX gaining adventure segment share
+- **EV:** Suzuki India hit 10M production units; Ather, Ultraviolette, Vida expanding
+- **Kawasaki:** Extending New Year discounts up to ₹2.5L on select models
 
 ---
 
 ## 6. Recommendations for Week 9 (Feb 17–23)
 
-### 🔴 Critical — Do This Week
+### 🔴 Critical — Immediate Action
 
-| # | Action | Expected Impact |
-|---|---|---|
-| 1 | **Unblock video production** — Switch from HeyGen to Synthesia, D-ID, or Pictory. 3 scripts are ready. | Unblocks entire video pipeline |
-| 2 | **Publish tire brands article** — 25KB draft sitting in `content/drafts/`. High-value seasonal keyword. | Immediate SEO capture |
-| 3 | **Write Royal Enfield Bullet 650 launch article** — Launching TODAY. First-mover advantage. | Trending traffic spike |
+| # | Action | Owner | Expected Impact |
+|---|---|---|---|
+| 1 | **Unblock video** — switch HeyGen → Synthesia/D-ID/Pictory. 3 scripts ready. | Citraka (चित्रक) | Unblocks entire video pipeline |
+| 2 | **Publish tire brands article** — 25KB draft in `content/drafts/`. Highest-value SEO piece. | Prakāśaka (प्रकाशक) | Immediate search capture |
+| 3 | **Write premium motorcycle shift analysis** — 125cc+ segment at 26%, RE/TVS dominating | Lekhaka (लेखक) | Trending authority piece |
 
-### 🟡 Growth — Plan This Week
+### 🟡 Growth — This Week
 
-| # | Action | Expected Impact |
-|---|---|---|
-| 4 | **Start EV motorcycle content track** — India EV 2W up 20.82% YoY. Write research brief: "Electric Motorcycles in India 2026" | Competitor parity on hottest topic |
-| 5 | **Convert helmet research → draft** — `best-motorcycle-helmets-2026-research.md` ready | New published article by Week 10 |
-| 6 | **India market analysis piece** — RE profit +21%, Honda restructuring, Bajaj Pulsar Classic coming | Authority content for Indian riders |
+| # | Action | Owner | Expected Impact |
+|---|---|---|---|
+| 4 | **Start EV motorcycle content** — Research brief on India EV 2W market 2026 | Anveṣaka (अन्वेषक) | Competitor parity |
+| 5 | **Convert helmet research → draft** — `best-motorcycle-helmets-2026-research.md` ready | Lekhaka | New article by W10 |
+| 6 | **Aprilia Tuono 457 first impressions** — launched, reviews are live, we have nothing | Anveṣaka → Lekhaka | Time-sensitive traffic |
+| 7 | **Reddit reliability debate** — viral thread is perfect for Motorrad Theory's "transparency" positioning | Cāraka (चारक) | Community credibility |
 
 ### 🟢 Optimization — Ongoing
 
 | # | Action | Expected Impact |
 |---|---|---|
-| 7 | **Sync GitHub → motaorradtheory.com** — Published HTML articles exist but may not be live on Wix blog | Content actually reaches audience |
-| 8 | **Execute Reddit outreach** — 60+ opportunities identified in scout reports. Start commenting with value-add links. | Community growth, backlinks |
-| 9 | **Schedule social posts** — 13 packs ready, none confirmed posted on platforms. Set up Buffer/Hootsuite. | Social reach activation |
+| 8 | **Execute Reddit outreach** — 60+ opportunities from 4 scout reports, 0 acted on | Community growth + backlinks |
+| 9 | **Schedule social posts** — 14 packs sitting uncommitted. Set up Buffer/Later. | Social reach activation |
+| 10 | **Verify tymingchain.com DNS** — CNAME committed, confirm GitHub Pages serves correctly | Site actually reachable |
 
 ---
 
@@ -137,38 +144,41 @@ Research (14) ──→ Drafts (8) ──→ Published (10) ──→ Social (13
 | Metric | Week 7 | Week 8 | Trend |
 |---|---|---|---|
 | Commits | ~10* | 30 | 📈 +200% |
-| Published articles | 4 | 10 (+1 new) | 📈 |
-| Social packs | 10 | 13 (+3 new) | 📈 |
-| Reddit scouts | 1 | 4 | 📈 |
-| Video scripts | 2 | 3 (+1) | 📈 |
-| Videos produced | 0 | 0 | ⛔ Blocked |
-| Blocked items | 2 | 3 (all video) | ⚠️ |
+| Research briefs | 10 | 14 | 📈 +4 |
+| Drafts | 7 | 9 | 📈 +2 |
+| Published articles | 9 | 10 | 📈 +1 (INMRC) |
+| Social packs | 10 | 14 | 📈 +4 |
+| Video scripts | 2 | 3 | 📈 +1 |
+| Videos produced | 0 | 0 | ⛔ Still blocked |
+| Reddit scouts | 1 | 4 | 📈 +3 |
+| GitHub Pages | ❌ | ✅ Live | 🆕 Major milestone |
 
-*Week 7 estimates based on partial analytics report.*
+*Week 7 estimates from partial analytics.*
 
 ---
 
 ## 8. Pipeline Health Score
 
-### **Overall: 6.5 / 10** ⚡
+### **Overall: 6.5 / 10** ⚡ *(unchanged — video block offsets site launch gains)*
 
 | Dimension | Score | Notes |
 |---|---|---|
-| Content velocity | 8/10 | 30 commits, strong output |
-| Research depth | 7/10 | 14 briefs, some very deep (tire brands 19KB) |
-| Publish rate | 6/10 | 10 articles published but 8 drafts waiting |
-| Distribution | 3/10 | Social packs exist but not posted; blog may not sync |
+| Content velocity | 8/10 | 30 commits, site + product pages + INMRC publish |
+| Research depth | 7/10 | 14 briefs, tire research at 19KB depth |
+| Publish rate | 6/10 | 10 articles but 9 drafts still waiting |
+| Distribution | 4/10 | ↑ from 3 — tymingchain.com now live, but social still unposted |
 | Video | 1/10 | Completely blocked — HeyGen credits |
-| Community | 5/10 | Reddit scouting active, outreach not executed |
-| Competitor coverage | 4/10 | Missing EV, adventure, and market analysis topics |
+| Community | 5/10 | Reddit scouting ×4, outreach not executed |
+| Competitor coverage | 4/10 | Missing EV, premium shift, Tuono 457, Brixton |
 
-### To reach 8+/10:
-1. ✅ Unblock video (HeyGen → alternative)
-2. ✅ Publish 2-3 more articles from draft backlog
-3. ✅ Start EV + RE Bullet 650 content
-4. ✅ Actually distribute social posts + sync blog
+### Path to 8.5/10:
+1. ✅ Unblock video → Synthesia/D-ID (score +2)
+2. ✅ Publish tire brands + 2 more drafts (+1)
+3. ✅ Write premium shift + EV pieces (+1)
+4. ✅ Actually post social packs + execute Reddit outreach (+1)
 
 ---
 
-*Report generated by Archie 🤖 | Analytics Reporter | Motorrad Theory Content Pipeline*
-*Data sources: GitHub API (Amaresh/motorrad-content), Tavily web search*
+*Report generated by Gaṇaka (गणक) 🔢 | Analytics Reporter | Motorrad Theory Content Pipeline*
+*Previous version: Archie @ 2026-02-16T04:01Z*
+*Data sources: GitHub API (Amaresh/motorrad-content), Tavily web search, competitor monitoring*
