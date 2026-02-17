@@ -1,5 +1,5 @@
 # 📊 Motorrad Theory — साप्ताहिक विश्लेषण (Weekly Analytics Report)
-## Week 8 (Feb 16–22, 2026) | Final: 2026-02-17T21:15Z by Gaṇaka (गणक)
+## Week 8 (Feb 16–22, 2026) | Update #5: 2026-02-17T21:30Z by Gaṇaka (गणक)
 
 > *Consolidated analytics with live competitor data, market intelligence, brand monitoring, and pipeline audit.*
 
@@ -12,7 +12,7 @@
 | **Commits (last 30)** | 30 |
 | **Active days (W8)** | 2 of 7 (Feb 16–17; week in progress) |
 | **Peak day** | Feb 16 — 18 commits (GitHub Pages launch + UI redesign + Products page) |
-| **Latest commit** | Feb 17 21:05 UTC — EOD consolidation |
+| **Latest commit** | Feb 17 21:18 UTC — final consolidation |
 | **Contributors** | 1 (Amaresh + Copilot co-authored) |
 
 ### Key Activity This Week
@@ -71,7 +71,7 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 
 ---
 
-## 5. Brand Mentions Online (Live Scan — Feb 17 21:15Z)
+## 5. Brand Mentions Online (Live Scan — Feb 17 21:30Z)
 
 | Channel | Status | Metrics |
 |---|---|---|
@@ -96,15 +96,19 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 |---|---|---|---|
 | 1 | **🏍️ 5 Major Launches Feb 2026** — RE Bullet 650, Triumph 350, TVS Apache RTX 300, Brixton Crossfire 500 Storr, FB Mondial Piega 452 | eAuto.co.in (Feb 17) | Multiple first-mover article opportunities |
 | 2 | **🇺🇸 Harley zero-duty India** — India-US trade framework eliminates tariffs on premium bikes | Reuters, PowersportsBusiness (Feb 12) | Import pricing disruption for premium segment |
-| 3 | **📊 2W market → 29M units FY27** — 7-9% growth; 150-350cc premiumisation at 25% (up from 23%) | Crisil via TNIE, Fortune India, Upstox (Feb 17) | Macro industry authority piece |
+| 3 | **📊 2W market → 29M units FY27** — 7-9% growth; 150-350cc premiumisation at 25% (up from 23%) | Crisil via News18, Financial Express (Feb 17) | Macro industry authority piece |
 | 4 | **📈 Premium motorcycles gaining speed** — consumer sentiment shifting toward higher-cc models | Economic Times (Feb 17) | Aligns with supersport content |
 | 5 | **🏢 Hero MotoCorp premium expansion** — CEO admits "under-represented" in scooters, premium, EV | Outlook Business (Feb 16) | Strategy shift; Hero-Harley partnership angle |
-| 6 | **🏷️ Kawasaki Feb discounts** — up to ₹2.5L off + free accessories through Feb 28 | LiveMint (Feb 15) | Time-sensitive deal coverage |
+| 6 | **🏷️ Kawasaki Feb discounts** — up to ₹2.5L off + free accessories through Feb 28 | HindustanTimes (Feb 15) | Time-sensitive deal coverage |
 | 7 | **⚡ Legacy OEMs 60% EV 2W market** — TVS/Bajaj/Hero crush startups; Ola -69% YoY | ET, AutocarPro (Feb 16) | Massive market shift story |
 | 8 | **📦 2W export split recovery Q3** — divergent manufacturer patterns | Business Standard (Feb 15) | Data journalism opportunity |
 | 9 | **🏁 SIAM Jan 2026** — Hero & Honda separated by just 629 units (27% each) | AutocarPro (Feb 13) | Dramatic statistical deadlock |
-| 10 | **🏍️ Honda revives 8 iconic models** — Africa Twin, Trail125, Dax, PCX, ADV160 for 2026-27 | RoadRacingWorld (Feb 2026) | Global model refresh coverage |
+| 10 | **🏍️ BMW R 1300 RT announced** — new 1,300cc boxer tourer with 145 hp, ASA automatic shift | BMW Motorrad (Feb 17) | Premium touring segment coverage |
 | 11 | **🏔️ QJMotor SRT 450 RX** — affordable ADV with TPMS, heated grips, TFT dash | GearPatrol (Feb 2026) | Budget ADV segment disruption |
+| 12 | **⚙️ MV Agusta full electronics standard** — across entire 2026 lineup | TotalMotorcycle (Feb 2026) | Premium tech story |
+| 13 | **🔧 RE Continental GT 650 mid-cycle update** — confirmed for late 2026 | NDTV Auto (Feb 2026) | Royal Enfield product pipeline coverage |
+| 14 | **📱 Garmin zūmo XT3** — motorcycle GPS with live lean angles, expanded mapping | Garmin/PRNewswire (Feb 2026) | Motorcycle tech/accessories niche |
+| 15 | **🏍️ Indian Motorcycle: no entry-level plans** — focusing exclusively on premium cruisers/touring | BRM NZ (Feb 2026) | Strategy analysis; contrasts with Hero/Honda approach |
 
 ### Previously Identified Gaps (Still Open)
 | Topic | Priority |
@@ -139,7 +143,7 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 | # | Action | Agent | Impact |
 |---|---|---|---|
 | 5 | **India 2W market → 29M units FY27** — Crisil data + premiumisation trend analysis | Anveṣaka → Lekhaka | Industry authority content |
-| 6 | **Royal Enfield growth + Flying Flea C6** — record stock, 2M capacity, EV confirmed | Lekhaka | Authority on market leader |
+| 6 | **BMW R 1300 RT + RE Continental GT 650 update** — premium touring segment coverage | Lekhaka | Global + India premium angle |
 | 7 | **EV market shakeup** — Legacy OEMs crush startups; Ola collapse (-69% YoY) | Anveṣaka → Lekhaka | Trending analysis piece |
 | 8 | **Submit tymingchain.com to Google Search Console + JSON-LD schema** | Rakṣaka | Enable SEO discovery |
 
@@ -151,6 +155,7 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 | 11 | **Process draft queue** — triage 9 drafts, clear 3+, rename UUID slugs | Pipeline throughput |
 | 12 | **Redirect motaorradtheory.com → tymingchain.com** | SEO authority consolidation |
 | 13 | **Helmet article** — research brief exists, no draft yet | New article for W10 |
+| 14 | **MV Agusta electronics + Garmin zūmo XT3 tech roundup** | Motorcycle tech authority |
 
 ### 📈 Week 9 KPI Targets
 
@@ -191,5 +196,5 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 ---
 
 *Report by Gaṇaka (गणक) 🔢 | Analytics Reporter | Motorrad Theory Content Pipeline*
-*Data: GitHub API (Amaresh/motorrad-content), Tavily (Reuters, ET, Crisil, Fortune India, PowersportsBusiness, LiveMint, eAuto, Business Standard, RoadRacingWorld, GearPatrol, Outlook Business)*
+*Data: GitHub API (Amaresh/motorrad-content), Tavily (Reuters, ET, Crisil, News18, Financial Express, HindustanTimes, BMW Motorrad, TotalMotorcycle, NDTV Auto, Garmin, BRM NZ, GearPatrol, Outlook Business)*
 *Next report: Week 9 — 2026-02-23*
