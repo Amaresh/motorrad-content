@@ -1,5 +1,5 @@
 # 📊 Motorrad Theory — साप्ताहिक विश्लेषण (Weekly Analytics Report)
-## Week 8 (Feb 16–22, 2026) | Update #6: 2026-02-17T21:30Z by Gaṇaka (गणक)
+## Week 8 (Feb 16–22, 2026) | Update #7: 2026-02-17T21:34Z by Gaṇaka (गणक)
 
 > *Consolidated analytics with live competitor data, market intelligence, brand monitoring, and pipeline audit.*
 
@@ -12,7 +12,7 @@
 | **Commits (last 30)** | 30+ |
 | **Active days (W8)** | 2 of 7 (Feb 16–17; week in progress) |
 | **Peak day** | Feb 16 — 18 commits (GitHub Pages launch + UI redesign + Products page) |
-| **Latest commit** | Feb 17 21:18 UTC — final consolidation |
+| **Latest commit** | Feb 17 21:34 UTC — analytics update #7 |
 | **Contributors** | 1 (Amaresh + Copilot co-authored) |
 
 ### Key Activity This Week
@@ -71,7 +71,7 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 
 ---
 
-## 5. Brand Mentions Online (Live Scan — Feb 17 21:30Z)
+## 5. Brand Mentions Online (Live Scan — Feb 17 21:34Z)
 
 | Channel | Status | Metrics |
 |---|---|---|
@@ -88,7 +88,7 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 
 ---
 
-## 6. Competitor Gap Analysis (Live Data — Feb 17, 2026 21:30Z)
+## 6. Competitor Gap Analysis (Live Data — Feb 17, 2026 21:34Z)
 
 ### 🔥 Breaking Headlines We're Missing
 
@@ -105,10 +105,19 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 | 9 | **📊 Honda record Q3 motorcycle sales** — offset by auto losses | Investing.com (Feb 10) | Financial + market analysis |
 | 10 | **🏍️ Top 10 Best 2026 Motorcycles** — TotalMotorcycle definitive list | TotalMotorcycle (Feb 16) | Compete with own listicle |
 | 11 | **🔔 Barber Museum founder George Barber Jr. dies at 85** | RevZilla (Feb 17) | Tribute/heritage piece |
-| 12 | **📋 Federal bill to ban autocycles** | RevZilla (Feb 16) | Regulatory coverage |
+| 12 | **📋 Federal bill to ban autocycles** — HR 3385 redefining motorcycles | RevZilla, Baltimore Sun (Feb 16-17) | Regulatory coverage |
 | 13 | **⚡ Solid-state batteries in Verge electric motorcycles** | Riding5, CES 2026 | EV technology authority |
 | 14 | **🏍️ 5 Major Launches Feb 2026** — Bullet 650, Triumph 350, Apache RTX 300, Brixton Crossfire 500 | eAuto.co.in (Feb 17) | First-mover listicle |
 | 15 | **📈 Premium motorcycles gaining speed** — consumer sentiment shift | ET Prime (Feb 17) | Aligns with supersport content |
+
+### 🆕 New Stories (Evening Scan — 21:34Z)
+
+| # | Topic | Source | Impact |
+|---|---|---|---|
+| 16 | **💴 Yamaha tariff profit decline** — sharp FY25 drop, US tariff pressure on margins, PWC/SxS weak | Powersports Business (Feb 17) | Financial analysis + tariff angle |
+| 17 | **⚡ LiveWire S4 Honcho** — smaller/cheaper EV, targeting small-format explosive growth | Electrek (Feb 17) | EV strategy deep-dive |
+| 18 | **🔧 Ducati Factory Made** — first-ever factory customization program (Multistrada V4 S) | Gear Patrol (Feb 17) | Industry-first coverage |
+| 19 | **🏍️ Honda 2026-27 diverse lineup** — 8 returning models: adventure, miniMOTO, scooter, trials | Powersports Business (Feb 17) | Model coverage |
 
 ### Previously Identified Gaps (Still Open)
 | Topic | Priority |
@@ -145,7 +154,7 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 |---|---|---|---|
 | 5 | **MotoGP 2027 revolution** — 850cc engines, biggest rule change in 80 years | Lekhaka | Technical authority, motorsport SEO |
 | 6 | **India 2W market analysis** — 29M FY27, premiumisation, Hero vs Honda 629-unit gap | Anveṣaka → Lekhaka | Industry authority content |
-| 7 | **Ducati Formula 73 + Monster+ roundup** — leverage RevZilla first rides | Lekhaka | Timely model coverage |
+| 7 | **LiveWire S4 Honcho + Yamaha tariff impact** — EV strategy + financial pressure dual piece | Lekhaka | Timely EV + financial coverage |
 | 8 | **Submit tymingchain.com to Google Search Console + JSON-LD schema** | Rakṣaka | Enable SEO discovery |
 
 ### 🟢 P2 — Strategic (Fri–Sun)
@@ -155,7 +164,7 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 | 10 | **Schedule social posts** — 14 packs unposted, set up Buffer/Later | Social reach activation |
 | 11 | **Process draft queue** — triage 9 drafts, clear 3+, rename UUID slugs | Pipeline throughput |
 | 12 | **Redirect motaorradtheory.com → tymingchain.com** | SEO authority consolidation |
-| 13 | **EV coverage** — solid-state batteries in Verge, legacy OEMs crushing startups | New vertical for W10 |
+| 13 | **Ducati Factory Made + Honda 2026-27 roundup** — leverage today's announcements | New product coverage |
 | 14 | **Helmet article** — research brief exists, no draft yet | New article for W10 |
 
 ### 📈 Week 9 KPI Targets
@@ -181,7 +190,7 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 | Distribution | 4/10 | tymingchain.com live, but social unposted |
 | Video | 1/10 | BLOCKED — HeyGen credits exhausted |
 | Community | 5/10 | 5 Reddit scouts, 0 outreach executed |
-| Competitor coverage | 3/10 | Missing 22+ trending topics |
+| Competitor coverage | 3/10 | Missing 26+ trending topics |
 | Website/SEO | 6/10 | Site live, needs GSC + schema markup |
 
 ### **Overall: 5.0 / 10** ⚠️
@@ -197,5 +206,5 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 ---
 
 *Report by Gaṇaka (गणक) 🔢 | Analytics Reporter | Motorrad Theory Content Pipeline*
-*Data: GitHub API (Amaresh/motorrad-content), Tavily (The Sun, Investing.com, Motorcycle.com, TotalMotorcycle, RevZilla, Motorsport Magazine, Riding5, ET, Crisil, Fortune India)*
+*Data: GitHub API (Amaresh/motorrad-content), Tavily (Powersports Business, Electrek, Gear Patrol, Baltimore Sun, The Sun, Investing.com, Motorcycle.com, TotalMotorcycle, RevZilla, Motorsport Magazine, ET Prime)*
 *Next report: Week 9 — 2026-02-23*
