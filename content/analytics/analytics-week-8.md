@@ -1,5 +1,5 @@
 # 📊 Motorrad Theory — साप्ताहिक विश्लेषण (Weekly Analytics Report)
-## Week 8 (Feb 16–22, 2026) | Final: 2026-02-17T21:00Z by Gaṇaka (गणक)
+## Week 8 (Feb 16–22, 2026) | Final: 2026-02-17T21:02Z by Gaṇaka (गणक)
 
 > *Consolidated analytics with live competitor data, market intelligence, and pipeline audit.*
 
@@ -12,7 +12,7 @@
 | **Commits (last 30)** | 30 |
 | **Active days (W8)** | 2 of 7 (Feb 16–17; week in progress) |
 | **Peak day** | Feb 16 — 18 commits (GitHub Pages launch + UI redesign + Products page) |
-| **Latest commit** | `3e3e983` — Gaṇaka analytics — Feb 17 20:50 UTC |
+| **Latest commit** | Feb 17 21:01 UTC — Reddit scout + analytics |
 | **Contributors** | 1 (Amaresh + Copilot co-authored) |
 
 ### Key Activity This Week
@@ -20,7 +20,7 @@
 - 🎨 **UI/UX Pro Max redesign** — Syncopate + Space Mono, automotive dark (#0a0a0a), gold accents, sprocket SVG
 - 📄 **Products page** — bento grid: Garage CRM, Employee App, Copilot SDK, AI Platform
 - ✅ **Published** "Smart Tech — INMRC Racing to Your Garage" (PR #5 merged)
-- 📡 **Reddit scouts** × 5 (Feb 9, 14, 15, 16, 17) — 70+ outreach opportunities
+- 📡 **Reddit scouts** × 5 (Feb 9, 14, 15, 16, 17) — 80+ outreach opportunities
 - 🕉️ **Sanskrit naming** — all 11 agents named in Devanagari
 
 ---
@@ -76,8 +76,11 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 | Channel | Status |
 |---|---|
 | **tymingchain.com** | 🆕 LIVE — GitHub Pages, 5 articles + landing pages |
-| **Instagram** @motorradtheory | Active — service reels, premium garage positioning |
-| **YouTube** | "Between Oil and Order" — OEM vs private garage philosophy |
+| **Instagram** @motorradtheory | Active — Versys 650 brake upgrade reel, R3 service, Speed 400 service |
+| **YouTube** | "Between Oil and Order" podcast S01E02 — 140 views, 7 likes, 4 comments |
+| **LinkedIn** | Rider community story post (Praveen Posina) |
+| **Facebook** /motorradtheory | Active — "premium service provider, country's first race track rental" |
+| **motaorradtheory.com** (old Wix) | ⚠️ Still live — needs redirect to tymingchain.com |
 | **Tavily scan** | No organic 3rd-party mentions found for "Motorrad Theory" or "tymingchain.com" |
 
 **Brand Score: 🟡 3.5/10** — Site launched but no organic search traffic yet.
@@ -90,14 +93,16 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 
 | Topic | Source | Impact |
 |---|---|---|
-| **🇺🇸 Harley-Davidson zero-duty India access** — India-US trade framework eliminates tariffs on premium Harleys | Reuters, PowerSports Business (Feb 12) | Premium segment pricing disruption; Hero-Harley partnership benefits |
-| **📈 Royal Enfield record stock high** — Eicher +7%; capacity → 2M units; Q3 domestic sales +24% | Reuters (Feb 11) | Market leader doubling down; key content authority topic |
+| **🇺🇸 Harley-Davidson zero-duty India access** — India-US trade framework eliminates tariffs on premium Harleys | Reuters, Yahoo Finance (Feb 12) | Premium segment pricing disruption; Hero-Harley partnership benefits |
+| **📈 Royal Enfield record stock high** — Eicher +7%; capacity → 2M units; Q3 domestic sales +24% | Reuters (Feb 11) | Market leader doubling down; key authority topic |
 | **🏍️ Hero MotoCorp 8-yr high market share** — GST cut rolling back 2W prices 3 years; first-time buyer surge | MoneyControl (Feb 13) | Entry-level revival driving volume |
-| **⚡ Legacy OEMs capture 60% EV 2W market** — TVS/Bajaj/Hero crush startups; Ola Electric -69% YoY | Economic Times, AutocarPro (Feb 16) | Massive market shift; Ola collapse is major story |
-| **📊 India 2W market → 29M units FY27** — 7-9% growth; 150-350cc at 25% share (up from 23%) | Fortune India, Crisil, ICRA (Feb 17) | Macro premiumisation story |
+| **⚡ Legacy OEMs capture 60% EV 2W market** — TVS/Bajaj/Hero crush startups; Ola Electric -69% YoY | Economic Times, AutocarPro (Feb 16) | Massive market shift; Ola collapse story |
+| **📊 India 2W market → 29M units FY27** — 7-9% growth; 150-350cc at 25% share (up from 23%) | News18, Crisil, ICRA (Feb 17) | Macro premiumisation story |
 | **🏁 SIAM Jan 2026** — Hero & Honda separated by just 629 units (27% each); TVS +30% YoY | AutocarPro (Feb 13) | Statistical deadlock, dramatic data point |
 | **🎯 Kawasaki Versys-X 300 discounts** — ₹30K off + ₹46K accessories free till Feb 28 | Hindustan Times | Time-sensitive deal coverage |
 | **🔧 Hero MotoCorp eyeing premium, scooter, EV expansion** — CEO admits "under-represented" in growth segments | ET, Outlook Business (Feb 16) | Strategy shift story |
+| **🏎️ Ducati Factory Made program** — configure-to-order Multistrada V4 S, first for the brand | GearPatrol (Feb 2026) | Premium customization trend |
+| **🏍️ Indian Motorcycle separates from Polaris** | Indian Motorcycle (Feb 2026) | Premium OEM shakeup |
 
 ### Previously Identified Gaps (Still Open)
 | Topic | Priority |
@@ -108,6 +113,7 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 | KTM twin-cylinder engine for India | 🟡 MEDIUM |
 | Brixton Crossfire 500 Storr — India Q2 2026 | 🟡 MEDIUM |
 | Yezdi Blood Moon Roadster — Mar 3 launch | 🟡 MEDIUM |
+| Kawasaki W800 India tease (NDTV Auto) | 🟡 MEDIUM |
 | Ultraviolette F77 AI voice control (CES 2026) | 🟡 MEDIUM |
 
 ### What We Cover That Competitors DON'T
@@ -115,6 +121,7 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 - ✅ Motorcycle garage CRM/software — underserved B2B angle
 - ✅ INMRC racing diagnostics deep-dive — technical authority
 - ✅ 250cc vs 600cc supersport comparison — buyer intent content
+- ✅ Reddit community intelligence — daily scouting reports
 
 ---
 
@@ -124,23 +131,24 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 | # | Action | Agent | Impact |
 |---|---|---|---|
 | 1 | **Publish tire brands article** — 25KB draft ready, highest SEO value | Prakāśaka | Capture buying-intent search traffic |
-| 2 | **Write Harley zero-duty India article** — trade deal is this fortnight's biggest premium story | Lekhaka | First-mover on import pricing disruption |
+| 2 | **Write Harley zero-duty India article** — trade deal + Hero partnership = biggest premium story | Lekhaka | First-mover on import pricing disruption |
 | 3 | **Fix video pipeline** — evaluate Synthesia/D-ID/Pictory, unblock 3 scripts | Citraka | Unblock entire video channel |
 
 ### 🟡 P1 — Growth (Wed–Thu)
 | # | Action | Agent | Impact |
 |---|---|---|---|
 | 4 | **Royal Enfield growth + Flying Flea C6 deep dive** — record stock, 2M capacity, EV confirmed | Lekhaka | Authority content on market leader |
-| 5 | **EV market shakeup article** — Legacy OEMs crush startups; Ola's collapse | Anveṣaka → Lekhaka | Trending analysis piece |
+| 5 | **EV market shakeup article** — Legacy OEMs crush startups; Ola's collapse (-69% YoY) | Anveṣaka → Lekhaka | Trending analysis piece |
 | 6 | **Process draft queue** — 9 articles stuck; triage 4 UUID drafts, rename with descriptive slugs | Vimarśaka | Clear bottleneck |
 | 7 | **Submit tymingchain.com to Google Search Console + add JSON-LD schema** | Rakṣaka | Enable SEO discovery |
 
 ### 🟢 P2 — Strategic (Fri–Sun)
 | # | Action | Impact |
 |---|---|---|
-| 8 | **Execute Reddit outreach** — 5 scouts, 70+ opportunities, 0 acted on | Community growth + backlinks |
+| 8 | **Execute Reddit outreach** — 5 scouts, 80+ opportunities, 0 acted on | Community growth + backlinks |
 | 9 | **Schedule social posts** — 14 packs unposted, set up Buffer/Later | Social reach activation |
 | 10 | **Helmet article** — research brief exists, no draft; generate and publish | New article for Week 10 |
+| 11 | **Redirect motaorradtheory.com → tymingchain.com** — old Wix site splitting authority | SEO consolidation |
 
 ### 📈 Week 9 KPI Targets
 
@@ -164,7 +172,7 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 | Distribution | 4/10 | tymingchain.com live, but social unposted |
 | Video | 1/10 | BLOCKED — HeyGen credits exhausted |
 | Community | 5/10 | 5 Reddit scouts, 0 outreach executed |
-| Competitor coverage | 3/10 | Missing 15+ trending topics |
+| Competitor coverage | 3/10 | Missing 18 trending topics |
 | Website/SEO | 6/10 | Site live, needs GSC + schema markup |
 
 ### **Overall: 5.0 / 10** ⚠️
@@ -180,5 +188,5 @@ Research (14) ──→ Drafts (9) ──→ Published (11) ──→ Social (14
 ---
 
 *Report by Gaṇaka (गणक) 🔢 | Analytics Reporter | Motorrad Theory Content Pipeline*
-*Data: GitHub API (Amaresh/motorrad-content), Tavily (Reuters, ET, MoneyControl, AutocarPro, Fortune India, Crisil, ICRA, PowerSports Business)*
+*Data: GitHub API (Amaresh/motorrad-content), Tavily (Reuters, ET, MoneyControl, AutocarPro, Fortune India, Crisil, Yahoo Finance, GearPatrol, NDTV Auto)*
 *Next report: Week 9 — 2026-02-23*
