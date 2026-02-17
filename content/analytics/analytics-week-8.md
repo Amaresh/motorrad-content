@@ -1,6 +1,6 @@
 # 📊 Gaṇaka (गणक) — Week 8 Analytics Report (FINAL CONSOLIDATED)
-> **Period:** 2026-02-10 → 2026-02-17 (ISO Week 8)
-> **Generated:** 2026-02-17T23:00Z | Update #24 (FINAL CONSOLIDATED)
+> **Period:** 2026-02-16 → 2026-02-22 (ISO Week 8)
+> **Generated:** 2026-02-17T23:02Z | Update #25 (FINAL CONSOLIDATED)
 > **Pipeline:** Motorrad Theory / tymingchain.com
 
 ---
@@ -25,7 +25,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 ```
 
 ### Bottleneck Analysis
-1. **Drafts → Published** (⚠️ PRIMARY): 9 drafts — tire brands published ✅ but 8 remain including `agno-mission-control-sdk-article.md` (25KB)
+1. **Drafts → Published** (⚠️ PRIMARY): 9 drafts sitting — tire brands published ✅ but 8 remain including `agno-mission-control-sdk-article.md` (25KB)
 2. **Videos** (🔴 CRITICAL): 3 scripts written, 0 produced — HeyGen integration blocked
 3. **Competitor coverage** (🔴 CRITICAL): 70+ competitor stories tracked, 0 covered
 4. **Reddit outreach** (⚠️): 80+ opportunities across 5 scout reports, 0 engaged
@@ -43,27 +43,28 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Agno Mission Control SDK | Published (25KB) | ⭐ MEDIUM | Tech crossover |
 | Superbike maintenance tips | Social only | ⭐ MEDIUM | Needs full article |
 
-### Trending Keywords (from competitor analysis — scan #24)
-- **"HR-3385 autocycle bill"** — VIRAL across 5+ CBS/Fox news affiliates this week
-- **"Honda Super Cub discontinued USA"** — Autopian exclusive, massive nostalgic engagement
+### Trending Keywords (from competitor analysis — scan #25)
+- **"HR-3385 autocycle bill"** — VIRAL across 5+ CBS/Fox news affiliates (Feb 16–17)
+- **"Honda Super Cub discontinued USA"** — Autopian exclusive, nostalgic engagement
 - **"Indian Motorcycle trike strategy"** — 159 comments on RevZilla (HIGHEST engagement W8)
 - **"Ducati Monster+"** — 82 comments on RevZilla first ride review
 - **"Ducati Formula 73"** — 28 comments, 873 numbered units
-- **"MotoGP 2026/2027 850cc rules"** — massive search spike
+- **"MotoGP 2026/2027 850cc rules"** — massive search spike, Marc Márquez Sepang test
 - **"Harley-Davidson 2025 sales decline"** — $29M loss, news cycle active
 - **"Harley 2026 Liberty Edition CVO"** — 250th US anniversary touring/trike debut
 - **"Ducati 100th anniversary 2026"** — year-long coverage opportunity
 - **"KTM 490 twin"** — replacing 390 single, huge enthusiast buzz (Visordown)
 - **"LiveWire S4 Honcho"** — EV motorcycle strategy shift
-- **"Intermot 2026 cancelled"** — postponed to Feb 2027, industry shock
+- **"Intermot 2026 cancelled"** — postponed to Feb 2027, industry shock (RideApart)
 - **"CFMoto electric sportbike"** — emerging details, new segment
 - **"Aprilia leg wings patent"** — aero innovation for streetbikes
 - **"Honda Rebel 300 E-Clutch"** — clutchless tech expanding to small bikes
 - **"Zero Motorcycles 2026 relaunch"** — strategic pivot, A1 scooter EU
 - **"Triumph Speed 400 service"** — 🔥 our own viral content (11.7K views)
-- **"Dainese Overyond XT GTX"** — innovative shorty ADV boots, new category (ADV Rider)
-- **"Scorpion EXO-R430"** — new helmet release at RevZilla, budget segment
-- **"RevZilla Presidents' Day sale"** — up to 50% off gear, seasonal traffic spike
+- **"Honda Nighthawk tariff parallel"** — RideApart feature, 1983 Reagan tariffs vs 2026
+- **"Dainese Overyond XT GTX"** — innovative shorty ADV boots (ADV Rider)
+- **"Scorpion EXO-R430"** — budget helmet at RevZilla, new release
+- **"RevZilla Presidents' Day sale"** — seasonal traffic spike, up to 50% off
 - **"Premium motorcycles India"** — ET coverage, RE/TVS/Bajaj consumer shift
 - **"Top 5 adventure bikes 2026"** — Visordown feature, buyer guide gap for us
 
@@ -112,6 +113,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Premium motorcycles gaining speed in India | Economic Times | Consumer shift |
 | Top 5 adventure bikes 2026 feature | Visordown | Buyer guide gap |
 | Triumph Trident 800 arrives Malaysia RM56,900 | BikesRepublic | Asia expansion |
+| Honda Nighthawk restoration + 1983 tariff parallel | RideApart | Historical angle |
 
 #### 📌 TRACKED (lower priority)
 - Triumph Tiger Sport 660, Trident 660, Bonneville T120 2026
@@ -128,8 +130,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 - Benda LFC700, LAND Moto District ADV, Indian Chief Vintage 2026
 - UK custom bikes +79.2%, Latin America 5.86M (+20.6%)
 - RideApart acquired by Motorsport Network
-- Honda Nighthawk 1983 tariff parallel (RideApart)
-- Fuel for Thought motorsports organizer series yr 4 (High Gear Success)
+- Fuel for Thought motorsports organizer series yr 4
 - KTM 2026-27 Duke lineup, RE 6 new twin-cylinder bikes 2026
 
 ### Market Data Snapshot
@@ -185,7 +186,7 @@ This is a **20-80x increase** over typical posts. **Action:** Create more Speed 
 | Metric | Value |
 |--------|-------|
 | **Total commits (today alone)** | 30+ (analytics, reddit scouts, social) |
-| **Total commits (week)** | 45+ |
+| **Total commits (week)** | 50+ |
 | **New files this week** | Reddit scouts (Feb 9–17), tire brands published, analytics |
 | **Active agents** | Gaṇaka (analytics), Cāraka (reddit), content pipeline |
 | **Website** | tymingchain.com LIVE — 11 pages |
@@ -238,4 +239,4 @@ This is a **20-80x increase** over typical posts. **Action:** Create more Speed 
 
 *Report generated by Gaṇaka (गणक) — Analytics Reporter*
 *Motorrad Theory Content Pipeline — tymingchain.com*
-*24 scans consolidated across Week 8*
+*25 scans consolidated across Week 8*
