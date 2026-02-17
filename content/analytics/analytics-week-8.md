@@ -1,6 +1,6 @@
 # 📊 Gaṇaka (गणक) — Week 8 Analytics Report (FINAL CONSOLIDATED)
 > **Period:** 2026-02-16 → 2026-02-22 (ISO Week 8)
-> **Generated:** 2026-02-17T23:02Z | Update #25 (FINAL CONSOLIDATED)
+> **Generated:** 2026-02-17T23:15Z | Update #26 (FINAL CONSOLIDATED)
 > **Pipeline:** Motorrad Theory / tymingchain.com
 
 ---
@@ -43,12 +43,12 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Agno Mission Control SDK | Published (25KB) | ⭐ MEDIUM | Tech crossover |
 | Superbike maintenance tips | Social only | ⭐ MEDIUM | Needs full article |
 
-### Trending Keywords (from competitor analysis — scan #25)
+### Trending Keywords (from competitor analysis — scan #26)
 - **"HR-3385 autocycle bill"** — VIRAL across 5+ CBS/Fox news affiliates (Feb 16–17)
 - **"Honda Super Cub discontinued USA"** — Autopian exclusive, nostalgic engagement
 - **"Indian Motorcycle trike strategy"** — 159 comments on RevZilla (HIGHEST engagement W8)
 - **"Ducati Monster+"** — 82 comments on RevZilla first ride review
-- **"Ducati Formula 73"** — 28 comments, 873 numbered units
+- **"Ducati Formula 73"** — 28 comments, 873 numbered units, Ducati.com feature
 - **"MotoGP 2026/2027 850cc rules"** — massive search spike, Marc Márquez Sepang test
 - **"Harley-Davidson 2025 sales decline"** — $29M loss, news cycle active
 - **"Harley 2026 Liberty Edition CVO"** — 250th US anniversary touring/trike debut
@@ -61,12 +61,13 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 - **"Honda Rebel 300 E-Clutch"** — clutchless tech expanding to small bikes
 - **"Zero Motorcycles 2026 relaunch"** — strategic pivot, A1 scooter EU
 - **"Triumph Speed 400 service"** — 🔥 our own viral content (11.7K views)
-- **"Honda Nighthawk tariff parallel"** — RideApart feature, 1983 Reagan tariffs vs 2026
+- **"5 adventure bikes 2026"** — Visordown feature: DesertX V2, BSA Thunderbolt 350, Ténéré 700S
+- **"Indian Motorcycle CEO Mike Kennedy"** — CycleWorld interview, brand direction
 - **"Dainese Overyond XT GTX"** — innovative shorty ADV boots (ADV Rider)
 - **"Scorpion EXO-R430"** — budget helmet at RevZilla, new release
 - **"RevZilla Presidents' Day sale"** — seasonal traffic spike, up to 50% off
 - **"Premium motorcycles India"** — ET coverage, RE/TVS/Bajaj consumer shift
-- **"Top 5 adventure bikes 2026"** — Visordown feature, buyer guide gap for us
+- **"UK Road Safety Strategy 2026"** — first government strategy in a decade
 
 ---
 
@@ -92,11 +93,13 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Story | Source | Engagement |
 |-------|--------|------------|
 | Ducati Monster+ first ride review | RevZilla | 82 comments |
-| Ducati Formula 73 first look (873 units) | RevZilla/CycleWorld | 28 comments |
+| Ducati Formula 73 first look (873 units) | RevZilla/CycleWorld/Ducati.com | 28 comments |
 | MV Agusta Rush Titanio first look | CycleWorld | Limited exotic |
 | KTM 490 twin replacing 390 single | Visordown | High buzz |
 | Norton Manx R — premium superbike AIMExpo reveal | MPN | Brand resurgence |
 | Honda 8 models returning 2026-27 (AIMExpo confirmed) | MPN, BikesRepublic | Major lineup |
+| 5 adventure bikes to watch 2026 (DesertX V2, BSA, Triumph) | Visordown | Buyer guide gap |
+| Indian CEO Mike Kennedy interview — brand direction | CycleWorld | Leadership transition |
 | CFMoto electric sportbike details emerge | CycleWorld | New segment |
 | Aprilia leg wings patent for streetbikes | CycleWorld | Aero innovation |
 | Yamaha variable-geometry swingarm patent | CycleWorld | Chassis tech |
@@ -111,9 +114,10 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | BMW R 1300 RT boxer tourer announced | Various | Touring segment |
 | Dainese Overyond XT GTX shorty ADV boots | ADV Rider | Innovative design |
 | Premium motorcycles gaining speed in India | Economic Times | Consumer shift |
-| Top 5 adventure bikes 2026 feature | Visordown | Buyer guide gap |
 | Triumph Trident 800 arrives Malaysia RM56,900 | BikesRepublic | Asia expansion |
 | Honda Nighthawk restoration + 1983 tariff parallel | RideApart | Historical angle |
+| UK Road Safety Strategy — first in decade | IAM RoadSmart, MCN | Policy, safety content |
+| Scottish motorcycle safety roadshow 2026 | MCN | Community engagement |
 
 #### 📌 TRACKED (lower priority)
 - Triumph Tiger Sport 660, Trident 660, Bonneville T120 2026
@@ -130,8 +134,9 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 - Benda LFC700, LAND Moto District ADV, Indian Chief Vintage 2026
 - UK custom bikes +79.2%, Latin America 5.86M (+20.6%)
 - RideApart acquired by Motorsport Network
-- Fuel for Thought motorsports organizer series yr 4
+- Fuel for Thought motorsports organizer series yr 4 (PSB)
 - KTM 2026-27 Duke lineup, RE 6 new twin-cylinder bikes 2026
+- Port Dover Friday 13th rally — cultural motorcycle events
 
 ### Market Data Snapshot
 | Region | Metric |
@@ -209,17 +214,19 @@ This is a **20-80x increase** over typical posts. **Action:** Create more Speed 
 9. **Write Intermot 2026 cancellation article** — Postponed to Feb 2027, implications
 10. **Write Ducati 100th anniversary overview** — Year-long evergreen content
 11. **Execute Reddit outreach** — 80+ opportunities, 0 engaged. Start with CRM/shop threads
+12. **Write 5 ADV bikes 2026 roundup** — DesertX V2, BSA Thunderbolt 350, Ténéré 700S (Visordown gap)
 
 ### 📌 NICE TO HAVE
-12. Create "News" section on tymingchain.com for rapid competitor coverage
-13. Publish remaining 8 drafts
-14. Norton Manx R + KTM 490 twin + MV Agusta Rush Titanio articles
-15. Gear roundup: Dainese Overyond XT GTX, Scorpion EXO-R430, Arai XD-5, Leatt 2026
-16. Cross-link motaorradtheory.com ↔ tymingchain.com
-17. EPA repeal explainer — regulatory angle for V-twin riders
-18. CFMoto electric sportbike + Aprilia leg wings + Yamaha swingarm tech roundup
-19. Indian Motorcycle 125th anniversary + CEO Mike Kennedy profile
-20. RevZilla ADV Fest Jul 16-18 preview — test ride coverage opportunity
+13. Create "News" section on tymingchain.com for rapid competitor coverage
+14. Publish remaining 8 drafts
+15. Norton Manx R + KTM 490 twin + MV Agusta Rush Titanio articles
+16. Gear roundup: Dainese Overyond XT GTX, Scorpion EXO-R430, Arai XD-5, Leatt 2026
+17. Cross-link motaorradtheory.com ↔ tymingchain.com
+18. EPA repeal explainer — regulatory angle for V-twin riders
+19. CFMoto electric sportbike + Aprilia leg wings + Yamaha swingarm tech roundup
+20. Indian Motorcycle 125th anniversary + CEO Mike Kennedy profile
+21. RevZilla ADV Fest Jul 16-18 preview — test ride coverage opportunity
+22. UK Road Safety Strategy explainer — first in a decade, rider implications
 
 ---
 
@@ -239,4 +246,4 @@ This is a **20-80x increase** over typical posts. **Action:** Create more Speed 
 
 *Report generated by Gaṇaka (गणक) — Analytics Reporter*
 *Motorrad Theory Content Pipeline — tymingchain.com*
-*25 scans consolidated across Week 8*
+*26 scans consolidated across Week 8*
