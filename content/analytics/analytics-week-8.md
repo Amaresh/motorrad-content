@@ -1,6 +1,6 @@
 # 📊 Gaṇaka (गणक) — Week 8 Analytics Report (FINAL CONSOLIDATED)
 > **Period:** 2026-02-10 → 2026-02-17 (ISO Week 8)
-> **Generated:** 2026-02-17T23:32Z | Update #29 (FINAL CONSOLIDATED)
+> **Generated:** 2026-02-17T23:45Z | Update #30 (FINAL CONSOLIDATED)
 > **Pipeline:** Motorrad Theory / tymingchain.com
 
 ---
@@ -43,15 +43,16 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Agno Mission Control SDK | Published (25KB) | ⭐ MEDIUM | Tech crossover |
 | Superbike maintenance tips | Social only | ⭐ MEDIUM | Needs full article |
 
-### Trending Keywords (from competitor analysis — scan #29)
-- **"HR-3385 autocycle bill"** — VIRAL across 5+ CBS/Fox news affiliates, 86 comments RevZilla
-- **"KTM struggles Bajaj ownership"** — RevZilla NEW, 46% revenue plunge (MCN)
+### Trending Keywords (from competitor analysis — scan #30)
+- **"HR-3385 autocycle bill"** — VIRAL across 5+ CBS/Fox/ABC news affiliates, 86+ comments RevZilla
+- **"KTM struggles Bajaj ownership"** — RevZilla, 46% revenue plunge (MCN)
 - **"Honda Super Cub discontinued USA"** — Autopian exclusive, nostalgic engagement
 - **"Indian Motorcycle trike strategy"** — 159 comments on RevZilla (HIGHEST engagement W8)
 - **"Ducati Monster+"** — 82 comments on RevZilla first ride review
 - **"Ducati Formula 73"** — 28 comments, 873 numbered units, £15,095
 - **"MotoGP 2026/2027 850cc rules"** — massive search spike; Motorsport Magazine "2001 all over again"
 - **"Harley-Davidson 2025 sales decline"** — $29M loss, job cuts confirmed
+- **"Harley 2026 Street Glide 3 Limited"** — 🆕 UltimateMoto first look (3-wheeler touring)
 - **"Harley 2026 Liberty Edition CVO"** — 250th US anniversary touring/trike debut
 - **"Ducati 100th anniversary 2026"** — year-long coverage opportunity
 - **"KTM 490 twin"** — replacing 390 single, huge enthusiast buzz (Visordown)
@@ -60,16 +61,20 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 - **"QJMotor SRK 921"** — 4-cylinder naked £8699 arriving UK (MCN)
 - **"RE Continental GT 750"** — spy shots, capacity increase from 650 platform (MCN)
 - **"Zero LS1 scooter"** — £4500 urban EV in UK dealerships (MCN)
+- **"Zero S long-term test"** — 🆕 UltimateMoto 1-year EV review
 - **"Sena Specter helmet"** — AI-assisted comms + built-in lighting (Visordown)
 - **"Triumph Speed 400 service"** — 🔥 our own viral content (11.7K views)
+- **"Indian Chief Vintage 2026"** — 🆕 125th anniversary review (UltimateMoto)
+- **"Michelin Anakee Adventure 2"** — 🆕 80/20 tire first look (UltimateMoto)
+- **"Suzuki DR-Z4SM+ 2026"** — 🆕 sophomore supermoto upgrade
 - **"5 adventure bikes 2026"** — Visordown: DesertX V2, BSA Thunderbolt 350, Ténéré 700S
-- **"Total Motorcycle Top 10 Best 2026"** — 🆕 Published Feb 16
-- **"Vintage Japanese motorcycles collectors 2026"** — 🆕 CB750, Z1, RD series rising values
-- **"MotoGP 2026 preview = 2001 parallel"** — 🆕 Mat Oxley Motorsport Magazine analysis
-- **"Wunderlich Edition X R1300 GS"** — 🆕 aftermarket kit feature (Visordown)
-- **"Ogri creator Paul Sample dies at 78"** — 🆕 MCN tribute to biking culture icon
-- **"KTM debt slash 46% revenue plunge"** — 🆕 MCN business analysis
-- **"UK motorcycle industry Westminster biking"** — 🆕 MCN policy lobbying
+- **"Total Motorcycle Top 10 Best 2026"** — Published Feb 16
+- **"Vintage Japanese motorcycles collectors 2026"** — CB750, Z1, RD series rising values
+- **"MotoGP 2026 preview = 2001 parallel"** — Mat Oxley Motorsport Magazine analysis
+- **"Wunderlich Edition X R1300 GS"** — aftermarket kit feature (Visordown)
+- **"Ogri creator Paul Sample dies at 78"** — MCN tribute to biking culture icon
+- **"KTM debt slash 46% revenue plunge"** — MCN business analysis
+- **"UK motorcycle industry Westminster biking"** — MCN policy lobbying
 
 ---
 
@@ -84,13 +89,15 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | MotoGP 2027 850cc revolution (80yr rule change) | Motorsport Mag, CycleWorld | Huge search demand |
 | Honda Super Cub C125 quietly pulled from US market | The Autopian | Nostalgic, shareable |
 | Indian Motorcycle trike strategy (159 comments) | RevZilla | Most-discussed W8 article |
-| HR-3385 federal autocycle bill — MIC opposes | CBS12, OKC Fox, ABC45 | VIRAL regulatory story |
+| HR-3385 federal autocycle bill — MIC opposes | CBS12, ABC45, KATV | VIRAL regulatory story |
 | Intermot 2026 cancelled → Feb 2027 | RideApart | Industry calendar disruption |
 | KTM struggles under Bajaj — 46% revenue plunge | RevZilla, MCN | Industry restructuring |
 | Ducati 100th anniversary year | Visordown, MCN | Year-long opportunity |
 | LiveWire S4 Honcho — make-or-break for EV motos | Electrek | EV future defining |
 | QJMotor SRK 921 — 4-cyl naked £8699 | MCN | Budget performance |
 | RE Continental GT 750 spy shots | MCN | Platform evolution |
+| Harley Street Glide 3 Limited — 3-wheeler touring | UltimateMoto | 🆕 New format vehicle |
+| Indian Chief Vintage 2026 — 125th anniversary | UltimateMoto | 🆕 Heritage moment |
 
 #### ⚠️ MEDIUM PRIORITY
 | Story | Source | Engagement |
@@ -103,17 +110,20 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Honda 8 models returning 2026-27 | MPN, Road Racing World | Major lineup |
 | 5 ADV bikes 2026 roundup | Visordown | Buyer guide gap |
 | Indian CEO Mike Kennedy interview | CycleWorld | Leadership transition |
-| Total Motorcycle Top 10 Best 2026 | TotalMotorcycle | 🆕 Listicle opportunity |
-| Vintage Japanese motorcycles collectors | WC Shipping | 🆕 CB750/Z1 market analysis |
-| Wunderlich Edition X R1300 GS | Visordown | 🆕 Aftermarket kit |
-| Multistrada V4 Factory Made customisation | Visordown | 🆕 Industry first |
+| Total Motorcycle Top 10 Best 2026 | TotalMotorcycle | Listicle opportunity |
+| Vintage Japanese motorcycles collectors | WC Shipping | CB750/Z1 market analysis |
+| Michelin Anakee Adventure 2 tires | UltimateMoto | 🆕 Tire tech |
+| Zero S long-term test (1 year EV review) | UltimateMoto | 🆕 EV real-world data |
+| Suzuki DR-Z4SM+ 2026 sophomore upgrade | UltimateMoto | 🆕 Supermoto |
+| Wunderlich Edition X R1300 GS | Visordown | Aftermarket kit |
+| Multistrada V4 Factory Made customisation | Visordown | Industry first |
 | Sena Specter smart modular helmet | Visordown | Tech gear |
 | Zero LS1 urban scooter UK £4500 | MCN | EV commuter |
 | Harley 2026 Liberty Edition CVO + Touring | MPN | 250th anniversary |
 | George Barber Jr. dies at 85 / Ogri creator dies at 78 | RevZilla, MCN | Cultural significance |
 
 #### 📌 TRACKED (lower priority)
-- Triumph Tiger Sport 660, Trident 660/800, Bonneville T120 2026
+- Triumph Tiger Sport 660, Trident 660/800, Bonneville T120/Speedmaster 2026
 - Harley CVO Street Glide + Limited + Trike (105 comments RevZilla)
 - CES 2026 solid-state batteries + Verge EVs (56 comments)
 - CFMOTO Papio Racer, AJS JS125-X, Benelli middleweights
@@ -128,6 +138,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 - Ride 6 game review (Baggers + dirt), BMW "World of BMW" UK
 - UK motorcycle industry urges Westminster to back biking (MCN)
 - Scottish motorcycle safety roadshow, Port Dover Friday 13th rally
+- Kawasaki KX112 + KX85 L first looks (UltimateMoto)
 
 ### Market Data Snapshot
 | Region | Metric |
@@ -190,10 +201,10 @@ This is a **20-80x increase** over typical posts. **Action:** Create more Speed 
 ## 🎯 Week 9 Recommendations
 
 ### 🔴 MUST DO (Critical Path)
-1. **Write Harley-Davidson crisis article** — $29M loss, job cuts, Kawasaki overtaking US, LiveWire $75M loss, aftermarket pivot, Liberty Edition CVO
+1. **Write Harley-Davidson crisis article** — $29M loss, job cuts, Kawasaki overtaking US, LiveWire $75M loss, aftermarket pivot, Liberty Edition CVO, Street Glide 3 Limited
 2. **Write MotoGP 2027 850cc revolution article** — 80-year rule change, Marc Márquez, "2001 all over again" (Mat Oxley)
 3. **Create Speed 400 content series** — 11.7K views proves massive audience demand
-4. **Write HR-3385 autocycle bill explainer** — Viral across 5+ news affiliates, 86 comments RevZilla
+4. **Write HR-3385 autocycle bill explainer** — Viral across 5+ news affiliates, 86+ comments RevZilla, coverage expanding (ABC45, KATV)
 
 ### ⚠️ SHOULD DO (High Impact)
 5. **Write KTM/Bajaj restructuring analysis** — 46% revenue plunge, debt slash, fresh story
@@ -205,16 +216,19 @@ This is a **20-80x increase** over typical posts. **Action:** Create more Speed 
 11. **Write Ducati 100th anniversary overview** — Year-long evergreen content
 12. **Execute Reddit outreach** — 80+ opportunities, 0 engaged
 13. **Write QJMotor SRK 921 + RE Continental GT 750 spy shots** — fresh breaking news
+14. **Write Indian Chief Vintage 125th anniversary review** — 🆕 UltimateMoto coverage
 
 ### 📌 NICE TO HAVE
-14. Create "News" section on tymingchain.com for rapid competitor coverage
-15. Publish remaining 8 drafts
-16. Norton Manx R + KTM 490 twin articles
-17. Gear roundup: Sena Specter, Dainese Overyond XT GTX, Scorpion EXO-R430
-18. Cross-link motaorradtheory.com ↔ tymingchain.com
-19. EPA repeal explainer for V-twin riders
-20. Vintage Japanese motorcycle collector market analysis (CB750, Z1, RD)
-21. Total Motorcycle Top 10 Best 2026 — our own list version
+15. Create "News" section on tymingchain.com for rapid competitor coverage
+16. Publish remaining 8 drafts
+17. Norton Manx R + KTM 490 twin articles
+18. Gear roundup: Sena Specter, Michelin Anakee Adventure 2, Dainese Overyond XT GTX
+19. Cross-link motaorradtheory.com ↔ tymingchain.com
+20. EPA repeal explainer for V-twin riders
+21. Vintage Japanese motorcycle collector market analysis (CB750, Z1, RD)
+22. Total Motorcycle Top 10 Best 2026 — our own list version
+23. Zero S long-term EV ownership analysis
+24. Suzuki DR-Z4SM+ supermoto review
 
 ---
 
@@ -234,4 +248,4 @@ This is a **20-80x increase** over typical posts. **Action:** Create more Speed 
 
 *Report generated by Gaṇaka (गणक) — Analytics Reporter*
 *Motorrad Theory Content Pipeline — tymingchain.com*
-*29 scans consolidated across Week 8*
+*30 scans consolidated across Week 8*
