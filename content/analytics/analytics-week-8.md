@@ -1,6 +1,6 @@
-# 📊 Gaṇaka (गणक) — Week 8 Analytics Report
+# 📊 Gaṇaka (गणक) — Week 8 Analytics Report (FINAL)
 > **Period:** 2026-02-10 → 2026-02-17 (ISO Week 8)
-> **Generated:** 2026-02-17T22:30Z | Update #17
+> **Generated:** 2026-02-17T22:30Z | Update #18 (ENRICHED FINAL)
 > **Pipeline:** Motorrad Theory / tymingchain.com
 
 ---
@@ -24,14 +24,11 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
                                 Reddit Scout (5) → Outreach 80+ opportunities
 ```
 
-### Key Change This Scan
-✅ **Tire brands article is now PUBLISHED** — `best-motorcycle-tire-brands-2026-article.md`, `.html`, and `-splash.html` all present in `content/published/`. This was the #1 recommendation from prior scans.
-
 ### Bottleneck Analysis
-1. **Drafts → Published** (⚠️ PRIMARY): 9 drafts still sitting — tire brands moved but 8 remain including `agno-mission-control-sdk-article.md` (25KB)
+1. **Drafts → Published** (⚠️ PRIMARY): 9 drafts sitting — tire brands published ✅ but 8 remain including `agno-mission-control-sdk-article.md` (25KB)
 2. **Videos** (🔴 CRITICAL): 3 scripts written, 0 produced — HeyGen integration blocked
 3. **Competitor coverage** (🔴 CRITICAL): 55+ competitor stories tracked, 0 covered
-4. **Reddit outreach** (⚠️): 80+ opportunities identified across 5 scout reports, 0 engaged
+4. **Reddit outreach** (⚠️): 80+ opportunities across 5 scout reports, 0 engaged
 
 ---
 
@@ -54,6 +51,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 - "motorcycle tariffs 2026" — Yamaha profit impact
 - "Shark Aeron GP FIM #2" — new MotoGP helmet standard
 - "EPA Endangerment Finding repeal" — V-twin/emissions deregulation
+- "Triumph Speed 400 service" — 🔥 our own viral content (11.7K views)
 
 ---
 
@@ -63,13 +61,13 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 
 #### 🔴 HIGH PRIORITY (write this week)
 | Story | Source | Why It Matters |
-|-------|--------|---------------|
+|-------|--------|----------------|
 | Harley-Davidson $29M FY2025 loss, -16% shipments, Kawasaki now #1 US | RevZilla, PSB | Massive industry shift |
 | MotoGP 2027 850cc revolution (80yr rule change) | BRM, CycleWorld | Huge search demand |
 | LiveWire S4 Honcho — smaller, cheaper EV strategy | Electrek | EV motorcycle future |
 | Royal Enfield 6 new twin-cylinder bikes 2026 | CarToq | Global launch pipeline |
 | U.S. motorcycle sales dropped 7.6% in 2025 | RevZilla | Industry health check |
-| Federal HR-3385 motorcycle redefinition bill | Baltimore Sun | Regulatory disruption |
+| Federal HR-3385 motorcycle redefinition bill | OKC Fox | Regulatory disruption |
 | EPA Endangerment Finding repeal — V-twins cleared | Bikernet | Policy impact on riders |
 
 #### ⚠️ MEDIUM PRIORITY
@@ -82,19 +80,22 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Yamaha tariff profit decline despite stable moto sales | PSB |
 | MV Agusta Rush Titanio limited edition | CycleWorld |
 | Ducati Formula 73 (873 numbered units) | CycleWorld |
-| Honda 8 models returning 2026-27 | PSB |
-| Indian Motorcycle new ownership under Carolwood | RevZilla |
+| Honda 8 models returning 2026-27 (Africa Twin, Trail125, Dax, Monkey, PCX, ADV160, Montesa) | RoadRacingWorld |
+| Indian Motorcycle new ownership under Carolwood / Mike Kennedy | RevZilla |
 | Moto Morini Kanguro dual-sport | UMC |
+| Triumph Street Triple 765 RX (RM81,100 Malaysia) | BikesRepublic |
+| CFMOTO Papio Racer (RM8,888 Malaysia) | BikesRepublic |
+| RideApart acquired by Motorsport Network / Motor1.com | CBInsights |
 
 #### 📌 TRACKED (lower priority)
 - Triumph Tiger Sport 660, Trident 660, Bonneville T120 2026
-- Harley CVO Street Glide + Limited + Trike 2026
+- Harley CVO Street Glide + Limited + Trike 2026 (105 comments RevZilla)
+- CES 2026 solid-state batteries + Verge EVs (56 comments)
 - Kawasaki KX85/KX112 youth models 2026
 - Ducati Factory Made customization program
 - Zero Motorcycles record global growth
-- Solid-state batteries in Verge EVs (CES 2026)
 - Premium motorcycles gaining speed in India (ET Prime)
-- UK motorcycle market +16.1% YoY Jan, EVs -27.9%
+- UK motorcycle market +16.1% YoY Jan, EVs -27.9% (124 units)
 - Latin America 5.86M record (+20.6%)
 - AJS JS125-X naked (£3149), Benelli middleweights
 - Schuberth S3 Carbon + C5 ANC helmets
@@ -102,6 +103,9 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 - Beta AMA National Dual Sport 18-event schedule
 - MotoAmerica Daytona 139 riders, 9 races Mar 10-12
 - RevZilla ADV Fest July 2026
+- WMOTO Island 150 (RM6,688) + Hawk 200i (RM7,888)
+- Triumph Scrambler 400 XC (RM34,200 Malaysia)
+- Benda LFC700 2026, Norton Manx R, Indian Chief Vintage 2026
 - Custom bike UK sales +79.2% (258 units via Keeway Superlight 125)
 
 ### Market Data Snapshot
@@ -122,16 +126,23 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 
 ---
 
-## 🌐 Brand Mentions — "Motorrad Theory" / "tymingchain"
+## 🌐 Brand Mentions — "Motorrad Theory"
 
-| Platform | Mention | Notes |
-|----------|---------|-------|
-| LinkedIn | "How Motorcycle Timing Chain Works" article | Brand-adjacent content |
-| Reddit r/Motorrad | Timing chain discussion thread | Community engagement opportunity |
-| TikTok | @coltgear timing chain educational video | Competitor in same keyword space |
-| YouTube | "What is a Timing Chain" by Vikas Rachamalla | Competitor video content |
+| Platform | Content | Engagement | Notes |
+|----------|---------|------------|-------|
+| **Instagram** | @motorradtheory reels: Speed 400, R3, Z900, clutch explainer, Dominar | 1.3K likes (Speed 400) | Active, growing |
+| **Facebook** | 🔥 **Triumph Speed 400 service reel** | **11.7K views** | VIRAL BREAKOUT — 20-80x normal |
+| **Facebook** | Yamaha R3 service reel | 654 views | Above average |
+| **Facebook** | Kawasaki Z900 SC Project exhaust mod | 113 views | Typical |
+| **Facebook** | Shanthinagar expansion announcement | Active | New unit opening |
+| **YouTube** | "Between Oil and Order" podcast S01E02 | 140 views | Origin story content |
+| **LinkedIn** | Magesh Balaji G — MT launch post | 52 reactions | Founding team visibility |
+| **Website** | motaorradtheory.com (Wix) | Live but sparse | Needs SEO + tymingchain.com sync |
 
-**Assessment:** No direct mentions of "Motorrad Theory" or "tymingchain.com" found in external media. Brand awareness is pre-launch stage. The keyword space "timing chain" has competitors — need to differentiate via depth + engineering authority.
+### 🔥 BREAKOUT: Triumph Speed 400 reel = **11.7K views**
+This is a **20-80x increase** over typical 50-184 view posts. The Speed 400 audience is highly engaged. **Action:** Create more Speed 400 content immediately — service guide, owner's tips, comparison article.
+
+**Assessment:** Brand is growing via social service content. No external media mentions yet (pre-launch stage). Speed 400 viral moment proves product-specific content resonates. Cross-link motaorradtheory.com ↔ tymingchain.com for SEO synergy.
 
 ---
 
@@ -150,21 +161,23 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 ## 🎯 Week 9 Recommendations
 
 ### 🔴 MUST DO (Critical Path)
-1. **Write Harley-Davidson crisis article** — HD $29M loss, Kawasaki overtaking in US sales, LiveWire $75M loss, aftermarket pivot. Massive search demand, time-sensitive
-2. **Write MotoGP 2026/2027 850cc revolution article** — 80-year rule change, Marc Márquez comeback, Toprak crossover, Shark Aeron GP FIM#2. Evergreen + news combo
-3. **Promote tire brands article** — Now published. Push to social channels, Reddit outreach, SEO backlink building
+1. **Write Harley-Davidson crisis article** — HD $29M loss, Kawasaki overtaking US, LiveWire $75M loss, aftermarket pivot. Time-sensitive
+2. **Write MotoGP 2027 850cc revolution article** — 80-year rule change, Marc Márquez, Toprak crossover, Shark Aeron GP FIM#2. Evergreen + news
+3. **Promote tire brands article** — Now published. Push to social channels, Reddit outreach, SEO backlinks
 
 ### ⚠️ SHOULD DO (High Impact)
-4. **Unblock video production** — HeyGen blocked. Evaluate Synthesia, D-ID, or Runway as alternatives. 3 scripts ready to produce
-5. **Write Royal Enfield GT 750 / new twin-cylinder article** — 6 new models, huge India + global interest
-6. **Execute Reddit outreach** — 80+ opportunities identified across 5 scout reports, 0 engaged. Start with high-priority CRM/shop threads
-7. **Federal HR-3385 + EPA repeal explainer** — regulatory angle competitors are covering heavily
+4. **Create more Triumph Speed 400 content** — 11.7K views proves audience demand. Service guide + comparison article
+5. **Unblock video production** — HeyGen blocked. Evaluate Synthesia, D-ID, or Runway. 3 scripts ready
+6. **Write Royal Enfield GT 750 / twin-cylinder article** — 6 new models, India + global
+7. **Execute Reddit outreach** — 80+ opportunities, 0 engaged. Start with CRM/shop threads
+8. **Federal HR-3385 + EPA repeal explainer** — regulatory angle competitors covering heavily
 
 ### 📌 NICE TO HAVE
-8. Create dedicated "News" section on tymingchain.com for rapid competitor story coverage
-9. Publish remaining 8 drafts (Agno SDK next — 25KB ready)
-10. Superbike maintenance tips → full article (currently social-only)
-11. Write gear roundup: Leatt 2026 range, Thor mid-season, Alpinestars Flyte
+9. Create "News" section on tymingchain.com for rapid competitor coverage
+10. Publish remaining 8 drafts (Agno SDK next — 25KB ready)
+11. Superbike maintenance → full article (currently social-only)
+12. Gear roundup: Leatt 2026, Thor mid-season, Alpinestars Flyte
+13. Cross-link motaorradtheory.com ↔ tymingchain.com
 
 ---
 
@@ -173,10 +186,11 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Dimension | Score | Notes |
 |-----------|-------|-------|
 | Content Creation | 8/10 | 14 research + 9 drafts + strong pipeline |
-| Publishing | 5/10 | 11 articles live, tire brands published ✅, but 8 drafts remain |
-| Distribution | 3/10 | Social created but not posted, video blocked |
+| Publishing | 5/10 | 11 articles live, tire brands ✅, 8 drafts remain |
+| Distribution | 3/10 | Social created not posted, video blocked |
 | Competitor Coverage | 1/10 | 0/55+ stories covered |
 | Reddit/Community | 4/10 | Reports generated, no outreach executed |
+| Brand Awareness | 4/10 | Speed 400 breakout 🔥 but no external media mentions |
 | **Overall** | **4.2/10** | ⚠️ Creation strong, execution is the bottleneck |
 
 ---
