@@ -1,6 +1,6 @@
 # 📊 Gaṇaka (गणक) — Week 8 Analytics Report (FINAL CONSOLIDATED)
 > **Period:** 2026-02-10 → 2026-02-17 (ISO Week 8)
-> **Generated:** 2026-02-17T22:33Z | Update #19 (FINAL CONSOLIDATED)
+> **Generated:** 2026-02-17T22:45Z | Update #20 (FINAL CONSOLIDATED)
 > **Pipeline:** Motorrad Theory / tymingchain.com
 
 ---
@@ -54,6 +54,9 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 - "Shark Aeron GP FIM #2" — new MotoGP helmet standard
 - "EPA Endangerment Finding repeal" — V-twin/emissions deregulation
 - "Triumph Speed 400 service" — 🔥 our own viral content (11.7K views)
+- "Zero Motorcycles 2026 relaunch" — strategic pivot, A1 scooter EU
+- "Federal HR-3385 autocycle bill" — three-wheeler regulation fight
+- "Triumph Thruxton 400" — TotalMotorcycle Best New Rider 2026
 
 ---
 
@@ -71,8 +74,9 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | LiveWire S4 Honcho — smaller, cheaper EV strategy | Electrek | EV motorcycle future |
 | Royal Enfield 6 new twin-cylinder bikes 2026 | CarToq | Global launch pipeline |
 | U.S. motorcycle sales dropped 7.6% in 2025 | RevZilla | Industry health check |
-| Federal HR-3385 motorcycle redefinition bill | WCHS TV | Regulatory disruption |
+| Federal HR-3385 motorcycle redefinition bill | WCHS TV, OKC Fox | Regulatory disruption — active in Congress |
 | EPA Endangerment Finding repeal — V-twins cleared | Bikernet | Policy impact on riders |
+| Zero Motorcycles 2026 strategic relaunch — larger batteries, A1 scooter | 1000PS | EV strategic pivot |
 
 #### ⚠️ MEDIUM PRIORITY
 | Story | Source |
@@ -88,18 +92,21 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Leatt 2026 full range (helmets, jackets, boots, gloves) | Instagram |
 | Alpinestars Supertech R10 Flyte limited edition | Alpinestars |
 | Ducati Formula 73 (873 numbered units) | CycleWorld |
+| Ducati Desmo450 MX Factory — competition Desmo | Ducati |
 | Honda 8 models returning 2026-27 (Africa Twin, Trail125, Dax, etc.) | MPN |
 | Indian Motorcycle new ownership — Carolwood / Mike Kennedy | TotalMotorcycle |
 | Arai XD-5 adventure helmet review | Motorcycle.com |
+| MV Agusta Rush Titanio limited edition | CycleWorld |
 | Premium motorcycles gaining speed in India (ET Prime) | ET |
 | 'Fuel for Thought' motorsports organizer support series yr 4 | PSB |
+| Triumph Thruxton 400 — Best New Rider Release 2026 (TotalMotorcycle) | TotalMoto |
+| Triumph Speed Twin 1200 RS — Ltd 800 units, "Most Beautiful 2026" | TotalMoto |
 
 #### 📌 TRACKED (lower priority)
 - Triumph Tiger Sport 660, Trident 660, Bonneville T120 2026
 - Harley CVO Street Glide + Limited + Trike 2026 (105 comments RevZilla)
 - CES 2026 solid-state batteries + Verge EVs (56 comments)
 - Ducati Factory Made customization program (Multistrada V4 first)
-- MV Agusta Rush Titanio limited edition
 - Yamaha tariff profit decline despite stable moto sales
 - CFMOTO Papio Racer (RM8,888 Malaysia)
 - Triumph Scrambler 400 XC (RM34,200 Malaysia)
@@ -109,22 +116,24 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 - Alpinestars Wolf Dust + Tech 7 Enduro Drystar
 - Beta AMA National Dual Sport 18-event schedule
 - MotoAmerica Daytona 139 riders, 9 races Mar 10-12
-- RevZilla ADV Fest July 2026
+- RevZilla ADV Fest Jul 16-18 (Buffalo Chip, SD — test rides from 7 OEMs)
 - Benda LFC700 2026, Norton Manx R, Indian Chief Vintage 2026
 - UK custom bike sales +79.2% (Keeway Superlight 125)
 - Zero Motorcycles record global growth
 - RideApart acquired by Motorsport Network / Motor1.com
 - Latin America 5.86M units (+20.6%), fastest growing market
+- UK worst Jan in years — +16.1% overall but EVs -27.9% (124 units only)
 
 ### Market Data Snapshot
 | Region | Metric |
 |--------|--------|
 | **Global** | $78.58B (2026) → $118.9B (2034), CAGR 5.31% |
+| **Global (alt)** | $73.15B (2026) → $82.9B (2035), CAGR 1.4% (MRW) |
 | **India** | $10.63B projected 2026 — largest by volume (17M+ units/yr) |
 | **China** | $14.27B projected 2026 — largest by production (19M+) |
 | **Japan** | $2.73B projected 2026 |
 | **Latin America** | 5.86M units 2025, +20.6% YoY — fastest growing |
-| **UK** | +16.1% Jan 2026, but EVs -27.9% (124 units) |
+| **UK** | +16.1% Jan 2026, but EVs -27.9% (124 units). ICE 89.53% share |
 | **US** | -7.6% overall 2025; Harley -12%, Kawasaki now #1 |
 
 ### Coverage Rate
@@ -138,14 +147,17 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 
 | Platform | Content | Engagement | Notes |
 |----------|---------|------------|-------|
-| **Instagram** | @motorradtheory reels: Speed 400, R3, Z900, clutch explainer, Dominar | **1.3K likes** (Speed 400) | Active, growing |
+| **Instagram** | @motorradtheory reels: Speed 400, R3, Z900, clutch explainer, Dominar, Versys 650, ZX-6R | **1.3K likes** (Speed 400) | Active, growing |
 | **Facebook** | 🔥 **Triumph Speed 400 service reel** | **11.7K views** | VIRAL BREAKOUT — 20-80x normal |
 | **Facebook** | Yamaha R3 service reel | 654 views | Above average |
 | **Facebook** | Kawasaki Z900 SC Project exhaust mod | 113 views | Typical |
 | **Facebook** | Shanthinagar expansion announcement | Active | New unit opening |
 | **YouTube** | "Between Oil and Order" podcast S01E02 | 140 views | Origin story content |
+| **YouTube** | 4.93K subscribers, 22 videos total | Growing | Podcast + service content |
 | **LinkedIn** | Magesh Balaji G — MT launch post | 52 reactions | Founding team visibility |
 | **Website** | motaorradtheory.com (Wix) | Live but sparse | Needs SEO + tymingchain.com sync |
+| **Website** | tymingchain.com | LIVE — 11 pages | Content hub operational |
+| **Reviews** | Arrivala.com | 5.00 rating (1 review) | "Good behavior, reasonable rate" |
 
 ### 🔥 BREAKOUT: Triumph Speed 400 reel = **11.7K views + 1.3K likes**
 This is a **20-80x increase** over typical 50-184 view posts. The Speed 400 audience is highly engaged. **Action:** Create more Speed 400 content immediately — service guide, owner's tips, comparison article.
@@ -179,14 +191,16 @@ This is a **20-80x increase** over typical 50-184 view posts. The Speed 400 audi
 6. **Write Ducati 100th anniversary overview** — Year-long opportunity for evergreen content
 7. **Write KTM 490 twin article** — Replacing 390 single, major enthusiast buzz
 8. **Execute Reddit outreach** — 80+ opportunities, 0 engaged. Start with CRM/shop threads
+9. **Write Zero Motorcycles strategic relaunch** — EU A1 scooter, larger batteries, pricing realities
 
 ### 📌 NICE TO HAVE
-9. Create "News" section on tymingchain.com for rapid competitor coverage
-10. Publish remaining 8 drafts (Agno SDK next — 25KB ready)
-11. Superbike maintenance → full article (currently social-only)
-12. Gear roundup: Leatt 2026, Thor mid-season, Alpinestars Flyte, Arai XD-5
-13. Cross-link motaorradtheory.com ↔ tymingchain.com
-14. Federal HR-3385 + EPA repeal explainer — regulatory angle
+10. Create "News" section on tymingchain.com for rapid competitor coverage
+11. Publish remaining 8 drafts (Agno SDK next — 25KB ready)
+12. Superbike maintenance → full article (currently social-only)
+13. Gear roundup: Leatt 2026, Thor mid-season, Alpinestars Flyte, Arai XD-5
+14. Cross-link motaorradtheory.com ↔ tymingchain.com
+15. Federal HR-3385 + EPA repeal explainer — regulatory angle
+16. RevZilla ADV Fest Jul 16-18 preview — test ride coverage opportunity
 
 ---
 
@@ -199,11 +213,11 @@ This is a **20-80x increase** over typical 50-184 view posts. The Speed 400 audi
 | Distribution | 3/10 | Social created not posted, video blocked |
 | Competitor Coverage | 1/10 | 0/60+ stories covered |
 | Reddit/Community | 4/10 | Reports generated, no outreach executed |
-| Brand Awareness | 5/10 | Speed 400 breakout 🔥 + Shanthinagar expansion |
+| Brand Awareness | 5/10 | Speed 400 breakout 🔥 + Shanthinagar expansion + 4.93K YT subs |
 | **Overall** | **4.3/10** | ⚠️ Creation strong, execution is the bottleneck |
 
 ---
 
 *Report generated by Gaṇaka (गणक) — Analytics Reporter*
 *Motorrad Theory Content Pipeline — tymingchain.com*
-*19 scans consolidated across Week 8*
+*20 scans consolidated across Week 8*
