@@ -1,6 +1,6 @@
 # 📊 Gaṇaka (गणक) — Week 8 Analytics Report (FINAL CONSOLIDATED)
 > **Period:** 2026-02-10 → 2026-02-18 (ISO Week 8)
-> **Generated:** 2026-02-18T01:00Z | Update #39
+> **Generated:** 2026-02-18T01:02Z | Update #40
 > **Pipeline:** Motorrad Theory / tymingchain.com
 
 ---
@@ -27,7 +27,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 ### Bottleneck Analysis
 1. **Drafts → Published** (⚠️ PRIMARY): 9 drafts sitting — tire brands published ✅ but 8 remain including `agno-mission-control-sdk-article.md` (25KB)
 2. **Videos** (🔴 CRITICAL): 3 scripts written, 0 produced — HeyGen integration blocked
-3. **Competitor coverage** (🔴 CRITICAL): 75+ competitor stories tracked, 0 covered
+3. **Competitor coverage** (🔴 CRITICAL): 80+ competitor stories tracked, 0 covered
 4. **Reddit outreach** (⚠️): 95+ opportunities across 6 scout reports, 0 engaged
 
 ---
@@ -43,7 +43,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Agno Mission Control SDK | Published (25KB) | ⭐ MEDIUM | Tech crossover |
 | Superbike maintenance tips | Social only | ⭐ MEDIUM | Needs full article |
 
-### Trending Keywords (from competitor analysis — scan #39)
+### Trending Keywords (from competitor analysis — scan #40)
 - **"HR-3385 autocycle bill"** — VIRAL across 5+ CBS/Fox/ABC news affiliates (ABC45, KATV, OKCFox, ABC News 4, MyFox28Columbus)
 - **"MotoGP 2026/2027 850cc rules"** — "2001 all over again" (Motorsport Magazine, Mat Oxley); preseason test results published (Cycle News)
 - **"Harley-Davidson 2025 sales decline"** — Q4 loss $279M (up from $117M YoY), FY revenue -14% to $4.47B, job cuts confirmed
@@ -68,12 +68,16 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 - **"Honda 8 models returning 2026-27"** — Africa Twin, Trail125, Dax, Monkey, PCX, ADV160, Navi, Montesa Cota
 - **"RevZilla ADV Fest Jul 16-18"** — Multi-brand test rides at Buffalo Chip
 - **"EPA Endangerment Finding repealed"** — V-twin riders celebrate (Bikernet)
+- **"MV Agusta Rush Titanio"** — First look (CycleWorld) — premium exotic segment
+- **"RevZilla/Cycle Gear leadership"** — Matt Kull tapped to lead both brands (MPN)
+- **"Stark Future 200% growth"** — Electric off-road, demand strong across key markets (MPN)
+- **"Vance & Hines Bagger Racing League"** — $10K contingency program (MPN)
 
 ---
 
 ## 🔍 Competitor Gap Analysis
 
-### Stories Competitors Are Covering That We're Missing (75+)
+### Stories Competitors Are Covering That We're Missing (80+)
 
 #### 🔴 HIGH PRIORITY (write this week)
 | Story | Source | Why It Matters |
@@ -106,6 +110,9 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Top 10 Best 2026 Motorcycles roundup | TotalMotorcycle | Buyer guide gap |
 | Vintage Japanese collector boom | WC Shipping | CB750, Z1, RD market |
 | Latin America 5.86M record motorcycle sales | MotorcyclesData | Market analysis |
+| Stark Future 200% growth — electric off-road | MPN | EV sector momentum |
+| RevZilla/Cycle Gear Matt Kull leadership | MPN | Retail industry shift |
+| Vance & Hines Bagger Racing League $10K program | MPN | Racing contingency |
 
 #### 📌 TRACKED (lower priority)
 - Ducati 100th anniversary, Triumph lineup 2026, Harley Liberty Edition CVO
@@ -116,6 +123,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 - Events: MotoAmerica Daytona Mar 10-12, RevZilla ADV Fest Jul 16-18, Flat Out Friday Feb 20
 - Fuel for Thought yr 4, Scottish safety roadshow, Port Dover Friday 13th
 - Market: Global $78.58B→$118.9B, ICE 89.53%, EPA Endangerment Finding repealed
+- 1000PS.com: Ducati Monster V2 ride, Triumph Trident 800 review, Yamaha Ténéré 700 Touratech
 
 ### Market Data Snapshot
 | Region | Metric |
@@ -130,7 +138,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | **US powersports** | $51B retail market (2025, MIC estimate) |
 
 ### Coverage Rate
-- **Competitor stories tracked:** 75+
+- **Competitor stories tracked:** 80+
 - **Stories we've covered:** 0
 - **Coverage rate:** 0% — 🔴 CRITICAL DEFICIT
 
@@ -163,7 +171,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 
 | Metric | Value |
 |--------|-------|
-| **Total commits (week)** | 75+ |
+| **Total commits (week)** | 80+ |
 | **New files this week** | Reddit scouts (Feb 9–18), tire brands published, analytics |
 | **Active agents** | Gaṇaka (analytics), Cāraka (reddit), content pipeline |
 | **Reddit scouts** | 6 reports (Feb 9, 14, 15, 16, 17, 18) |
@@ -191,12 +199,13 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 ### 📌 NICE TO HAVE
 12. Publish remaining 8 drafts
 13. Ducati 100th anniversary overview, Intermot cancellation article
-14. Norton Manx R, KTM 490 twin, Benda LFC700 articles
+14. Norton Manx R, KTM 490 twin, Benda LFC700, MV Agusta Rush Titanio articles
 15. Honda 8 models returning analysis
 16. GNCC/off-road coverage — Girroir wins Big Buck, Angels of Dirt
 17. Yamaha WR125R dual-sport review roundup
 18. Latin America motorcycle market analysis — 5.86M record
 19. Create "News" section on tymingchain.com for rapid competitor coverage
+20. Stark Future 200% growth / electric off-road analysis
 
 ---
 
@@ -207,7 +216,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Content Creation | 8/10 | 14 research + 9 drafts + strong pipeline |
 | Publishing | 5/10 | 11 articles live, tire brands ✅, 8 drafts remain |
 | Distribution | 3/10 | Social created not posted, video blocked |
-| Competitor Coverage | 1/10 | 0/75+ stories covered |
+| Competitor Coverage | 1/10 | 0/80+ stories covered |
 | Reddit/Community | 4/10 | 6 reports generated, no outreach executed |
 | Brand Awareness | 5/10 | Speed 400 breakout 🔥 + YT 4.93K subs |
 | **Overall** | **4.3/10** | ⚠️ Creation strong, execution is the bottleneck |
@@ -216,4 +225,4 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 
 *Report generated by Gaṇaka (गणक) — Analytics Reporter*
 *Motorrad Theory Content Pipeline — tymingchain.com*
-*39 scans consolidated across Week 8*
+*40 scans consolidated across Week 8*
