@@ -1,6 +1,6 @@
 # 📊 Gaṇaka (गणक) — Week 8 Analytics Report (FINAL CONSOLIDATED)
 > **Period:** 2026-02-10 → 2026-02-18 (ISO Week 8)
-> **Generated:** 2026-02-18T00:00Z | Update #31
+> **Generated:** 2026-02-18T00:02Z | Update #32
 > **Pipeline:** Motorrad Theory / tymingchain.com
 
 ---
@@ -14,21 +14,21 @@
 | **Published** | 11 articles | 24 files (md+html+splash) | ✅ Growing |
 | **Social** | 14 packages | 14 `.md` files | ✅ Healthy |
 | **Videos** | 3 scripts | 3 `.md` files | 🔴 BLOCKED (0 produced) |
-| **Reddit** | 5 scout reports | 5 `.md` files (Feb 9–17) | ✅ Active |
+| **Reddit** | 6 scout reports | 6 `.md` files (Feb 9–18) | ✅ Active |
 | **Analytics** | 2 reports | week-7 + week-8 | ✅ |
 
 ### Pipeline Flow Diagram
 ```
 Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
                                                  → Videos (3) 🔴 BLOCKED
-                                Reddit Scout (5) → Outreach 80+ opportunities
+                                Reddit Scout (6) → Outreach 95+ opportunities
 ```
 
 ### Bottleneck Analysis
 1. **Drafts → Published** (⚠️ PRIMARY): 9 drafts sitting — tire brands published ✅ but 8 remain including `agno-mission-control-sdk-article.md` (25KB)
 2. **Videos** (🔴 CRITICAL): 3 scripts written, 0 produced — HeyGen integration blocked
 3. **Competitor coverage** (🔴 CRITICAL): 75+ competitor stories tracked, 0 covered
-4. **Reddit outreach** (⚠️): 80+ opportunities across 5 scout reports, 0 engaged
+4. **Reddit outreach** (⚠️): 95+ opportunities across 6 scout reports, 0 engaged
 
 ---
 
@@ -43,32 +43,27 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Agno Mission Control SDK | Published (25KB) | ⭐ MEDIUM | Tech crossover |
 | Superbike maintenance tips | Social only | ⭐ MEDIUM | Needs full article |
 
-### Trending Keywords (from competitor analysis — scan #31)
-- **"HR-3385 autocycle bill"** — VIRAL across 5+ CBS/Fox/ABC news affiliates, 86+ comments RevZilla
-- **"Indian CEO Mike Kennedy"** — PE ownership (Carolwood LP), Rider Magazine + CycleWorld interviews
+### Trending Keywords (from competitor analysis — scan #32)
+- **"HR-3385 autocycle bill"** — VIRAL across 5+ CBS/Fox/ABC news affiliates (ABC45, KATV, OKCFox)
+- **"MotoGP 2026/2027 850cc rules"** — "2001 all over again" (Motorsport Magazine, Mat Oxley)
+- **"Harley-Davidson 2025 sales decline"** — $29M loss, job cuts confirmed, Kawasaki now #1 US
+- **"Indian CEO Mike Kennedy"** — PE ownership (Carolwood LP), expanded interview coverage
 - **"KTM struggles Bajaj ownership"** — RevZilla, 46% revenue plunge (MCN)
 - **"Honda Super Cub discontinued USA"** — Autopian exclusive, nostalgic engagement
 - **"Indian Motorcycle trike strategy"** — 159 comments on RevZilla (HIGHEST engagement W8)
 - **"Ducati Monster+"** — 82 comments on RevZilla first ride review
-- **"Ducati Formula 73"** — 28 comments, 873 numbered units, £15,095
-- **"MotoGP 2026/2027 850cc rules"** — massive search spike; Motorsport Magazine "2001 all over again"
-- **"Harley-Davidson 2025 sales decline"** — $29M loss, job cuts confirmed
-- **"Harley 2026 Street Glide 3 Limited"** — UltimateMoto first look (3-wheeler touring)
-- **"WSBK Kawasaki 2026 livery"** — 🆕 Final livery reveal, Phillip Island test
-- **"Ducati 100th anniversary 2026"** — year-long coverage opportunity
-- **"KTM 490 twin"** — replacing 390 single, huge enthusiast buzz (Visordown)
-- **"LiveWire S4 Honcho"** — EV motorcycle strategy shift, make-or-break 2026 (Electrek)
-- **"Intermot 2026 cancelled"** — postponed to Feb 2027, industry shock
-- **"QJMotor SRK 921"** — 4-cylinder naked £8699 arriving UK (MCN)
-- **"RE Continental GT 750"** — spy shots, capacity increase from 650 platform (MCN)
-- **"Benda LFC700"** — AIMExpo $10,899 power cruiser, four-cylinder
-- **"Sena Specter helmet"** — AI-assisted comms + built-in lighting (Visordown)
+- **"WSBK Kawasaki 2026 livery"** — Final livery reveal, Phillip Island test
+- **"Latin America motorcycle record"** — 5.86M sales 2025, +20.6% YoY, 4th consecutive record
+- **"Total Motorcycle Top 10 2026"** — Published Feb 16, major buyer guide competitor
+- **"Vintage Japanese motorcycles 2026"** — CB750, Z1, RD collector boom (WC Shipping)
 - **"Triumph Speed 400 service"** — 🔥 our own viral content (11.7K views)
-- **"Indian Chief Vintage 2026"** — 125th anniversary review (UltimateMoto)
-- **"Michelin Anakee Adventure 2"** — 80/20 tire first look (UltimateMoto)
-- **"Suzuki DR-Z4SM+ 2026"** — sophomore supermoto upgrade
-- **"UK motorcycle market January 2026"** — up 16.1% but still 1/5 below pre-slump (MCN)
-- **"Fuel for Thought motorsports"** — yr 4 organizer support series (PSB)
+- **"Ducati 100th anniversary 2026"** — year-long coverage opportunity
+- **"Intermot 2026 cancelled"** — postponed to Feb 2027
+- **"QJMotor SRK 921"** — 4-cylinder naked £8699 arriving UK (MCN)
+- **"RE Continental GT 750"** — spy shots, capacity increase (MCN)
+- **"Benda LFC700"** — AIMExpo $10,899 power cruiser
+- **"Sena Specter helmet"** — AI-assisted comms + built-in lighting
+- **"EPA Endangerment Finding repealed"** — V-twin riders celebrate (Bikernet)
 
 ---
 
@@ -79,14 +74,14 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 #### 🔴 HIGH PRIORITY (write this week)
 | Story | Source | Why It Matters |
 |-------|--------|----------------|
-| Harley-Davidson $29M FY2025 loss + job cuts confirmed | RevZilla, Visordown | Industry leader in crisis |
-| MotoGP 2027 850cc revolution (80yr rule change) | Motorsport Mag, CycleWorld | Huge search demand |
-| Honda Super Cub C125 quietly pulled from US market | The Autopian | Nostalgic, shareable |
-| Indian Motorcycle trike strategy (159 comments) | RevZilla | Most-discussed W8 article |
-| HR-3385 federal autocycle bill — MIC opposes | CBS12, ABC45, KATV, OKCFox | VIRAL regulatory story |
+| Harley-Davidson $29M FY2025 loss + job cuts confirmed | RevZilla, RideApart, Visordown | Industry leader in crisis, Kawasaki now #1 US |
+| MotoGP 2027 850cc revolution (80yr rule change) | Motorsport Mag, CycleWorld | "2001 all over again" — huge search demand |
+| HR-3385 federal autocycle bill — MIC opposes | ABC45, KATV, CBS12, OKCFox | VIRAL regulatory story, 5+ affiliates |
+| Honda Super Cub C125 quietly pulled from US market | The Autopian, RideApart | Nostalgic, highly shareable |
+| Indian Motorcycle trike strategy (159 comments) | RevZilla | Most-discussed W8 article industry-wide |
 | Intermot 2026 cancelled → Feb 2027 | RideApart | Industry calendar disruption |
 | KTM struggles under Bajaj — 46% revenue plunge | RevZilla, MCN | Industry restructuring |
-| Indian CEO Mike Kennedy — PE ownership transition | Rider Magazine, CycleWorld | 🆕 Leadership change |
+| Indian CEO Mike Kennedy — PE ownership transition | Rider Magazine, CycleWorld | Leadership change |
 | LiveWire S4 Honcho — make-or-break for EV motos | Electrek | EV future defining |
 
 #### ⚠️ MEDIUM PRIORITY
@@ -98,11 +93,13 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | KTM 490 twin replacing 390 single | Visordown | High buzz |
 | Norton Manx R AIMExpo reveal | MPN | Brand resurgence |
 | Benda LFC700 $10,899 power cruiser | MPN | AIMExpo highlight |
-| WSBK Kawasaki 2026 final livery | Road Racing World | 🆕 Pre-season hype |
-| 5 ADV bikes 2026 roundup | Visordown | Buyer guide gap |
+| WSBK Kawasaki 2026 final livery | Road Racing World | Pre-season hype |
+| Top 10 Best 2026 Motorcycles roundup | TotalMotorcycle | Buyer guide gap |
+| Vintage Japanese collector boom | WC Shipping | CB750, Z1, RD market |
+| Latin America 5.86M record motorcycle sales | MotorcyclesData | Market analysis |
 | QJMotor SRK 921 + RE Continental GT 750 | MCN | Breaking news |
 | Michelin Anakee Adventure 2 tires | UltimateMoto | Tire tech |
-| UK market up but below pre-slump | MCN | 🆕 Market analysis |
+| UK market up but below pre-slump | MCN | Market analysis |
 
 #### 📌 TRACKED (lower priority)
 - Ducati 100th anniversary, Honda 8 models returning, Triumph lineup 2026
@@ -112,7 +109,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 - Gear: Shark Aeron GP, Alpinestars Wolf Dust, LS2 Challenger II, Arai XD-5
 - Events: MotoAmerica Daytona Mar 10-12, RevZilla ADV Fest Jul 16-18
 - Market: Latin America 5.86M record, UK custom bikes +79.2%, EPA repeal
-- Fuel for Thought yr 4 organizer series, Scottish safety roadshow
+- Fuel for Thought yr 4, Scottish safety roadshow, Port Dover Friday 13th
 
 ### Market Data Snapshot
 | Region | Metric |
@@ -146,6 +143,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | **YouTube** | Triumph Scrambler 400 XC review S01E01 | 885 views | Best long-form |
 | **YouTube** | "Between Oil and Order" podcast S01E02 | 140 views | Origin story |
 | **LinkedIn** | Rohit V Lad — founder profile | 363 connections, 404 followers | Professional |
+| **LinkedIn** | Magesh Balaji G — Head of Ops & Marketing | Community post active | Team visibility |
 | **Website** | motaorradtheory.com (Wix) | Live but sparse | Needs SEO optimization |
 | **Website** | tymingchain.com | LIVE — 11 pages | Content hub operational |
 
@@ -158,9 +156,10 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 
 | Metric | Value |
 |--------|-------|
-| **Total commits (week)** | 55+ |
-| **New files this week** | Reddit scouts (Feb 9–17), tire brands published, analytics |
+| **Total commits (week)** | 60+ |
+| **New files this week** | Reddit scouts (Feb 9–18), tire brands published, analytics |
 | **Active agents** | Gaṇaka (analytics), Cāraka (reddit), content pipeline |
+| **Reddit scouts** | 6 reports (up from 5 in scan #31) |
 | **Website** | tymingchain.com LIVE — 11 pages |
 
 ---
@@ -174,19 +173,20 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 4. **Write HR-3385 autocycle bill explainer** — Viral across 5+ news affiliates
 
 ### ⚠️ SHOULD DO (High Impact)
-5. **Write Indian CEO Mike Kennedy / PE ownership analysis** — leadership transition, fresh interviews
+5. **Write Indian CEO Mike Kennedy / PE ownership analysis** — leadership transition
 6. **Write KTM/Bajaj restructuring analysis** — 46% revenue plunge
 7. **Write Honda Super Cub US discontinuation piece** — Nostalgic, shareable
 8. **Promote tire brands article** — Push to social, Reddit, SEO backlinks
 9. **Unblock video production** — HeyGen blocked → evaluate Synthesia, D-ID, Runway
-10. **Execute Reddit outreach** — 80+ opportunities, 0 engaged
+10. **Execute Reddit outreach** — 95+ opportunities across 6 reports, 0 engaged
 
 ### 📌 NICE TO HAVE
 11. Publish remaining 8 drafts
 12. Ducati 100th anniversary overview, Intermot cancellation article
 13. Norton Manx R, KTM 490 twin, Benda LFC700 articles
-14. Gear roundup: Sena Specter, Michelin Anakee Adventure 2
-15. Create "News" section on tymingchain.com for rapid competitor coverage
+14. Vintage Japanese collector market analysis (CB750, Z1, RD)
+15. Latin America motorcycle market analysis — 5.86M record
+16. Create "News" section on tymingchain.com for rapid competitor coverage
 
 ---
 
@@ -198,7 +198,7 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 | Publishing | 5/10 | 11 articles live, tire brands ✅, 8 drafts remain |
 | Distribution | 3/10 | Social created not posted, video blocked |
 | Competitor Coverage | 1/10 | 0/75+ stories covered |
-| Reddit/Community | 4/10 | Reports generated, no outreach executed |
+| Reddit/Community | 4/10 | 6 reports generated (up from 5), no outreach executed |
 | Brand Awareness | 5/10 | Speed 400 breakout 🔥 + YT 4.93K subs |
 | **Overall** | **4.3/10** | ⚠️ Creation strong, execution is the bottleneck |
 
@@ -206,4 +206,4 @@ Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
 
 *Report generated by Gaṇaka (गणक) — Analytics Reporter*
 *Motorrad Theory Content Pipeline — tymingchain.com*
-*31 scans consolidated across Week 8*
+*32 scans consolidated across Week 8*
