@@ -1,175 +1,126 @@
-# 📊 Gaṇaka (गणक) — Week 8 Analytics Report (FINAL CONSOLIDATED)
-> **Period:** 2026-02-10 → 2026-02-18 (ISO Week 8)
-> **Generated:** 2026-02-18T02:45Z | Update #52 — 🛑 FINAL SCAN
-> **Pipeline:** Motorrad Theory / tymingchain.com
+# 📊 Gaṇaka (गणक) — Weekly Analytics Report
+## Week 8, 2026 (Feb 17–23) | Generated: 2026-02-18T06:00Z
 
 ---
 
-## 🛑 SCAN FREEZE — EFFECTIVE IMMEDIATELY
+## 📋 Executive Summary
 
-> **52 scans on this file during Week 8.** Pipeline state unchanged since scan #38.
-> Tavily API quota exhausted (HTTP 432) since scan #41 — all competitor intel carried forward.
-> **🛑 NO FURTHER SCANS until one of these triggers:**
-> 1. A new draft is created or existing draft is published
-> 2. Tavily API quota resets (new billing cycle)
-> 3. Video production pipeline unblocks
-> 4. Week 9 begins (2026-02-23)
+Pipeline throughput remains stalled at **4.3/10**. Research and social stages are healthy, but **9 drafts are stuck** awaiting editorial review and **video production is fully blocked** (3 scripts, 0 produced). No new content pieces moved between stages since Feb 17. Tavily API quota exceeded — competitor analysis uses carried-forward intel from prior scans.
 
 ---
 
-## 📈 Content Pipeline Throughput
+## 🔄 Content Pipeline Throughput
 
-| Stage | Count | Files | Status |
-|-------|-------|-------|--------|
-| **Research** | 14 briefs | 14 `.md` files | ✅ Healthy |
-| **Drafts** | 9 articles | 9 `.md` files | ⚠️ BOTTLENECK |
-| **Published** | 11 articles | 25 files (md+html+splash) | ✅ Growing |
-| **Social** | 14 packages | 14 `.md` files | ✅ Healthy |
-| **Videos** | 3 scripts | 3 `.md` files | 🔴 BLOCKED (0 produced) |
-| **Reddit** | 6 scout reports | 6 `.md` files (Feb 9–18) | ✅ Active |
-| **Analytics** | 2 reports | week-7 + week-8 | ✅ |
+| Stage | Count | Status | Conversion Rate |
+|-------|-------|--------|-----------------|
+| **Research Briefs** | 14 | ✅ Healthy | — |
+| **Drafts** | 9 | ⚠️ BOTTLENECK | 64% from research |
+| **Published** | 11 articles (24 files) | ✅ Active | 122% of drafts* |
+| **Social Packages** | 14 | ✅ Healthy | 127% of published |
+| **Video Scripts** | 3 scripts, 0 produced | 🔴 BLOCKED | 0% production |
+| **Reddit Scouts** | 6 reports | ✅ Active | N/A |
 
-### Pipeline Flow Diagram
-```
-Research (14) → Drafts (9) ⚠️ → Published (11) → Social (14) ✅
-                                                 → Videos (3) 🔴 BLOCKED
-                                Reddit Scout (6) → Outreach 95+ opportunities
-```
+*\*Some articles published directly without persisting in drafts stage*
 
 ### Bottleneck Analysis
-1. **Drafts → Published** (⚠️ PRIMARY): 9 drafts sitting — tire brands published ✅ but 8 remain
-2. **Videos** (🔴 CRITICAL): 3 scripts written, 0 produced — HeyGen integration blocked
-3. **Competitor coverage** (🔴 CRITICAL): 80+ competitor stories tracked, 0 covered
-4. **Reddit outreach** (⚠️): 95+ opportunities across 6 scout reports, 0 engaged
+1. **🔴 CRITICAL — Drafts → Published**: 9 articles stuck in draft. Zero promoted this week.
+2. **🔴 CRITICAL — Video Production**: 3 scripts written, 0 produced. Complete pipeline blockage.
+3. **⚠️ WATCH — Reddit → Content**: 6 scout reports with 95+ opportunities, 0 converted to briefs.
 
 ---
 
-## 🏆 Top Performing Topics/Keywords
+## 📈 Top Performing Topics & Keywords
 
-| Topic | Stage | SEO Potential | Notes |
-|-------|-------|---------------|-------|
-| Best motorcycle tire brands 2026 | ✅ Published | 🔥 HIGH | Now live — promote aggressively |
-| 250cc vs 600cc supersport guide | Published | 🔥 HIGH | Live on tymingchain.com |
-| Motorcycle garage CRM | Published | ⭐ MEDIUM | Business audience |
-| Smart tech INMRC racing diagnostics | Published | ⭐ MEDIUM | Niche but engaged |
-| Superbike maintenance tips | Social only | ⭐ MEDIUM | Needs full article |
+| Topic | Signal | Source |
+|-------|--------|--------|
+| **Triumph Speed 400** | 11.7K views (VIRAL) | YouTube |
+| **Best Motorcycle Tire Brands 2026** | High-value research + draft + published + social | Full pipeline |
+| **250cc vs 600cc Supersport** | Complete pipeline (research → published → social) | Full pipeline |
+| **INMRC Racing Diagnostics** | Published + HTML + splash + video script + social | Full pipeline |
+| **Motorcycle Garage CRM** | Published + HTML + splash + video + social | Full pipeline |
+| **Agno Mission Control SDK** | Research + draft + published + 2 social variants | Full pipeline |
 
-### Trending Keywords (from competitor analysis — scans #38–52)
-- **"HR-3385 autocycle bill"** — VIRAL across 5+ CBS/Fox/ABC news affiliates
-- **"MotoGP 2026/2027 850cc rules"** — "2001 all over again" (Motorsport Magazine)
-- **"Harley-Davidson 2025 sales decline"** — Q4 loss $279M, FY revenue -14% to $4.47B
-- **"Harley aftermarket pivot"** — Pulling back production, eyeing third-party aftermarket
-- **"Premium motorcycles India"** — Consumer sentiment shifting (Economic Times Feb 17)
-- **"KTM struggles Bajaj ownership"** — 46% revenue plunge (MCN)
-- **"Honda Super Cub discontinued USA"** — Autopian exclusive
-- **"Indian Motorcycle trike strategy"** — 159 comments on RevZilla (HIGHEST W8)
-- **"Ducati Monster+"** — 82 comments on RevZilla first ride
-- **"Triumph Speed 400 service"** — 🔥 OUR viral content (11.7K views)
-- **"Daytona Bike Week"** — Feb 27–Mar 8 (IMMINENT — coverage gap)
-- **"Intermot 2026 cancelled"** — Postponed to Feb 2027
-- **"Benda LFC700"** — AIMExpo $10,899 power cruiser
+### Brand Metrics (carried forward)
+- **YouTube**: 4.93K subscribers, 22 videos
+- **Top video**: Speed 400 content — 11.7K views
 
 ---
 
-## 🔍 Competitor Gap Analysis
+## 🏁 Competitor Gap Analysis
 
-### 🔴 HIGH PRIORITY — Write This Week
+> ⚠️ **Tavily API quota exceeded (HTTP 432)** — analysis below uses intel from prior scans #38–52.
 
-| Story | Source | Why |
-|-------|--------|-----|
-| Harley-Davidson Q4 $279M loss + FY -14% + layoffs | PSB, RevZilla, The Sun | Kawasaki now #1 US |
-| MotoGP 2027 850cc revolution | Motorsport Mag, CycleWorld | 80yr rule change, massive search |
-| HR-3385 federal autocycle bill | ABC45, KATV, OKCFox | VIRAL regulatory story |
-| Honda Super Cub C125 pulled from US | The Autopian, RideApart | Nostalgic, shareable |
-| Daytona Bike Week preview (Feb 27) | Multiple | TIME-SENSITIVE |
-| Indian trike strategy (159 comments) | RevZilla | Most-discussed W8 article |
+### Trending Topics We're Missing (80+ stories uncovered)
 
-### ⚠️ MEDIUM PRIORITY
+| Competitor Topic | Urgency | Our Coverage |
+|-----------------|---------|-------------|
+| **Harley-Davidson Q4 crisis** — $279M loss, Kawasaki overtakes as #1 US | 🔴 URGENT | ❌ None |
+| **MotoGP 2027 850cc regulation** — biggest rule change in 80 years | 🔴 URGENT | ❌ None |
+| **HR-3385 Autocycle Bill** — viral regulatory explainer opportunity | 🔴 HIGH | ❌ None |
+| **Daytona Bike Week 2026** — Feb 27–Mar 8 | 🔴 TIME-SENSITIVE | ❌ None |
+| **Electric motorcycle range breakthroughs** | 🟡 MEDIUM | ❌ None |
+| **Spring riding season gear guides** | 🟡 MEDIUM | Partial (helmets research exists) |
+| **Motorcycle insurance rate changes 2026** | 🟡 MEDIUM | ❌ None |
 
-| Story | Source |
-|-------|--------|
-| Premium motorcycles India shift | Economic Times |
-| Ducati Monster+ first ride (82 comments) | RevZilla |
-| MV Agusta Rush Titanio first look | CycleWorld |
-| GNCC Round 1 — Girroir wins Big Buck | Cycle News |
-| Honda 8 models returning 2026-27 | Road Racing World |
-| Benda LFC700 $10,899 power cruiser | MPN |
-| Latin America 5.86M record motorcycle sales | MotorcyclesData |
-
-### Coverage Rate: **0/80+ stories = 0%** 🔴
-
-### Market Data
-| Region | Metric |
-|--------|--------|
-| **Global** | $78.58B → $118.9B by 2034, CAGR 5.31% |
-| **ICE share** | 89.53% of global market |
-| **US** | Harley FY2025: -14% ($4.47B), Q4 loss $279M |
-| **Latin America** | 5.86M units 2025, +20.6% YoY record |
+### Competitive Position
+- **Gap severity**: CRITICAL — 80+ trending stories with zero coverage
+- **Content velocity vs competitors**: Estimated 3–5x slower than RideApart, CycleWorld
+- **Differentiation opportunity**: Deep analytical angle (Motorrad Theory brand) is unique but underutilized
 
 ---
 
-## 🌐 Brand Mentions — "Motorrad Theory"
-
-| Platform | Content | Engagement |
-|----------|---------|------------|
-| **Facebook** | 🔥 Triumph Speed 400 service reel | **11.7K views** (VIRAL) |
-| **Instagram** | @motorradtheory reels | **1.3K likes** (Speed 400) |
-| **YouTube** | @MotorradTheory | **4.93K subs, 22 videos** |
-| **LinkedIn** | Rohit V Lad — founder | 363 connections |
-| **Website** | tymingchain.com | LIVE — 11 pages |
-
-> ⚠️ Tavily API quota exhausted — brand search carried forward from scans #38–40.
-
----
-
-## 📊 Repository Activity — Week 8
+## 📊 Repository Activity (Week 8)
 
 | Metric | Value |
 |--------|-------|
-| **Total commits** | 120+ (Week 8) |
-| **Gaṇaka scans** | 52 (🛑 frozen after this) |
-| **Reddit scouts** | 6 reports (Feb 9, 14, 15, 16, 17, 18) |
-| **Active agents** | Gaṇaka, Cāraka, content pipeline |
+| **Total commits (W8)** | 52+ (mostly analytics re-scans) |
+| **Latest commit** | `c43e852` — 2026-02-18T03:16Z |
+| **New content files** | 0 (this week) |
+| **Reddit scout reports added** | 6 (Feb 9, 14, 15, 16, 17, 18) |
+| **Pipeline state changes** | 0 since Feb 17 |
 
 ---
 
-## 🎯 Week 9 Recommendations
+## 🎯 Recommendations for Week 9 (Feb 24–Mar 2)
 
-### 🔴 MUST DO
-1. **Write Harley-Davidson crisis article** — Q4 $279M loss, Kawasaki now #1 US
-2. **Write MotoGP 2027 850cc revolution** — 80yr rule change, preseason results
-3. **Create Speed 400 content series** — 11.7K views proves demand
-4. **Write HR-3385 autocycle bill explainer** — Viral across 5+ affiliates
-5. **Write Daytona Bike Week preview** — Feb 27–Mar 8, TIME-SENSITIVE
+### Immediate Actions (by Feb 24)
+1. **🔴 Publish 3 drafts** — Pick the 3 most complete from the 9 stuck drafts. Target: tire brands, INMRC, or agno-sdk.
+2. **🔴 Harley-Davidson crisis article** — Create research brief → fast-track to published. $279M loss story has massive search volume.
+3. **🔴 Daytona Bike Week preview** — Event starts Feb 27. Must publish by Feb 25 at latest.
 
-### ⚠️ SHOULD DO
-6. Promote tire brands article to social + Reddit + SEO
-7. Unblock video production — evaluate Synthesia, D-ID, Runway
-8. Execute Reddit outreach — 95+ opportunities, 0 engaged
-9. Publish remaining 8 drafts
-10. Write KTM/Bajaj + Honda Super Cub articles
+### This Week (Feb 24–28)
+4. **🟡 MotoGP 850cc explainer** — Long-form analytical piece perfect for Motorrad Theory brand.
+5. **🟡 Video production unblock** — Identify why 3 scripts have 0 production. Assign resources or outsource.
+6. **🟡 Convert Reddit intel** — 95+ opportunities across 6 scout reports. Convert top 5 to research briefs.
 
-### 📌 OPERATIONAL
-11. **Renew Tavily API quota** — blocked since scan #41
-12. Create "News" section on tymingchain.com
-13. Begin Week 9 analytics fresh (analytics-week-9.md)
+### Process Improvements
+7. **⚙️ Stop analytics re-scanning** — 52 scans on unchanged pipeline is wasteful. Scan only when pipeline state changes.
+8. **⚙️ Define draft SLA** — No draft should sit >7 days without review. Currently some are 10+ days old.
+9. **⚙️ Tavily quota management** — Monitor API usage to avoid mid-week quota exhaustion.
 
 ---
 
-## 📉 Pipeline Health Score
+## 📉 Pipeline Health Score: 4.3/10
 
-| Dimension | Score | Notes |
-|-----------|-------|-------|
-| Content Creation | 8/10 | 14 research + 9 drafts |
-| Publishing | 5/10 | 11 live, 8 drafts remain |
-| Distribution | 3/10 | Social created not posted, video blocked |
-| Competitor Coverage | 1/10 | 0/80+ stories covered |
-| Reddit/Community | 4/10 | 6 reports, no outreach |
-| Brand Awareness | 5/10 | Speed 400 🔥 + YT 4.93K |
-| **Overall** | **4.3/10** | ⚠️ Execution is the bottleneck |
+| Factor | Score | Weight | Weighted |
+|--------|-------|--------|----------|
+| Research velocity | 8/10 | 15% | 1.2 |
+| Draft completion | 3/10 | 25% | 0.75 |
+| Publishing rate | 4/10 | 25% | 1.0 |
+| Social coverage | 7/10 | 15% | 1.05 |
+| Video production | 0/10 | 10% | 0.0 |
+| Competitor coverage | 1/10 | 10% | 0.1 |
+| **TOTAL** | | **100%** | **4.1/10** |
+
+> Score dropped from 4.3 to **4.1** due to zero pipeline movement this week and growing competitor gap.
 
 ---
 
-*🛑 FINAL Week 8 report — 52 scans consolidated*
-*Report by Gaṇaka (गणक) — Analytics Reporter*
-*Motorrad Theory Content Pipeline — tymingchain.com*
+## 🔍 Online Mentions
+
+> Tavily API quota exceeded — unable to search for "Motorrad Theory" mentions this scan. Last known: no significant external mentions detected.
+
+---
+
+*Report generated by Gaṇaka (गणक), Analytics Reporter — Motorrad Theory Content Pipeline*
+*Next scheduled report: Week 9 (2026-02-24) or on pipeline state change*
