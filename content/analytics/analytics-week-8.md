@@ -1,119 +1,133 @@
 # 📊 Gaṇaka (गणक) — Weekly Analytics Report
-## Week 8 (2026-02-17 → 2026-02-23) | Generated: 2026-02-18T06:45Z
+## ISO Week 8 | Feb 12–18, 2026
+**Generated**: 2026-02-18T10:45Z | **Scan**: Final W8 consolidation
 
 ---
 
 ## 📈 Content Pipeline Throughput
 
-| Stage | Count | Files | Status | Δ vs W7 |
-|-------|-------|-------|--------|---------|
-| **Research Briefs** | 14 | 14 .md files | ✅ Healthy | +6 |
-| **Drafts** | 9 | 9 articles | ⚠️ BOTTLENECK | +2 |
-| **Published** | 11 articles | 24 files (md+html+splash) | ✅ Active | +4 |
-| **Social Packages** | 14 | 14 .md files | ✅ Healthy | +5 |
-| **Video Scripts** | 3 | 3 scripts, 0 produced | 🔴 BLOCKED | 0 produced |
-| **Reddit Scouts** | 6 | 6 daily reports | ✅ Active | +5 |
-| **Analytics** | 2 | W7 + W8 reports | ✅ | — |
+| Stage | Count | Files | Status |
+|-------|-------|-------|--------|
+| **Research Briefs** | 14 | `content/research/` | ✅ Healthy |
+| **Drafts** | 9 | `content/drafts/` | 🔴 BOTTLENECK |
+| **Published Articles** | 11 unique (24 files) | `content/published/` | ⚠️ Below target |
+| **Social Posts** | 13 | `content/social/` | ✅ Good |
+| **Video Scripts** | 3 (0 produced) | `content/videos/` | 🔴 BLOCKED |
+| **Reddit Scout Reports** | 6 | `content/reddit/` | ✅ Active |
+| **Analytics Reports** | 2 (W7, W8) | `content/analytics/` | ✅ Current |
 
 ### Pipeline Flow
 ```
-Research (14) → Drafts (9) → Published (11) → Social (14) → Video (0/3) 🔴
-                    ↑                                           ↑
-               BOTTLENECK                                   BLOCKED
+Research (14) → Drafts (9 stuck) → Published (11) → Social (13) → Video (0/3 produced)
+     ✅              🔴                ⚠️              ✅            🔴
 ```
 
-**Pipeline Health Score: 4.1/10** (down from 4.3 — zero movement since W8 mid-week)
-
-### 🚨 Bottleneck Analysis
-1. **Drafts → Published (9 stuck)**: 9 articles sitting in drafts with no editorial review. Conversion rate: 0% this period.
-2. **Video Production (0/3 scripts)**: 3 video scripts written, zero produced. No recording/editing infrastructure in place.
-3. **Reddit → Content (0 engaged)**: 6 scout reports with 95+ opportunities identified, zero converted to content.
+**Pipeline Score: 4.1/10** — Research & social creation strong; draft-to-publish conversion and video production are critical blockers.
 
 ---
 
-## 🏷️ Top Performing Topics & Keywords
+## 🔴 Bottleneck Analysis
 
-| Topic | Content Pieces | Signal Strength |
-|-------|---------------|-----------------|
-| Motorcycle tire brands 2026 | 3 (research + draft + published) | 🔥 High search volume |
-| 250cc vs 600cc supersport | 2 (research + published w/ splash) | 🔥 Buyer intent |
-| Motorcycle garage CRM | 3 (research + published + video) | 🔥 Commercial intent |
-| INMRC racing diagnostics | 3 (draft + published + social) | ⚡ Niche authority |
-| Agno Mission Control SDK | 4 (research + draft + published + social) | ⚡ Dev/tech crossover |
-| Superbike maintenance | 2 (research + social) | 📈 Evergreen |
+### 1. Draft Backlog (CRITICAL)
+- **9 drafts** stuck in review with 0 movement this week
+- Key stuck drafts: `best-motorcycle-tire-brands-2026`, `agno-mission-control-sdk`, `94c830a5`, `9e4c1ae6`
+- **Impact**: 64% of drafted content never reaches publication
 
-### Top Published Articles by Depth
-1. `best-motorcycle-tire-brands-2026` — 25K words, full HTML, splash page
-2. `smart-tech-inmrc-racing-diagnostics` — 24K words, full HTML, splash page
-3. `agno-mission-control-sdk` — 25K words, full HTML, splash page
-4. `why-garage-needs-crm-definitive` — 17K words, full HTML, splash + video script
-5. `250cc-vs-600cc-definitive-2026` — 17K words, full HTML, splash page
+### 2. Video Production (BLOCKED)
+- **3 scripts** written, **0 videos** produced
+- Scripts: `9741240a-video`, `d3027b30-video`, `smart-tech-inmrc-racing-diagnostics-video`
+- **Impact**: YouTube channel (4.93K subs, 22 videos) stalling without new content
+
+### 3. Published File Sprawl
+- 11 unique articles generating 24 files (HTML + MD + splash variants)
+- Ratio of 2.2 files per article — consider consolidating output formats
+
+---
+
+## 🏆 Top Performing Topics & Keywords
+
+| Topic | Signal | Source |
+|-------|--------|--------|
+| **Triumph Speed 400** | 11.7K views (VIRAL) | YouTube analytics |
+| **250cc vs 600cc Supersport** | Full pipeline: research → published + splash | Content pipeline |
+| **Motorcycle Tire Brands 2026** | Deep research (14K+ bytes) + draft + published | Pipeline + SEO |
+| **Garage CRM** | Full pipeline with video script | Cross-format |
+| **INMRC Racing Diagnostics** | Published + social + video script | Multi-channel |
+
+### Keyword Clusters
+- **Buyer's guides**: 250cc vs 600cc, tire brands, helmets
+- **Business/Tech**: Garage CRM, Agno SDK, racing diagnostics
+- **Maintenance**: Superbike maintenance tips
 
 ---
 
 ## 🔍 Competitor Gap Analysis
 
-> ⚠️ Tavily API quota exceeded (HTTP 432). Intel carried forward from prior scans (W8 scans #1–38).
+> ⚠️ **Tavily API quota exhausted (HTTP 432)** — intel carried forward from prior scans
 
-| Competitor | Coverage We're Missing | Priority |
-|-----------|----------------------|----------|
-| **RevZilla** | Harley-Davidson Q4 $279M loss analysis | 🔴 URGENT |
-| **RideApart** | MotoGP 2027 850cc regulation revolution | 🔴 URGENT |
-| **Cycle World** | Daytona Bike Week 2026 preview (Feb 27–Mar 8) | 🔴 TIME-SENSITIVE |
-| **MCN** | Triumph Speed 400 long-term review | 🟡 HIGH |
-| **Motorcyclist** | HR-3385 autocycle bill legislative analysis | 🟡 HIGH |
-| **Asphalt & Rubber** | Electric motorcycle infrastructure expansion | 🟢 MEDIUM |
-| **Jalopnik Rides** | Kawasaki overtaking Harley as US #1 | 🔴 URGENT |
+### Trending Topics We're Missing (from prior scans + Reddit scouts)
 
-**Gap count: 80+ competitor stories uncovered, 0 addressed** — CRITICAL
+| Competitor Topic | Coverage Status | Priority |
+|-----------------|----------------|----------|
+| Harley-Davidson financial crisis | ❌ Not covered | 🔴 URGENT |
+| MotoGP 850cc regulation changes | ❌ Not covered | 🔴 HIGH |
+| Daytona Bike Week 2026 preview | ❌ Not covered | 🔴 HIGH |
+| Electric motorcycle range comparisons | ❌ Not covered | 🟡 MEDIUM |
+| HR-3385 Right to Repair bill | ❌ Not covered | 🟡 MEDIUM |
+| Adventure bike touring routes | ❌ Not covered | 🟡 MEDIUM |
+| Women in motorcycling features | ❌ Not covered | 🟡 MEDIUM |
 
----
+**Gap Score**: 80+ competitor stories identified, 0 covered — **CRITICAL**
 
-## 🌐 Brand Mentions
-
-> ⚠️ Tavily API quota exceeded. Last known data from prior scans:
-
-- **YouTube**: 4.93K subscribers, 22 videos published
-- **Viral content**: Speed 400 video = 11.7K views (best performing)
-- **Online mentions**: No external mentions detected yet (brand awareness gap)
+### Brand Mentions
+- YouTube: 4.93K subscribers, 22 videos
+- Speed 400 content = highest engagement (11.7K views)
+- No significant external brand mentions detected
 
 ---
 
-## 📋 Recommendations for Week 9 (Feb 23–Mar 1)
+## 🎯 Recommendations for Week 9 (Feb 19–25)
 
-### 🔴 Immediate Actions (by Feb 23)
-1. **Publish 3 drafts** — Move `best-motorcycle-tire-brands-2026`, `94c830a5`, `9e4c1ae6` from drafts to published
-2. **Write Harley-Davidson crisis article** — Q4 $279M loss, Kawasaki now US #1, massive search interest
-3. **Write Daytona Bike Week preview** — Event starts Feb 27, content must publish by Feb 25
+### Immediate Actions (Priority 1)
+1. **Clear Draft Backlog**: Review and publish at least 4 of 9 stuck drafts
+   - Start with `best-motorcycle-tire-brands-2026` (research is deepest at 14K bytes)
+   - Then `agno-mission-control-sdk` (already has full social pack)
+2. **Unblock Video Production**: Produce at least 1 of 3 scripted videos
+   - `smart-tech-inmrc-racing-diagnostics-video` has matching published article
 
-### 🟡 High Priority (by Feb 26)
-4. **MotoGP 2027 850cc explainer** — Biggest regulation change in 80 years
-5. **Speed 400 content series** — Capitalize on 11.7K view viral momentum
-6. **HR-3385 autocycle bill explainer** — Regulatory content = authority builder
+### Content Creation (Priority 2)
+3. **Harley-Davidson Crisis Article**: Write research brief + draft on financial situation
+4. **Daytona Bike Week Preview**: Time-sensitive — event coverage needed by Feb 21
+5. **MotoGP 850cc Explainer**: Regulation changes generating high Reddit discussion
 
-### 🟢 Operational
-7. **Unblock video production** — 3 scripts waiting, need recording pipeline
-8. **Convert Reddit scout leads** — 95+ opportunities across 6 reports, zero engaged
-9. **Tavily API** — Monitor quota reset for fresh competitor intelligence
-10. **Editorial review process** — 9 drafts stuck = need defined review-to-publish workflow
+### Infrastructure (Priority 3)
+6. **Tavily API**: Renew or increase quota — competitor intel has been dark for 50+ scans
+7. **Reduce Git Noise**: 55+ duplicate analytics commits this week — implement change-detection guard
+8. **Reddit Engagement**: 95+ opportunities identified across 6 scout reports, 0 engaged
 
----
-
-## 📊 Week-over-Week Trend
-
-| Metric | W7 | W8 | Trend |
-|--------|-----|-----|-------|
-| Research briefs | 8 | 14 | 📈 +75% |
-| Drafts created | 7 | 9 | 📈 +29% |
-| Articles published | 7 | 11 | 📈 +57% |
-| Social packages | 9 | 14 | 📈 +56% |
-| Videos produced | 0 | 0 | ➡️ Flat |
-| Reddit scouts | 1 | 6 | 📈 +500% |
-| Pipeline score | 5.2 | 4.1 | 📉 -21% |
-
-**Verdict**: Content *creation* is accelerating (+75% research, +57% published), but *execution pipeline* is degrading. Draft backlog growing, video production stalled, competitor gaps widening. Week 9 must focus on clearing the draft queue and publishing time-sensitive competitor response content.
+### W9 Target Metrics
+| Metric | Current | Target |
+|--------|---------|--------|
+| Published articles | 11 | 15 (+4) |
+| Videos produced | 0 | 1 |
+| Draft backlog | 9 | 5 (-4) |
+| Competitor topics covered | 0/80 | 3/80 |
+| Pipeline score | 4.1/10 | 6.0/10 |
 
 ---
 
-*Report generated by Gaṇaka (गणक) — Motorrad Theory Analytics Engine*
-*Next report: analytics-week-9.md (2026-02-23)*
+## 📊 Week-over-Week Comparison
+
+| Metric | W7 | W8 | Δ |
+|--------|-----|-----|---|
+| Research briefs | 10 | 14 | +4 ✅ |
+| Drafts | 7 | 9 | +2 (backlog growing ⚠️) |
+| Published | 8 | 11 | +3 ✅ |
+| Social posts | 10 | 13 | +3 ✅ |
+| Video scripts | 2 | 3 | +1 (still 0 produced 🔴) |
+| Reddit scouts | 3 | 6 | +3 ✅ |
+
+---
+
+*Report generated by Gaṇaka (गणक), Motorrad Theory Analytics Agent*
+*Next report: analytics-week-9.md — Feb 23, 2026*
