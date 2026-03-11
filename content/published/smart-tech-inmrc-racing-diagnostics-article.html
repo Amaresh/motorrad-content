@@ -3,477 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Tech — From INMRC Podiums to Your Garage: How Racing Innovation Is Transforming Motorcycle Service in India | Motorrad Theory</title>
+  <title>Smart Tech — From INMRC Podiums to Your Garage: How Racing Innovation Is Transforming Motorcycle Service in India | Tyming Chain</title>
   <meta name="description" content="From ECU mapping to OBD scanners — how Motorrad Theory uses smart tech to win INMRC podiums, and how the same innovation is changing Indian motorcycle garages.">
   <meta property="og:title" content="Smart Tech — From INMRC Podiums to Your Garage: How Racing Innovation Is Transforming Motorcycle Service in India">
   <meta property="og:description" content="From ECU mapping to OBD scanners — how Motorrad Theory uses smart tech to win INMRC podiums, and how the same innovation is changing Indian motorcycle garages.">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1400&h=700&fit=crop&q=80">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1400&amp;h=700&amp;fit=crop&amp;q=80">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Smart Tech — From INMRC Podiums to Your Garage: How Racing Innovation Is Transforming Motorcycle Service in India">
   <meta name="twitter:description" content="From ECU mapping to OBD scanners — how Motorrad Theory uses smart tech to win INMRC podiums, and how the same innovation is changing Indian motorcycle garages.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1400&h=700&fit=crop&q=80">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --accent: #ff4d4d;
-      --accent-glow: #ff4d4d26;
-      --bg-primary: #09090b;
-      --bg-secondary: #111113;
-      --bg-card: #18181b;
-      --bg-elevated: #1e1e22;
-      --text-primary: #fafafa;
-      --text-secondary: #a1a1aa;
-      --text-muted: #71717a;
-      --border: #27272a;
-      --border-subtle: #1e1e22;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-secondary);
-      line-height: 1.8;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    /* ═══ HERO WITH IMAGE ═══ */
-    .hero {
-      position: relative;
-      min-height: 70vh;
-      display: flex;
-      align-items: flex-end;
-      overflow: hidden;
-    }
-    .hero-img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.4) saturate(1.1);
-    }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        0deg,
-        var(--bg-primary) 0%,
-        rgba(9, 9, 11, 0.85) 30%,
-        rgba(9, 9, 11, 0.4) 60%,
-        rgba(9, 9, 11, 0.2) 100%
-      );
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 4rem 2rem 3.5rem;
-      width: 100%;
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: rgba(255, 255, 255, 0.06);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: var(--accent);
-      padding: 0.4rem 1rem;
-      border-radius: 100px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-
-      margin-bottom: 1.25rem;
-    }
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 900;
-      line-height: 1.12;
-      color: #fff;
-      margin-bottom: 1.25rem;
-      letter-spacing: -0.03em;
-    }
-    .hero .subtitle {
-      font-size: 1.1rem;
-      color: rgba(255, 255, 255, 0.65);
-      line-height: 1.7;
-      max-width: 620px;
-      margin-bottom: 1.5rem;
-    }
-    .meta-row {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      font-size: 0.85rem;
-      color: rgba(255, 255, 255, 0.4);
-    }
-    .meta-row span { display: flex; align-items: center; gap: 0.3rem; }
-    .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.25); }
-
-    /* ═══ SECTION IMAGES (under h2) ═══ */
-    .section-image {
-      position: relative;
-      width: 100%;
-      margin: 1rem 0 2rem;
-      border-radius: 12px;
-      overflow: hidden;
-      aspect-ratio: 3 / 1;
-    }
-    .section-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      filter: brightness(0.7) saturate(1.15);
-      transition: filter 0.4s ease;
-    }
-    .section-image:hover img {
-      filter: brightness(0.85) saturate(1.2);
-    }
-    .section-image-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        180deg,
-        transparent 0%,
-        rgba(9, 9, 11, 0.15) 60%,
-        rgba(9, 9, 11, 0.5) 100%
-      );
-      pointer-events: none;
-    }
-
-    /* ═══ FLOWING BACKGROUND IMAGES ═══ */
-    .bg-break {
-      position: relative;
-      width: 100vw;
-      margin-left: calc(-50vw + 50%);
-      height: 300px;
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-      overflow: hidden;
-    }
-    .bg-break img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.3) saturate(1.2);
-    }
-    .bg-break-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        180deg,
-        var(--bg-primary) 0%,
-        rgba(9, 9, 11, 0.2) 20%,
-        rgba(9, 9, 11, 0.2) 80%,
-        var(--bg-primary) 100%
-      );
-    }
-
-    /* ═══ TABLE OF CONTENTS ═══ */
-    .toc {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 2.5rem 2rem 0;
-    }
-    .toc-label {
-      font-size: 0.7rem;
-      font-weight: 700;
-
-      letter-spacing: 0.12em;
-      color: var(--accent);
-      margin-bottom: 0.75rem;
-    }
-    .toc ul { list-style: none; display: flex; flex-direction: column; gap: 0.15rem; }
-    .toc a {
-      display: block;
-      padding: 0.4rem 0.75rem;
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.88rem;
-      font-weight: 500;
-      border-radius: 6px;
-      transition: all 0.15s;
-    }
-    .toc a:hover {
-      color: var(--text-primary);
-      background: var(--bg-card);
-    }
-    .toc .toc-h3 a { padding-left: 1.75rem; font-size: 0.83rem; font-weight: 400; }
-
-    /* ═══ ARTICLE BODY ═══ */
-    .article {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 3rem 2rem 5rem;
-    }
-
-    /* ── Headings ── */
-    .article h2 {
-      font-size: 1.65rem;
-      font-weight: 800;
-      color: var(--text-primary);
-      margin: 3.5rem 0 0.5rem;
-      padding-bottom: 0.6rem;
-      letter-spacing: -0.02em;
-      position: relative;
-    }
-    .article h2::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 48px;
-      height: 3px;
-      background: var(--accent);
-      border-radius: 3px;
-    }
-    .article h2:first-child { margin-top: 0; }
-
-    .article h3 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin: 2.5rem 0 0.75rem;
-      padding-left: 0.9rem;
-      border-left: 3px solid var(--accent);
-    }
-
-    .article h4 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin: 2rem 0 0.5rem;
-    }
-
-    /* ── Paragraphs & links ── */
-    .article p {
-      margin-bottom: 1.35rem;
-      font-size: 1.02rem;
-    }
-    .article a {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      text-decoration-color: var(--accent-glow);
-      transition: text-decoration-color 0.15s;
-    }
-    .article a:hover { text-decoration-color: var(--accent); }
-
-    /* ── Lists ── */
-    .article ul, .article ol {
-      margin: 0 0 1.5rem 1.25rem;
-      padding: 0;
-    }
-    .article li {
-      margin-bottom: 0.45rem;
-      font-size: 1.02rem;
-    }
-    .article li::marker { color: var(--accent); }
-
-    /* ── Blockquotes ── */
-    .article blockquote {
-      border-left: 3px solid var(--accent);
-      background: var(--accent-glow);
-      margin: 1.75rem 0;
-      padding: 1.25rem 1.5rem;
-      border-radius: 0 10px 10px 0;
-      font-style: italic;
-      color: var(--text-primary);
-    }
-    .article blockquote p { margin-bottom: 0; }
-
-    /* ── Code ── */
-    .article code {
-      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
-      font-size: 0.88em;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      padding: 0.15em 0.4em;
-      border-radius: 5px;
-      color: var(--accent);
-    }
-    .article pre {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.25rem 1.5rem;
-      overflow-x: auto;
-      margin: 1.75rem 0;
-    }
-    .article pre code {
-      background: none;
-      border: none;
-      padding: 0;
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-    }
-
-    /* ── Tables ── */
-    .article table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      margin: 1.75rem 0;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    .article thead th {
-      background: var(--bg-card);
-      padding: 0.85rem 1rem;
-      text-align: left;
-      font-weight: 700;
-      font-size: 0.82rem;
-
-      letter-spacing: 0.06em;
-      color: var(--accent);
-      border-bottom: 1px solid var(--border);
-    }
-    .article td {
-      padding: 0.75rem 1rem;
-      border-bottom: 1px solid var(--border-subtle);
-      font-size: 0.95rem;
-    }
-    .article tr:last-child td { border-bottom: none; }
-    .article tbody tr { transition: background 0.15s; }
-    .article tbody tr:hover { background: var(--bg-card); }
-
-    /* ── Horizontal rule ── */
-    .article hr {
-      border: none;
-      height: 1px;
-      background: var(--border);
-      margin: 3rem 0;
-    }
-
-    /* ── Strong / em ── */
-    .article strong { color: var(--text-primary); font-weight: 700; }
-    .article em { color: var(--text-primary); }
-
-    /* ═══ FOOTER CTA ═══ */
-    .footer-cta {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 0 2rem 4rem;
-    }
-    .cta-card {
-      background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 3rem;
-      text-align: center;
-    }
-    .cta-card h3 {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--text-primary);
-      margin-bottom: 0.75rem;
-      border: none;
-      padding: 0;
-    }
-    .cta-card p {
-      color: var(--text-muted);
-      margin-bottom: 2rem;
-      font-size: 1rem;
-    }
-    .cta-links {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .cta-links a {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.7rem 1.5rem;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s;
-    }
-    .cta-links a.primary {
-      background: var(--accent);
-      color: #fff;
-    }
-    .cta-links a.primary:hover { filter: brightness(1.15); }
-    .cta-links a.secondary {
-      background: var(--bg-elevated);
-      color: var(--text-secondary);
-      border: 1px solid var(--border);
-    }
-    .cta-links a.secondary:hover { border-color: var(--accent); color: var(--text-primary); }
-
-    /* ═══ FOOTER ═══ */
-    .site-footer {
-      text-align: center;
-      padding: 2rem;
-      color: var(--text-muted);
-      font-size: 0.82rem;
-      border-top: 1px solid var(--border-subtle);
-    }
-
-    /* ═══ RESPONSIVE ═══ */
-    @media (max-width: 640px) {
-      .hero { min-height: 60vh; }
-      .hero-content { padding: 2.5rem 1.25rem 2.5rem; }
-      .article { padding: 2rem 1.25rem 3rem; }
-      .toc { padding: 2rem 1.25rem 0; }
-      .cta-card { padding: 2rem 1.25rem; }
-      .cta-links { flex-direction: column; }
-      .section-image { aspect-ratio: 2.5 / 1; border-radius: 8px; }
-      .bg-break { height: 200px; margin-top: 2.5rem; margin-bottom: 2.5rem; }
-    }
-  </style>
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1400&amp;h=700&amp;fit=crop&amp;q=80">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-
-  <header class="hero">
-    <img class="hero-img" src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1400&h=700&fit=crop&q=80" alt="Smart Tech — From INMRC Podiums to Your Garage: How Racing Innovation Is Transforming Motorcycle Service in India">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="badge">⬡ Racing Technology</div>
-      <h1>Smart Tech — From INMRC Podiums to Your Garage: How Racing Innovation Is Transforming Motorcycle Service in India</h1>
-      <p class="subtitle">From ECU mapping to OBD scanners — how Motorrad Theory uses smart tech to win INMRC podiums, and how the same innovation is changing Indian motorcycle garages.</p>
-      <div class="meta-row">
-        <span>✎ Motorrad Theory Team</span>
-        <span class="meta-dot"></span>
-        <span>◷ 15 min read</span>
-        <span class="meta-dot"></span>
-        <span>⊞ 2026-02-15</span>
+  <a href="#content" class="skip-link">Skip to content</a>
+  
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="/" class="brand" aria-label="Tyming Chain home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy">
+          <strong>tymingchain</strong>
+          <small>motorcycle workshop software</small>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/products/">Products</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <nav class="toc"><div class="toc-label">In this article</div><ul><li><a href="#race-day-at-the-madras-international-circuit">Race Day at the Madras International Circuit</a></li><li><a href="#inside-the-smart-tech-stack">Inside the Smart Tech Stack</a></li><li class="toc-h3"><a href="#data-acquisition-systems">Data Acquisition Systems</a></li><li class="toc-h3"><a href="#ecu-mapping-and-fuel-strategy">ECU Mapping and Fuel Strategy</a></li><li class="toc-h3"><a href="#traction-control-and-the-imu">Traction Control and the IMU</a></li><li class="toc-h3"><a href="#quickshifters-and-auto-blippers">Quickshifters and Auto-Blippers</a></li><li class="toc-h3"><a href="#tyre-pressure-monitoring">Tyre Pressure Monitoring</a></li><li class="toc-h3"><a href="#pit-to-rider-communication">Pit-to-Rider Communication</a></li><li><a href="#data-driven-racing-how-telemetry-wins-podiums">Data-Driven Racing: How Telemetry Wins Podiums</a></li><li><a href="#from-racetrack-to-workshop-the-trickle-down-revolution">From Racetrack to Workshop: The Trickle-Down Revolution</a></li><li class="toc-h3"><a href="#bs-vi-phase-2-indias-obd-moment">BS-VI Phase 2: India's OBD Moment</a></li><li class="toc-h3"><a href="#connected-bike-apps-india-leads">Connected Bike Apps: India Leads</a></li><li class="toc-h3"><a href="#predictive-maintenance-the-real-game-changer">Predictive Maintenance: The Real Game-Changer</a></li><li><a href="#diy-vs-dealer-smart-diagnostics-for-every-indian-rider">DIY vs. Dealer: Smart Diagnostics for Every Indian Rider</a></li><li><a href="#the-mechanic-as-data-analyst">The Mechanic as Data Analyst</a></li><li><a href="#building-a-360-customer-view">Building a 360° Customer View</a></li><li><a href="#where-indian-motorcycle-tech-is-heading">Where Indian Motorcycle Tech Is Heading</a></li><li><a href="#faq">FAQ</a></li><li class="toc-h3"><a href="#what-smart-tech-is-used-in-inmrc-racing">What smart tech is used in INMRC racing?</a></li><li class="toc-h3"><a href="#how-does-ecu-mapping-improve-motorcycle-race-performance">How does ECU mapping improve motorcycle race performance?</a></li><li class="toc-h3"><a href="#can-i-use-an-obd-scanner-on-my-bs-vi-bike">Can I use an OBD scanner on my BS-VI bike?</a></li><li class="toc-h3"><a href="#what-is-an-imu-on-a-motorcycle">What is an IMU on a motorcycle?</a></li><li class="toc-h3"><a href="#how-does-predictive-maintenance-work-for-motorcycles">How does predictive maintenance work for motorcycles?</a></li><li><a href="#ride-smart-wrench-smarter">Ride Smart. Wrench Smarter.</a></li></ul></nav>
+  <main id="content" class="page-shell article-shell">
+    <section class="article-hero">
+      <div class="article-grid">
+        <div>
+          <div class="eyebrow">Racing technology</div>
+          <h1 class="article-title">Smart Tech — From INMRC Podiums to Your Garage: How Racing Innovation Is Transforming Motorcycle Service in India</h1>
+          <p class="hero-copy">From ECU mapping to OBD scanners — how Motorrad Theory uses smart tech to win INMRC podiums, and how the same innovation is changing Indian motorcycle garages.</p>
+          <div class="tag-row">
+            <span class="tag">Feb 15, 2026</span>
+            <span class="tag">15 min read</span>
+          </div>
+          <div class="article-summary-grid"><article class="summary-card"><div class="summary-label">Headline</div><div class="summary-number">Data-led</div><p>Diagnostics beat guesswork under pressure</p></article><article class="summary-card"><div class="summary-label">Shift</div><div class="summary-number">2 worlds</div><p>Race discipline brought back to regular service</p></article><article class="summary-card"><div class="summary-label">Takeaway</div><div class="summary-number">1 takeaway</div><p>Sharper process produces more reliable outcomes</p></article></div>
+        </div>
+        <div class="hero-visual">
+          <article class="photo-card article-hero-photo">
+            <div class="photo-overlay">
+              <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1400&amp;h=700&amp;fit=crop&amp;q=80" alt="Smart Tech — From INMRC Podiums to Your Garage: How Racing Innovation Is Transforming Motorcycle Service in India">
+              <div class="photo-caption">
+                <div class="mini-label">Visual summary</div>
+                <p>This page now lives in the same design language as the rest of Tyming Chain, with a faster summary before the long-form read.</p>
+              </div>
+            </div>
+          </article>
+          <article class="chart-card">
+            <div class="chart-head">
+              <div>
+                <div class="chart-label">Impact profile</div>
+                <h3 class="card-title">Where this article puts the emphasis</h3>
+              </div>
+            </div>
+            <div class="bar-list"><div class="bar-row"><div class="bar-meta"><span>Diagnostics depth</span><span>86</span></div><div class="bar-track"><div class="bar-fill" style="width: 86%;"></div></div></div><div class="bar-row"><div class="bar-meta"><span>Process discipline</span><span>81</span></div><div class="bar-track"><div class="bar-fill" style="width: 81%;"></div></div></div><div class="bar-row"><div class="bar-meta"><span>Workshop transferability</span><span>64</span></div><div class="bar-track"><div class="bar-fill" style="width: 64%;"></div></div></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <article class="article">
-    <!-- IMAGE SUGGESTION: Hero banner — split composition showing INMRC pit box screens (left) and a modern Indian garage with a mechanic using a tablet diagnostic tool (right). Conveys the racing-to-garage bridge visually. -->
+    <section class="section">
+      <div class="article-layout">
+        <aside class="jump-card">
+          <div class="jump-title">On this page</div>
+          <h3>Quick jump</h3>
+          <div class="jump-list"><a href="#race-day-at-the-madras-international-circuit">Race Day at the Madras International Circuit</a><a href="#inside-the-smart-tech-stack">Inside the Smart Tech Stack</a><a href="#data-driven-racing-how-telemetry-wins-podiums">Data-Driven Racing: How Telemetry Wins Podiums</a><a href="#from-racetrack-to-workshop-the-trickle-down-revolution">From Racetrack to Workshop: The Trickle-Down Revolution</a><a href="#diy-vs-dealer-smart-diagnostics-for-every-indian-rider">DIY vs. Dealer: Smart Diagnostics for Every Indian Rider</a></div>
+        </aside>
+        <article class="article-body">
+ IMAGE SUGGESTION: Hero banner — split composition showing INMRC pit box screens (left) and a modern Indian garage with a mechanic using a tablet diagnostic tool (right). Conveys the racing-to-garage bridge visually. 
 <h2 id="race-day-at-the-madras-international-circuit">Race Day at the Madras International Circuit</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1200&h=400&fit=crop&q=80" alt="Race Day at the Madras International Circuit" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="Race Day at the Madras International Circuit" loading="lazy" src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>The five-second board goes up. Twenty-two machines sit on the grid at the Madras International Circuit, exhausts popping and crackling in the thick Chennai humidity. Inside Motorrad Theory's pit box, three screens paint a picture no spectator in the grandstand can see — tyre pressures climbing through the warm-up lap, a throttle position trace from qualifying overlaid against the race strategy target, and a fuel map selected for the 34°C ambient and 52°C tarmac the team's weather station logged twenty minutes ago.</p>
 <p>The lights go out. The pack charges into Turn 1. And from this moment, every tenth of a second separating a podium finish from a mid-pack result will come down to something most fans never think about: data.</p>
 <p>Not horsepower. Not bravery. Data.</p>
 <p>The sensors bolted to the motorcycle are recording everything — wheel speed, lean angle, brake pressure, throttle opening, gear position, suspension travel, oil temperature. The data flows through the ECU, streams to the pit wall, and lands on the data engineer's screen in real time. By the time the chequered flag drops, Motorrad Theory's single motorcycle will have generated between 8 and 12 gigabytes of raw information. That is more data than most Indian workshops process in a year.</p>
 <p>This is smart motorcycle technology in the Indian National Motorcycle Racing Championship. It is not science fiction reserved for Valentino Rossi's era or Marc Márquez's factory Honda. It is happening right now, on Indian tarmac, with Indian teams, in front of Indian fans.</p>
 <p>And the technology that wins these podiums? It is about to change how every motorcycle garage in India operates.</p>
-<hr />
+<hr/>
 <h2 id="inside-the-smart-tech-stack">Inside the Smart Tech Stack</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=400&fit=crop&q=80" alt="Inside the Smart Tech Stack" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="Inside the Smart Tech Stack" loading="lazy" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>A racing motorcycle is an instrument cluster on two wheels. Here is what makes the data pipeline work — component by component.</p>
-<!-- IMAGE SUGGESTION: Labelled diagram of a racing motorcycle showing sensor locations — wheel speed sensors, IMU, ECU, data logger, TPMS, throttle position sensor, brake pressure sensor, suspension potentiometers. -->
+ IMAGE SUGGESTION: Labelled diagram of a racing motorcycle showing sensor locations — wheel speed sensors, IMU, ECU, data logger, TPMS, throttle position sensor, brake pressure sensor, suspension potentiometers. 
 <h3 id="data-acquisition-systems">Data Acquisition Systems</h3>
 <p>The data acquisition system is the nervous system of a smart racing operation. Think of it as the black box that records everything the motorcycle does, every millisecond of every lap.</p>
 <p>Motorrad Theory runs AiM hardware — the Solo 2 DL for testing sessions (approximately ₹59,000) and the EVO5 for race weekends. These units connect to 30-plus sensor channels simultaneously: wheel speed front and rear, throttle position, brake pressure at both ends, GPS position and velocity, gear position, RPM, coolant temperature, oil temperature, oil pressure, and suspension travel at all four corners of the fork and shock.</p>
@@ -496,21 +117,21 @@
 <p>Motorrad Theory knows their Pirelli Supercorsa front tyre reaches optimal operating pressure by lap 3 in 30°C ambient conditions but takes until lap 5 when it is 22°C. This data shapes qualifying strategy — send the rider out for one flying lap on low fuel, or build tyre pressure gradually over a longer, more methodical run?</p>
 <p>The answer is never a guess. It is always in the data.</p>
 <h3 id="pit-to-rider-communication">Pit-to-Rider Communication</h3>
-<p>Unlike Formula 1's open radio, motorcycle pit-to-rider communication relies on pit boards and LED dashboard messages pushed from the pit box directly to the bike's instrument display. During a race, the team sends concise instructions: &quot;+0.3&quot; means you are behind target pace by three-tenths. &quot;SAVE&quot; means switch to tyre conservation mode. &quot;P1 GAP 1.2&quot; means you are leading by 1.2 seconds.</p>
+<p>Unlike Formula 1's open radio, motorcycle pit-to-rider communication relies on pit boards and LED dashboard messages pushed from the pit box directly to the bike's instrument display. During a race, the team sends concise instructions: "+0.3" means you are behind target pace by three-tenths. "SAVE" means switch to tyre conservation mode. "P1 GAP 1.2" means you are leading by 1.2 seconds.</p>
 <p>This transforms the rider from a solo decision-maker into an executor of team strategy — the same philosophical shift that changed car racing decades ago, now arriving in Indian paddocks.</p>
-<hr />
+<hr/>
 <h2 id="data-driven-racing-how-telemetry-wins-podiums">Data-Driven Racing: How Telemetry Wins Podiums</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=1200&h=400&fit=crop&q=80" alt="Data-Driven Racing: How Telemetry Wins Podiums" loading="lazy"><div class="section-image-overlay"></div></div>
-<!-- IMAGE SUGGESTION: Screenshot-style graphic of a telemetry overlay — throttle trace, brake pressure, and lean angle graphs layered on an INMRC circuit map. Annotate key sections showing where data reveals improvement opportunities. -->
+<div class="section-image"><img alt="Data-Driven Racing: How Telemetry Wins Podiums" loading="lazy" src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
+ IMAGE SUGGESTION: Screenshot-style graphic of a telemetry overlay — throttle trace, brake pressure, and lean angle graphs layered on an INMRC circuit map. Annotate key sections showing where data reveals improvement opportunities. 
 <p>After every session, the rider climbs off the bike and walks straight into the debrief room. The data engineer has the telemetry replay loaded before the helmet comes off. They are not discussing feelings. They are looking at a throttle trace showing the rider rolled off 3 percent entering Turn 7 — that hesitation cost a tenth. Brake pressure data reveals a peak 0.4 bar above optimal at Turn 4, causing a micro-lockup the rider may not have even felt but the front tyre certainly did. Lean angle data shows the bike could carry 1.5 degrees more lean through the fast sweeper at Turn 9 before exceeding the tyre's grip envelope.</p>
 <p>Then they adjust. The ECU gets a revised fuel curve for the mid-range. The TC intervention threshold is raised a fraction for Turn 9 to give the rider confidence to lean harder. Suspension gets two clicks of rebound damping adjustment based on travel data through the bump sequence at Turn 5.</p>
 <p>It is methodical. It is precise. And it compounds — a tenth here, two-tenths there, half a second per lap over race distance. That is the difference between standing on the podium and finishing seventh. Multiply it across a championship season, and data is not just an advantage. It is the advantage.</p>
 <p>In World Superbike, this approach has become so dominant that technicians now outnumber riders in pit boxes. Data engineers are the fastest-growing role in the global racing paddock. The wrench is still essential, but the laptop has become equally important.</p>
 <p>FMSCI competition licence applications have grown roughly 40 percent between 2023 and 2025. Indian racing is booming. And the teams investing in data infrastructure — not just fast riders and expensive engines — are the ones climbing the championship standings.</p>
-<hr />
-<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
+<hr/>
+<div aria-hidden="true" class="bg-break"><img alt="" loading="lazy" src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1600&amp;h=600&amp;fit=crop&amp;q=80"/><div class="bg-break-overlay"></div></div>
 <h2 id="from-racetrack-to-workshop-the-trickle-down-revolution">From Racetrack to Workshop: The Trickle-Down Revolution</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1200&h=400&fit=crop&q=80" alt="From Racetrack to Workshop: The Trickle-Down Revolution" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="From Racetrack to Workshop: The Trickle-Down Revolution" loading="lazy" src="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>Every major motorcycle technology on the road today was born on a racetrack. ABS. Ride-by-wire. Traction control. Lean-angle-sensitive stability systems. Quickshifters. All refined at 200 km/h before landing on showroom floors across India.</p>
 <p>The latest trickle-down wave is diagnostics — and India is uniquely positioned to benefit.</p>
 <h3 id="bs-vi-phase-2-indias-obd-moment">BS-VI Phase 2: India's OBD Moment</h3>
@@ -524,9 +145,9 @@
 <p>In racing, this means knowing brake pads will reach minimum thickness during lap 14 of a 16-lap race, so you plan your strategy accordingly. In a garage, it means knowing a customer's chain needs replacement in 800 kilometres — and contacting them before it becomes a roadside breakdown on the Mumbai-Pune Expressway.</p>
 <p><strong><a href="https://www.motorradtheory.com/garage-crm">Garage CRM</a></strong> brings this racing-grade approach to your service bay. Track every bike's service history, diagnostic codes, parts lifecycle, and upcoming maintenance windows — all on a single dashboard. The same structured data pipeline that wins INMRC podiums can drive your workshop's efficiency. You do not need a MotoGP budget. You need a system that treats data the way a racing team does: as the foundation of every decision.</p>
 <p>With BS-VI Phase 2 creating an explosion of diagnostic data from every new motorcycle entering your workshop, the garages that capture and organise this data will own the customer relationship. The ones that ignore it will lose customers to shops that understand their bikes better than they do.</p>
-<hr />
+<hr/>
 <h2 id="diy-vs-dealer-smart-diagnostics-for-every-indian-rider">DIY vs. Dealer: Smart Diagnostics for Every Indian Rider</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1530124566582-a45a7e3ddd65?w=1200&h=400&fit=crop&q=80" alt="DIY vs. Dealer: Smart Diagnostics for Every Indian Rider" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="DIY vs. Dealer: Smart Diagnostics for Every Indian Rider" loading="lazy" src="https://images.unsplash.com/photo-1530124566582-a45a7e3ddd65?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>You do not need a professional garage to start using smart diagnostics. Here is how the options stack up for Indian riders and workshops:</p>
 <table>
 <thead>
@@ -566,31 +187,31 @@
 </table>
 <p>The ₹2,500 Bluetooth adapter gives any rider with a BS-VI motorcycle 80 percent of the diagnostic capability that a dealership offered with ₹4 lakh equipment a decade ago. That is the trickle-down effect measured in rupees.</p>
 <p>India's two-wheeler aftermarket is worth ₹32,000 crore and growing at 12 percent annually. The workshops winning market share are the ones embracing digital diagnostic tools — not because they are trendy, but because the bikes arriving at their doors demand it. A 2026 KTM 390 Duke generates more sensor data in a single ride than a 2015 Pulsar 220 produced in its lifetime. If your workshop cannot read that data, you are working blind.</p>
-<hr />
+<hr/>
 <h2 id="the-mechanic-as-data-analyst">The Mechanic as Data Analyst</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&h=400&fit=crop&q=80" alt="The Mechanic as Data Analyst" loading="lazy"><div class="section-image-overlay"></div></div>
-<!-- IMAGE SUGGESTION: Photo of an Indian motorcycle mechanic reviewing diagnostic data on a tablet in a workshop setting, with a KTM or TVS Apache on the lift behind them. -->
+<div class="section-image"><img alt="The Mechanic as Data Analyst" loading="lazy" src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
+ IMAGE SUGGESTION: Photo of an Indian motorcycle mechanic reviewing diagnostic data on a tablet in a workshop setting, with a KTM or TVS Apache on the lift behind them. 
 <p>The best garages in India are cross-training their teams. A mechanic who can read a diagnostic scan, interpret a fuel trim value, and explain to a customer why their O2 sensor is reading lean commands higher trust and higher labour rates. The wrench-only mechanic is not obsolete — but the mechanic who combines wrench skills with diagnostic literacy is worth twice as much.</p>
 <p>Staff roles are evolving. In a racing pit box, everyone has a defined specialisation: data engineer, tyre technician, suspension specialist, crew chief. The crew chief does not guess who is responsible for what. Roles are clear, skills are tracked, and the right person is assigned to the right task every time.</p>
 <p><strong><a href="https://www.motorradtheory.com/employee">Motorrad Theory Employee</a></strong> brings that racing-team clarity to your workshop. Track which technician is certified on Kawasaki ECU systems. Know who your Ducati Desmo specialist is. Schedule shifts based on the diagnostic complexity of the day's job cards. Assign a BS-VI OBD scan job to the tech who completed the training, not the one who happens to be free. A racing team knows exactly who handles telemetry and who changes tyres — your garage deserves the same visibility.</p>
-<hr />
-<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
+<hr/>
+<div aria-hidden="true" class="bg-break"><img alt="" loading="lazy" src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=1600&amp;h=600&amp;fit=crop&amp;q=80"/><div class="bg-break-overlay"></div></div>
 <h2 id="building-a-360-customer-view">Building a 360° Customer View</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=400&fit=crop&q=80" alt="Building a 360° Customer View" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="Building a 360° Customer View" loading="lazy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>Racing teams maintain comprehensive data profiles on every machine. Motorrad Theory's data engineers can pull up any motorcycle's full history: every ECU map loaded, every suspension setting tried, every tyre compound run, every sector time logged. Context is everything. Without it, you are tuning in the dark.</p>
 <p>The same principle applies to your workshop.</p>
 <p>When a customer rides in with a TVS Apache RR 310 showing an intermittent misfire, what do you do? If you start from zero — no service history, no previous diagnostic codes, no parts record — you are guessing. But if you can pull up their full profile and see: last service at 8,400 km, spark plugs replaced, air filter flagged as marginal with a note to replace next visit, throttle body sync last performed at 12,000 km, and a lean fuel trim code logged three months ago that was resolved with an injector clean — now you are diagnosing with context. Exactly like a racing data engineer reviewing telemetry with the full weekend's data behind them.</p>
 <p><strong><a href="https://www.motorradtheory.com/crm">Motorrad Theory CRM</a></strong> gives you that 360-degree view for every customer and every bike in your database. Service history, diagnostic codes, parts lifecycle, customer preferences, communication log — everything a modern workshop needs to deliver the kind of data-driven service that builds loyalty and commands premium pricing. In a ₹32,000 crore aftermarket, the garages that know their customers' bikes better than the customers do will win.</p>
-<hr />
+<hr/>
 <h2 id="where-indian-motorcycle-tech-is-heading">Where Indian Motorcycle Tech Is Heading</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=400&fit=crop&q=80" alt="Where Indian Motorcycle Tech Is Heading" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="Where Indian Motorcycle Tech Is Heading" loading="lazy" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>The next five years will make today's smart tech look primitive. Here is what is coming — and what Indian riders and garages should prepare for.</p>
 <p><strong>AI-driven diagnostics</strong> are being tested in global racing paddocks right now. Machine learning models trained on thousands of engine hours can identify failure patterns before a human technician spots any symptom. Cloud-based diagnostic platforms will bring this capability to independent Indian workshops as subscription services — no massive hardware investment required.</p>
 <p><strong>Vehicle-to-Everything (V2X) communication</strong> will let motorcycles talk to infrastructure, cars, and each other. Imagine a connected bike that warns you about a pothole reported by the rider ahead on the Bangalore-Mysore highway, or a diesel spill flagged by a truck's telematics system at the next roundabout. India's Smart Cities Mission infrastructure is being built with V2X readiness.</p>
 <p><strong>Predictive tyre modelling</strong> — machine learning that forecasts grip levels from temperature, pressure, wear, and compound data — is under active development at Pirelli and Michelin. The street version will tell your garage exactly when a customer's tyres will reach wear indicators based on their actual riding patterns and routes, not generic mileage estimates.</p>
 <p><strong>OTA updates for ICE motorcycles</strong> are the next frontier. Ather proved over-the-air software updates work for Indian two-wheelers. Major ICE manufacturers are building the same capability into their connected platforms. Your customer's bike will update its ECU map, TC calibration, and dashboard firmware overnight — and your workshop needs systems that track what version each bike is running.</p>
 <p>For garages, the bottom line is simple: bikes are getting smarter every model year. If your workshop systems cannot keep pace with the data these machines produce, you will lose customers to the shops that can.</p>
-<hr />
+<hr/>
 <h2 id="faq">FAQ</h2>
 <h3 id="what-smart-tech-is-used-in-inmrc-racing">What smart tech is used in INMRC racing?</h3>
 <p>INMRC racing teams use data acquisition systems (AiM, MoTeC), fully programmable ECU mapping, traction control governed by 6-axis inertial measurement units (IMUs), quickshifters with 40–80 ms shift times, racing-grade tyre pressure monitoring systems, and pit-to-rider LED dashboard communication. A single motorcycle generates 8–12 GB of sensor data per race weekend.</p>
@@ -602,8 +223,8 @@
 <p>An Inertial Measurement Unit (IMU) is a 6-axis sensor containing three accelerometers and three gyroscopes. It measures lean angle, pitch, yaw, and their rates of change at up to 1,000 readings per second. Traction control, cornering ABS, wheelie control, and slide control all depend on IMU data. The Bosch IMU 6.5 is standard on bikes sold in India including the KTM 390 Duke and BMW S 1000 RR.</p>
 <h3 id="how-does-predictive-maintenance-work-for-motorcycles">How does predictive maintenance work for motorcycles?</h3>
 <p>Predictive maintenance uses historical service data and sensor patterns to forecast when components need replacement before they fail. By tracking chain wear rates, brake pad thickness, tyre tread depth, and fluid conditions over time, a garage management system can proactively schedule service — reducing unplanned breakdowns by 30–50% and maintenance costs by 10–40% (McKinsey).</p>
-<hr />
-<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
+<hr/>
+<div aria-hidden="true" class="bg-break"><img alt="" loading="lazy" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&amp;h=600&amp;fit=crop&amp;q=80"/><div class="bg-break-overlay"></div></div>
 <h2 id="ride-smart-wrench-smarter">Ride Smart. Wrench Smarter.</h2>
 <p>The gap between an INMRC pit box and a neighbourhood motorcycle garage narrows every year. The same data philosophy that earns Motorrad Theory podiums — structured analysis, predictive decisions, sensor-driven precision — is now accessible to any Indian workshop ready to embrace it.</p>
 <p>India sells 21.4 million motorcycles a year. Every new one carries more sensors, more data, and more diagnostic capability than the generation before it. The garages that thrive in this environment will not be the ones with the most bays or the loudest signboards. They will be the ones that treat data the way a racing team does: as the single most valuable asset in the building.</p>
@@ -614,23 +235,44 @@
 <li><strong><a href="https://www.motorradtheory.com/employee">Motorrad Theory Employee</a></strong> — Manage your team with racing-team precision</li>
 <li><strong><a href="https://www.motorradtheory.com/crm">Motorrad Theory CRM</a></strong> — Build 360° customer relationships that outlast any service interval</li>
 </ul>
+</article>
+      </div>
+    </section>
 
-  </article>
-
-  <div class="footer-cta">
-    <div class="cta-card">
-      <h3>Ready to Transform Your Garage?</h3>
-      <p>Explore Motorrad Theory's suite of tools built for Indian motorcycle workshops.</p>
-      <div class="cta-links">
-        <a href="#" class="primary">🏍 Garage CRM</a>
-        <a href="#" class="secondary">👥 Customer CRM</a>
-        <a href="#" class="secondary">📊 Team Management</a>
+    <section class="section article-footer-card">
+      <div class="split-grid">
+        <article class="contact-card">
+          <div class="mini-label">Continue exploring</div>
+          <h3>See how the product pages frame the same problems.</h3>
+          <p>If this article touches an operations problem you already feel in the workshop, the products page will show how that problem is mapped into the Tyming Chain platform.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/products/">View the products page</a>
+            <a class="button button-secondary" href="/contact/">Start a conversation</a>
+          </div>
+        </article>
+        <article class="chart-card">
+          <div class="chart-head">
+            <div>
+              <div class="chart-label">Article layout note</div>
+              <h3 class="card-title">One shared design across blog and product surfaces.</h3>
+            </div>
+          </div>
+          <p>This article has been remapped to the current site system so the blog feels like part of the same product story, not a separate theme.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>Tyming Chain now uses one visual system across product pages and long-form content.</div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/products/">Products</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
       </div>
     </div>
-  </div>
-
-  <footer class="site-footer">
-    <p>© 2026 Motorrad Theory · Built for Indian motorcycle workshops</p>
   </footer>
 
 </body>

@@ -12,13 +12,9 @@
         { prefix: '/service-history/', targetBase: 'https://motorradtheory.in' },
         { prefix: '/photo-verification/', targetBase: 'https://motorradtheory.in' }
       ];
-
       var path = window.location.pathname || '/';
       var match = rules.find(function(rule) { return path.indexOf(rule.prefix) === 0; });
-      if (!match) {
-        return;
-      }
-
+      if (!match) { return; }
       var destination = match.targetBase + path + window.location.search + window.location.hash;
       window.location.replace(destination);
     })();
@@ -28,11 +24,11 @@
   <main class="page-shell">
     <article class="contact-card center-card">
       <div class="eyebrow">Page not found</div>
-      <h1 class="page-title" style="font-size: clamp(2.4rem, 6vw, 4rem); margin-bottom: 1rem;">This page does not exist here.</h1>
-      <p class="lead">If you opened a customer-service link, you may be redirected to the live portal automatically. Otherwise, head back to the main Tyming Chain site and continue from there.</p>
+      <h1 class="page-title" style="font-size: clamp(2.5rem, 7vw, 4.4rem); margin-bottom: 1rem;">This page is not on the chain.</h1>
+      <p class="hero-copy">If you opened a customer-service link, you may be redirected to the live portal automatically. Otherwise, head back to the homepage or jump into the product map.</p>
       <div class="hero-actions">
         <a class="button button-primary" href="/">Go to the homepage</a>
-        <a class="button button-secondary" href="/products/">View the products page</a>
+        <a class="button button-secondary" href="/products/">Open products</a>
       </div>
     </article>
   </main>

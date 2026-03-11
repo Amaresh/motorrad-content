@@ -4,477 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Is Your Garage Ready for Electric Motorcycles? The EV Readiness Checklist for Indian Workshops | Tyming Chain</title>
-  <meta name="description" content="India's electric two-wheeler market is growing 40%+ year-over-year. This EV readiness checklist covers training, tools, infrastructure, software, and revenue opportunities for Indian motorcycle workshops preparing for the electric transition.">
+  <meta name="description" content="India&#x27;s electric two-wheeler market is growing 40%+ year-over-year. This EV readiness checklist covers training, tools, infrastructure, software, and revenue opportunities for Indian motorcycle workshops preparing for the electric transition.">
   <meta property="og:title" content="Is Your Garage Ready for Electric Motorcycles? The EV Readiness Checklist for Indian Workshops">
-  <meta property="og:description" content="India's electric two-wheeler market is growing 40%+ year-over-year. This EV readiness checklist covers training, tools, infrastructure, software, and revenue opportunities for Indian motorcycle workshops preparing for the electric transition.">
+  <meta property="og:description" content="India&#x27;s electric two-wheeler market is growing 40%+ year-over-year. This EV readiness checklist covers training, tools, infrastructure, software, and revenue opportunities for Indian motorcycle workshops preparing for the electric transition.">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=1400&h=700&fit=crop&q=80">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=1400&amp;h=700&amp;fit=crop&amp;q=80">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Is Your Garage Ready for Electric Motorcycles? The EV Readiness Checklist for Indian Workshops">
-  <meta name="twitter:description" content="India's electric two-wheeler market is growing 40%+ year-over-year. This EV readiness checklist covers training, tools, infrastructure, software, and revenue opportunities for Indian motorcycle workshops preparing for the electric transition.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=1400&h=700&fit=crop&q=80">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');</style>
-  <style>
-    :root {
-      --accent: #DC2626;
-      --accent-glow: rgba(220,38,38,0.15);
-      --bg-primary: #0a0a0a;
-      --bg-secondary: #111113;
-      --bg-card: #1E293B;
-      --bg-elevated: #334155;
-      --text-primary: #f1f5f9;
-      --text-secondary: #94a3b8;
-      --text-muted: #64748b;
-      --border: #1e293b;
-      --border-subtle: #1e293b;
-      --gold: #CA8A04;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-secondary);
-      line-height: 1.8;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    /* ═══ HERO WITH IMAGE ═══ */
-    .hero {
-      position: relative;
-      min-height: 70vh;
-      display: flex;
-      align-items: flex-end;
-      overflow: hidden;
-    }
-    .hero-img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.4) saturate(1.1);
-    }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        0deg,
-        var(--bg-primary) 0%,
-        rgba(10, 10, 10, 0.85) 30%,
-        rgba(10, 10, 10, 0.4) 60%,
-        rgba(10, 10, 10, 0.2) 100%
-      );
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 4rem 2rem 3.5rem;
-      width: 100%;
-    }
-    .badge {
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: rgba(255, 255, 255, 0.06);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: var(--accent);
-      padding: 0.4rem 1rem;
-      border-radius: 100px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      margin-bottom: 1.25rem;
-    }
-    .hero h1 {
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 900;
-      line-height: 1.12;
-      color: #fff;
-      margin-bottom: 1.25rem;
-      letter-spacing: -0.03em;
-    }
-    .hero .subtitle {
-      font-size: 1.1rem;
-      color: rgba(255, 255, 255, 0.65);
-      line-height: 1.7;
-      max-width: 620px;
-      margin-bottom: 1.5rem;
-    }
-    .meta-row {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      font-size: 0.85rem;
-      color: rgba(255, 255, 255, 0.4);
-    }
-    .meta-row span { display: flex; align-items: center; gap: 0.3rem; }
-    .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.25); }
-
-    /* ═══ SECTION IMAGES (under h2) ═══ */
-    .section-image {
-      position: relative;
-      width: 100%;
-      margin: 1rem 0 2rem;
-      border-radius: 12px;
-      overflow: hidden;
-      aspect-ratio: 3 / 1;
-    }
-    .section-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      filter: brightness(0.7) saturate(1.15);
-      transition: filter 0.4s ease;
-    }
-    .section-image:hover img {
-      filter: brightness(0.85) saturate(1.2);
-    }
-    .section-image-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        180deg,
-        transparent 0%,
-        rgba(9, 9, 11, 0.15) 60%,
-        rgba(9, 9, 11, 0.5) 100%
-      );
-      pointer-events: none;
-    }
-
-    /* ═══ FLOWING BACKGROUND IMAGES ═══ */
-    .bg-break {
-      position: relative;
-      width: 100vw;
-      margin-left: calc(-50vw + 50%);
-      height: 300px;
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-      overflow: hidden;
-    }
-    .bg-break img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.3) saturate(1.2);
-    }
-    .bg-break-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        180deg,
-        var(--bg-primary) 0%,
-        rgba(10, 10, 10, 0.2) 20%,
-        rgba(10, 10, 10, 0.2) 80%,
-        var(--bg-primary) 100%
-      );
-    }
-
-    /* ═══ ARTICLE BODY ═══ */
-    .article {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 3rem 2rem 5rem;
-    }
-
-    /* ── Headings ── */
-    .article h2 {
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      font-size: 1.65rem;
-      font-weight: 800;
-      color: var(--text-primary);
-      margin: 3.5rem 0 0.5rem;
-      padding-bottom: 0.6rem;
-      letter-spacing: -0.02em;
-      position: relative;
-    }
-    .article h2::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 48px;
-      height: 3px;
-      background: var(--accent);
-      border-radius: 3px;
-    }
-    .article h2:first-child { margin-top: 0; }
-
-    .article h3 {
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin: 2.5rem 0 0.75rem;
-      padding-left: 0.9rem;
-      border-left: 3px solid var(--accent);
-    }
-
-    .article h4 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin: 2rem 0 0.5rem;
-    }
-
-    /* ── Paragraphs & links ── */
-    .article p {
-      margin-bottom: 1.35rem;
-      font-size: 1.02rem;
-    }
-    .article a {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      text-decoration-color: var(--accent-glow);
-      transition: text-decoration-color 0.15s;
-    }
-    .article a:hover { text-decoration-color: var(--accent); }
-
-    /* ── Lists ── */
-    .article ul, .article ol {
-      margin: 0 0 1.5rem 1.25rem;
-      padding: 0;
-    }
-    .article li {
-      margin-bottom: 0.45rem;
-      font-size: 1.02rem;
-    }
-    .article li::marker { color: var(--accent); }
-
-    /* ── Blockquotes ── */
-    .article blockquote {
-      border-left: 3px solid var(--accent);
-      background: var(--accent-glow);
-      margin: 1.75rem 0;
-      padding: 1.25rem 1.5rem;
-      border-radius: 0 10px 10px 0;
-      font-style: italic;
-      color: var(--text-primary);
-    }
-    .article blockquote p { margin-bottom: 0; }
-
-    /* ── Code ── */
-    .article code {
-      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
-      font-size: 0.88em;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      padding: 0.15em 0.4em;
-      border-radius: 5px;
-      color: var(--accent);
-    }
-    .article pre {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.25rem 1.5rem;
-      overflow-x: auto;
-      margin: 1.75rem 0;
-    }
-    .article pre code {
-      background: none;
-      border: none;
-      padding: 0;
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-    }
-
-    /* ── Tables ── */
-    .article table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      margin: 1.75rem 0;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    .article thead th {
-      background: var(--bg-card);
-      padding: 0.85rem 1rem;
-      text-align: left;
-      font-weight: 700;
-      font-size: 0.82rem;
-      letter-spacing: 0.06em;
-      color: var(--accent);
-      border-bottom: 1px solid var(--border);
-    }
-    .article td {
-      padding: 0.75rem 1rem;
-      border-bottom: 1px solid var(--border-subtle);
-      font-size: 0.95rem;
-    }
-    .article tr:last-child td { border-bottom: none; }
-    .article tbody tr { transition: background 0.15s; }
-    .article tbody tr:hover { background: var(--bg-card); }
-
-    /* ── Horizontal rule ── */
-    .article hr {
-      border: none;
-      height: 1px;
-      background: var(--border);
-      margin: 3rem 0;
-    }
-
-    /* ── Strong / em ── */
-    .article strong { color: var(--text-primary); font-weight: 700; }
-    .article em { color: var(--text-primary); }
-
-    /* ═══ FOOTER CTA ═══ */
-    .footer-cta {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 0 2rem 4rem;
-    }
-    .cta-card {
-      background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 3rem;
-      text-align: center;
-    }
-    .cta-card h3 {
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--text-primary);
-      margin-bottom: 0.75rem;
-      border: none;
-      padding: 0;
-    }
-    .cta-card p {
-      color: var(--text-muted);
-      margin-bottom: 2rem;
-      font-size: 1rem;
-    }
-    .cta-links {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .cta-links a {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.7rem 1.5rem;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s;
-    }
-    .cta-links a.primary {
-      background: var(--accent);
-      color: #fff;
-    }
-    .cta-links a.primary:hover { filter: brightness(1.15); }
-    .cta-links a.secondary {
-      background: var(--bg-elevated);
-      color: var(--text-secondary);
-      border: 1px solid var(--border);
-    }
-    .cta-links a.secondary:hover { border-color: var(--accent); color: var(--text-primary); }
-
-    /* ═══ FOOTER ═══ */
-    .site-footer {
-      text-align: center;
-      padding: 2rem;
-      color: var(--text-muted);
-      font-size: 0.82rem;
-      border-top: 1px solid var(--border-subtle);
-    }
-
-    /* ═══ RESPONSIVE ═══ */
-    @media (max-width: 640px) {
-      .hero { min-height: 60vh; }
-      .hero-content { padding: 2.5rem 1.25rem 2.5rem; }
-      .article { padding: 2rem 1.25rem 3rem; }
-      .cta-card { padding: 2rem 1.25rem; }
-      .cta-links { flex-direction: column; }
-      .section-image { aspect-ratio: 2.5 / 1; border-radius: 8px; }
-      .bg-break { height: 200px; margin-top: 2.5rem; margin-bottom: 2.5rem; }
-    }
-  </style>
+  <meta name="twitter:description" content="India&#x27;s electric two-wheeler market is growing 40%+ year-over-year. This EV readiness checklist covers training, tools, infrastructure, software, and revenue opportunities for Indian motorcycle workshops preparing for the electric transition.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=1400&amp;h=700&amp;fit=crop&amp;q=80">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-  <style>
-    .site-nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(10,10,10,0.9);
-      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      padding: 0 2rem;
-    }
-    .nav-inner {
-      max-width: 1200px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between;
-      height: 64px;
-    }
-    .nav-logo {
-      font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 1.1rem; font-weight: 800; color: #f1f5f9;
-      text-decoration: none; letter-spacing: -0.02em;
-    }
-    .nav-logo {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-    }
-    .logo-icon { flex-shrink: 0; }
-    .nav-logo span { color: #DC2626; }
-    .nav-links { display: flex; gap: 2rem; align-items: center; }
-    .nav-links a {
-      color: #94a3b8; text-decoration: none; font-size: 0.88rem;
-      font-weight: 500; transition: color 0.15s;
-    }
-    .nav-links a:hover { color: #f1f5f9; }
-    .nav-links a.active { color: #DC2626; }
-</style>
+  <a href="#content" class="skip-link">Skip to content</a>
+  
   <nav class="site-nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo"><svg class="logo-icon" width="36" height="36" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="22" cy="30" r="12" stroke="#DC2626" stroke-width="2.5" fill="none"/><circle cx="22" cy="30" r="4" fill="#DC2626"/><line x1="22" y1="15" x2="22" y2="18" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="22" y1="42" x2="22" y2="45" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="23" x2="11.5" y2="25" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="32.5" y1="35" x2="35" y2="37" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="37" x2="11.5" y2="35" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="32.5" y1="25" x2="35" y2="23" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><circle cx="72" cy="30" r="20" stroke="#f1f5f9" stroke-width="2.5" fill="none"/><circle cx="72" cy="30" r="6" fill="#f1f5f9"/><line x1="72" y1="7" x2="72" y2="10" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="72" y1="50" x2="72" y2="53" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="49" y1="30" x2="52" y2="30" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="92" y1="30" x2="95" y2="30" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="54" y1="16" x2="56.5" y2="18.5" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="87.5" y1="41.5" x2="90" y2="44" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="54" y1="44" x2="56.5" y2="41.5" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="87.5" y1="18.5" x2="90" y2="16" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><path d="M 22 18 Q 47 6, 72 10" stroke="#CA8A04" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M 22 42 Q 47 54, 72 50" stroke="#CA8A04" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="35" cy="12" r="1.5" fill="#CA8A04"/><circle cx="47" cy="9" r="1.5" fill="#CA8A04"/><circle cx="59" cy="9" r="1.5" fill="#CA8A04"/><circle cx="35" cy="48" r="1.5" fill="#CA8A04"/><circle cx="47" cy="51" r="1.5" fill="#CA8A04"/><circle cx="59" cy="51" r="1.5" fill="#CA8A04"/></svg>tyming<span>chain</span></a>
+      <a href="/" class="brand" aria-label="Tyming Chain home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy">
+          <strong>tymingchain</strong>
+          <small>motorcycle workshop software</small>
+        </span>
+      </a>
       <div class="nav-links">
         <a href="/">Home</a>
         <a href="/products/">Products</a>
-        <a href="/blog/">Blog</a>
+        <a href="/blog/" class="active">Blog</a>
         <a href="/about/">About</a>
         <a href="/contact/">Contact</a>
       </div>
     </div>
   </nav>
-  <style>.hero { padding-top: 64px; }</style>
 
-  <header class="hero">
-    <img class="hero-img" src="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=1400&h=700&fit=crop&q=80" alt="Is Your Garage Ready for Electric Motorcycles? The EV Readiness Checklist for Indian Workshops">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="badge">⬡ Garage Management</div>
-      <h1>Is Your Garage Ready for Electric Motorcycles? The EV Readiness Checklist for Indian Workshops</h1>
-      <p class="subtitle">India's electric two-wheeler revolution is accelerating faster than anyone predicted. Here's the complete readiness checklist for workshops that don't want to be left behind.</p>
-      <div class="meta-row">
-        <span>✎ Tyming Chain Team</span>
-        <span class="meta-dot"></span>
-        <span>◷ 12 min read</span>
-        <span class="meta-dot"></span>
-        <span>⊞ 2026-03-09</span>
+  <main id="content" class="page-shell article-shell">
+    <section class="article-hero">
+      <div class="article-grid">
+        <div>
+          <div class="eyebrow">Garage management</div>
+          <h1 class="article-title">Is Your Garage Ready for Electric Motorcycles? The EV Readiness Checklist for Indian Workshops</h1>
+          <p class="hero-copy">India&#x27;s electric two-wheeler market is growing 40%+ year-over-year. This EV readiness checklist covers training, tools, infrastructure, software, and revenue opportunities for Indian motorcycle workshops preparing for the electric transition.</p>
+          <div class="tag-row">
+            <span class="tag">Mar 9, 2026</span>
+            <span class="tag">12 min read</span>
+          </div>
+          <div class="article-summary-grid"><article class="summary-card"><div class="summary-label">Headline</div><div class="summary-number">40%+</div><p>Category growth used in the article framing</p></article><article class="summary-card"><div class="summary-label">Shift</div><div class="summary-number">3 layers</div><p>Tools, diagnostics, and process readiness</p></article><article class="summary-card"><div class="summary-label">Takeaway</div><div class="summary-number">1 shift</div><p>From ICE-only workflow to mixed workshop logic</p></article></div>
+        </div>
+        <div class="hero-visual">
+          <article class="photo-card article-hero-photo">
+            <div class="photo-overlay">
+              <img src="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=1400&amp;h=700&amp;fit=crop&amp;q=80" alt="Is Your Garage Ready for Electric Motorcycles? The EV Readiness Checklist for Indian Workshops">
+              <div class="photo-caption">
+                <div class="mini-label">Visual summary</div>
+                <p>This page now lives in the same design language as the rest of Tyming Chain, with a faster summary before the long-form read.</p>
+              </div>
+            </div>
+          </article>
+          <article class="chart-card">
+            <div class="chart-head">
+              <div>
+                <div class="chart-label">Impact profile</div>
+                <h3 class="card-title">Where this article puts the emphasis</h3>
+              </div>
+            </div>
+            <div class="bar-list"><div class="bar-row"><div class="bar-meta"><span>Safety readiness</span><span>76</span></div><div class="bar-track"><div class="bar-fill" style="width: 76%;"></div></div></div><div class="bar-row"><div class="bar-meta"><span>Diagnostic readiness</span><span>63</span></div><div class="bar-track"><div class="bar-fill" style="width: 63%;"></div></div></div><div class="bar-row"><div class="bar-meta"><span>Commercial opportunity</span><span>69</span></div><div class="bar-track"><div class="bar-fill" style="width: 69%;"></div></div></div></div>
+          </article>
+        </div>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <article class="article">
-    <h2 id="the-ev-tidal-wave-hitting-indias-two-wheeler-market">The EV Tidal Wave Hitting India's Two-Wheeler Market</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&h=400&fit=crop&q=80" alt="The EV Tidal Wave Hitting India's Two-Wheeler Market" loading="lazy"><div class="section-image-overlay"></div></div>
+    <section class="section">
+      <div class="article-layout">
+        <aside class="jump-card">
+          <div class="jump-title">On this page</div>
+          <h3>Quick jump</h3>
+          <div class="jump-list"><a href="#the-ev-tidal-wave-hitting-indias-two-wheeler-market">The EV Tidal Wave Hitting India&#x27;s Two-Wheeler Market</a><a href="#why-traditional-garages-are-at-risk">Why Traditional Garages Are at Risk</a><a href="#the-ev-readiness-checklist">The EV Readiness Checklist</a><a href="#the-revenue-opportunity-ev-service-is-a-premium-business">The Revenue Opportunity: EV Service Is a Premium Business</a><a href="#how-tymingchain-helps-you-get-ev-ready">How TymingChain Helps You Get EV-Ready</a></div>
+        </aside>
+        <article class="article-body">
+<h2 id="the-ev-tidal-wave-hitting-indias-two-wheeler-market">The EV Tidal Wave Hitting India's Two-Wheeler Market</h2>
+<div class="section-image"><img alt="The EV Tidal Wave Hitting India's Two-Wheeler Market" loading="lazy" src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>Let's start with the numbers, because the numbers don't lie.</p>
 <p>India's electric two-wheeler market is growing at <strong>over 40% year-over-year</strong>, according to research from Mordor Intelligence and IMARC Group. In FY2024, India sold over 9.4 lakh electric two-wheelers. By FY2025, that number crossed 12 lakh. The trajectory is steep, and it isn't slowing down.</p>
 <p>Here's the projection that should keep every garage owner up at night: <strong>by 2028, approximately 30% of all new two-wheelers sold in India will be electric.</strong> That's not a government target or an optimistic startup pitch — it's the consensus estimate from multiple independent research firms tracking registrations, policy incentives, and consumer sentiment.</p>
@@ -517,9 +125,9 @@
 </tbody>
 </table>
 <p>The wave isn't coming. It's already here. The only question is whether your garage will ride it or get swept under.</p>
-<hr />
+<hr/>
 <h2 id="why-traditional-garages-are-at-risk">Why Traditional Garages Are at Risk</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&h=400&fit=crop&q=80" alt="Why Traditional Garages Are at Risk" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="Why Traditional Garages Are at Risk" loading="lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>Most independent motorcycle garages in India are built around the internal combustion engine. That's not a criticism — it's a description of reality. Your mechanics learned on petrol engines. Your tools are designed for carburetors, cylinder heads, and exhaust systems. Your diagnostic equipment reads OBD-II codes from ECUs designed for ICE powertrains.</p>
 <p>Electric vehicles are a fundamentally different machine. Here's where the gap shows up:</p>
 <h3 id="the-knowledge-gap">The Knowledge Gap</h3>
@@ -530,10 +138,10 @@
 <h3 id="the-revenue-gap">The Revenue Gap</h3>
 <p>Here's the part that hurts: <strong>EV owners aren't going without service. They're going to brand-exclusive service centers.</strong> Ather has 100+ experience centers. Ola has a network of service hubs. When an independent garage can't help, the customer doesn't wait — they go where the expertise is. And once they're in that ecosystem, they don't come back.</p>
 <p>Every EV customer who walks in, gets turned away, and goes to a brand service center is a customer you've lost — not just for that visit, but potentially forever.</p>
-<hr />
-<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
+<hr/>
+<div aria-hidden="true" class="bg-break"><img alt="" loading="lazy" src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?w=1600&amp;h=600&amp;fit=crop&amp;q=80"/><div class="bg-break-overlay"></div></div>
 <h2 id="the-ev-readiness-checklist">The EV Readiness Checklist</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&h=400&fit=crop&q=80" alt="The EV Readiness Checklist" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="The EV Readiness Checklist" loading="lazy" src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>This is the actionable part. Six areas, each with specific, concrete steps. You don't need to do everything at once — but you need to start.</p>
 <h3 id="1-training-high-voltage-safety-certification">1. Training: High-Voltage Safety Certification</h3>
 <p>This is non-negotiable. Before a single mechanic touches an EV battery, they need proper high-voltage safety training.</p>
@@ -635,9 +243,9 @@
 <li>Third-party liability for post-service electrical failures.</li>
 </ul>
 <p>Talk to your insurer. Get explicit confirmation that your policy covers EV-related work, or get a rider added. The premium increase is typically 10-15% — negligible compared to the liability exposure of operating without coverage.</p>
-<hr />
+<hr/>
 <h2 id="the-revenue-opportunity-ev-service-is-a-premium-business">The Revenue Opportunity: EV Service Is a Premium Business</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=400&fit=crop&q=80" alt="The Revenue Opportunity: EV Service Is a Premium Business" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="The Revenue Opportunity: EV Service Is a Premium Business" loading="lazy" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>Here's the part that should make all the investment worthwhile: <strong>EV-capable garages command a 20-30% premium</strong> on service rates compared to ICE-only workshops. And the margins on certain EV-specific services are outstanding.</p>
 <h3 id="battery-reconditioning">Battery Reconditioning</h3>
 <p>When a lithium-ion battery pack shows degraded cells, the entire pack doesn't need replacement. A skilled technician can identify and replace individual cells or modules, rebalance the pack, and restore capacity. This is a <strong>₹5,000-15,000 service per bike</strong> — and the parts cost is often under ₹2,000. That's a 60-75% gross margin on a service that brand centers either don't offer or charge ₹30,000+ for.</p>
@@ -694,10 +302,10 @@
 </tbody>
 </table>
 <p>Compare those margins to a typical ICE oil-and-filter change at 30-40% margin, and the business case writes itself.</p>
-<hr />
-<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
+<hr/>
+<div aria-hidden="true" class="bg-break"><img alt="" loading="lazy" src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=1600&amp;h=600&amp;fit=crop&amp;q=80"/><div class="bg-break-overlay"></div></div>
 <h2 id="how-tymingchain-helps-you-get-ev-ready">How TymingChain Helps You Get EV-Ready</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=400&fit=crop&q=80" alt="How TymingChain Helps You Get EV-Ready" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="How TymingChain Helps You Get EV-Ready" loading="lazy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>We built TymingChain for Indian motorcycle workshops — and that means building for where the industry is going, not just where it's been. Our garage management platform handles EV service data the same way it handles ICE service records: as a core part of every customer and vehicle profile.</p>
 <h3 id="battery-degradation-tracking">Battery Degradation Tracking</h3>
 <p>Every time an EV comes in for service, log the battery SOH. TymingChain builds a <strong>degradation curve</strong> over time — a visual graph showing how that specific battery is aging. When the curve starts steepening, you know it's time for reconditioning before the customer notices performance loss. That's proactive service, and it builds trust like nothing else.</p>
@@ -709,9 +317,9 @@
 <p>Track EV-specific parts alongside your existing ICE inventory. TymingChain knows that a motor controller board for an Ola S1 Pro is not the same as one for a TVS iQube — and it tracks stock levels, reorder points, and supplier lead times separately. When your last Ather throttle sensor goes out the door, the system flags it for reorder before you even notice.</p>
 <h3 id="digital-service-history-for-resale-value">Digital Service History for Resale Value</h3>
 <p>An EV with a verified, digital service history showing battery SOH at every service interval is worth significantly more on the used market than one with no records. TymingChain creates a shareable digital service record that the customer can show to prospective buyers — and it links back to your garage as the trusted service provider. That's marketing you don't even have to pay for.</p>
-<hr />
+<hr/>
 <h2 id="getting-started-the-90-day-plan">Getting Started: The 90-Day Plan</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&h=400&fit=crop&q=80" alt="Getting Started: The 90-Day Plan" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="Getting Started: The 90-Day Plan" loading="lazy" src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>You don't need to transform your entire workshop overnight. Here's a realistic 90-day plan to get EV-ready without disrupting your existing ICE business:</p>
 <h3 id="month-1-foundation">Month 1: Foundation</h3>
 <ul>
@@ -735,28 +343,49 @@
 <li>Start logging SOH data for every EV that comes through — you're building the dataset that powers future predictive maintenance.</li>
 </ul>
 <blockquote><p>The best time to prepare for the EV transition was two years ago. The second best time is today. Start with one trained mechanic, one diagnostic tool, and a CRM that tracks battery data. The rest follows naturally.</p></blockquote>
-<hr />
+<hr/>
 <h2 id="the-bottom-line">The Bottom Line</h2>
 <p>India's two-wheeler market is going electric. Not slowly, not tentatively — at 40%+ year-over-year growth with billions in government subsidies accelerating adoption. The garages that will thrive in 2028 and beyond are the ones investing in EV capabilities <em>now</em>, while the competition is still debating whether EVs are real.</p>
 <p>The checklist isn't complicated. Training, tools, infrastructure, software, inventory, insurance — six pillars, each with clear, affordable steps. The total investment to get started is under ₹2 lakh. The revenue opportunity in EV-specialized service is multiples of that, every single year.</p>
 <p>Your customers are buying electric. Make sure they're bringing those bikes to you — not to someone else.</p>
+</article>
+      </div>
+    </section>
 
-  </article>
-
-  <div class="footer-cta">
-    <div class="cta-card">
-      <h3>Get Your Garage EV-Ready with TymingChain</h3>
-      <p>Battery tracking, predictive maintenance, and EV parts inventory — built for Indian workshops.</p>
-      <div class="cta-links">
-        <a href="/products/" class="primary">🔋 Explore Garage CRM</a>
-        <a href="/contact/" class="secondary">📞 Talk to Us</a>
-        <a href="/blog/" class="secondary">📖 More Articles</a>
+    <section class="section article-footer-card">
+      <div class="split-grid">
+        <article class="contact-card">
+          <div class="mini-label">Continue exploring</div>
+          <h3>See how the product pages frame the same problems.</h3>
+          <p>If this article touches an operations problem you already feel in the workshop, the products page will show how that problem is mapped into the Tyming Chain platform.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/products/">View the products page</a>
+            <a class="button button-secondary" href="/contact/">Start a conversation</a>
+          </div>
+        </article>
+        <article class="chart-card">
+          <div class="chart-head">
+            <div>
+              <div class="chart-label">Article layout note</div>
+              <h3 class="card-title">One shared design across blog and product surfaces.</h3>
+            </div>
+          </div>
+          <p>This article has been remapped to the current site system so the blog feels like part of the same product story, not a separate theme.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>Tyming Chain now uses one visual system across product pages and long-form content.</div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/products/">Products</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
       </div>
     </div>
-  </div>
-
-  <footer class="site-footer">
-    <p>© 2026 Tyming Chain · <a href="/" style="color:#DC2626;text-decoration:none">Home</a> · <a href="/blog/" style="color:#DC2626;text-decoration:none">Blog</a> · <a href="/about/" style="color:#DC2626;text-decoration:none">About</a> · <a href="/contact/" style="color:#DC2626;text-decoration:none">Contact</a></p>
   </footer>
 
 </body>

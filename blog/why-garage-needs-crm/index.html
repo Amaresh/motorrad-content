@@ -3,487 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Why Your Motorcycle Garage Needs a CRM System (And What It's Costing You Without One) | Motorrad Theory</title>
+  <title>Why Your Motorcycle Garage Needs a CRM System (And What It&#x27;s Costing You Without One) | Tyming Chain</title>
   <meta name="description" content="Motorcycle garages running on paper and spreadsheets are bleeding money. Learn how a purpose-built CRM system eliminates missed appointments, lost customer history, and inventory chaos—with real data on ROI for independent workshops.">
-  <meta property="og:title" content="Why Your Motorcycle Garage Needs a CRM System (And What It's Costing You Without One)">
+  <meta property="og:title" content="Why Your Motorcycle Garage Needs a CRM System (And What It&#x27;s Costing You Without One)">
   <meta property="og:description" content="Motorcycle garages running on paper and spreadsheets are bleeding money. Learn how a purpose-built CRM system eliminates missed appointments, lost customer history, and inventory chaos—with real data on ROI for independent workshops.">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1400&h=700&fit=crop&q=80">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1400&amp;h=700&amp;fit=crop&amp;q=80">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Why Your Motorcycle Garage Needs a CRM System (And What It's Costing You Without One)">
+  <meta name="twitter:title" content="Why Your Motorcycle Garage Needs a CRM System (And What It&#x27;s Costing You Without One)">
   <meta name="twitter:description" content="Motorcycle garages running on paper and spreadsheets are bleeding money. Learn how a purpose-built CRM system eliminates missed appointments, lost customer history, and inventory chaos—with real data on ROI for independent workshops.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1400&h=700&fit=crop&q=80">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');</style>
-  <style>
-    :root {
-      --accent: #DC2626;
-      --accent-glow: rgba(220,38,38,0.15);
-      --bg-primary: #0a0a0a;
-      --bg-secondary: #111113;
-      --bg-card: #1E293B;
-      --bg-elevated: #334155;
-      --text-primary: #f1f5f9;
-      --text-secondary: #94a3b8;
-      --text-muted: #64748b;
-      --border: #1e293b;
-      --border-subtle: #1e293b;
-      --gold: #CA8A04;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-secondary);
-      line-height: 1.8;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    /* ═══ HERO WITH IMAGE ═══ */
-    .hero {
-      position: relative;
-      min-height: 70vh;
-      display: flex;
-      align-items: flex-end;
-      overflow: hidden;
-    }
-    .hero-img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.4) saturate(1.1);
-    }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        0deg,
-        var(--bg-primary) 0%,
-        rgba(10, 10, 10, 0.85) 30%,
-        rgba(10, 10, 10, 0.4) 60%,
-        rgba(10, 10, 10, 0.2) 100%
-      );
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 4rem 2rem 3.5rem;
-      width: 100%;
-    }
-    .badge {
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: rgba(255, 255, 255, 0.06);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: var(--accent);
-      padding: 0.4rem 1rem;
-      border-radius: 100px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-
-      margin-bottom: 1.25rem;
-    }
-    .hero h1 {
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 900;
-      line-height: 1.12;
-      color: #fff;
-      margin-bottom: 1.25rem;
-      letter-spacing: -0.03em;
-    }
-    .hero .subtitle {
-      font-size: 1.1rem;
-      color: rgba(255, 255, 255, 0.65);
-      line-height: 1.7;
-      max-width: 620px;
-      margin-bottom: 1.5rem;
-    }
-    .meta-row {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      font-size: 0.85rem;
-      color: rgba(255, 255, 255, 0.4);
-    }
-    .meta-row span { display: flex; align-items: center; gap: 0.3rem; }
-    .meta-dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.25); }
-
-    /* ═══ SECTION IMAGES (under h2) ═══ */
-    .section-image {
-      position: relative;
-      width: 100%;
-      margin: 1rem 0 2rem;
-      border-radius: 12px;
-      overflow: hidden;
-      aspect-ratio: 3 / 1;
-    }
-    .section-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      filter: brightness(0.7) saturate(1.15);
-      transition: filter 0.4s ease;
-    }
-    .section-image:hover img {
-      filter: brightness(0.85) saturate(1.2);
-    }
-    .section-image-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        180deg,
-        transparent 0%,
-        rgba(9, 9, 11, 0.15) 60%,
-        rgba(9, 9, 11, 0.5) 100%
-      );
-      pointer-events: none;
-    }
-
-    /* ═══ FLOWING BACKGROUND IMAGES ═══ */
-    .bg-break {
-      position: relative;
-      width: 100vw;
-      margin-left: calc(-50vw + 50%);
-      height: 300px;
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-      overflow: hidden;
-    }
-    .bg-break img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.3) saturate(1.2);
-    }
-    .bg-break-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        180deg,
-        var(--bg-primary) 0%,
-        rgba(10, 10, 10, 0.2) 20%,
-        rgba(10, 10, 10, 0.2) 80%,
-        var(--bg-primary) 100%
-      );
-    }
-
-    /* ═══ ARTICLE BODY ═══ */
-    .article {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 3rem 2rem 5rem;
-    }
-
-    /* ── Headings ── */
-    .article h2 {
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      font-size: 1.65rem;
-      font-weight: 800;
-      color: var(--text-primary);
-      margin: 3.5rem 0 0.5rem;
-      padding-bottom: 0.6rem;
-      letter-spacing: -0.02em;
-      position: relative;
-    }
-    .article h2::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 48px;
-      height: 3px;
-      background: var(--accent);
-      border-radius: 3px;
-    }
-    .article h2:first-child { margin-top: 0; }
-
-    .article h3 {
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--text-primary);
-      margin: 2.5rem 0 0.75rem;
-      padding-left: 0.9rem;
-      border-left: 3px solid var(--accent);
-    }
-
-    .article h4 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin: 2rem 0 0.5rem;
-    }
-
-    /* ── Paragraphs & links ── */
-    .article p {
-      margin-bottom: 1.35rem;
-      font-size: 1.02rem;
-    }
-    .article a {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      text-decoration-color: var(--accent-glow);
-      transition: text-decoration-color 0.15s;
-    }
-    .article a:hover { text-decoration-color: var(--accent); }
-
-    /* ── Lists ── */
-    .article ul, .article ol {
-      margin: 0 0 1.5rem 1.25rem;
-      padding: 0;
-    }
-    .article li {
-      margin-bottom: 0.45rem;
-      font-size: 1.02rem;
-    }
-    .article li::marker { color: var(--accent); }
-
-    /* ── Blockquotes ── */
-    .article blockquote {
-      border-left: 3px solid var(--accent);
-      background: var(--accent-glow);
-      margin: 1.75rem 0;
-      padding: 1.25rem 1.5rem;
-      border-radius: 0 10px 10px 0;
-      font-style: italic;
-      color: var(--text-primary);
-    }
-    .article blockquote p { margin-bottom: 0; }
-
-    /* ── Code ── */
-    .article code {
-      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
-      font-size: 0.88em;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      padding: 0.15em 0.4em;
-      border-radius: 5px;
-      color: var(--accent);
-    }
-    .article pre {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.25rem 1.5rem;
-      overflow-x: auto;
-      margin: 1.75rem 0;
-    }
-    .article pre code {
-      background: none;
-      border: none;
-      padding: 0;
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-    }
-
-    /* ── Tables ── */
-    .article table {
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      margin: 1.75rem 0;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    .article thead th {
-      background: var(--bg-card);
-      padding: 0.85rem 1rem;
-      text-align: left;
-      font-weight: 700;
-      font-size: 0.82rem;
-
-      letter-spacing: 0.06em;
-      color: var(--accent);
-      border-bottom: 1px solid var(--border);
-    }
-    .article td {
-      padding: 0.75rem 1rem;
-      border-bottom: 1px solid var(--border-subtle);
-      font-size: 0.95rem;
-    }
-    .article tr:last-child td { border-bottom: none; }
-    .article tbody tr { transition: background 0.15s; }
-    .article tbody tr:hover { background: var(--bg-card); }
-
-    /* ── Horizontal rule ── */
-    .article hr {
-      border: none;
-      height: 1px;
-      background: var(--border);
-      margin: 3rem 0;
-    }
-
-    /* ── Strong / em ── */
-    .article strong { color: var(--text-primary); font-weight: 700; }
-    .article em { color: var(--text-primary); }
-
-    /* ═══ FOOTER CTA ═══ */
-    .footer-cta {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 0 2rem 4rem;
-    }
-    .cta-card {
-      background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 3rem;
-      text-align: center;
-    }
-    .cta-card h3 {
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--text-primary);
-      margin-bottom: 0.75rem;
-      border: none;
-      padding: 0;
-    }
-    .cta-card p {
-      color: var(--text-muted);
-      margin-bottom: 2rem;
-      font-size: 1rem;
-    }
-    .cta-links {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .cta-links a {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.7rem 1.5rem;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s;
-    }
-    .cta-links a.primary {
-      background: var(--accent);
-      color: #fff;
-    }
-    .cta-links a.primary:hover { filter: brightness(1.15); }
-    .cta-links a.secondary {
-      background: var(--bg-elevated);
-      color: var(--text-secondary);
-      border: 1px solid var(--border);
-    }
-    .cta-links a.secondary:hover { border-color: var(--accent); color: var(--text-primary); }
-
-    /* ═══ FOOTER ═══ */
-    .site-footer {
-      text-align: center;
-      padding: 2rem;
-      color: var(--text-muted);
-      font-size: 0.82rem;
-      border-top: 1px solid var(--border-subtle);
-    }
-
-    /* ═══ RESPONSIVE ═══ */
-    @media (max-width: 640px) {
-      .hero { min-height: 60vh; }
-      .hero-content { padding: 2.5rem 1.25rem 2.5rem; }
-      .article { padding: 2rem 1.25rem 3rem; }
-      .cta-card { padding: 2rem 1.25rem; }
-      .cta-links { flex-direction: column; }
-      .section-image { aspect-ratio: 2.5 / 1; border-radius: 8px; }
-      .bg-break { height: 200px; margin-top: 2.5rem; margin-bottom: 2.5rem; }
-    }
-  </style>
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1400&amp;h=700&amp;fit=crop&amp;q=80">
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-  <style>
-    .site-nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(10,10,10,0.9);
-      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      padding: 0 2rem;
-    }
-    .nav-inner {
-      max-width: 1200px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between;
-      height: 64px;
-    }
-    .nav-logo {
-      font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 1.1rem; font-weight: 800; color: #f1f5f9;
-      text-decoration: none; letter-spacing: -0.02em;
-    }
-    .nav-logo {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-    }
-    .logo-icon { flex-shrink: 0; }
-    .nav-logo span { color: #DC2626; }
-    .nav-links { display: flex; gap: 2rem; align-items: center; }
-    .nav-links a {
-      color: #94a3b8; text-decoration: none; font-size: 0.88rem;
-      font-weight: 500; transition: color 0.15s;
-    }
-    .nav-links a:hover { color: #f1f5f9; }
-    .nav-links a.active { color: #DC2626; }
-</style>
+  <a href="#content" class="skip-link">Skip to content</a>
+  
   <nav class="site-nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo"><svg class="logo-icon" width="36" height="36" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="22" cy="30" r="12" stroke="#DC2626" stroke-width="2.5" fill="none"/><circle cx="22" cy="30" r="4" fill="#DC2626"/><line x1="22" y1="15" x2="22" y2="18" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="22" y1="42" x2="22" y2="45" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="23" x2="11.5" y2="25" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="32.5" y1="35" x2="35" y2="37" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="37" x2="11.5" y2="35" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="32.5" y1="25" x2="35" y2="23" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><circle cx="72" cy="30" r="20" stroke="#f1f5f9" stroke-width="2.5" fill="none"/><circle cx="72" cy="30" r="6" fill="#f1f5f9"/><line x1="72" y1="7" x2="72" y2="10" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="72" y1="50" x2="72" y2="53" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="49" y1="30" x2="52" y2="30" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="92" y1="30" x2="95" y2="30" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="54" y1="16" x2="56.5" y2="18.5" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="87.5" y1="41.5" x2="90" y2="44" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="54" y1="44" x2="56.5" y2="41.5" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="87.5" y1="18.5" x2="90" y2="16" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><path d="M 22 18 Q 47 6, 72 10" stroke="#CA8A04" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M 22 42 Q 47 54, 72 50" stroke="#CA8A04" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="35" cy="12" r="1.5" fill="#CA8A04"/><circle cx="47" cy="9" r="1.5" fill="#CA8A04"/><circle cx="59" cy="9" r="1.5" fill="#CA8A04"/><circle cx="35" cy="48" r="1.5" fill="#CA8A04"/><circle cx="47" cy="51" r="1.5" fill="#CA8A04"/><circle cx="59" cy="51" r="1.5" fill="#CA8A04"/></svg>tyming<span>chain</span></a>
+      <a href="/" class="brand" aria-label="Tyming Chain home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy">
+          <strong>tymingchain</strong>
+          <small>motorcycle workshop software</small>
+        </span>
+      </a>
       <div class="nav-links">
         <a href="/">Home</a>
         <a href="/products/">Products</a>
-        <a href="/blog/">Blog</a>
+        <a href="/blog/" class="active">Blog</a>
         <a href="/about/">About</a>
         <a href="/contact/">Contact</a>
       </div>
     </div>
   </nav>
-  <style>.hero { padding-top: 64px; }</style>
 
-  <header class="hero">
-    <img class="hero-img" src="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1400&h=700&fit=crop&q=80" alt="Why Your Motorcycle Garage Needs a CRM System (And What It's Costing You Without One)">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="badge">⬡ Garage Management</div>
-      <h1>Why Your Motorcycle Garage Needs a CRM System (And What It's Costing You Without One)</h1>
-      <p class="subtitle">Motorcycle garages running on paper and spreadsheets are bleeding money. Learn how a purpose-built CRM system eliminates missed appointments, lost customer history, and inventory chaos—with real data on ROI for independent workshops.</p>
-      <div class="meta-row">
-        <span>✎ Motorrad Theory Team</span>
-        <span class="meta-dot"></span>
-        <span>◷ 10 min read</span>
-        <span class="meta-dot"></span>
-        <span>⊞ 2026-02-09</span>
+  <main id="content" class="page-shell article-shell">
+    <section class="article-hero">
+      <div class="article-grid">
+        <div>
+          <div class="eyebrow">Garage operations</div>
+          <h1 class="article-title">Why Your Motorcycle Garage Needs a CRM System (And What It&#x27;s Costing You Without One)</h1>
+          <p class="hero-copy">Motorcycle garages running on paper and spreadsheets are bleeding money. Learn how a purpose-built CRM system eliminates missed appointments, lost customer history, and inventory chaos—with real data on ROI for independent workshops.</p>
+          <div class="tag-row">
+            <span class="tag">Feb 9, 2026</span>
+            <span class="tag">12 min read</span>
+          </div>
+          <div class="article-summary-grid"><article class="summary-card"><div class="summary-label">Headline</div><div class="summary-number">30%</div><p>Common scheduling and follow-up leakage</p></article><article class="summary-card"><div class="summary-label">Shift</div><div class="summary-number">25%</div><p>Retention upside when customer history stays visible</p></article><article class="summary-card"><div class="summary-label">Takeaway</div><div class="summary-number">1 system</div><p>For intake, workflow, and billing context</p></article></div>
+        </div>
+        <div class="hero-visual">
+          <article class="photo-card article-hero-photo">
+            <div class="photo-overlay">
+              <img src="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1400&amp;h=700&amp;fit=crop&amp;q=80" alt="Why Your Motorcycle Garage Needs a CRM System (And What It&#x27;s Costing You Without One)">
+              <div class="photo-caption">
+                <div class="mini-label">Visual summary</div>
+                <p>This page now lives in the same design language as the rest of Tyming Chain, with a faster summary before the long-form read.</p>
+              </div>
+            </div>
+          </article>
+          <article class="chart-card">
+            <div class="chart-head">
+              <div>
+                <div class="chart-label">Impact profile</div>
+                <h3 class="card-title">Where this article puts the emphasis</h3>
+              </div>
+            </div>
+            <div class="bar-list"><div class="bar-row"><div class="bar-meta"><span>Customer recall</span><span>84</span></div><div class="bar-track"><div class="bar-fill" style="width: 84%;"></div></div></div><div class="bar-row"><div class="bar-meta"><span>Bay visibility</span><span>78</span></div><div class="bar-track"><div class="bar-fill" style="width: 78%;"></div></div></div><div class="bar-row"><div class="bar-meta"><span>Manual admin</span><span>33</span></div><div class="bar-track"><div class="bar-fill" style="width: 33%;"></div></div></div></div>
+          </article>
+        </div>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <article class="article">
-    <h2 id="introduction-the-garage-that-runs-on-memory-and-paper">Introduction: The Garage That Runs on Memory and Paper</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1200&h=400&fit=crop&q=80" alt="Introduction: The Garage That Runs on Memory and Paper" loading="lazy"><div class="section-image-overlay"></div></div>
+    <section class="section">
+      <div class="article-layout">
+        <aside class="jump-card">
+          <div class="jump-title">On this page</div>
+          <h3>Quick jump</h3>
+          <div class="jump-list"><a href="#introduction-the-garage-that-runs-on-memory-and-paper">Introduction: The Garage That Runs on Memory and Paper</a><a href="#the-five-pain-points-killing-your-garages-profitability">The Five Pain Points Killing Your Garage&#x27;s Profitability</a><a href="#what-a-crm-actually-does-for-a-motorcycle-garage">What a CRM Actually Does for a Motorcycle Garage</a><a href="#the-roi-of-crm-adoption-real-numbers-for-real-garages">The ROI of CRM Adoption: Real Numbers for Real Garages</a><a href="#why-motorcycle-garages-need-motorcycle-specific-software">Why Motorcycle Garages Need Motorcycle-Specific Software</a></div>
+        </aside>
+        <article class="article-body">
+<h2 id="introduction-the-garage-that-runs-on-memory-and-paper">Introduction: The Garage That Runs on Memory and Paper</h2>
+<div class="section-image"><img alt="Introduction: The Garage That Runs on Memory and Paper" loading="lazy" src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>You know the scene. A rider calls about a valve adjustment you did on his Street Triple eight months ago, and you're flipping through a grease-smeared notebook trying to find the record. The phone rings again—that's the Panigale V4 owner confirming tomorrow's appointment, except you're pretty sure you already booked a full engine-out service in that bay. And somewhere in the back, there are three boxes of brake pads you ordered twice because nobody updated the inventory sheet.</p>
 <p>This isn't a failure of skill. Your wrenches are sharp. Your diagnostics are clean. The bikes that leave your garage are better than when they arrived. But the business <em>around</em> the bikes—the scheduling, the customer records, the parts tracking, the follow-ups—is running on a system built for a different era.</p>
 <p>The motorcycle industry has a blind spot. Most CRM and shop management content online is written for car dealerships or generic auto repair chains. Independent motorcycle garages—the backbone of the riding community—get ignored. But the data is clear: <strong>garages without software lose an estimated 15-20% of potential repeat business</strong> simply because of poor follow-up. That's not a technical failure. It's an organizational one.</p>
 <p>This article is for the independent motorcycle garage owner who knows something needs to change but isn't sure what that change looks like. We'll break down the real pain points, quantify the costs, and show exactly how a motorcycle-specific CRM system transforms a workshop from reactive chaos to controlled, profitable operation.</p>
-<hr />
+<hr/>
 <h2 id="the-five-pain-points-killing-your-garages-profitability">The Five Pain Points Killing Your Garage's Profitability</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=400&fit=crop&q=80" alt="The Five Pain Points Killing Your Garage's Profitability" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="The Five Pain Points Killing Your Garage's Profitability" loading="lazy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <h3 id="1-missed-and-double-booked-appointments">1. Missed and Double-Booked Appointments</h3>
 <p>A busy motorcycle garage juggles dozens of appointments per week across multiple bays and technicians. Without centralized scheduling software, conflicts are inevitable:</p>
 <ul>
@@ -524,10 +130,10 @@
 <li>No audit trail when issues arise after service.</li>
 <li>Training gaps that go unnoticed until a costly mistake.</li>
 </ul>
-<hr />
+<hr/>
 <h2 id="what-a-crm-actually-does-for-a-motorcycle-garage">What a CRM Actually Does for a Motorcycle Garage</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1200&h=400&fit=crop&q=80" alt="What a CRM Actually Does for a Motorcycle Garage" loading="lazy"><div class="section-image-overlay"></div></div>
-<p>&quot;CRM&quot; sounds corporate—like something a dealership chain needs but a five-bay independent shop doesn't. That's a misconception that costs garages real money. A purpose-built motorcycle garage CRM is simply the digital backbone that connects your customers, your schedule, your inventory, and your team.</p>
+<div class="section-image"><img alt="What a CRM Actually Does for a Motorcycle Garage" loading="lazy" src="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
+<p>"CRM" sounds corporate—like something a dealership chain needs but a five-bay independent shop doesn't. That's a misconception that costs garages real money. A purpose-built motorcycle garage CRM is simply the digital backbone that connects your customers, your schedule, your inventory, and your team.</p>
 <h3 id="centralized-customer-profiles">Centralized Customer Profiles</h3>
 <p>Every rider who walks through your door gets a profile. Not a line in a spreadsheet—a living record that includes:</p>
 <ul>
@@ -562,10 +168,10 @@
 <p>No more emergency runs to the distributor. No more $800 in Ducati timing belts gathering dust because someone forgot they already ordered a batch.</p>
 <h3 id="staff-management-and-performance-tracking">Staff Management and Performance Tracking</h3>
 <p>Assign jobs based on technician expertise and availability. Track certifications—know who's qualified for Öhlins suspension service versus routine oil changes. Monitor productivity per tech, per bay, per day.</p>
-<hr />
-<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
+<hr/>
+<div aria-hidden="true" class="bg-break"><img alt="" loading="lazy" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&amp;h=600&amp;fit=crop&amp;q=80"/><div class="bg-break-overlay"></div></div>
 <h2 id="the-roi-of-crm-adoption-real-numbers-for-real-garages">The ROI of CRM Adoption: Real Numbers for Real Garages</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&h=400&fit=crop&q=80" alt="The ROI of CRM Adoption: Real Numbers for Real Garages" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="The ROI of CRM Adoption: Real Numbers for Real Garages" loading="lazy" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>Let's do the math for a mid-size independent motorcycle garage doing $400,000 in annual revenue.</p>
 <table>
 <thead>
@@ -604,9 +210,9 @@
 </tbody>
 </table>
 <p>Even recovering a fraction of this through CRM adoption pays for the software many times over. <strong>Motorcycle dealerships using CRM report 30% faster lead response times</strong>—and for independent garages, the impact on customer satisfaction is even more pronounced because the personal relationship matters more.</p>
-<hr />
+<hr/>
 <h2 id="why-motorcycle-garages-need-motorcycle-specific-software">Why Motorcycle Garages Need Motorcycle-Specific Software</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1530124566582-a45a7e3ddd65?w=1200&h=400&fit=crop&q=80" alt="Why Motorcycle Garages Need Motorcycle-Specific Software" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="Why Motorcycle Garages Need Motorcycle-Specific Software" loading="lazy" src="https://images.unsplash.com/photo-1530124566582-a45a7e3ddd65?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>Generic auto repair shop CRM exists. So do spreadsheets. So does the back of a napkin. The question is whether those tools understand your business.</p>
 <h3 id="what-generic-software-gets-wrong">What Generic Software Gets Wrong</h3>
 <ul>
@@ -625,18 +231,18 @@
 <li><strong>Integration with <a href="#">Motorrad Theory Employee</a></strong> for technician management, certification tracking, and workload balancing.</li>
 <li><strong>Deep customer insights via <a href="#">Motorrad Theory CRM</a></strong> for marketing, loyalty programs, and retention analytics.</li>
 </ul>
-<hr />
+<hr/>
 <h2 id="from-dealership-to-independent-crm-is-not-just-for-the-big-shops">From Dealership to Independent: CRM Is Not Just for the Big Shops</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=400&fit=crop&q=80" alt="From Dealership to Independent: CRM Is Not Just for the Big Shops" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="From Dealership to Independent: CRM Is Not Just for the Big Shops" loading="lazy" src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>There's a persistent myth that CRM is enterprise software—something a multi-location dealership needs but a three-person garage doesn't. The opposite is true.</p>
 <p><strong>Big dealerships can absorb inefficiency.</strong> They have margin, volume, and staff redundancy. When they lose a customer, ten more walk in. When they overstock parts, the capital hit is a rounding error.</p>
 <p><strong>Independent garages can't.</strong> Every lost customer hurts. Every inventory error cuts into thin margins. Every missed appointment is a bay sitting empty while rent and utilities keep running.</p>
 <p>CRM adoption levels the playing field. It gives a three-bay shop the organizational capability of a dealership without the overhead. It turns one receptionist into an automated scheduling, reminder, and follow-up engine. It turns a shelf of parts into a tracked, optimized, waste-free inventory.</p>
 <p><strong>CRM adoption increases customer retention by up to 25% in small service businesses.</strong> For an independent garage, that retention improvement is existential—it's the difference between growing and closing.</p>
-<hr />
-<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1504222490345-c075b6008014?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
+<hr/>
+<div aria-hidden="true" class="bg-break"><img alt="" loading="lazy" src="https://images.unsplash.com/photo-1504222490345-c075b6008014?w=1600&amp;h=600&amp;fit=crop&amp;q=80"/><div class="bg-break-overlay"></div></div>
 <h2 id="implementation-how-to-get-started-without-disrupting-your-workflow">Implementation: How to Get Started Without Disrupting Your Workflow</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&h=400&fit=crop&q=80" alt="Implementation: How to Get Started Without Disrupting Your Workflow" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="Implementation: How to Get Started Without Disrupting Your Workflow" loading="lazy" src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <h3 id="phase-1-customer-data-migration-week-1-2">Phase 1: Customer Data Migration (Week 1-2)</h3>
 <p>Start by importing your existing customer data—even if it's messy. Names, phone numbers, emails, bike details. <a href="#">Garage CRM</a> handles CSV imports and can deduplicate records automatically. Imperfect data entered into a system is infinitely more valuable than perfect data locked in a filing cabinet.</p>
 <h3 id="phase-2-schedule-digitization-week-2-3">Phase 2: Schedule Digitization (Week 2-3)</h3>
@@ -644,12 +250,12 @@
 <h3 id="phase-3-service-history-logging-ongoing">Phase 3: Service History Logging (Ongoing)</h3>
 <p>From this point forward, every service gets logged in the CRM. Attach photos, diagnostic codes, parts used, and technician notes. Within six months, you'll have a comprehensive digital history for your most active customers.</p>
 <h3 id="phase-4-inventory-integration-month-2">Phase 4: Inventory Integration (Month 2)</h3>
-<p>Connect your parts catalog to the CRM. Start with your top 50 fastest-moving items. As techs log parts usage on service tickets, inventory levels update automatically. Low-stock alerts replace the &quot;we're out of oil filters again&quot; crisis.</p>
+<p>Connect your parts catalog to the CRM. Start with your top 50 fastest-moving items. As techs log parts usage on service tickets, inventory levels update automatically. Low-stock alerts replace the "we're out of oil filters again" crisis.</p>
 <h3 id="phase-5-automation-activation-month-3">Phase 5: Automation Activation (Month 3)</h3>
 <p>Turn on automated service reminders, follow-up emails, and rebooking prompts. This is where the ROI accelerates—every reminder that converts to a booking is revenue you would have lost under the old system.</p>
-<hr />
+<hr/>
 <h2 id="what-your-customers-actually-experience">What Your Customers Actually Experience</h2>
-<div class="section-image"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=400&fit=crop&q=80" alt="What Your Customers Actually Experience" loading="lazy"><div class="section-image-overlay"></div></div>
+<div class="section-image"><img alt="What Your Customers Actually Experience" loading="lazy" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&amp;h=400&amp;fit=crop&amp;q=80"/><div class="section-image-overlay"></div></div>
 <p>From the rider's perspective, a CRM-equipped garage feels different:</p>
 <ul>
 <li><strong>They book online</strong> at midnight after deciding their bike needs a pre-season check.</li>
@@ -659,8 +265,8 @@
 <li><strong>At pickup,</strong> they get a digital service report with photos and next-service recommendations.</li>
 <li><strong>Three months later,</strong> they get a timely reminder—and they book again, because the experience was frictionless.</li>
 </ul>
-<p>That's not a &quot;nice to have.&quot; That's a competitive moat. In a market where independent garages compete on reputation and relationships, this level of professionalism wins customers for life.</p>
-<hr />
+<p>That's not a "nice to have." That's a competitive moat. In a market where independent garages compete on reputation and relationships, this level of professionalism wins customers for life.</p>
+<hr/>
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 <h3 id="do-i-need-a-crm-if-i-only-have-one-or-two-technicians">Do I need a CRM if I only have one or two technicians?</h3>
 <p>Yes—arguably more than a larger shop. With fewer staff, every missed follow-up and scheduling error has a proportionally bigger impact. A CRM acts as your virtual office manager.</p>
@@ -672,20 +278,20 @@
 <p>Modern CRM platforms use encrypted cloud storage with role-based access controls. Your customer data is safer in a CRM than in a filing cabinet that anyone can access.</p>
 <h3 id="can-i-track-both-service-and-retail-sales">Can I track both service and retail sales?</h3>
 <p>Yes. <a href="#">Motorrad Theory CRM</a> handles service history, parts sales, accessory purchases, and customer communications in a single platform.</p>
-<hr />
-<div class="bg-break" aria-hidden="true"><img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1600&h=600&fit=crop&q=80" alt="" loading="lazy"><div class="bg-break-overlay"></div></div>
+<hr/>
+<div aria-hidden="true" class="bg-break"><img alt="" loading="lazy" src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1600&amp;h=600&amp;fit=crop&amp;q=80"/><div class="bg-break-overlay"></div></div>
 <h2 id="conclusion-the-garage-that-remembers-everything">Conclusion: The Garage That Remembers Everything</h2>
 <p>The best motorcycle garages aren't just the ones with the best technicians. They're the ones that never forget a customer, never miss a follow-up, never run out of the right parts, and never leave money on the table because of a scheduling conflict.</p>
 <p>That level of operational excellence used to require a full-time office staff or the obsessive organizational skills of a rare few. Now it requires software—specifically, software built for the unique rhythms and challenges of motorcycle workshop life.</p>
 <p>The bikes you work on are precision machines. Your business deserves the same treatment.</p>
-<hr />
+<hr/>
 <h2 id="take-your-garage-from-chaos-to-control">Take Your Garage From Chaos to Control</h2>
 <ul>
 <li><a href="#"><strong>Start with Garage CRM by Motorrad Theory</strong></a> — Purpose-built scheduling, service tracking, and inventory management for motorcycle workshops.</li>
 <li><a href="#"><strong>Explore Motorrad Theory Employee</strong></a> — Technician management, certifications, and workload optimization.</li>
 <li><a href="#"><strong>Grow with Motorrad Theory CRM</strong></a> — Customer retention, marketing automation, and business intelligence for garages that want to scale.</li>
 </ul>
-<hr />
+<hr/>
 <p><em>Internal Links:</em></p>
 <ul>
 <li><a href="#">Garage CRM</a></li>
@@ -694,23 +300,44 @@
 </ul>
 <p><em>Hashtags:</em>
 #GarageCRM #MotorcycleWorkshop #ShopManagement #CustomerRetention #PartsInventory #MotoBusiness #GarageLife #ServiceScheduling</p>
+</article>
+      </div>
+    </section>
 
-  </article>
-
-  <div class="footer-cta">
-    <div class="cta-card">
-      <h3>Ready to Transform Your Garage?</h3>
-      <p>Explore Motorrad Theory's suite of tools built for Indian motorcycle workshops.</p>
-      <div class="cta-links">
-        <a href="#" class="primary">🏍 Garage CRM</a>
-        <a href="#" class="secondary">👥 Customer CRM</a>
-        <a href="#" class="secondary">📊 Team Management</a>
+    <section class="section article-footer-card">
+      <div class="split-grid">
+        <article class="contact-card">
+          <div class="mini-label">Continue exploring</div>
+          <h3>See how the product pages frame the same problems.</h3>
+          <p>If this article touches an operations problem you already feel in the workshop, the products page will show how that problem is mapped into the Tyming Chain platform.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/products/">View the products page</a>
+            <a class="button button-secondary" href="/contact/">Start a conversation</a>
+          </div>
+        </article>
+        <article class="chart-card">
+          <div class="chart-head">
+            <div>
+              <div class="chart-label">Article layout note</div>
+              <h3 class="card-title">One shared design across blog and product surfaces.</h3>
+            </div>
+          </div>
+          <p>This article has been remapped to the current site system so the blog feels like part of the same product story, not a separate theme.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>Tyming Chain now uses one visual system across product pages and long-form content.</div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/products/">Products</a>
+        <a href="/blog/">Blog</a>
+        <a href="/contact/">Contact</a>
       </div>
     </div>
-  </div>
-
-  <footer class="site-footer">
-    <p>© 2026 Tyming Chain · <a href="/" style="color:#DC2626;text-decoration:none">Home</a> · <a href="/blog/" style="color:#DC2626;text-decoration:none">Blog</a> · <a href="/about/" style="color:#DC2626;text-decoration:none">About</a> · <a href="/contact/" style="color:#DC2626;text-decoration:none">Contact</a></p>
   </footer>
 
 </body>
