@@ -3,211 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');</style>
-  <title>Tyming Chain — Smart Software for Motorcycle Garages</title>
-  <meta name="description" content="Purpose-built CRM and management software for motorcycle workshops in India. From service scheduling to customer retention.">
-  <meta property="og:title" content="Tyming Chain — Smart Software for Motorcycle Garages">
-  <meta property="og:description" content="Purpose-built CRM and management software for motorcycle workshops in India.">
+  <title>Tyming Chain — The operating system for modern motorcycle workshops</title>
+  <meta name="description" content="Tyming Chain helps Indian motorcycle workshops run bookings, job cards, bays, parts, billing, reminders, analytics, and AI-driven follow-up from one connected system.">
+  <meta property="og:title" content="Tyming Chain — The operating system for modern motorcycle workshops">
+  <meta property="og:description" content="Run bookings, job cards, estimates, bays, staff, customer reminders, and analytics from one connected platform.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=1200&h=630&fit=crop&q=80">
-  <style>
-    :root {
-      --accent: #DC2626;
-      --accent-glow: rgba(220,38,38,0.15);
-      --bg: #0a0a0a;
-      --bg-card: #1E293B;
-      --bg-elevated: #334155;
-      --text: #94a3b8;
-      --text-bright: #f1f5f9;
-      --border: #1e293b;
-      --gold: #CA8A04;
-    }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family:'Inter',system-ui,sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
-    
-    .site-nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(10,10,10,0.9);
-      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      padding: 0 2rem;
-    }
-    .nav-inner {
-      max-width: 1200px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between;
-      height: 64px;
-    }
-    .nav-logo {
-      font-family: 'Space Grotesk', system-ui, sans-serif; font-size: 1.1rem; font-weight: 800; color: #f1f5f9;
-      text-decoration: none; letter-spacing: -0.02em;
-    }
-    .nav-logo {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-    }
-    .logo-icon { flex-shrink: 0; }
-    .nav-logo span { color: #DC2626; }
-    .nav-links { display: flex; gap: 2rem; align-items: center; }
-    .nav-links a {
-      color: #94a3b8; text-decoration: none; font-size: 0.88rem;
-      font-weight: 500; transition: color 0.15s;
-    }
-    .nav-links a:hover { color: #f1f5f9; }
-    .nav-links a.active { color: #DC2626; }
-
-
-    /* Hero */
-    .hero {
-      position: relative;
-      min-height: 90vh;
-      display: flex; align-items: center; justify-content: center;
-      overflow: hidden; padding-top: 64px;
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0a 40%, #1E293B 70%, #0a0a0a 100%);
-    }
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -50%; left: -50%;
-      width: 200%; height: 200%;
-      background: radial-gradient(ellipse at 30% 50%, rgba(220,38,38,0.12) 0%, transparent 60%),
-                  radial-gradient(ellipse at 70% 30%, rgba(202,138,4,0.08) 0%, transparent 50%);
-      animation: pulse 8s ease-in-out infinite alternate;
-    }
-    @keyframes pulse { 0% { opacity: 0.6; } 100% { opacity: 1; } }
-    .hero-content {
-      position:relative; z-index:2; text-align:center;
-      max-width:800px; padding:4rem 2rem;
-    }
-    .hero-badge {
-      display:flex; flex-direction:column; align-items:center; gap:1rem;
-      width: 75%;
-      margin: 0 auto 2rem;
-      background: linear-gradient(135deg, #DC2626, #991B1B);
-      color: #fff; padding:2rem 3rem 1.5rem; border-radius:12px;
-      font-family:'Space Grotesk',system-ui,sans-serif; font-size:3rem; font-weight:900; letter-spacing:0.12em;
- text-align:center;
-      box-shadow: 0 6px 30px rgba(220,38,38,0.35);
-    }
-    .hero-badge svg { opacity:0.25; }
-    .hero-badge .badge-text { line-height:1; }
-    .hero h1 {
-      font-family:'Space Grotesk',system-ui,sans-serif; font-size:clamp(2.2rem,5.5vw,3.8rem); font-weight:900;
-      line-height:1.15; letter-spacing:-0.03em;
-      margin-bottom:1.5rem;
-      background: linear-gradient(135deg, #ffffff 0%, #DC2626 50%, #CA8A04 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .hero h1 span { 
-      background: linear-gradient(135deg, #DC2626, #CA8A04);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .hero .subtitle {
-      font-size:1.15rem; color:#94a3b8;
-      line-height:1.7; max-width:650px; margin:0 auto 2.5rem;
-    }
-    .hero-stats {
-      display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap;
-      margin-top:2.5rem; margin-bottom:2.5rem;
-    }
-    .stat {
-      background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08);
-      border-radius:12px; padding:1rem 1.5rem; text-align:center; min-width:160px;
-    }
-    .stat-num { font-family:'Space Grotesk',system-ui,sans-serif; font-size:1.8rem; font-weight:800; color:var(--gold); }
-    .stat-label { font-size:0.78rem; color:var(--text); margin-top:0.25rem; }
-    .hero-cta {
-      display:inline-flex; align-items:center; gap:0.5rem;
-      background:var(--accent); color:#fff; padding:0.9rem 2.5rem;
-      border-radius:8px; text-decoration:none; font-weight:700;
-      font-size:1.05rem; transition:filter 0.2s;
-    }
-    .hero-cta:hover { filter:brightness(1.15); box-shadow: 0 0 20px rgba(220,38,38,0.4); }
-
-    .hero-video {
-      margin: 2.5rem auto 0;
-      width: 100%;
-      max-width: 100%;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-    }
-    .hero-video video {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    /* Articles section */
-    .articles-section {
-      max-width:1200px; margin:0 auto; padding:5rem 2rem;
-    }
-    .section-header {
-      text-align:center; margin-bottom:3rem;
-    }
-    .section-header h2 {
-      font-family:'Space Grotesk',system-ui,sans-serif; font-size:2rem; font-weight:800; color:var(--text-bright);
-      letter-spacing:-0.02em; margin-bottom:0.5rem;
-    }
-    .section-header p { color:var(--text); font-size:1rem; }
-
-    .cards {
-      display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
-      gap:1.5rem;
-    }
-    .card {
-      background:var(--bg-card); border:1px solid var(--border);
-      border-radius:12px; overflow:hidden; text-decoration:none;
-      transition:border-color 0.2s, transform 0.2s;
-    }
-    .card:hover { border-color:var(--accent); transform:translateY(-2px); }
-    .card img { width:100%; height:200px; object-fit:cover; filter:brightness(0.8); }
-    .card-body { padding:1.25rem; }
-    .card-cat {
-      font-size:0.72rem; font-weight:700;
-      letter-spacing:0.08em; margin-bottom:0.5rem; display:block;
-    }
-    .card h3 {
-      font-family:'Space Grotesk',system-ui,sans-serif; font-size:1rem; font-weight:700; color:var(--text-bright);
-      line-height:1.3; margin-bottom:0.5rem;
-    }
-    .card p { font-size:0.88rem; color:var(--text); line-height:1.5; margin-bottom:0.75rem; }
-    .card-meta { font-size:0.75rem; color:#71717a; }
-
-    .view-all {
-      display:block; text-align:center; margin-top:2.5rem;
-    }
-    .view-all a {
-      color:var(--accent); text-decoration:none; font-weight:600;
-      font-size:0.95rem; transition:opacity 0.15s;
-    }
-    .view-all a:hover { opacity:0.8; }
-
-    /* Footer */
-    .site-footer {
-      text-align:center; padding:3rem 2rem;
-      border-top:1px solid var(--border); color:#71717a; font-size:0.82rem;
-    }
-    .site-footer a { color:var(--accent); text-decoration:none; }
-
-    @media (max-width:640px) {
-      .hero { min-height:80vh; }
-      .hero-stats { flex-direction:column; align-items:center; }
-      .cards { grid-template-columns:1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
+  <a href="#content" class="skip-link">Skip to content</a>
   <nav class="site-nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo"><svg class="logo-icon" width="36" height="36" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="22" cy="30" r="12" stroke="#DC2626" stroke-width="2.5" fill="none"/><circle cx="22" cy="30" r="4" fill="#DC2626"/><line x1="22" y1="15" x2="22" y2="18" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="22" y1="42" x2="22" y2="45" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="23" x2="11.5" y2="25" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="32.5" y1="35" x2="35" y2="37" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="37" x2="11.5" y2="35" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><line x1="32.5" y1="25" x2="35" y2="23" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/><circle cx="72" cy="30" r="20" stroke="#f1f5f9" stroke-width="2.5" fill="none"/><circle cx="72" cy="30" r="6" fill="#f1f5f9"/><line x1="72" y1="7" x2="72" y2="10" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="72" y1="50" x2="72" y2="53" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="49" y1="30" x2="52" y2="30" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="92" y1="30" x2="95" y2="30" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="54" y1="16" x2="56.5" y2="18.5" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="87.5" y1="41.5" x2="90" y2="44" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="54" y1="44" x2="56.5" y2="41.5" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><line x1="87.5" y1="18.5" x2="90" y2="16" stroke="#f1f5f9" stroke-width="2" stroke-linecap="round"/><path d="M 22 18 Q 47 6, 72 10" stroke="#CA8A04" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M 22 42 Q 47 54, 72 50" stroke="#CA8A04" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="35" cy="12" r="1.5" fill="#CA8A04"/><circle cx="47" cy="9" r="1.5" fill="#CA8A04"/><circle cx="59" cy="9" r="1.5" fill="#CA8A04"/><circle cx="35" cy="48" r="1.5" fill="#CA8A04"/><circle cx="47" cy="51" r="1.5" fill="#CA8A04"/><circle cx="59" cy="51" r="1.5" fill="#CA8A04"/></svg>tyming<span>chain</span></a>
+      <a href="/" class="brand" aria-label="Tyming Chain home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-copy">
+          <strong>tymingchain</strong>
+          <small>motorcycle workshop software</small>
+        </span>
+      </a>
       <div class="nav-links">
-        <a href="/">Home</a>
+        <a href="/" class="active">Home</a>
         <a href="/products/">Products</a>
         <a href="/blog/">Blog</a>
         <a href="/about/">About</a>
@@ -216,86 +31,222 @@
     </div>
   </nav>
 
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-text">TYMING CHAIN</span>
-        <svg width="280" height="80" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="22" cy="30" r="12" stroke="#fff" stroke-width="2.5" fill="none"/><circle cx="22" cy="30" r="4" fill="#fff"/><line x1="22" y1="15" x2="22" y2="18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="22" y1="42" x2="22" y2="45" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="23" x2="11.5" y2="25" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="32.5" y1="35" x2="35" y2="37" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="37" x2="11.5" y2="35" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="32.5" y1="25" x2="35" y2="23" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="72" cy="30" r="20" stroke="#fff" stroke-width="2.5" fill="none"/><circle cx="72" cy="30" r="6" fill="#fff"/><line x1="72" y1="7" x2="72" y2="10" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="72" y1="50" x2="72" y2="53" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="49" y1="30" x2="52" y2="30" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="92" y1="30" x2="95" y2="30" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="54" y1="16" x2="56.5" y2="18.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="87.5" y1="41.5" x2="90" y2="44" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="54" y1="44" x2="56.5" y2="41.5" stroke="#fff" stroke-width="2" stroke-linecap="round"/><line x1="87.5" y1="18.5" x2="90" y2="16" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M 22 18 Q 47 6, 72 10" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M 22 42 Q 47 54, 72 50" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="35" cy="12" r="1.5" fill="#fff"/><circle cx="47" cy="9" r="1.5" fill="#fff"/><circle cx="59" cy="9" r="1.5" fill="#fff"/><circle cx="35" cy="48" r="1.5" fill="#fff"/><circle cx="47" cy="51" r="1.5" fill="#fff"/><circle cx="59" cy="51" r="1.5" fill="#fff"/></svg>
+  <main id="content" class="page-shell">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Built for Indian two-wheeler service centres</div>
+          <h1 class="display-title">Run the workshop, the front desk, and the follow-up from one system.</h1>
+          <p class="lead">Tyming Chain gives motorcycle garages a connected operating layer for appointments, job cards, estimates, parts, invoices, reminders, technician coordination, and owner visibility. No paper diary. No WhatsApp chaos. No blind spots between the counter and the bay.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/products/">See the platform</a>
+            <a class="button button-secondary" href="/contact/">Book a walkthrough</a>
+          </div>
+          <ul class="mini-list">
+            <li>Appointments planned against real bay capacity, not guesswork.</li>
+            <li>Job cards move from reception to quality check with clear status and ownership.</li>
+            <li>Blocked work, missing parts, unpaid invoices, and at-risk customers surface early.</li>
+          </ul>
+        </div>
+        <div class="surface stack">
+          <div class="badge">Today in the garage</div>
+          <div class="metric-grid">
+            <article class="metric">
+              <div class="stat-label">Capacity planning</div>
+              <div class="metric-value">12 bookings</div>
+              <p>Typical weekday scheduling across four bays, with slot conflicts resolved before they happen.</p>
+            </article>
+            <article class="metric">
+              <div class="stat-label">Shop-floor visibility</div>
+              <div class="metric-value">Live status</div>
+              <p>Reception, in progress, awaiting parts, quality check, and ready for delivery in one view.</p>
+            </article>
+            <article class="metric">
+              <div class="stat-label">Customer approvals</div>
+              <div class="metric-value">Estimate to invoice</div>
+              <p>Quotes move into billing without re-entry once the customer approves.</p>
+            </article>
+            <article class="metric">
+              <div class="stat-label">Owner intelligence</div>
+              <div class="metric-value">Retention + revenue</div>
+              <p>Track return rate, ticket size, blocked-job age, and where service revenue is actually coming from.</p>
+            </article>
+          </div>
+          <div class="note-panel">
+            <div class="note-label">Operational upside</div>
+            <h3>The floor keeps moving even when a job is blocked.</h3>
+            <p>If a part is missing or an approval is pending, the system can flag the job, free the bay, and show the next decision that needs attention.</p>
+          </div>
+        </div>
       </div>
-      <h1>Your Garage Deserves <span>Smart Software</span></h1>
-      <p class="subtitle">Purpose-built CRM, scheduling, and customer management for motorcycle workshops. Stop losing revenue to paper diaries and missed appointments.</p>
-      <div class="hero-video">
-        <video controls loop playsinline>
-          <source src="/assets/garage-crm-hero.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><div class="stat-num">30%</div><div class="stat-label">Revenue lost to scheduling failures</div></div>
-        <div class="stat"><div class="stat-num">25%</div><div class="stat-label">Higher retention with CRM</div></div>
-        <div class="stat"><div class="stat-num">₹73L+</div><div class="stat-label">Recoverable revenue per year</div></div>
-      </div>
-      <a href="/blog/why-garage-needs-crm/" class="hero-cta">Read the Full Guide →</a>
-    </div>
-  </section>
+    </section>
 
-  <section class="articles-section">
-    <div class="section-header">
-      <h2>Latest from the Blog</h2>
-      <p>Deep-dive guides on motorcycle technology, garage management, and the Indian riding scene.</p>
-    </div>
-    <div class="cards">
-      
-        <a href="/blog/ev-readiness-indian-garages-2026/" class="card">
-          <img src="https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=800&h=450&fit=crop&q=80" alt="Is Your Garage Ready for Electric Motorcycles?" loading="lazy">
-          <div class="card-body">
-            <span class="card-cat" style="color:#DC2626">Garage Management</span>
-            <h3>Is Your Garage Ready for Electric Motorcycles?</h3>
-            <p>India's EV revolution is coming to two-wheelers. Here's the complete readiness checklist for workshops that don't want to be left behind…</p>
-            <span class="card-meta">Mar 9, 2026 · 12 min read</span>
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Why garages switch</div>
+          <h2 class="section-title">The problem is rarely one screen. It is the broken handoff between all of them.</h2>
+        </div>
+        <p class="section-copy">A workshop does not break because bookings exist or because bills exist. It breaks when the booking never becomes a clean job card, the parts request never reaches procurement, the customer never hears back, and the owner only sees the damage at the end of the week.</p>
+      </div>
+      <div class="asym-grid">
+        <article class="surface tall">
+          <div class="badge">What Tyming Chain replaces</div>
+          <h3>Disconnected notes, verbal updates, and reactive firefighting.</h3>
+          <p>Instead of separate notebooks for walk-ins, technician calls for updates, and manual reminders for pickups, the platform connects the intake desk, workshop floor, billing desk, and customer communication in one operating flow.</p>
+          <ul class="list-clean">
+            <li>Appointments convert cleanly into arrival-ready job cards.</li>
+            <li>Workflow templates assign the right technician and expose stalled work instantly.</li>
+            <li>Inspections, parts usage, invoices, and follow-up messages stay attached to the same record.</li>
+          </ul>
+        </article>
+        <article class="tile">
+          <div class="badge">Front desk</div>
+          <h3>Bookings, bays, and walk-ins without overloading the day.</h3>
+          <p>Daily capacity is visible before a promise is made to the customer, so the schedule reflects actual workshop throughput.</p>
+        </article>
+        <article class="tile">
+          <div class="badge">Workshop execution</div>
+          <h3>Every bike has a status, owner, next step, and reason if it stops.</h3>
+          <p>That clarity is what reduces rework, idle bays, and “let me check and call you back” moments.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Real workflow, not generic software</div>
+          <h2 class="section-title">Built around the way a motorcycle workshop actually moves through the day.</h2>
+        </div>
+        <p class="section-copy">The platform follows the same chain of events your staff already live through, then removes the weak links: missed intake details, unclear ownership, stalled approvals, missing parts, delayed pickups, and silent churn after delivery.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-step">
+          <span class="step-index">01</span>
+          <div>
+            <h3>Booking and arrival</h3>
+            <p>Reserve capacity by service type and bay, then turn booked arrivals into pre-filled job cards instead of typing the same information twice.</p>
           </div>
-        </a>
-        <a href="/blog/why-garage-needs-crm/" class="card">
-          <img src="https://images.unsplash.com/photo-1580310614729-ccd69652491d?w=800&h=450&fit=crop&q=80" alt="Why Your Motorcycle Garage Needs a CRM System" loading="lazy">
-          <div class="card-body">
-            <span class="card-cat" style="color:#DC2626">Garage Management</span>
-            <h3>Why Your Motorcycle Garage Needs a CRM System</h3>
-            <p>Motorcycle garages running on paper and spreadsheets are bleeding money. Learn how a purpose-built CRM eliminates missed…</p>
-            <span class="card-meta">Feb 9, 2026 · 12 min read</span>
+        </article>
+        <article class="timeline-step">
+          <span class="step-index">02</span>
+          <div>
+            <h3>Job cards and inspections</h3>
+            <p>Capture complaints, odometer, fuel level, notes, pre-service checks, and the exact workflow the bike should follow through the floor.</p>
           </div>
-        </a>
-        <a href="/blog/smart-tech-inmrc-racing/" class="card">
-          <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&h=450&fit=crop&q=80" alt="Smart Tech — From INMRC Podiums to Your Garage" loading="lazy">
-          <div class="card-body">
-            <span class="card-cat" style="color:#DC2626">Racing Technology</span>
-            <h3>Smart Tech — From INMRC Podiums to Your Garage</h3>
-            <p>From ECU mapping to OBD scanners — how Motorrad Theory uses smart tech to win INMRC podiums, and how the same innovation…</p>
-            <span class="card-meta">Feb 15, 2026 · 15 min read</span>
+        </article>
+        <article class="timeline-step">
+          <span class="step-index">03</span>
+          <div>
+            <h3>Estimate, approval, and execution</h3>
+            <p>Create structured estimates, collect customer approval, track parts consumption, and move work forward only when the right prerequisites are met.</p>
           </div>
-        </a>
-        <a href="/blog/best-motorcycle-tire-brands-2026/" class="card">
-          <img src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?w=800&h=450&fit=crop&q=80" alt="Best Motorcycle Tire Brands 2026" loading="lazy">
-          <div class="card-body">
-            <span class="card-cat" style="color:#CA8A04">Buyer's Guide</span>
-            <h3>Best Motorcycle Tire Brands 2026</h3>
-            <p>Compare Michelin, Pirelli, Dunlop, Bridgestone, Continental & Metzeler motorcycle tires with independent lap times, cost…</p>
-            <span class="card-meta">Feb 11, 2026 · 14 min read</span>
+        </article>
+        <article class="timeline-step">
+          <span class="step-index">04</span>
+          <div>
+            <h3>Billing, pickup, and follow-up</h3>
+            <p>Issue GST-ready invoices, log payments, trigger pickup reminders, and keep customer history ready for the next service cycle.</p>
           </div>
-        </a>
-        <a href="/blog/agno-mission-control-sdk/" class="card">
-          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=450&fit=crop&q=80" alt="The $12/Month AI Workforce" loading="lazy">
-          <div class="card-body">
-            <span class="card-cat" style="color:#DC2626">Product Deep-Dive</span>
-            <h3>The $12/Month AI Workforce</h3>
-            <p>Mission Control is an open-source AI agent platform that runs 18 autonomous workers on a $12/month server. Learn how gar…</p>
-            <span class="card-meta">Feb 10, 2026 · 18 min read</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Three working surfaces</div>
+          <h2 class="section-title">One platform across the counter, the bay, and the owner’s dashboard.</h2>
+        </div>
+        <p class="section-copy">The product is not one monolith pretending everyone works the same way. It has focused surfaces for the front desk, technicians, and decision-makers, with the same operational truth behind them.</p>
+      </div>
+      <div class="asym-grid">
+        <article class="surface tall">
+          <div class="badge">Garage CRM</div>
+          <h3>The command centre for intake, job execution, billing, parts, and customer history.</h3>
+          <p>Owners and service advisors get one place to track live workload, blocked jobs, outstanding payments, and customer patterns without assembling reports manually.</p>
+          <div class="hero-actions">
+            <a class="link-button" href="/products/">Explore the detailed product map</a>
           </div>
+        </article>
+        <article class="tile">
+          <div class="badge">Employee app</div>
+          <h3>Built for technicians who need fast updates, not admin overhead.</h3>
+          <p>Assigned tasks, workflow progress, leave status, and floor updates in a format staff can actually use on entry-level Android devices.</p>
+        </article>
+        <article class="tile">
+          <div class="badge">AI and messaging</div>
+          <h3>Use natural language to query operations and automate customer communication.</h3>
+          <p>From reminders and approvals to management questions about revenue or blocked work, the AI layer turns data into action.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid-split">
+        <article class="surface">
+          <div class="kicker">What managers start seeing</div>
+          <h2 class="section-title">A better garage runs on cleaner signals.</h2>
+          <ul class="list-clean">
+            <li>Which bays are under pressure and which jobs are waiting on parts or approvals.</li>
+            <li>Where revenue is coming from: labour, parts, service type, and bike segment.</li>
+            <li>Which customers are drifting away before they disappear from the workshop entirely.</li>
+            <li>Which technicians are overloaded, underused, or handling the highest-value work.</li>
+          </ul>
+        </article>
+        <article class="quote-card">
+          <div class="kicker">Why it matters</div>
+          <h3>Less time chasing status. More time fixing the underlying issue.</h3>
+          <p>The point of the system is not to digitize clutter. It is to make the next decision obvious: call the customer, follow up on the vendor, free the bay, reassign the job, or send the reminder before the customer has to ask.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/contact/">Talk to us about your workshop</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <div class="kicker">From the garage playbook</div>
+          <h2 class="section-title">Notes on workshop operations, technology, and the road ahead.</h2>
+        </div>
+        <p class="section-copy">The blog is where we unpack the practical side of running modern two-wheeler service businesses in India, from CRM economics to EV readiness.</p>
+      </div>
+      <div class="article-rail">
+        <a class="article-link" href="/blog/ev-readiness-indian-garages-2026/">
+          <span>Garage management</span>
+          <h3>Is your garage ready for electric motorcycles?</h3>
+          <p>A workshop-level checklist for tools, diagnostics, safety, and process changes as EV service demand starts to rise.</p>
+          <div class="article-meta">Mar 9, 2026 · 12 min read</div>
         </a>
-    </div>
-    <div class="view-all"><a href="/blog/">View all articles →</a></div>
-  </section>
+        <a class="article-link" href="/blog/why-garage-needs-crm/">
+          <span>Garage management</span>
+          <h3>Why your motorcycle garage needs a CRM system</h3>
+          <p>Where revenue leaks out of paper-based operations and what changes when the entire workshop flow becomes visible.</p>
+          <div class="article-meta">Feb 9, 2026 · 12 min read</div>
+        </a>
+        <a class="article-link" href="/blog/agno-mission-control-sdk/">
+          <span>Product deep-dive</span>
+          <h3>The small-team AI stack behind autonomous operations</h3>
+          <p>How a lightweight AI layer can support content, customer communication, and internal coordination without enterprise overhead.</p>
+          <div class="article-meta">Feb 10, 2026 · 18 min read</div>
+        </a>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
-    <p>© 2026 Tyming Chain · Built for Indian motorcycle workshops · <a href="https://motorradtheory.com">Motorrad Theory</a></p>
+    <div class="footer-inner">
+      <div>Tyming Chain builds software for Indian motorcycle workshops that need cleaner operations and better customer follow-through.</div>
+      <div class="footer-links">
+        <a href="/products/">Products</a>
+        <a href="/blog/">Blog</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
