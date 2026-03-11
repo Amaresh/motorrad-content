@@ -15,7 +15,7 @@
   --accent-soft: rgba(226, 93, 59, 0.18);
   --accent-alt: #f0b76a;
   --good: #7ec28b;
-  --shadow: 0 26px 70px rgba(0, 0, 0, 0.28);
+  --shadow: 0 26px 70px rgba(10, 12, 24, 0.38);
   --max: 1280px;
 }
 
@@ -265,6 +265,7 @@ main, nav, section, article, footer { position: relative; }
 .summary-card p {
   color: var(--muted);
   line-height: 1.78;
+  text-wrap: pretty;
 }
 
 .lead,
@@ -482,6 +483,7 @@ main, nav, section, article, footer { position: relative; }
   gap: 1rem;
   font-size: 0.88rem;
   color: var(--muted);
+  font-variant-numeric: tabular-nums;
 }
 
 .bar-track {
@@ -499,6 +501,7 @@ main, nav, section, article, footer { position: relative; }
   bottom: 0;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--accent-alt), var(--accent));
+  transition: width 600ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .spark-row {
