@@ -29,6 +29,8 @@ html{scroll-behavior:smooth}
 body {
   margin: 0;
   min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   font-family: "Manrope", system-ui, -apple-system, sans-serif;
   color: var(--text);
   background: var(--bg);
@@ -39,6 +41,7 @@ body {
 img,video{display:block;max-width:100%}
 a{color:inherit}
 main,nav,section,article,footer{position:relative}
+main{flex:1}
 
 .skip-link{position:absolute;left:-999px;top:auto}
 .skip-link:focus{
@@ -171,7 +174,7 @@ main,nav,section,article,footer{position:relative}
 /* -- PHOTOS -- */
 .photo-card,.image-frame{overflow:hidden}
 .photo-card img,.image-frame img,.article-hero-photo img,
-.post-image,.media-photo img{width:100%;height:100%;object-fit:cover}
+.post-image img,.media-photo img{width:100%;height:100%;object-fit:cover}
 .photo-card.large{min-height:370px}
 .photo-card.small{min-height:185px}
 .photo-stack{display:grid;gap:1rem}
@@ -267,7 +270,7 @@ main,nav,section,article,footer{position:relative}
 .article-hero-photo{min-height:400px}
 
 .post-label,.clean-list strong,.story-card strong{color:var(--accent)}
-.post-card{text-decoration:none}
+.post-card{text-decoration:none;display:block;color:inherit}
 .post-card p{margin:0.45rem 0 0.8rem}
 .post-meta{color:var(--soft);font-size:0.88rem}
 
