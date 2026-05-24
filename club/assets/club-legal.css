@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap');
+
+:root {
+  --bg: #f9f7f4;
+  --text: #1c1917;
+  --muted: #57524c;
+  --soft: #8a837b;
+  --accent: #c0452a;
+  --line: rgba(28, 25, 23, 0.1);
+  --max: 760px;
+  --radius: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: "Manrope", system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+a { color: var(--accent); }
+
+.site-nav {
+  border-bottom: 1px solid var(--line);
+  background: rgba(249, 247, 244, 0.92);
+  backdrop-filter: blur(12px);
+}
+
+.nav-inner {
+  max-width: calc(var(--max) + 4rem);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-mark {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  background: radial-gradient(circle at 38% 38%, #d86a48, #c0452a 60%, #7a2a16 100%);
+}
+
+.brand-copy strong {
+  display: block;
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: 0.95rem;
+}
+
+.brand-copy small {
+  display: block;
+  color: var(--soft);
+  font-size: 0.72rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  font-size: 0.92rem;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav-links a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.page-shell {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-family: "Outfit", system-ui, sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  line-height: 1.15;
+  margin: 0 0 0.75rem;
+}
+
+.lede {
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  display: block;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.card span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+h2 {
+  font-size: 1.08rem;
+  margin: 1.75rem 0 0.65rem;
+}
+
+ul { padding-left: 1.2rem; }
+
+.meta {
+  color: var(--soft);
+  font-size: 0.92rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 1.25rem 1.5rem 2rem;
+  color: var(--soft);
+  font-size: 0.88rem;
+  text-align: center;
+}
