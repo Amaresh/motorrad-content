@@ -691,6 +691,10 @@ def main() -> None:
         if "noindex" not in html.lower():
             fail(f"{rel} must be noindex")
 
+    css = (ROOT / "assets/site.css").read_text(encoding="utf-8")
+    if ".article-body a.button-primary" not in css:
+        fail("article-body must keep primary button label color (specificity vs .article-body a)")
+
     print("check-seo: ok")
 
 

@@ -346,6 +346,14 @@ main{flex:1}
 .article-body ul,.article-body ol{margin:0;padding-left:1.25rem}
 .article-body li + li{margin-top:0.45rem}
 .article-body a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+.article-body a.button,.article-body a.link-button,.article-body a.ghost-button{
+  text-decoration:none;
+}
+.article-body a.button-primary{color:#fff}
+.article-body a.button-primary:hover,.article-body a.button-primary:focus-visible{color:#fff}
+.article-body a.button-secondary,.article-body a.link-button,.article-body a.ghost-button{
+  color:var(--text);
+}
 .article-body blockquote{
   margin:0;padding:1.15rem 1.25rem;
   border-left:3px solid var(--accent);background:var(--accent-soft);
