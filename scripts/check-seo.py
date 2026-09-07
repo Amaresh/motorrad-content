@@ -93,11 +93,14 @@ SITEMAP_PATHS = [
     "/blog/best-motorcycle-tire-brands-2026/",
     "/blog/agno-mission-control-sdk/",
     "/blog/250cc-vs-600cc-2026/",
-    "/club/",
-    "/club/privacy/",
-    "/club/terms/",
-    "/club/subscriptions/",
-    "/club/delete-account/",
+]
+
+CLUB_HTML = [
+    "club/index.html",
+    "club/privacy/index.html",
+    "club/terms/index.html",
+    "club/subscriptions/index.html",
+    "club/delete-account/index.html",
 ]
 
 MARKETING_HTML = [
@@ -362,6 +365,8 @@ def check_robots(robots: str) -> None:
         fail("robots.txt must Disallow: /content/")
     if re.search(r"(?m)^Disallow:\s*/\s*$", robots):
         fail("robots.txt must not disallow the whole site")
+    if re.search(r"(?im)^Disallow:\s*/club", robots):
+        fail("robots.txt must not Disallow /club (crawlers need noindex)")
     lowered = robots.lower()
     for bot in AI_BOTS:
         pattern = re.compile(
@@ -547,12 +552,16 @@ def main() -> None:
             f"missing {sorted(expected - locs)}\n"
             f"extra {sorted(locs - expected)}"
         )
+    if any("/club" in loc for loc in locs):
+        fail("sitemap must not list /club URLs")
 
     llms = (ROOT / "llms.txt").read_text(encoding="utf-8").lower()
     if "bike garage management software" not in llms:
         fail("llms.txt must state bike garage management software")
     if "not a manufacturer of engine timing chains" not in llms:
         fail("llms.txt must disambiguate engine timing chains")
+    if "/club" in llms:
+        fail("llms.txt must not point at /club")
 
     readme_head = "\n".join(
         (ROOT / "README.md").read_text(encoding="utf-8").splitlines()[:20]
@@ -642,6 +651,10 @@ def main() -> None:
                 fail(f"{rel} JSON-LD contains aggregateRating")
         check_internal_hrefs(rel, html)
         check_chrome(rel, html)
+        for href in hrefs_in(html):
+            path = href.split("#")[0].split("?")[0].lower()
+            if "/club" in path:
+                fail(f"{rel} must not link to /club ({href})")
 
     for rel, expected in TITLES.items():
         got = title_of((ROOT / rel).read_text(encoding="utf-8"))
@@ -672,6 +685,11 @@ def main() -> None:
     notfound = (ROOT / "404.html").read_text(encoding="utf-8")
     if "noindex" not in notfound.lower():
         fail("404.html must be noindex")
+
+    for rel in CLUB_HTML:
+        html = (ROOT / rel).read_text(encoding="utf-8")
+        if "noindex" not in html.lower():
+            fail(f"{rel} must be noindex")
 
     print("check-seo: ok")
 

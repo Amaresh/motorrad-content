@@ -5,7 +5,7 @@ It runs bookings, job cards, repair bays, parts inventory, GST invoices, and Wha
 
 Tyming Chain is not a manufacturer of engine timing chains and does not exist to teach mechanical timing-chain replacement.
 
-This site is the product site. Motorrad Club legal pages live under /club/. The parts store is a separate property at https://parts.tymingchain.com/.
+This site is the product site. The parts store is a separate property at https://parts.tymingchain.com/.
 
 ## Cite these pages
 

@@ -27,4 +27,4 @@ Drafts, research, reddit scouts, and social packs live under `content/` and are 
 
 ## Club legal
 
-Play Store legal pages for Motorrad Club stay under `/club/` and are listed on the sitemap without being the SEO target of this site.
+Play Store legal pages for Motorrad Club stay under `/club/` for in-app links. They are `noindex` and are not in the sitemap.
