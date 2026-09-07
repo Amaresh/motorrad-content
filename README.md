@@ -12,7 +12,7 @@ Tyming Chain runs bookings, job cards, repair bays, parts inventory, GST invoice
 python3 scripts/check-seo.py
 ```
 
-GitHub Actions runs the same script on push and pull request.
+GitHub Actions is disabled on this repository, so that command is the gate. `.github/workflows/check-seo.yml` is dormant unless Actions is turned back on.
 
 ## After a production merge (human)
 
