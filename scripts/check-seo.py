@@ -138,6 +138,66 @@ GUIDE_PAGES = [
     "guides/gst-invoices-for-bike-workshops/index.html",
 ]
 
+NAV_SECTION_HREFS = (
+    "/features/",
+    "/compare/",
+    "/faq/",
+    "/guides/",
+    "/blog/",
+    "/contact/",
+)
+NAV_FEATURE_HREFS = (
+    "/features/job-cards/",
+    "/features/bay-scheduling/",
+    "/features/inventory/",
+    "/features/gst-billing/",
+    "/features/whatsapp-reminders/",
+)
+PRIMARY_FORBIDDEN_HREFS = ("/", "/products/", "/about/")
+FOOTER_COL_LABELS = ("Product", "Learn", "Company")
+FOOTER_REQUIRED_HREFS = (
+    "/products/",
+    "/features/",
+    *NAV_FEATURE_HREFS,
+    "/compare/",
+    "/faq/",
+    "/guides/",
+    "/blog/",
+    "/about/",
+    "/contact/",
+)
+ACTIVE_PRIMARY_BY_PAGE = {
+    "index.html": None,
+    "products/index.html": None,
+    "about/index.html": None,
+    "contact/index.html": "/contact/",
+    "blog/index.html": "/blog/",
+    "blog/ev-readiness-indian-garages-2026/index.html": "/blog/",
+    "blog/why-garage-needs-crm/index.html": "/blog/",
+    "blog/smart-tech-inmrc-racing/index.html": "/blog/",
+    "blog/best-motorcycle-tire-brands-2026/index.html": "/blog/",
+    "blog/agno-mission-control-sdk/index.html": "/blog/",
+    "blog/250cc-vs-600cc-2026/index.html": "/blog/",
+    "features/index.html": "/features/",
+    "features/job-cards/index.html": "/features/",
+    "features/bay-scheduling/index.html": "/features/",
+    "features/inventory/index.html": "/features/",
+    "features/gst-billing/index.html": "/features/",
+    "features/whatsapp-reminders/index.html": "/features/",
+    "compare/index.html": "/compare/",
+    "faq/index.html": "/faq/",
+    "guides/index.html": "/guides/",
+    "guides/stop-overbooking-repair-bays/index.html": "/guides/",
+    "guides/gst-invoices-for-bike-workshops/index.html": "/guides/",
+}
+ACTIVE_STRIP_BY_PAGE = {
+    "features/job-cards/index.html": "/features/job-cards/",
+    "features/bay-scheduling/index.html": "/features/bay-scheduling/",
+    "features/inventory/index.html": "/features/inventory/",
+    "features/gst-billing/index.html": "/features/gst-billing/",
+    "features/whatsapp-reminders/index.html": "/features/whatsapp-reminders/",
+}
+
 WEBPAGE_PAGES = [
     "products/index.html",
     "about/index.html",
@@ -337,6 +397,86 @@ def check_internal_hrefs(rel: str, html: str) -> None:
             fail(f"{rel} internal href {href} does not resolve ({target})")
 
 
+def site_nav(html: str) -> str:
+    match = re.search(r'<nav class="site-nav">(.*?)</nav>', html, re.I | re.S)
+    if not match:
+        fail("missing nav.site-nav")
+    return match.group(1)
+
+
+def site_footer(html: str) -> str:
+    match = re.search(r'<footer class="site-footer">(.*?)</footer>', html, re.I | re.S)
+    if not match:
+        fail("missing footer.site-footer")
+    return match.group(1)
+
+
+def region(markup: str, cls: str) -> str:
+    match = re.search(
+        rf'<(?:div|nav)[^>]*class=["\'][^"\']*\b{re.escape(cls)}\b[^"\']*["\'][^>]*>(.*?)</(?:div|nav)>',
+        markup,
+        re.I | re.S,
+    )
+    if not match:
+        fail(f"missing .{cls}")
+    return match.group(1)
+
+
+def hrefs_in(markup: str) -> set[str]:
+    return set(re.findall(r'href=["\']([^"\']+)["\']', markup))
+
+
+def current_hrefs(markup: str) -> set[str]:
+    found: set[str] = set()
+    for tag in re.findall(r"<a\b[^>]*>", markup, re.I):
+        if re.search(r'\bactive\b', tag) or re.search(r'aria-current=["\']page["\']', tag, re.I):
+            href = re.search(r'href=["\']([^"\']+)["\']', tag)
+            if href:
+                found.add(href.group(1))
+    return found
+
+
+def check_chrome(rel: str, html: str) -> None:
+    if set(ACTIVE_PRIMARY_BY_PAGE) != set(MARKETING_HTML):
+        fail("ACTIVE_PRIMARY_BY_PAGE must list every MARKETING_HTML path")
+    nav = site_nav(html)
+    footer = site_footer(html)
+    links = region(nav, "nav-links")
+    strip = region(nav, "nav-features")
+    nav_hrefs = hrefs_in(nav)
+    for href in NAV_SECTION_HREFS + NAV_FEATURE_HREFS:
+        if href not in nav_hrefs:
+            fail(f"{rel} site-nav missing {href}")
+    for href in PRIMARY_FORBIDDEN_HREFS:
+        if href in hrefs_in(links) or href in hrefs_in(strip):
+            fail(f"{rel} header chrome must not include {href}")
+    if "footer-inner footer-features" in footer or "footer-features" in footer:
+        fail(f"{rel} must not use footer-features")
+    if "footer-col" not in footer:
+        fail(f"{rel} footer missing footer-col")
+    foot_hrefs = hrefs_in(footer)
+    for href in FOOTER_REQUIRED_HREFS:
+        if href not in foot_hrefs:
+            fail(f"{rel} footer missing {href}")
+    for label in FOOTER_COL_LABELS:
+        if f'aria-label="{label}"' not in footer:
+            fail(f"{rel} footer missing column {label}")
+    expected_primary = ACTIVE_PRIMARY_BY_PAGE[rel]
+    expected_strip = ACTIVE_STRIP_BY_PAGE.get(rel)
+    primary_current = current_hrefs(links)
+    strip_current = current_hrefs(strip)
+    if expected_primary is None:
+        if primary_current:
+            fail(f"{rel} nav-links should have no active link, got {sorted(primary_current)}")
+    elif primary_current != {expected_primary}:
+        fail(f"{rel} nav-links active {sorted(primary_current)} != {[expected_primary]}")
+    if expected_strip is None:
+        if strip_current:
+            fail(f"{rel} nav-features should have no active link, got {sorted(strip_current)}")
+    elif strip_current != {expected_strip}:
+        fail(f"{rel} nav-features active {sorted(strip_current)} != {[expected_strip]}")
+
+
 def faq_answers(html: str) -> list[tuple[str, str]]:
     items = re.findall(
         r'<article class="faq-item[^"]*">(.*?)</article>',
@@ -501,6 +641,7 @@ def main() -> None:
             if "aggregateRating" in dumped:
                 fail(f"{rel} JSON-LD contains aggregateRating")
         check_internal_hrefs(rel, html)
+        check_chrome(rel, html)
 
     for rel, expected in TITLES.items():
         got = title_of((ROOT / rel).read_text(encoding="utf-8"))

@@ -86,8 +86,13 @@
           <small>motorcycle workshop solutions</small>
         </span>
       </a>
-      <div class="nav-links">
-        <a href="/">Home</a> <a href="/products/" class="active">Products</a> <a href="/blog/">Blog</a> <a href="/about/">About</a> <a href="/contact/">Contact</a>
+      <div class="nav-cluster">
+        <div class="nav-links" aria-label="Sections">
+          <a href="/features/" class="active">Features</a> <a href="/compare/">Compare</a> <a href="/faq/">FAQ</a> <a href="/guides/">Guides</a> <a href="/blog/">Blog</a> <a href="/contact/">Contact</a>
+        </div>
+        <div class="nav-features" aria-label="Features">
+          <a href="/features/job-cards/">Job cards</a> <a href="/features/bay-scheduling/">Bay scheduling</a> <a href="/features/inventory/" class="active" aria-current="page">Inventory</a> <a href="/features/gst-billing/">GST billing</a> <a href="/features/whatsapp-reminders/">WhatsApp reminders</a>
+        </div>
       </div>
     </div>
   </nav>
@@ -122,25 +127,30 @@
 
   </main>
   <footer class="site-footer">
-    <div class="footer-inner">
-      <div>Tyming Chain · Bike garage management software for Indian two-wheeler workshops.</div>
-      <div class="footer-links">
+    <div class="footer-grid">
+      <p class="footer-blurb">Tyming Chain · Bike garage management software for Indian two-wheeler workshops.</p>
+      <nav class="footer-col" aria-label="Product">
+        <div class="mini-label">Product</div>
         <a href="/products/">Products</a>
         <a href="/features/">Features</a>
+        <a href="/features/job-cards/">Job cards</a>
+        <a href="/features/bay-scheduling/">Bay scheduling</a>
+        <a href="/features/inventory/">Inventory</a>
+        <a href="/features/gst-billing/">GST billing</a>
+        <a href="/features/whatsapp-reminders/">WhatsApp reminders</a>
+      </nav>
+      <nav class="footer-col" aria-label="Learn">
+        <div class="mini-label">Learn</div>
         <a href="/compare/">Compare</a>
         <a href="/faq/">FAQ</a>
         <a href="/guides/">Guides</a>
         <a href="/blog/">Blog</a>
+      </nav>
+      <nav class="footer-col" aria-label="Company">
+        <div class="mini-label">Company</div>
         <a href="/about/">About</a>
         <a href="/contact/">Contact</a>
-      </div>
-    </div>
-    <div class="footer-inner footer-features">
-      <a href="/features/job-cards/">Job cards</a>
-      <a href="/features/bay-scheduling/">Bay scheduling</a>
-      <a href="/features/inventory/">Inventory</a>
-      <a href="/features/gst-billing/">GST billing</a>
-      <a href="/features/whatsapp-reminders/">WhatsApp reminders</a>
+      </nav>
     </div>
   </footer>
 </body>
