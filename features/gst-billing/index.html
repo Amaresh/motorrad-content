@@ -106,7 +106,15 @@
 </section>
 <section class="section article-body">
   <h2>How it works</h2>
-  <ol>
+  <figure class="diagram-frame">
+    <figcaption class="mini-label">Approve first, invoice after QC</figcaption>
+    <pre class="mermaid">flowchart TD
+  est["Estimate from tariff + parts"] --&gt; wa["WhatsApp approve"]
+  wa --&gt;|approved| work["Work + QC"]
+  work --&gt; inv["GST invoice CGST/SGST or IGST"]
+  inv --&gt; pay["UPI cash or Cashfree"]</pre>
+  </figure>
+  <ol class="sr-steps">
     <li>The advisor builds an estimate from the tariff sheet and parts list, then sends it for approval.</li>
     <li>After approval and QC, one click creates the GST invoice from that estimate.</li>
     <li>The customer pays by UPI, card, cash, or the Cashfree link. Partial and overdue amounts stay on the owner dashboard.</li>
@@ -153,5 +161,7 @@
       </nav>
     </div>
   </footer>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+<script defer src="/assets/mermaid-boot.js"></script>
 </body>
 </html>

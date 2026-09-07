@@ -99,6 +99,16 @@
   <p class="hero-copy">Each page is a citeable URL for one Tyming Chain capability. The hub on <a href="/products/">products</a> still lists every module, including workflows and inspections that do not have a dedicated URL yet.</p>
 </section>
 <section class="section">
+  <figure class="diagram-frame">
+    <figcaption class="mini-label">Every module hangs on the job card</figcaption>
+    <pre class="mermaid">flowchart LR
+  jc["Job card"] --- bay["Bay scheduling"]
+  jc --- parts["Inventory"]
+  jc --- gst["GST billing"]
+  jc --- wa["WhatsApp"]</pre>
+  </figure>
+</section>
+<section class="section">
   <div class="feature-grid">
     <article class="feature-card"><div class="mini-label">Core</div><h3><a href="/features/job-cards/">Job cards</a></h3><p>One record from walk-in to delivery.</p></article>
     <article class="feature-card"><div class="mini-label">Floor</div><h3><a href="/features/bay-scheduling/">Bay scheduling</a></h3><p>Four bays against real duration.</p></article>
@@ -136,5 +146,7 @@
       </nav>
     </div>
   </footer>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+<script defer src="/assets/mermaid-boot.js"></script>
 </body>
 </html>

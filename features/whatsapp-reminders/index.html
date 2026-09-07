@@ -106,7 +106,17 @@
 </section>
 <section class="section article-body">
   <h2>How it works</h2>
-  <ol>
+  <figure class="diagram-frame">
+    <figcaption class="mini-label">The chat is not the ledger</figcaption>
+    <pre class="mermaid">sequenceDiagram
+  participant Shop
+  participant Rider
+  Shop-&gt;&gt;Rider: Estimate on WhatsApp
+  Rider--&gt;&gt;Shop: Approve or reject
+  Shop-&gt;&gt;Rider: Ready for pickup + Cashfree link
+  Shop-&gt;&gt;Rider: Service due by km or time</pre>
+  </figure>
+  <ol class="sr-steps">
     <li>Template notifications fire when a job card is created, an estimate is ready, the bike is ready for pickup, or payment is received.</li>
     <li>The estimate link lets the customer approve or reject on the phone. Rejected estimates are revised and resent; approved estimates become the invoice later.</li>
     <li>Cashfree payment links ride the same channel so UPI collection is not a screenshot in a group chat.</li>
@@ -152,5 +162,7 @@
       </nav>
     </div>
   </footer>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+<script defer src="/assets/mermaid-boot.js"></script>
 </body>
 </html>

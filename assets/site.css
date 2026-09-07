@@ -354,6 +354,26 @@ main{flex:1}
 .article-body a.button-secondary,.article-body a.link-button,.article-body a.ghost-button{
   color:var(--text);
 }
+.diagram-frame{
+  margin:0;
+  padding:1.4rem 1.25rem 1.15rem;
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  background:var(--bg-elevated);
+  box-shadow:var(--shadow);
+  overflow-x:auto;
+}
+.diagram-frame .mini-label{display:block;margin:0 0 0.95rem}
+.diagram-frame .mermaid{
+  margin:0;background:transparent;text-align:center;
+  font-family:"Manrope",system-ui,sans-serif;
+}
+.diagram-frame svg{max-width:100%;height:auto}
+.sr-steps{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);
+  white-space:nowrap;border:0;
+}
 .article-body blockquote{
   margin:0;padding:1.15rem 1.25rem;
   border-left:3px solid var(--accent);background:var(--accent-soft);
@@ -371,6 +391,9 @@ main{flex:1}
   border:1px solid rgba(28,25,23,0.15);color:#e8e2da;
 }
 .article-body pre code{padding:0;border:0;background:transparent;color:#e8e2da}
+.article-body .diagram-frame pre.mermaid{
+  padding:0;background:transparent;border:0;color:var(--text);overflow:visible;
+}
 .article-body table{
   width:100%;border-collapse:collapse;
   border-radius:var(--radius-sm);overflow:hidden;border:1px solid var(--line);

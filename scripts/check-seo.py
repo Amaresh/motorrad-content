@@ -694,6 +694,29 @@ def main() -> None:
     css = (ROOT / "assets/site.css").read_text(encoding="utf-8")
     if ".article-body a.button-primary" not in css:
         fail("article-body must keep primary button label color (specificity vs .article-body a)")
+    if ".diagram-frame" not in css:
+        fail("site.css must style .diagram-frame")
+    if ".sr-steps" not in css:
+        fail("site.css must hide How-it-works steps with .sr-steps")
+
+    boot = ROOT / "assets/mermaid-boot.js"
+    if not boot.is_file():
+        fail("missing assets/mermaid-boot.js")
+    boot_text = boot.read_text(encoding="utf-8")
+    if "#c0452a" not in boot_text or "Manrope" not in boot_text:
+        fail("mermaid-boot.js must use terracotta and Manrope")
+
+    diagram_pages = ["features/index.html", *FEATURE_PAGES]
+    for rel in diagram_pages:
+        html = (ROOT / rel).read_text(encoding="utf-8")
+        if 'class="mermaid"' not in html:
+            fail(f"{rel} must include a mermaid figure")
+        if "mermaid-boot.js" not in html:
+            fail(f"{rel} must load mermaid-boot.js")
+    for rel in FEATURE_PAGES:
+        html = (ROOT / rel).read_text(encoding="utf-8")
+        if "sr-steps" not in html:
+            fail(f"{rel} must keep How-it-works steps in .sr-steps")
 
     print("check-seo: ok")
 

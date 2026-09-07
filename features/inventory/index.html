@@ -106,7 +106,15 @@
 </section>
 <section class="section article-body">
   <h2>How it works</h2>
-  <ol>
+  <figure class="diagram-frame">
+    <figcaption class="mini-label">Stock moves on the job card</figcaption>
+    <pre class="mermaid">flowchart LR
+  reorder["Reorder alert"] --&gt; vendor["Compare vendor prices"]
+  vendor --&gt; po["Purchase order"]
+  po --&gt; bin["Receive into bin"]
+  bin --&gt; unblock["Unblock AWAITING_PARTS"]</pre>
+  </figure>
+  <ol class="sr-steps">
     <li>When stock hits the reorder level, the system flags it instead of waiting for a panicked counter check.</li>
     <li>Vendor prices sit on the part so you can compare before you raise a purchase order (example: Bajrang Spares ₹295 vs Royal Genuine Parts ₹410).</li>
     <li>Purchase orders can create vendor payment requests. Receiving a PO updates stock.</li>
@@ -153,5 +161,7 @@
       </nav>
     </div>
   </footer>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+<script defer src="/assets/mermaid-boot.js"></script>
 </body>
 </html>

@@ -106,7 +106,17 @@
 </section>
 <section class="section article-body">
   <h2>How it works</h2>
-  <ol>
+  <figure class="diagram-frame">
+    <figcaption class="mini-label">One card, reception to delivery</figcaption>
+    <pre class="mermaid">stateDiagram-v2
+  [*] --&gt; RECEPTION: search registration
+  RECEPTION --&gt; IN_PROGRESS: bay + workflow steps
+  IN_PROGRESS --&gt; AWAITING_PARTS: missing SKU
+  AWAITING_PARTS --&gt; IN_PROGRESS: stock received
+  IN_PROGRESS --&gt; QC: work complete
+  QC --&gt; DELIVERED: GST invoice from estimate</pre>
+  </figure>
+  <ol class="sr-steps">
     <li>Search the registration number. The customer, vehicle, and prior visits load onto a new auto-numbered card (example format JC-20260222-0001).</li>
     <li>Pick the job type and bay. A workflow template creates ordered steps (oil change, chain tension, QC) and assigns a technician by skill and workload.</li>
     <li>As work proceeds, parts consumed, estimate approvals, and blocked states such as AWAITING_PARTS stay on the same card.</li>
@@ -153,5 +163,7 @@
       </nav>
     </div>
   </footer>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+<script defer src="/assets/mermaid-boot.js"></script>
 </body>
 </html>

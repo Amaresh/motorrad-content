@@ -106,7 +106,16 @@
 </section>
 <section class="section article-body">
   <h2>How it works</h2>
-  <ol>
+  <figure class="diagram-frame">
+    <figcaption class="mini-label">Bay-hours, not a hopeful morning list</figcaption>
+    <pre class="mermaid">flowchart TD
+  book["Named bay + duration"] --&gt; fit{"Hours left on that bay?"}
+  fit --&gt;|yes| slot["Confirm slot + WhatsApp"]
+  fit --&gt;|no| later["Offer a later slot"]
+  walk["Walk-in"] --&gt; leftover["Leftover duration only"]
+  leftover --&gt; slot</pre>
+  </figure>
+  <ol class="sr-steps">
     <li>Each booking asks for a bay and a service duration instead of a vague &ldquo;before noon&rdquo; slot.</li>
     <li>Walk-ins consume leftover capacity. No-shows are tracked so Monday does not silently overflow.</li>
     <li>The floor view shows job card, technician, current task, and time on floor per bay.</li>
@@ -153,5 +162,7 @@
       </nav>
     </div>
   </footer>
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@11.6.0/dist/mermaid.min.js"></script>
+<script defer src="/assets/mermaid-boot.js"></script>
 </body>
 </html>
