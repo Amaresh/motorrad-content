@@ -424,6 +424,53 @@ main{flex:1}
   .footer-inner{flex-direction:column;align-items:flex-start}
 }
 
+.crumbs ol{
+  display:flex;flex-wrap:wrap;gap:0.45rem 0.55rem;
+  list-style:none;margin:1.25rem 0 0;padding:0;
+  font-size:0.88rem;color:var(--soft);
+}
+.crumbs li{display:inline-flex;align-items:center;gap:0.55rem}
+.crumbs li:not(:last-child)::after{content:"/";color:var(--soft)}
+.crumbs a{text-decoration:none;color:var(--muted)}
+.crumbs a:hover,.crumbs a:focus-visible{color:var(--text)}
+.crumbs a[aria-current="page"]{color:var(--text);pointer-events:none}
+
+.faq-list{display:grid;gap:1.1rem}
+.faq-item{padding:1.25rem 1.4rem;border-radius:var(--radius);border:1px solid var(--line);background:var(--bg-elevated);box-shadow:var(--shadow)}
+.faq-item h2{margin:0 0 0.55rem;font-size:1.25rem}
+.faq-answer{margin:0 0 0.7rem;color:var(--text);font-size:1.02rem;line-height:1.65}
+
+.compare-wrap{overflow-x:auto;margin-top:1.2rem;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--bg-elevated)}
+.compare-wrap table{width:100%;border-collapse:collapse;min-width:720px}
+.compare-wrap caption{text-align:left;padding:0.9rem 1rem 0;color:var(--text);font-weight:700}
+.compare-wrap th,.compare-wrap td{padding:0.85rem 1rem;text-align:left;border-top:1px solid var(--line);vertical-align:top;color:var(--muted);line-height:1.55}
+.compare-wrap thead th{border-top:0;background:var(--bg-panel-strong);color:var(--text);font-size:0.84rem;letter-spacing:0.04em}
+.compare-wrap tbody th{color:var(--text);font-weight:700;width:9rem}
+
+a.feature-card{text-decoration:none;color:inherit;display:block}
+.feature-card{position:relative}
+.feature-card h3 a{color:inherit;text-decoration:none}
+.feature-card h3 a::after{content:"";position:absolute;inset:0}
+.feature-card:focus-within{outline:2px solid var(--accent);outline-offset:3px}
+
+.summary-card,.visual-card{position:relative}
+.summary-card a.stretched,.visual-card a.stretched{
+  color:inherit;text-decoration:none;
+}
+.summary-card a.stretched::after,.visual-card a.stretched::after{
+  content:"";position:absolute;inset:0;
+}
+
+.footer-features{
+  max-width:var(--max);margin:0.4rem auto 0;
+  padding:0 2rem 0;
+  display:flex;flex-wrap:wrap;gap:0.6rem 1rem;
+  color:var(--muted);font-size:0.88rem;
+}
+.footer-features a{text-decoration:none}
+.footer-features a:hover,.footer-features a:focus-visible{color:var(--text)}
+.updated-note{color:var(--soft);font-size:0.88rem;margin-top:0.8rem}
+
 @media(prefers-reduced-motion:no-preference){
   .feature-card,.post-card,.summary-card,.visual-card,
   .story-card,.chart-card,.mini-step{

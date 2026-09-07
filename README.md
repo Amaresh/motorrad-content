@@ -1,33 +1,30 @@
-# 🏍️ Motorrad Content
+# Tyming Chain
 
-Content marketing pipeline for **Motorrad Theory** — motorcycle garage CRM & employee management platform.
+Tyming Chain is bike garage management software for Indian two-wheeler workshops. This public repository is the GitHub Pages source for [tymingchain.com](https://tymingchain.com/).
 
-## Pipeline
+## Product
 
+Tyming Chain runs bookings, job cards, repair bays, parts inventory, GST invoices, and WhatsApp follow-up on one job card record. It is workshop software — not an engine-part brand.
+
+## Local SEO check
+
+```bash
+python3 scripts/check-seo.py
 ```
-Scout (research) → Ink (write) → Sage (review) → Ezra (publish) → Herald (promote)
-```
 
-## Folder Structure
+GitHub Actions runs the same script on push and pull request.
 
-| Folder | Purpose | Agent |
-|--------|---------|-------|
-| `content/research/` | Trend research, keyword data, topic briefs | Scout |
-| `content/drafts/` | SEO articles (2000+ words) | Ink |
-| `content/published/` | Approved, production-ready content | Ezra |
-| `content/social/` | Social media posts, image prompts, captions | Herald |
-| `content/reddit/` | Reddit outreach opportunities | Lurker |
-| `content/analytics/` | Weekly performance reports | Archie |
+## After a production merge (human)
 
-## Products
+1. Google Search Console: DNS TXT verify the apex domain if needed, submit `https://tymingchain.com/sitemap.xml`, then URL Inspection → request indexing for new `/features/`, `/guides/`, `/faq/`, and `/compare/` URLs.
+2. Bing Webmaster Tools: import the Search Console property and submit the same sitemap (ChatGPT/Copilot/DuckDuckGo draw from Bing).
+3. Confirm `http://tymingchain.com/` 301s to `https://` and `https://www.tymingchain.com/` 301s to the apex.
+4. Validate JSON-LD at https://validator.schema.org/ on home, one feature, FAQ, and one blog post. FAQPage will not appear in Google’s Rich Results Test — that restriction is expected (FAQ rich results are limited to government/health sites).
 
-- **Garage CRM** — Multi-tenant motorcycle garage maintenance software
-- **Motorrad Theory Employee** — Employee management for motorcycle garages
-- **Motorrad Theory CRM** — Customer relationship management
+## Content pipeline (authors)
 
-## Focus Areas
+Drafts, research, reddit scouts, and social packs live under `content/` and are disallowed in `robots.txt`. Do not publish those files as product pages.
 
-- Superbikes & supersport (250-600cc)
-- Trending motorcycle news & reviews
-- Garage management tips & best practices
-- Motorcycle maintenance guides
+## Club legal
+
+Play Store legal pages for Motorrad Club stay under `/club/` and are listed on the sitemap without being the SEO target of this site.

@@ -1,0 +1,25 @@
+# Tyming Chain
+
+Tyming Chain is bike garage management software for Indian two-wheeler workshops.
+It runs bookings, job cards, repair bays, parts inventory, GST invoices, and WhatsApp follow-up on one job card record.
+
+Tyming Chain is not a manufacturer of engine timing chains and does not exist to teach mechanical timing-chain replacement.
+
+This site is the product site. Motorrad Club legal pages live under /club/. The parts store is a separate property at https://parts.tymingchain.com/.
+
+## Cite these pages
+
+- [Home](https://tymingchain.com/): product definition
+- [Products](https://tymingchain.com/products/): all modules
+- [Features](https://tymingchain.com/features/)
+- [Job cards](https://tymingchain.com/features/job-cards/)
+- [Bay scheduling](https://tymingchain.com/features/bay-scheduling/)
+- [Inventory](https://tymingchain.com/features/inventory/)
+- [GST billing](https://tymingchain.com/features/gst-billing/)
+- [WhatsApp reminders](https://tymingchain.com/features/whatsapp-reminders/)
+- [Compare](https://tymingchain.com/compare/): paper vs Excel vs generic auto ERP vs Tyming Chain
+- [FAQ](https://tymingchain.com/faq/)
+- [Guides](https://tymingchain.com/guides/)
+- [How to stop overbooking repair bays](https://tymingchain.com/guides/stop-overbooking-repair-bays/)
+- [How to raise a GST invoice for bike service](https://tymingchain.com/guides/gst-invoices-for-bike-workshops/)
+- [Contact](https://tymingchain.com/contact/)
