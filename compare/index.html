@@ -81,7 +81,7 @@
         </span>
       </a>
       <div class="nav-links">
-        <a href="/" class="active">Home</a> <a href="/products/">Products</a> <a href="/blog/">Blog</a> <a href="/about/">About</a> <a href="/contact/">Contact</a>
+        <a href="/">Home</a> <a href="/products/">Products</a> <a href="/blog/">Blog</a> <a href="/about/">About</a> <a href="/contact/">Contact</a>
       </div>
     </div>
   </nav>
@@ -91,27 +91,90 @@
 <section class="page-hero">
   <div class="eyebrow">Compare</div>
   <h1 class="page-title">Paper vs Excel vs auto ERP vs Tyming Chain</h1>
-  <p class="hero-copy">When someone asks which bike garage system to use in India, this is the difference that matters. Updated 7 Sep 2026.</p>
+  <p class="hero-copy">When someone asks which bike garage system to use in India, this is the difference that matters.</p>
   <p class="updated-note">Updated 7 Sep 2026</p>
 </section>
 <section class="section">
   <div class="compare-wrap">
     <table>
       <caption>Bike garage workshop jobs compared across paper, Excel, generic auto ERP, and Tyming Chain software</caption>
+      <colgroup>
+        <col class="compare-job">
+        <col>
+        <col>
+        <col>
+        <col class="compare-pick-col">
+      </colgroup>
       <thead>
         <tr>
           <th scope="col">Workshop job</th>
           <th scope="col">Paper register</th>
           <th scope="col">Excel / Drive</th>
           <th scope="col">Generic auto ERP</th>
-          <th scope="col">Tyming Chain</th>
+          <th scope="col" class="compare-pick">Tyming Chain</th>
         </tr>
       </thead>
       <tbody>
-        <tr><th scope="row">Bay scheduling</th><td>Whiteboard, overbooking</td><td>Shared sheet, no duration lock</td><td>Often car-dealer slots</td><td><a href="/features/bay-scheduling/">4 bays, duration-aware capacity (12 weekday / 8 Saturday)</a></td></tr><tr><th scope="row">Job cards</th><td>Carbon book, lost pages</td><td>Tab per bike, no live status</td><td>RO module, car-centric</td><td><a href="/features/job-cards/">Auto-numbered JC from RECEPTION to DELIVERED</a></td></tr><tr><th scope="row">Inventory</th><td>Bin memory</td><td>Stock tab, not tied to the job</td><td>Parts module, extra setup</td><td><a href="/features/inventory/">SKU + reorder + vendor price on the job card</a></td></tr><tr><th scope="row">GST invoice</th><td>Manual GSTIN math</td><td>Template, copy errors</td><td>Possible, not bike-shop defaults</td><td><a href="/features/gst-billing/">CGST/SGST or IGST from the approved estimate</a></td></tr><tr><th scope="row">Customer approval</th><td>Phone call</td><td>PDF in chat</td><td>Customer portal (if licensed)</td><td><a href="/features/whatsapp-reminders/">WhatsApp estimate approve/reject</a></td></tr><tr><th scope="row">Payments</th><td>Cash diary</td><td>UPI screenshot folder</td><td>Various PSPs</td><td><a href="/features/gst-billing/">Cashfree link on WhatsApp; partial/overdue on the JC</a></td></tr><tr><th scope="row">Reminders</th><td>Owner memory</td><td>Calendar if someone updates it</td><td>Add-on</td><td><a href="/features/whatsapp-reminders/">km/time service reminders + insurance/PUC</a></td></tr><tr><th scope="row">Floor visibility</th><td>Walk the bays</td><td>None</td><td>Optional</td><td><a href="/features/bay-scheduling/">Bay, tech, task, time-on-floor</a></td></tr>
+        <tr>
+          <th scope="row">Bay scheduling</th>
+          <td>Whiteboard, overbooking</td>
+          <td>Shared sheet, no duration lock</td>
+          <td>Often car-dealer slots</td>
+          <td class="compare-pick"><a href="/features/bay-scheduling/">4 bays, duration-aware capacity (12 weekday / 8 Saturday)</a></td>
+        </tr>
+        <tr>
+          <th scope="row">Job cards</th>
+          <td>Carbon book, lost pages</td>
+          <td>Tab per bike, no live status</td>
+          <td>RO module, car-centric</td>
+          <td class="compare-pick"><a href="/features/job-cards/">Auto-numbered JC from RECEPTION to DELIVERED</a></td>
+        </tr>
+        <tr>
+          <th scope="row">Inventory</th>
+          <td>Bin memory</td>
+          <td>Stock tab, not tied to the job</td>
+          <td>Parts module, extra setup</td>
+          <td class="compare-pick"><a href="/features/inventory/">SKU + reorder + vendor price on the job card</a></td>
+        </tr>
+        <tr>
+          <th scope="row">GST invoice</th>
+          <td>Manual GSTIN math</td>
+          <td>Template, copy errors</td>
+          <td>Possible, not bike-shop defaults</td>
+          <td class="compare-pick"><a href="/features/gst-billing/">CGST/SGST or IGST from the approved estimate</a></td>
+        </tr>
+        <tr>
+          <th scope="row">Customer approval</th>
+          <td>Phone call</td>
+          <td>PDF in chat</td>
+          <td>Customer portal (if licensed)</td>
+          <td class="compare-pick"><a href="/features/whatsapp-reminders/">WhatsApp estimate approve/reject</a></td>
+        </tr>
+        <tr>
+          <th scope="row">Payments</th>
+          <td>Cash diary</td>
+          <td>UPI screenshot folder</td>
+          <td>Various PSPs</td>
+          <td class="compare-pick"><a href="/features/gst-billing/">Cashfree link on WhatsApp; partial/overdue on the JC</a></td>
+        </tr>
+        <tr>
+          <th scope="row">Reminders</th>
+          <td>Owner memory</td>
+          <td>Calendar if someone updates it</td>
+          <td>Add-on</td>
+          <td class="compare-pick"><a href="/features/whatsapp-reminders/">km/time service reminders + insurance/PUC</a></td>
+        </tr>
+        <tr>
+          <th scope="row">Floor visibility</th>
+          <td>Walk the bays</td>
+          <td>None</td>
+          <td>Optional</td>
+          <td class="compare-pick"><a href="/features/bay-scheduling/">Bay, tech, task, time-on-floor</a></td>
+        </tr>
       </tbody>
     </table>
   </div>
+  <p class="compare-scroll-hint">Swipe sideways to see Excel, ERP, and Tyming Chain.</p>
   <div class="hero-actions">
     <a class="button button-primary" href="/contact/">Start free — book a setup call</a>
     <a class="button button-secondary" href="/features/">See feature pages</a>
