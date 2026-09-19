@@ -626,8 +626,8 @@ def main() -> None:
         'alt="Motorrad Theory"',
         'src="assets/workshops/sunrise-motor-works.jpg"',
         'alt="Sunrise Motor Works"',
-        'href="https://www.motorradtheory.com/"',
-        'href="https://sunrisemotorworks.pages.dev/"',
+        'class="quote-logo" href="https://www.motorradtheory.com/"',
+        'class="quote-logo" href="https://sunrisemotorworks.pages.dev/"',
     ]
     for needle in logo_needles:
         if needle not in workshops:
