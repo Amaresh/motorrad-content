@@ -319,6 +319,26 @@ main{flex:1}
 .quote-attr a:hover{
   text-decoration:underline;
 }
+.quote-logo{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  min-height:4.75rem;
+  margin:0 0 1rem;
+}
+.quote-logo img{
+  max-height:4.25rem;
+  width:auto;
+  max-width:13rem;
+  object-fit:contain;
+}
+.quote-grid .feature-card:first-child .quote-logo img{
+  border-radius:8px;
+}
+.quote-grid .feature-card:nth-child(2) .quote-logo img{
+  max-height:5.25rem;
+  max-width:8.75rem;
+}
 @media (max-width:720px){
   .quote-grid{grid-template-columns:1fr}
 }

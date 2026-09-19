@@ -30,6 +30,8 @@ REQUIRED_FILES = [
     "llms.txt",
     "assets/favicon.svg",
     "assets/og-default.jpg",
+    "assets/workshops/motorrad-theory.png",
+    "assets/workshops/sunrise-motor-works.jpg",
     "features/index.html",
     "features/job-cards/index.html",
     "features/bay-scheduling/index.html",
@@ -619,6 +621,23 @@ def main() -> None:
         fail("Rohit Lad attribution must follow the Motorrad Theory quote")
     if not (0 <= quote_sm < syed_at):
         fail("Syed attribution must follow the Sunrise quote")
+    logo_needles = [
+        'src="assets/workshops/motorrad-theory.png"',
+        'alt="Motorrad Theory"',
+        'src="assets/workshops/sunrise-motor-works.jpg"',
+        'alt="Sunrise Motor Works"',
+        'href="https://www.motorradtheory.com/"',
+        'href="https://sunrisemotorworks.pages.dev/"',
+    ]
+    for needle in logo_needles:
+        if needle not in workshops:
+            fail(f"homepage workshop quotes missing {needle!r}")
+    mt_logo = workshops.find('src="assets/workshops/motorrad-theory.png"')
+    sm_logo = workshops.find('src="assets/workshops/sunrise-motor-works.jpg"')
+    if not (0 <= mt_logo < quote_mt):
+        fail("Motorrad Theory logo must sit above its quote")
+    if not (0 <= sm_logo < quote_sm):
+        fail("Sunrise Motor Works logo must sit above its quote")
 
     faq_html = (ROOT / "faq/index.html").read_text(encoding="utf-8")
     if "<blockquote" in faq_html.lower():
