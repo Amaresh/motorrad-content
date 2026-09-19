@@ -591,6 +591,8 @@ def main() -> None:
             "Riders still talk to us the same way. "
             "We just don\u2019t lose the job, the parts, or the bill in a chat thread anymore."
         ),
+        "Rohit Lad",
+        "Syed",
         'href="https://www.motorradtheory.com/"',
         'href="https://sunrisemotorworks.pages.dev/"',
     ]
@@ -604,6 +606,19 @@ def main() -> None:
         fail("homepage missing blog, 4-step, or workshop-quotes heading")
     if not (steps_at < quotes_at < blog_at):
         fail("workshop quotes must sit after the 4-step section and before From the blog")
+    workshops_start = home.find('id="workshops"')
+    workshops = home[workshops_start:blog_at] if workshops_start >= 0 else ""
+    for place in ("Bengaluru", "Bangalore", "BTM"):
+        if place in workshops:
+            fail(f"homepage workshop quotes must not use place tag {place!r}")
+    rohit_at = workshops.find("Rohit Lad")
+    syed_at = workshops.find("Syed")
+    quote_mt = workshops.find("We used to run the desk")
+    quote_sm = workshops.find("Riders still talk to us the same way")
+    if not (0 <= quote_mt < rohit_at):
+        fail("Rohit Lad attribution must follow the Motorrad Theory quote")
+    if not (0 <= quote_sm < syed_at):
+        fail("Syed attribution must follow the Sunrise quote")
 
     faq_html = (ROOT / "faq/index.html").read_text(encoding="utf-8")
     if "<blockquote" in faq_html.lower():
