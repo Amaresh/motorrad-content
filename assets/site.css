@@ -290,6 +290,27 @@ main{flex:1}
   margin-top:0.5rem;border-radius:999px;background:var(--accent);
 }
 
+/* -- WORKSHOP QUOTES -- */
+.quote-grid{
+  display:grid;
+  gap:1.25rem;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.quote-grid blockquote{
+  margin:0.6rem 0 0;
+  padding:0;
+  border:0;
+}
+.quote-grid blockquote p{
+  margin:0;
+  color:var(--muted);
+  font-size:1.02rem;
+  line-height:1.65;
+}
+@media (max-width:720px){
+  .quote-grid{grid-template-columns:1fr}
+}
+
 /* -- STORY -- */
 .story-grid{grid-template-columns:1.05fr 0.95fr}
 .story-list{grid-template-columns:repeat(2,minmax(0,1fr))}

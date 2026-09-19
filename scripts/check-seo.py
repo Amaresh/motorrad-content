@@ -580,6 +580,30 @@ def main() -> None:
     )
     if "aggregateRating" in home:
         fail("do not ship fake aggregateRating")
+    quote_needles = [
+        "Workshops on the floor",
+        "Garages already running Tyming Chain",
+        (
+            "We used to run the desk from notebooks and WhatsApp. "
+            "Now the job card is in one place, and the floor sees the same thing we do."
+        ),
+        (
+            "Riders still talk to us the same way. "
+            "We just don\u2019t lose the job, the parts, or the bill in a chat thread anymore."
+        ),
+        'href="https://www.motorradtheory.com/"',
+        'href="https://sunrisemotorworks.pages.dev/"',
+    ]
+    for needle in quote_needles:
+        if needle not in home:
+            fail(f"homepage workshop quotes missing {needle!r}")
+    blog_at = home.find("From the blog")
+    steps_at = home.find("Every step hands context to the next one.")
+    quotes_at = home.find("Garages already running Tyming Chain")
+    if blog_at < 0 or steps_at < 0 or quotes_at < 0:
+        fail("homepage missing blog, 4-step, or workshop-quotes heading")
+    if not (steps_at < quotes_at < blog_at):
+        fail("workshop quotes must sit after the 4-step section and before From the blog")
 
     faq_html = (ROOT / "faq/index.html").read_text(encoding="utf-8")
     if "<blockquote" in faq_html.lower():
